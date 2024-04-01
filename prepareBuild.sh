@@ -32,6 +32,8 @@ cp ./package.json $BUILD_FOLDER_PATH/
 cp ./yarn.lock $BUILD_FOLDER_PATH/
 cp ./.env.prod $BUILD_FOLDER_PATH/.env
 cp -r ./scripts/ $BUILD_FOLDER_PATH/
+cp ./newrelic.js $BUILD_FOLDER_PATH/
+
 
 npm version  --allow-same-version patch -m "Update version to %s"
 APP_VERSION=$(node -p -e "require('./package.json').version")
