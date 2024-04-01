@@ -30,7 +30,7 @@ git clone https://github.com/Absolute-PA/absolute-api.git $BUILD_FOLDER_PATH
 cp -r ./build $BUILD_FOLDER_PATH/
 cp ./package.json $BUILD_FOLDER_PATH/
 cp ./yarn.lock $BUILD_FOLDER_PATH/
-cp ./.env.prod $BUILD_FOLDER_PATH/.env
+cp ./.env.prod $BUILD_FOLDER_PATH/
 cp -r ./scripts/ $BUILD_FOLDER_PATH/
 cp ./newrelic.js $BUILD_FOLDER_PATH/
 
