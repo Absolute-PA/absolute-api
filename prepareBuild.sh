@@ -43,6 +43,8 @@ echo App version is $APP_VERSION
 git push
 
 cd $BUILD_FOLDER_PATH
+echo "\nnpm_package_version=$APP_VERSION" >> .env.prod
+
 git add .
 git commit -m "Version: $APP_VERSION"
 git push

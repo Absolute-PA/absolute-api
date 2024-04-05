@@ -1,6 +1,6 @@
 {
   "name": "nestjs-ecommerce",
-  "version": "0.0.12",
+  "version": "0.0.16",
   "description": "",
   "author": "",
   "private": true,
@@ -24,7 +24,7 @@
     "test:e2e": "jest --config ./test/jest-e2e.json",
     "compile": "tsc -b tsconfig.json --incremental",
     "docker:build": "docker build -t tien1106/absolutepa:nodeweb-master-api .",
-    "deploy": "cd ./deployment && docker compose up",
+    "deploy": "./scripts/prepareBuild.sh",
     "docker:save": "docker save -o ./out/nodeweb-master-api.tar nodeweb-master-api"
   },
   "dependencies": {
