@@ -1,7 +1,7 @@
-
+set -Eeuo pipefail
 git checkout main
 
-BUILD_ID_FILE=".next/BUILD_ID"
+BUILD_ID_FILE="build/BUILD_ID"
 CURRENT_COMMIT_HASH=$(git rev-parse HEAD)
 if [ -e "$BUILD_ID_FILE" ]; then
     # Read the stored commit hash from the BUILD_ID file
@@ -24,7 +24,12 @@ echo "Build process completed."
 
 
 BUILD_FOLDER_PATH=../absolute-api
-git clone https://github.com/Absolute-PA/absolute-api.git $BUILD_FOLDER_PATH
+
+if [ ! -d "$BUILD_FOLDER_PATH" ]; then 
+    git clone https://github.com/Absolute-PA/absolute-api.git $BUILD_FOLDER_PATH
+fi
+
+
 
 
 cp -r ./build $BUILD_FOLDER_PATH/
