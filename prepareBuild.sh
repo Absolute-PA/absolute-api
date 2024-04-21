@@ -1,5 +1,6 @@
 set -Eeuo pipefail
 git checkout main
+git pull origin main
 
 BUILD_ID_FILE="build/BUILD_ID"
 CURRENT_COMMIT_HASH=$(git rev-parse HEAD)
@@ -49,7 +50,7 @@ cp ./newrelic.js $BUILD_FOLDER_PATH/
 
 cd $BUILD_FOLDER_PATH
 echo "\nnpm_package_version=$APP_VERSION" >> .env.prod
-
+git pull origin main
 git add .
 git commit -m "Version: $APP_VERSION"
 git push
