@@ -16,12 +16,25 @@ if test -f .env; then
     # Extract npm_package_version line from .env.prod
     npm_package_version=$(grep 'npm_package_version' .env.prod)
     
-    # Replace the npm_package_version line in .env
-    if grep -q 'npm_package_version' .env; then
-        sed -i "s/npm_package_version=.*/$npm_package_version/" .env
-    else
-        echo "$npm_package_version" >> .env
-    fi
+    # Create a temporary file with updated content
+    awk -v new_line="$npm_package_version" '
+    BEGIN { found = 0 }
+    {
+        if ($0 ~ /^npm_package_version=/) {
+            print new_line
+            found = 1
+        } else {
+            print
+        }
+    }
+    END {
+        if (!found) {
+            print new_line
+        }
+    }' .env > .env.tmp
+    
+    # Move the temporary file to .env
+    mv .env.tmp .env
 else
     # If .env does not exist, copy .env.prod to .env
     cp .env.prod .env
