@@ -43,8 +43,6 @@ cp ./newrelic.js $BUILD_FOLDER_PATH/
 
 cd $BUILD_FOLDER_PATH
 echo "\nnpm_package_version=$CURRENT_COMMIT_HASH" >> .env.prod
-git reset --hard
-git fetch
 git checkout uat
 git pull origin uat
 git add .

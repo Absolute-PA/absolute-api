@@ -25,6 +25,7 @@
     "compile": "tsc -b tsconfig.json --incremental",
     "docker:build": "docker build -t tien1106/absolutepa:nodeweb-master-api .",
     "deploy": "./scripts/prepareBuild.sh",
+    "deployUat": "./scripts/prepareBuildUat.sh",
     "docker:save": "docker save -o ./out/nodeweb-master-api.tar nodeweb-master-api"
   },
   "dependencies": {

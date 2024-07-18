@@ -50,6 +50,7 @@ cp ./newrelic.js $BUILD_FOLDER_PATH/
 
 cd $BUILD_FOLDER_PATH
 echo "\nnpm_package_version=$APP_VERSION" >> .env.prod
+git checkout main
 git pull origin main
 git add .
 git commit -m "Version: $APP_VERSION"
