@@ -1,4 +1,16 @@
 set -Eeuo pipefail
+
+BUILD_FOLDER_PATH=../absolute-api
+SOURCE_FOLDER_PATH=../nodeweb-master-api
+
+# clean build repo
+cd $BUILD_FOLDER_PATH
+git reset --hard
+git checkout main
+git pull origin main
+
+# build UI
+cd $SOURCE_FOLDER_PATH
 git checkout main
 git pull origin main
 
@@ -46,12 +58,8 @@ cp -r ./scripts/ $BUILD_FOLDER_PATH/
 cp ./newrelic.js $BUILD_FOLDER_PATH/
 
 
-
-
 cd $BUILD_FOLDER_PATH
 echo "\nnpm_package_version=$APP_VERSION" >> .env.prod
-git checkout main
-git pull origin main
 git add .
 git commit -m "Version: $APP_VERSION"
 git push
