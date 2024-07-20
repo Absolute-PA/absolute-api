@@ -30,11 +30,6 @@ if [ ! -d "$BUILD_FOLDER_PATH" ]; then
     git clone https://github.com/Absolute-PA/absolute-api.git $BUILD_FOLDER_PATH
 fi
 
-npm version  --allow-same-version patch -m "Update version to %s"
-APP_VERSION=$(node -p -e "require('./package.json').version")
-echo App version is $APP_VERSION
-git push
-
 
 cp -r ./build $BUILD_FOLDER_PATH/
 cp ./package.json $BUILD_FOLDER_PATH/
@@ -46,12 +41,10 @@ cp -r ./scripts/ $BUILD_FOLDER_PATH/
 cp ./newrelic.js $BUILD_FOLDER_PATH/
 
 
-
-
 cd $BUILD_FOLDER_PATH
-echo "\nnpm_package_version=$APP_VERSION" >> .env.prod
-git checkout main
-git pull origin main
+echo "\nnpm_package_version=$CURRENT_COMMIT_HASH" >> .env.prod
+git checkout uat
+git pull origin uat
 git add .
-git commit -m "Version: $APP_VERSION"
+git commit -m "Version: $CURRENT_COMMIT_HASH"
 git push
