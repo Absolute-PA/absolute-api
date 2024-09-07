@@ -1,8 +1,20 @@
 set -Eeuo pipefail
+
+BUILD_FOLDER_PATH=../absolute-api
+SOURCE_FOLDER_PATH=../nodeweb-master-api
+
+# clean build repo
+cd $BUILD_FOLDER_PATH
+git reset --hard
 git checkout main
 git pull origin main
 
-BUILD_ID_FILE="build/BUILD_ID"
+# build API
+cd $SOURCE_FOLDER_PATH
+git checkout main
+git pull origin main
+
+BUILD_ID_FILE="dist/BUILD_ID"
 CURRENT_COMMIT_HASH=$(git rev-parse HEAD)
 if [ -e "$BUILD_ID_FILE" ]; then
     # Read the stored commit hash from the BUILD_ID file
@@ -36,7 +48,7 @@ echo App version is $APP_VERSION
 git push
 
 
-cp -r ./build $BUILD_FOLDER_PATH/
+cp -r ./dist $BUILD_FOLDER_PATH/
 cp ./package.json $BUILD_FOLDER_PATH/
 cp ./yarn.lock $BUILD_FOLDER_PATH/
 cp -r ./certificates $BUILD_FOLDER_PATH/
@@ -46,12 +58,8 @@ cp -r ./scripts/ $BUILD_FOLDER_PATH/
 cp ./newrelic.js $BUILD_FOLDER_PATH/
 
 
-
-
 cd $BUILD_FOLDER_PATH
 echo "\nnpm_package_version=$APP_VERSION" >> .env.prod
-git checkout main
-git pull origin main
 git add .
 git commit -m "Version: $APP_VERSION"
 git push

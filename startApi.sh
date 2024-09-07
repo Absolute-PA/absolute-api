@@ -41,4 +41,4 @@ else
 fi
 
 # Start the server with HTTPS enabled
-HTTPS=true node -r newrelic ./build/index.js
+HTTPS=true node -r newrelic ./dist/main.js
