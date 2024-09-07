@@ -1,0 +1,1 @@
+{"version":3,"file":"job.dto.js","sourceRoot":"","sources":["../../../src/agenda/dtos/job.dto.ts"],"names":[],"mappings":";;;AAqBO,MAAM,cAAc,GAAG,CAAC,GAAW,EAAuB,EAAE;IACjE,OAAQ,GAAoB,CAAC,KAAK,KAAK,SAAS,CAAC;AACnD,CAAC,CAAC;AAFW,QAAA,cAAc,kBAEzB;AAEK,MAAM,gBAAgB,GAAG,CAAC,GAAW,EAAyB,EAAE;IACrE,OAAQ,GAAsB,CAAC,IAAI,KAAK,SAAS,CAAC;AACpD,CAAC,CAAC;AAFW,QAAA,gBAAgB,oBAE3B"}
