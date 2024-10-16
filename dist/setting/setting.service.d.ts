@@ -10,7 +10,7 @@ export declare class SettingService {
     private readonly settingModel;
     constructor(settingModel: Model<SettingDocument>);
     create(setting: CreateSettingDto): Promise<SettingDocument>;
-    findFirst(): Promise<SettingDocument>;
+    findFirst(): Promise<SettingDocument | null>;
     update(id: string, updateSettingDto: UpdateSettingDto): Promise<SettingDocument>;
     updateExpiryStatus(): Promise<SettingDocument>;
     updateUserSetting(userSetting: UserSettingDto): Promise<SettingDocument>;
