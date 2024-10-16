@@ -8,6 +8,7 @@ if [ $? -eq 0 ]; then
     # Perform actions when the port is open
 else
     echo "MongoDB is not running";
+    docker network prune
     docker compose up -d --force-recreate --build --detach;
 fi
 
