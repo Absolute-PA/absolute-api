@@ -9,6 +9,16 @@ services:
       - db:/data/db
     ports:
       - 27017:27017
+    networks:
+      - custom_network
 
 volumes:
   db:
+
+networks:
+  custom_network:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.29.0.0/16
