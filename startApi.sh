@@ -11,6 +11,8 @@ yarn
 # Start the database
 ./startDB.sh
 
+pm2 start ecosystem.config.js
+
 # Check if .env file exists
 if test -f .env; then 
     # Extract npm_package_version line from .env.prod
