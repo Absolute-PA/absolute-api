@@ -50,6 +50,8 @@ git push
 
 cp -r ./dist $BUILD_FOLDER_PATH/
 cp ./package.json $BUILD_FOLDER_PATH/
+cp ./ecosystem.config.js $BUILD_FOLDER_PATH/
+cp ./docker-runner.js $BUILD_FOLDER_PATH/
 cp ./yarn.lock $BUILD_FOLDER_PATH/
 cp -r ./certificates $BUILD_FOLDER_PATH/
 cp -r ./assets $BUILD_FOLDER_PATH/
