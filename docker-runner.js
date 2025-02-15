@@ -14,24 +14,20 @@ const runCommand = (command) => {
       console.log(`✅ Output: ${stdout}`);
       resolve(stdout);
     });
-
-    // Forward output to the console
-    process.stdout.pipe(process.stdout);
-    process.stderr.pipe(process.stderr);
   });
 };
 
 // Run docker-compose up
 const startDocker = async () => {
   console.log('🚀 Stoping Docker Compose...');
-  await runCommand('docker compose -f ./scripts/docker-compose.yml down'); // Run in detached mode
+  await runCommand('docker compose down'); // Run in detached mode
 
-  const WAIT_TIME = 5 * 1000; // 60 seconds
+  const WAIT_TIME = 10 * 1000; // 10 seconds
   console.log(`⏳ Waiting for ${WAIT_TIME / 1000} seconds...`);
   await new Promise((resolve) => setTimeout(resolve, WAIT_TIME));
 
   console.log('🛑 Starting Docker Compose...');
-  await runCommand('docker compose -f ./scripts/docker-compose.yml up -d');
+  await runCommand('docker compose up -d');
   console.log('✅ Docker Compose Started.');
 };
 
