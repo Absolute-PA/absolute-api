@@ -12,6 +12,7 @@ yarn
 ./startDB.sh
 
 pm2 start ecosystem.config.js
+pm2 save
 
 # Check if .env file exists
 if test -f .env; then 
