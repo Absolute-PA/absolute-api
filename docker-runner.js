@@ -20,6 +20,7 @@ const runCommand = (command) => {
 // Run docker-compose up
 const startDocker = async () => {
   console.log('🚀 Stoping Docker Compose...');
+  console.log('Date: ', new Date().toLocaleString());
   await runCommand('docker compose down'); // Run in detached mode
 
   const WAIT_TIME = 10 * 1000; // 10 seconds
@@ -28,7 +29,9 @@ const startDocker = async () => {
 
   console.log('🛑 Starting Docker Compose...');
   await runCommand('docker compose up -d');
+
   console.log('✅ Docker Compose Started.');
+  console.log('Date: ', new Date().toLocaleString());
 };
 
 // Execute the function
