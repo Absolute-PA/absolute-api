@@ -23,7 +23,9 @@ let SoundGateway = class SoundGateway {
     handleDisconnect(client) {
         const socketName = client.handshake.query.name;
     }
-    handleConnection(client, ...args) { }
+    handleConnection(client, ...args) {
+        this.logger.log(`Client connected: ${client.id}`);
+    }
     async broadcastPlaying(data) {
         this.wss.emit("playing", data);
     }

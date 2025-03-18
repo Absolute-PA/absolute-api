@@ -6,11 +6,11 @@ const common_1 = require("@nestjs/common");
 const player_1 = require("./player");
 class AudioPlayer {
     static play(audioPath, volume) {
-        this.logger.log(`Playing sound: ${audioPath}`);
+        this.logger.log(`Playing sounds`);
         try {
             this.player.play(audioPath, {
                 afplay: volume ? ['-v', volume] : [],
-                mplayer: volume ? ['-volume', volume] : [],
+                mplayer: volume ? ['-volume', volume, '-novideo'] : [],
             }, (err) => {
                 if (err !== 1) {
                     this.logger.log(`Error playing sound: ${err}`);
@@ -24,9 +24,9 @@ class AudioPlayer {
     static playAsync(audioPath, volume, shuffle) {
         let process;
         const getMplayerOptions = () => {
-            const options = [];
+            const options = ['-novideo'];
             if (typeof volume === 'number' && volume >= 0) {
-                options.push('-volume', volume);
+                options.push('-volume', volume.toString());
             }
             if (shuffle) {
                 options.push('-shuffle');
@@ -34,7 +34,7 @@ class AudioPlayer {
             return options;
         };
         const promise = new Promise((resolve, reject) => {
-            this.logger.log(`Playing sound: ${audioPath}`);
+            this.logger.log(`Playing sounds`);
             process = this.player.play(audioPath, {
                 afplay: volume ? ['-v', volume] : [],
                 mplayer: getMplayerOptions(),

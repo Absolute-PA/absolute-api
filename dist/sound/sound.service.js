@@ -112,6 +112,10 @@ let SoundService = SoundService_1 = class SoundService {
         const { soundId, jobId, durationInSecond } = payload;
         const sound = await this.findOne(soundId);
         const soundPath = path.join(path_1.processRootPath, 'assets', 'audio', sound.fileName);
+        if (!(0, file_1.isFileExist)(soundPath)) {
+            this.logger.error(`Sound file not found: ${soundPath}`);
+            return;
+        }
         job_1.PROCESS_CACHE.killAll();
         this.logger.log(`Playing sound: ${soundId} - ${sound.name}`);
         (0, job_1.executeJob)({
@@ -127,6 +131,10 @@ let SoundService = SoundService_1 = class SoundService {
         const voice = await this.uploadService.findVoiceRecoredById(voiceId);
         const filePath = voice.filePath;
         const fullFilePath = (0, path_2.join)(process.cwd(), filePath);
+        if (!(0, file_1.isFileExist)(fullFilePath)) {
+            this.logger.error(`Voice file not found: ${fullFilePath}`);
+            return;
+        }
         job_1.PROCESS_CACHE.killAll();
         this.logger.log(`Playing voice recorded: ${voiceId}`);
         (0, job_1.executeJob)({
