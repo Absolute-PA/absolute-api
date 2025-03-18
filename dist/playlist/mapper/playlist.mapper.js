@@ -1,16 +1,1 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.mapToDto = void 0;
-const mapToDto = (playlist, sounds) => {
-    return {
-        _id: playlist._id,
-        name: playlist.name,
-        sounds: [...sounds],
-        isShuffle: playlist.isShuffle,
-        jobId: playlist.jobId,
-        createdAtUtc: playlist.createdAtUtc,
-        updatedAtUtc: playlist.updatedAtUtc,
-    };
-};
-exports.mapToDto = mapToDto;
-//# sourceMappingURL=playlist.mapper.js.map
+'use strict';const a84_0x716a9d=a84_0x2da5;(function(_0x4c8d77,_0x5c7f85){const _0x42b60a=a84_0x2da5,_0x4aef24=_0x4c8d77();while(!![]){try{const _0x18aac6=parseInt(_0x42b60a(0x6b))/0x1+-parseInt(_0x42b60a(0x6d))/0x2+-parseInt(_0x42b60a(0x70))/0x3*(parseInt(_0x42b60a(0x66))/0x4)+-parseInt(_0x42b60a(0x6e))/0x5+parseInt(_0x42b60a(0x6a))/0x6*(parseInt(_0x42b60a(0x74))/0x7)+parseInt(_0x42b60a(0x72))/0x8+parseInt(_0x42b60a(0x6c))/0x9;if(_0x18aac6===_0x5c7f85)break;else _0x4aef24['push'](_0x4aef24['shift']());}catch(_0x3349af){_0x4aef24['push'](_0x4aef24['shift']());}}}(a84_0x16fb,0x61fab));Object[a84_0x716a9d(0x69)](exports,'__esModule',{'value':!![]}),exports[a84_0x716a9d(0x6f)]=void 0x0;const mapToDto=(_0x17a3ff,_0x1e0c4a)=>{const _0x21c6a0=a84_0x716a9d;return{'_id':_0x17a3ff[_0x21c6a0(0x73)],'name':_0x17a3ff[_0x21c6a0(0x67)],'sounds':[..._0x1e0c4a],'isShuffle':_0x17a3ff[_0x21c6a0(0x71)],'jobId':_0x17a3ff[_0x21c6a0(0x65)],'createdAtUtc':_0x17a3ff[_0x21c6a0(0x68)],'updatedAtUtc':_0x17a3ff['updatedAtUtc']};};exports['mapToDto']=mapToDto;function a84_0x2da5(_0x514b59,_0xd54a4){const _0x16fb02=a84_0x16fb();return a84_0x2da5=function(_0x2da56b,_0x52f816){_0x2da56b=_0x2da56b-0x65;let _0x709fb0=_0x16fb02[_0x2da56b];return _0x709fb0;},a84_0x2da5(_0x514b59,_0xd54a4);}function a84_0x16fb(){const _0x4a12cb=['name','createdAtUtc','defineProperty','6pwLuOO','91683xxnCju','1133037ufTmvY','1390016HAsqbJ','1890550YjuFaI','mapToDto','72903aMEXKs','isShuffle','3886016emqoAs','_id','5567898IJbwxx','jobId','4VSxdEK'];a84_0x16fb=function(){return _0x4a12cb;};return a84_0x16fb();}

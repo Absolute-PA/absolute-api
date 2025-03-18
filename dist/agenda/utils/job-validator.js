@@ -1,18 +1,1 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.shouldRunJob = void 0;
-const shouldRunJob = async (job) => {
-    const current = new Date();
-    if (job.attrs.startDate && job.attrs.startDate > current) {
-        job.attrs.nextRunAt = new Date(job.attrs.startDate);
-        job.save();
-        return false;
-    }
-    if (job.attrs.endDate && job.attrs.endDate < current) {
-        await job.remove();
-        return false;
-    }
-    return true;
-};
-exports.shouldRunJob = shouldRunJob;
-//# sourceMappingURL=job-validator.js.map
+'use strict';const a19_0xf29cf7=a19_0x5b51;(function(_0x593cf9,_0x4ca087){const _0x24f81c=a19_0x5b51,_0xd60130=_0x593cf9();while(!![]){try{const _0x12e56e=-parseInt(_0x24f81c(0xcc))/0x1+parseInt(_0x24f81c(0xd1))/0x2+-parseInt(_0x24f81c(0xd0))/0x3*(-parseInt(_0x24f81c(0xc6))/0x4)+parseInt(_0x24f81c(0xd4))/0x5*(-parseInt(_0x24f81c(0xcb))/0x6)+-parseInt(_0x24f81c(0xc7))/0x7+parseInt(_0x24f81c(0xcf))/0x8+parseInt(_0x24f81c(0xcd))/0x9;if(_0x12e56e===_0x4ca087)break;else _0xd60130['push'](_0xd60130['shift']());}catch(_0x5717c8){_0xd60130['push'](_0xd60130['shift']());}}}(a19_0x27e8,0x1b4ee));function a19_0x27e8(){const _0x205802=['1511240fVALAe','5016JGKKEt','442022yBMMyB','startDate','endDate','11205FPIxIv','128LzoVNN','1360884aRIRaj','attrs','shouldRunJob','save','552wdjXcP','61696dhaNjN','996426UQEsHu','nextRunAt'];a19_0x27e8=function(){return _0x205802;};return a19_0x27e8();}Object['defineProperty'](exports,'__esModule',{'value':!![]}),exports[a19_0xf29cf7(0xc9)]=void 0x0;const shouldRunJob=async _0x248c0f=>{const _0x318340=a19_0xf29cf7,_0x1547cd=new Date();if(_0x248c0f[_0x318340(0xc8)][_0x318340(0xd2)]&&_0x248c0f[_0x318340(0xc8)][_0x318340(0xd2)]>_0x1547cd)return _0x248c0f['attrs'][_0x318340(0xce)]=new Date(_0x248c0f['attrs'][_0x318340(0xd2)]),_0x248c0f[_0x318340(0xca)](),![];if(_0x248c0f[_0x318340(0xc8)][_0x318340(0xd3)]&&_0x248c0f[_0x318340(0xc8)][_0x318340(0xd3)]<_0x1547cd)return await _0x248c0f['remove'](),![];return!![];};function a19_0x5b51(_0x7b9c7a,_0x255d3f){const _0x27e88a=a19_0x27e8();return a19_0x5b51=function(_0x5b512f,_0x478d6e){_0x5b512f=_0x5b512f-0xc6;let _0x27ad98=_0x27e88a[_0x5b512f];return _0x27ad98;},a19_0x5b51(_0x7b9c7a,_0x255d3f);}exports['shouldRunJob']=shouldRunJob;

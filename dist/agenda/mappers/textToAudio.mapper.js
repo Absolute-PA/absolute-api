@@ -1,12 +1,1 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.toPlayTextToAudioCommand = void 0;
-const toPlayTextToAudioCommand = (dto) => {
-    return {
-        textToAudioId: dto.attributes.textToAudioId,
-        durationInSecond: Number(dto.attributes.durationInSecond),
-        audit: dto.audit,
-    };
-};
-exports.toPlayTextToAudioCommand = toPlayTextToAudioCommand;
-//# sourceMappingURL=textToAudio.mapper.js.map
+'use strict';const a13_0x3d7850=a13_0x3ecd;function a13_0x4d35(){const _0x9add14=['1886780rjPzWc','140QZlHlF','defineProperty','30ggjjfE','343298rovryl','28bIiiUN','4353462cYYDxQ','__esModule','98325WwsKCc','1002628npYpjq','audit','845225EvbLyY','durationInSecond','attributes','toPlayTextToAudioCommand','3VQAEey','140472qAqJyi'];a13_0x4d35=function(){return _0x9add14;};return a13_0x4d35();}(function(_0x218ef5,_0x2614c5){const _0x2d07c4=a13_0x3ecd,_0x433052=_0x218ef5();while(!![]){try{const _0x2bd757=-parseInt(_0x2d07c4(0x1cd))/0x1*(parseInt(_0x2d07c4(0x1d3))/0x2)+parseInt(_0x2d07c4(0x1d7))/0x3+-parseInt(_0x2d07c4(0x1cf))/0x4+parseInt(_0x2d07c4(0x1c9))/0x5*(parseInt(_0x2d07c4(0x1d2))/0x6)+-parseInt(_0x2d07c4(0x1d4))/0x7*(parseInt(_0x2d07c4(0x1ce))/0x8)+-parseInt(_0x2d07c4(0x1d5))/0x9+parseInt(_0x2d07c4(0x1d0))/0xa*(parseInt(_0x2d07c4(0x1d8))/0xb);if(_0x2bd757===_0x2614c5)break;else _0x433052['push'](_0x433052['shift']());}catch(_0x2bcfc1){_0x433052['push'](_0x433052['shift']());}}}(a13_0x4d35,0x95c64));function a13_0x3ecd(_0x2daf99,_0x2bba34){const _0x4d35d1=a13_0x4d35();return a13_0x3ecd=function(_0x3ecd42,_0x17277d){_0x3ecd42=_0x3ecd42-0x1c8;let _0x2426e8=_0x4d35d1[_0x3ecd42];return _0x2426e8;},a13_0x3ecd(_0x2daf99,_0x2bba34);}Object[a13_0x3d7850(0x1d1)](exports,a13_0x3d7850(0x1d6),{'value':!![]}),exports[a13_0x3d7850(0x1cc)]=void 0x0;const toPlayTextToAudioCommand=_0x353f60=>{const _0x2e90f7=a13_0x3d7850;return{'textToAudioId':_0x353f60['attributes']['textToAudioId'],'durationInSecond':Number(_0x353f60[_0x2e90f7(0x1cb)][_0x2e90f7(0x1ca)]),'audit':_0x353f60[_0x2e90f7(0x1c8)]};};exports['toPlayTextToAudioCommand']=toPlayTextToAudioCommand;

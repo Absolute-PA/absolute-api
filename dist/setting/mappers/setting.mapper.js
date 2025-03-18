@@ -1,18 +1,1 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.mapSettingDocumentToDto = void 0;
-const mapSettingDocumentToDto = (settingDocument, expiryDate) => {
-    return {
-        _id: settingDocument._id,
-        schoolId: settingDocument.schoolId,
-        licenseKey: settingDocument.licenseKey,
-        isExpired: settingDocument.isExpired,
-        userSetting: settingDocument.userSetting,
-        createdAtUtc: settingDocument.createdAtUtc.toISOString(),
-        updatedAtUtc: settingDocument.updatedAtUtc.toISOString(),
-        expiryDate,
-        appVersion: process.env.npm_package_version,
-    };
-};
-exports.mapSettingDocumentToDto = mapSettingDocumentToDto;
-//# sourceMappingURL=setting.mapper.js.map
+'use strict';const a117_0x56dcbd=a117_0x134e;(function(_0x2f3db3,_0x305205){const _0x117e87=a117_0x134e,_0x2ee17f=_0x2f3db3();while(!![]){try{const _0x146114=parseInt(_0x117e87(0x1dd))/0x1+-parseInt(_0x117e87(0x1da))/0x2*(-parseInt(_0x117e87(0x1d3))/0x3)+parseInt(_0x117e87(0x1d4))/0x4*(parseInt(_0x117e87(0x1cf))/0x5)+-parseInt(_0x117e87(0x1e0))/0x6+-parseInt(_0x117e87(0x1dc))/0x7*(-parseInt(_0x117e87(0x1d5))/0x8)+parseInt(_0x117e87(0x1d1))/0x9*(-parseInt(_0x117e87(0x1df))/0xa)+parseInt(_0x117e87(0x1d6))/0xb;if(_0x146114===_0x305205)break;else _0x2ee17f['push'](_0x2ee17f['shift']());}catch(_0x107811){_0x2ee17f['push'](_0x2ee17f['shift']());}}}(a117_0x3898,0x4fc61));function a117_0x134e(_0x104ed7,_0x13cd34){const _0x38986a=a117_0x3898();return a117_0x134e=function(_0x134eff,_0x501a53){_0x134eff=_0x134eff-0x1cc;let _0x5b6fed=_0x38986a[_0x134eff];return _0x5b6fed;},a117_0x134e(_0x104ed7,_0x13cd34);}Object['defineProperty'](exports,a117_0x56dcbd(0x1d8),{'value':!![]}),exports[a117_0x56dcbd(0x1cd)]=void 0x0;const mapSettingDocumentToDto=(_0x3f59ec,_0x1f93e5)=>{const _0x2c7fca=a117_0x56dcbd;return{'_id':_0x3f59ec[_0x2c7fca(0x1d0)],'schoolId':_0x3f59ec[_0x2c7fca(0x1de)],'licenseKey':_0x3f59ec['licenseKey'],'isExpired':_0x3f59ec[_0x2c7fca(0x1ce)],'userSetting':_0x3f59ec[_0x2c7fca(0x1d9)],'createdAtUtc':_0x3f59ec[_0x2c7fca(0x1d7)][_0x2c7fca(0x1db)](),'updatedAtUtc':_0x3f59ec[_0x2c7fca(0x1cc)][_0x2c7fca(0x1db)](),'expiryDate':_0x1f93e5,'appVersion':process[_0x2c7fca(0x1d2)][_0x2c7fca(0x1e1)]};};function a117_0x3898(){const _0x47be04=['env','588180Nkznkp','8pYXLES','90744oOilJk','915530ogQnnB','createdAtUtc','__esModule','userSetting','4SDgNWE','toISOString','7yiFKPV','494349qBcCLP','schoolId','2460LezFos','2147022LooWFp','npm_package_version','updatedAtUtc','mapSettingDocumentToDto','isExpired','698585hdUwWI','_id','21069wMnpIC'];a117_0x3898=function(){return _0x47be04;};return a117_0x3898();}exports[a117_0x56dcbd(0x1cd)]=mapSettingDocumentToDto;
