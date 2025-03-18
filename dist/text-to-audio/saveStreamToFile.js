@@ -1,1 +1,20 @@
-'use strict';function a140_0x4beb(_0x3bbf23,_0x13e9e4){const _0x133ea1=a140_0x133e();return a140_0x4beb=function(_0x4beb23,_0x39fccd){_0x4beb23=_0x4beb23-0x155;let _0xdf3485=_0x133ea1[_0x4beb23];return _0xdf3485;},a140_0x4beb(_0x3bbf23,_0x13e9e4);}const a140_0x5872ec=a140_0x4beb;function a140_0x133e(){const _0x5e0fec=['Error\x20writing\x20stream\x20to\x20file:','finish','1091475fAvrVk','error','40WkCklI','6aIzuex','3OkDYkW','820585eUXzqP','31004TlWWMG','__esModule','defineProperty','Stream\x20has\x20been\x20written\x20to\x20the\x20file\x20successfully.','saveStreamToFile','22TueyZZ','12205064sDlDzF','3442167jlUqyW','3720280CQCclq','pipe','5274379KiTCuf','log'];a140_0x133e=function(){return _0x5e0fec;};return a140_0x133e();}(function(_0x556ebe,_0x2293b2){const _0x2d9395=a140_0x4beb,_0x1260b9=_0x556ebe();while(!![]){try{const _0x4c4619=-parseInt(_0x2d9395(0x15f))/0x1*(-parseInt(_0x2d9395(0x164))/0x2)+-parseInt(_0x2d9395(0x15d))/0x3*(-parseInt(_0x2d9395(0x167))/0x4)+-parseInt(_0x2d9395(0x15e))/0x5*(-parseInt(_0x2d9395(0x15c))/0x6)+-parseInt(_0x2d9395(0x159))/0x7+parseInt(_0x2d9395(0x165))/0x8+parseInt(_0x2d9395(0x166))/0x9*(-parseInt(_0x2d9395(0x15b))/0xa)+-parseInt(_0x2d9395(0x155))/0xb;if(_0x4c4619===_0x2293b2)break;else _0x1260b9['push'](_0x1260b9['shift']());}catch(_0x3fe129){_0x1260b9['push'](_0x1260b9['shift']());}}}(a140_0x133e,0xc23ce));Object[a140_0x5872ec(0x161)](exports,a140_0x5872ec(0x160),{'value':!![]}),exports[a140_0x5872ec(0x163)]=void 0x0;const fs=require('fs');async function saveStreamToFile(_0x5b18ab,_0x5c1196){const _0x3d3d52=a140_0x5872ec,_0x5de464=fs['createWriteStream'](_0x5c1196);return _0x5b18ab[_0x3d3d52(0x168)](_0x5de464),new Promise((_0x2fec19,_0x1db007)=>{const _0x4d8ef2=_0x3d3d52;_0x5de464['on'](_0x4d8ef2(0x158),()=>{const _0x38861c=_0x4d8ef2;console[_0x38861c(0x156)](_0x38861c(0x162)),_0x2fec19(_0x5c1196);}),_0x5de464['on'](_0x4d8ef2(0x15a),_0x16f758=>{const _0x2c4bc6=_0x4d8ef2;console[_0x2c4bc6(0x15a)](_0x2c4bc6(0x157),_0x16f758),_0x1db007(_0x16f758);});});}exports[a140_0x5872ec(0x163)]=saveStreamToFile;
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.saveStreamToFile = void 0;
+const fs = require("fs");
+async function saveStreamToFile(stream, output) {
+    const outputStream = fs.createWriteStream(output);
+    stream.pipe(outputStream);
+    return new Promise((resolve, reject) => {
+        outputStream.on('finish', () => {
+            console.log('Stream has been written to the file successfully.');
+            resolve(output);
+        });
+        outputStream.on('error', (err) => {
+            console.error('Error writing stream to file:', err);
+            reject(err);
+        });
+    });
+}
+exports.saveStreamToFile = saveStreamToFile;
+//# sourceMappingURL=saveStreamToFile.js.map

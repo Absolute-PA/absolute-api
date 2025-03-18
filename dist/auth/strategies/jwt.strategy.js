@@ -1,1 +1,38 @@
-'use strict';function a45_0xa0e2(){var _0x190e0b=['22745uTrDwB','design:paramtypes','username','fromAuthHeaderAsBearerToken','JwtStrategy','@nestjs/common','8wcotjJ','393672sOgLja','validate','decorate','Injectable','JWT_SECRET','958536SQvluB','Strategy','passport-jwt','1356uvhGxH','4748286brLzRN','metadata','defineProperty','__metadata','6pAStvn','roles','25042930NfTxIJ','777159FyPrfw','object','3465322kTFwDt','__decorate','function','env','length'];a45_0xa0e2=function(){return _0x190e0b;};return a45_0xa0e2();}var a45_0x49f3be=a45_0x11e5;(function(_0x3edcb9,_0x567292){var _0x2d9e02=a45_0x11e5,_0x20a790=_0x3edcb9();while(!![]){try{var _0x2044cb=parseInt(_0x2d9e02(0x1bb))/0x1+-parseInt(_0x2d9e02(0x1aa))/0x2*(-parseInt(_0x2d9e02(0x1c0))/0x3)+parseInt(_0x2d9e02(0x1c3))/0x4*(parseInt(_0x2d9e02(0x1b4))/0x5)+parseInt(_0x2d9e02(0x1c4))/0x6+-parseInt(_0x2d9e02(0x1af))/0x7+parseInt(_0x2d9e02(0x1ba))/0x8*(parseInt(_0x2d9e02(0x1ad))/0x9)+-parseInt(_0x2d9e02(0x1ac))/0xa;if(_0x2044cb===_0x567292)break;else _0x20a790['push'](_0x20a790['shift']());}catch(_0x4a8d2d){_0x20a790['push'](_0x20a790['shift']());}}}(a45_0xa0e2,0xbca68));var __decorate=this&&this[a45_0x49f3be(0x1b0)]||function(_0x1e99e3,_0x1b9171,_0x31061b,_0x37d977){var _0x7ed6a9=a45_0x49f3be,_0x4d9c0a=arguments[_0x7ed6a9(0x1b3)],_0x156f3e=_0x4d9c0a<0x3?_0x1b9171:_0x37d977===null?_0x37d977=Object['getOwnPropertyDescriptor'](_0x1b9171,_0x31061b):_0x37d977,_0x3b047e;if(typeof Reflect===_0x7ed6a9(0x1ae)&&typeof Reflect[_0x7ed6a9(0x1bd)]==='function')_0x156f3e=Reflect[_0x7ed6a9(0x1bd)](_0x1e99e3,_0x1b9171,_0x31061b,_0x37d977);else{for(var _0x415439=_0x1e99e3[_0x7ed6a9(0x1b3)]-0x1;_0x415439>=0x0;_0x415439--)if(_0x3b047e=_0x1e99e3[_0x415439])_0x156f3e=(_0x4d9c0a<0x3?_0x3b047e(_0x156f3e):_0x4d9c0a>0x3?_0x3b047e(_0x1b9171,_0x31061b,_0x156f3e):_0x3b047e(_0x1b9171,_0x31061b))||_0x156f3e;}return _0x4d9c0a>0x3&&_0x156f3e&&Object[_0x7ed6a9(0x1a8)](_0x1b9171,_0x31061b,_0x156f3e),_0x156f3e;},__metadata=this&&this[a45_0x49f3be(0x1a9)]||function(_0x1d3a36,_0x12f0b7){var _0x486254=a45_0x49f3be;if(typeof Reflect==='object'&&typeof Reflect['metadata']===_0x486254(0x1b1))return Reflect[_0x486254(0x1a7)](_0x1d3a36,_0x12f0b7);};function a45_0x11e5(_0x2a32f0,_0x57b573){var _0xa0e26e=a45_0xa0e2();return a45_0x11e5=function(_0x11e590,_0x1256dd){_0x11e590=_0x11e590-0x1a7;var _0x5da311=_0xa0e26e[_0x11e590];return _0x5da311;},a45_0x11e5(_0x2a32f0,_0x57b573);}Object[a45_0x49f3be(0x1a8)](exports,'__esModule',{'value':!![]}),exports['JwtStrategy']=void 0x0;const passport_jwt_1=require(a45_0x49f3be(0x1c2)),passport_1=require('@nestjs/passport'),common_1=require(a45_0x49f3be(0x1b9));require('dotenv/config');let JwtStrategy=class JwtStrategy extends(0x0,passport_1['PassportStrategy'])(passport_jwt_1[a45_0x49f3be(0x1c1)]){constructor(){var _0x436b78=a45_0x49f3be;super({'jwtFromRequest':passport_jwt_1['ExtractJwt'][_0x436b78(0x1b7)](),'ignoreExpiration':![],'secretOrKey':process[_0x436b78(0x1b2)][_0x436b78(0x1bf)]});}async[a45_0x49f3be(0x1bc)](_0x55f225){var _0x38e3f3=a45_0x49f3be;return{'userId':_0x55f225['sub'],'username':_0x55f225[_0x38e3f3(0x1b6)],'roles':_0x55f225[_0x38e3f3(0x1ab)]};}};JwtStrategy=__decorate([(0x0,common_1[a45_0x49f3be(0x1be)])(),__metadata(a45_0x49f3be(0x1b5),[])],JwtStrategy),exports[a45_0x49f3be(0x1b8)]=JwtStrategy;
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.JwtStrategy = void 0;
+const passport_jwt_1 = require("passport-jwt");
+const passport_1 = require("@nestjs/passport");
+const common_1 = require("@nestjs/common");
+require("dotenv/config");
+let JwtStrategy = class JwtStrategy extends (0, passport_1.PassportStrategy)(passport_jwt_1.Strategy) {
+    constructor() {
+        super({
+            jwtFromRequest: passport_jwt_1.ExtractJwt.fromAuthHeaderAsBearerToken(),
+            ignoreExpiration: false,
+            secretOrKey: process.env.JWT_SECRET,
+        });
+    }
+    async validate(payload) {
+        return {
+            userId: payload.sub,
+            username: payload.username,
+            roles: payload.roles,
+        };
+    }
+};
+JwtStrategy = __decorate([
+    (0, common_1.Injectable)(),
+    __metadata("design:paramtypes", [])
+], JwtStrategy);
+exports.JwtStrategy = JwtStrategy;
+//# sourceMappingURL=jwt.strategy.js.map

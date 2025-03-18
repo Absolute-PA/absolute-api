@@ -1,1 +1,103 @@
-'use strict';const a122_0x201c23=a122_0x4fbc;function a122_0x4fbc(_0x441e41,_0x5d7f48){const _0x491d6d=a122_0x491d();return a122_0x4fbc=function(_0x4fbca4,_0x1b795d){_0x4fbca4=_0x4fbca4-0xe8;let _0x19d82d=_0x491d6d[_0x4fbca4];return _0x19d82d;},a122_0x4fbc(_0x441e41,_0x5d7f48);}(function(_0x3a7123,_0x21cd01){const _0x461061=a122_0x4fbc,_0x19b274=_0x3a7123();while(!![]){try{const _0x451fcc=parseInt(_0x461061(0xf6))/0x1*(-parseInt(_0x461061(0xec))/0x2)+-parseInt(_0x461061(0x117))/0x3*(-parseInt(_0x461061(0x118))/0x4)+-parseInt(_0x461061(0x125))/0x5*(parseInt(_0x461061(0xf3))/0x6)+parseInt(_0x461061(0x123))/0x7+parseInt(_0x461061(0x11e))/0x8+parseInt(_0x461061(0xe8))/0x9+parseInt(_0x461061(0x100))/0xa*(-parseInt(_0x461061(0x10c))/0xb);if(_0x451fcc===_0x21cd01)break;else _0x19b274['push'](_0x19b274['shift']());}catch(_0x504266){_0x19b274['push'](_0x19b274['shift']());}}}(a122_0x491d,0x6b31d));function a122_0x491d(){const _0x96efa2=['@nestjs/mongoose','parse','killJobs','2186589RmpXEW','4SsZrvg','log','Setting','function','findByIdAndUpdate','validTo','4361072GvdcgG','settingModel','schoolId','../common/crypto','object','2065385gIhfbK','killAll','573745vRrgwS','updateExpiryStatus','save','3260169fbsetd','defineProperty','__esModule','findFirst','1488814CSBDTI','setting','toString','validFrom','enc','update','toDate','12hWVNFE','decrypt','__param','1lMbszJ','validateLicenseKey','length','assign','decorate','create','Model','userSetting','find','__decorate','810NvhegS','dayjs','exec','toObject','metadata','./constants','../common/job','_id','PROCESS_CACHE','DD/MM/YYYY','isValid','SettingService','70389wvVEqO','mongoose','DEFAULT_MAX_USER','crypto-js','maxUser','QVBFVFVMT1NCQQ==','getOwnPropertyDescriptor','Injectable'];a122_0x491d=function(){return _0x96efa2;};return a122_0x491d();}var __decorate=this&&this[a122_0x201c23(0xff)]||function(_0x2ada9a,_0x2ae994,_0xe7bbfd,_0x4d636a){const _0x1cf5fb=a122_0x201c23;var _0x7f66f3=arguments[_0x1cf5fb(0xf8)],_0x1c1743=_0x7f66f3<0x3?_0x2ae994:_0x4d636a===null?_0x4d636a=Object[_0x1cf5fb(0x112)](_0x2ae994,_0xe7bbfd):_0x4d636a,_0x45d877;if(typeof Reflect==='object'&&typeof Reflect[_0x1cf5fb(0xfa)]===_0x1cf5fb(0x11b))_0x1c1743=Reflect[_0x1cf5fb(0xfa)](_0x2ada9a,_0x2ae994,_0xe7bbfd,_0x4d636a);else{for(var _0x34637e=_0x2ada9a[_0x1cf5fb(0xf8)]-0x1;_0x34637e>=0x0;_0x34637e--)if(_0x45d877=_0x2ada9a[_0x34637e])_0x1c1743=(_0x7f66f3<0x3?_0x45d877(_0x1c1743):_0x7f66f3>0x3?_0x45d877(_0x2ae994,_0xe7bbfd,_0x1c1743):_0x45d877(_0x2ae994,_0xe7bbfd))||_0x1c1743;}return _0x7f66f3>0x3&&_0x1c1743&&Object[_0x1cf5fb(0xe9)](_0x2ae994,_0xe7bbfd,_0x1c1743),_0x1c1743;},__metadata=this&&this['__metadata']||function(_0xece37d,_0x5ea7d8){const _0x45e355=a122_0x201c23;if(typeof Reflect===_0x45e355(0x122)&&typeof Reflect[_0x45e355(0x104)]===_0x45e355(0x11b))return Reflect[_0x45e355(0x104)](_0xece37d,_0x5ea7d8);},__param=this&&this[a122_0x201c23(0xf5)]||function(_0x10234e,_0x138d9a){return function(_0x492cad,_0x6cf855){_0x138d9a(_0x492cad,_0x6cf855,_0x10234e);};};Object[a122_0x201c23(0xe9)](exports,a122_0x201c23(0xea),{'value':!![]}),exports[a122_0x201c23(0x10b)]=void 0x0;const common_1=require('@nestjs/common'),mongoose_1=require(a122_0x201c23(0x114)),mongoose_2=require(a122_0x201c23(0x10d)),CryptoJS=require(a122_0x201c23(0x10f)),dayjs=require(a122_0x201c23(0x101)),crypto_1=require(a122_0x201c23(0x121)),job_1=require(a122_0x201c23(0x106)),constants_1=require(a122_0x201c23(0x105)),SECRET=a122_0x201c23(0x111);let SettingService=class SettingService{constructor(_0x36685d){const _0x5dd947=a122_0x201c23;this[_0x5dd947(0x11f)]=_0x36685d;}async[a122_0x201c23(0xfb)](_0x332bf5){const _0x500072=a122_0x201c23,_0x507993=new this[(_0x500072(0x11f))](_0x332bf5);return _0x507993[_0x500072(0x127)]();}async[a122_0x201c23(0xeb)](){const _0x37835c=a122_0x201c23;var _0x588e01,_0x33a199,_0x447aff;const _0x1e7aba=await this[_0x37835c(0x11f)][_0x37835c(0xfe)]()['exec'](),_0x2ccc65=(_0x588e01=_0x1e7aba[0x0])===null||_0x588e01===void 0x0?void 0x0:_0x588e01[_0x37835c(0x103)]();if(!_0x2ccc65)return;return Object['assign'](Object[_0x37835c(0xf9)]({},_0x2ccc65),{'userSetting':Object['assign'](Object['assign']({},_0x2ccc65[_0x37835c(0xfd)]),{'maxUser':(_0x447aff=(_0x33a199=_0x2ccc65[_0x37835c(0xfd)])===null||_0x33a199===void 0x0?void 0x0:_0x33a199[_0x37835c(0x110)])!==null&&_0x447aff!==void 0x0?_0x447aff:constants_1[_0x37835c(0x10e)]})});}async[a122_0x201c23(0xf1)](_0x19fa96,_0xa553be){const _0x1105a6=a122_0x201c23,_0x499f97=await this[_0x1105a6(0x11f)][_0x1105a6(0x11c)](_0x19fa96,Object[_0x1105a6(0xf9)](Object[_0x1105a6(0xf9)]({},_0xa553be),{'updatedAtUtc':new Date()}),{'new':!![]})[_0x1105a6(0x102)]();return _0x499f97;}async[a122_0x201c23(0x126)](){const _0x233689=a122_0x201c23,_0x562831=await this[_0x233689(0xeb)](),_0x57f100=this[_0x233689(0xf7)](_0x562831['licenseKey'],_0x562831[_0x233689(0x120)]);return this[_0x233689(0xf1)](_0x562831['_id'],{'isExpired':!_0x57f100[_0x233689(0x10a)]});}async['updateUserSetting'](_0x5f57c9){const _0x2cad1c=a122_0x201c23,_0xe4e992=await this[_0x2cad1c(0xeb)]();return console[_0x2cad1c(0x119)](_0xe4e992,_0x2cad1c(0xed)),this[_0x2cad1c(0xf1)](_0xe4e992[_0x2cad1c(0x107)],{'userSetting':_0x5f57c9});}[a122_0x201c23(0xf7)](_0x246b98,_0x518567){const _0x14417c=a122_0x201c23;try{if(!_0x246b98)return{'isValid':![],'expiryDate':''};const _0x22c6a3=(0x0,crypto_1[_0x14417c(0xf4)])(_0x246b98,CryptoJS[_0x14417c(0xf0)]['Base64'][_0x14417c(0x115)](SECRET)[_0x14417c(0xee)](CryptoJS[_0x14417c(0xf0)]['Utf8']));if(_0x22c6a3[_0x14417c(0x120)]!==_0x518567)return{'isValid':![],'expiryDate':''};const _0x251fbe=dayjs(_0x22c6a3[_0x14417c(0xef)],_0x14417c(0x109))[_0x14417c(0xf2)](),_0x3e621a=dayjs(_0x22c6a3[_0x14417c(0x11d)],_0x14417c(0x109))[_0x14417c(0xf2)](),_0x53c269=dayjs()[_0x14417c(0xf2)]();if(_0x53c269<_0x251fbe||_0x53c269>_0x3e621a)return{'isValid':![],'expiryDate':_0x22c6a3[_0x14417c(0x11d)]};return{'isValid':!![],'expiryDate':_0x22c6a3[_0x14417c(0x11d)]};}catch(_0x46554c){return{'isValid':![],'expiryDate':''};}}async[a122_0x201c23(0x116)](){const _0x4ebfe4=a122_0x201c23;job_1[_0x4ebfe4(0x108)][_0x4ebfe4(0x124)]();}};SettingService=__decorate([(0x0,common_1[a122_0x201c23(0x113)])(),__param(0x0,(0x0,mongoose_1['InjectModel'])(a122_0x201c23(0x11a))),__metadata('design:paramtypes',[mongoose_2[a122_0x201c23(0xfc)]])],SettingService),exports[a122_0x201c23(0x10b)]=SettingService;
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __param = (this && this.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.SettingService = void 0;
+const common_1 = require("@nestjs/common");
+const mongoose_1 = require("@nestjs/mongoose");
+const mongoose_2 = require("mongoose");
+const CryptoJS = require("crypto-js");
+const dayjs = require("dayjs");
+const crypto_1 = require("@/common/crypto");
+const job_1 = require("@/common/job");
+const constants_1 = require("./constants");
+const SECRET = 'QVBFVFVMT1NCQQ==';
+let SettingService = class SettingService {
+    constructor(settingModel) {
+        this.settingModel = settingModel;
+    }
+    async create(setting) {
+        const newSetting = new this.settingModel(setting);
+        return newSetting.save();
+    }
+    async findFirst() {
+        var _a, _b, _c;
+        const settings = await this.settingModel.find().exec();
+        const setting = (_a = settings[0]) === null || _a === void 0 ? void 0 : _a.toObject();
+        if (!setting)
+            return;
+        return Object.assign(Object.assign({}, setting), { userSetting: Object.assign(Object.assign({}, setting.userSetting), { maxUser: (_c = (_b = setting.userSetting) === null || _b === void 0 ? void 0 : _b.maxUser) !== null && _c !== void 0 ? _c : constants_1.DEFAULT_MAX_USER }) });
+    }
+    async update(id, updateSettingDto) {
+        const updatedSetting = await this.settingModel
+            .findByIdAndUpdate(id, Object.assign(Object.assign({}, updateSettingDto), { updatedAtUtc: new Date() }), { new: true })
+            .exec();
+        return updatedSetting;
+    }
+    async updateExpiryStatus() {
+        const setting = await this.findFirst();
+        const result = this.validateLicenseKey(setting.licenseKey, setting.schoolId);
+        return this.update(setting._id, { isExpired: !result.isValid });
+    }
+    async updateUserSetting(userSetting) {
+        const setting = await this.findFirst();
+        console.log(setting, 'setting');
+        return this.update(setting._id, { userSetting });
+    }
+    validateLicenseKey(licenseKey, schoolId) {
+        try {
+            if (!licenseKey) {
+                return {
+                    isValid: false,
+                    expiryDate: '',
+                };
+            }
+            const message = (0, crypto_1.decrypt)(licenseKey, CryptoJS.enc.Base64.parse(SECRET).toString(CryptoJS.enc.Utf8));
+            if (message.schoolId !== schoolId) {
+                return {
+                    isValid: false,
+                    expiryDate: '',
+                };
+            }
+            const validFrom = dayjs(message.validFrom, 'DD/MM/YYYY').toDate();
+            const validTo = dayjs(message.validTo, 'DD/MM/YYYY').toDate();
+            const today = dayjs().toDate();
+            if (today < validFrom || today > validTo) {
+                return {
+                    isValid: false,
+                    expiryDate: message.validTo,
+                };
+            }
+            return {
+                isValid: true,
+                expiryDate: message.validTo,
+            };
+        }
+        catch (e) {
+            return {
+                isValid: false,
+                expiryDate: '',
+            };
+        }
+    }
+    async killJobs() {
+        job_1.PROCESS_CACHE.killAll();
+    }
+};
+SettingService = __decorate([
+    (0, common_1.Injectable)(),
+    __param(0, (0, mongoose_1.InjectModel)('Setting')),
+    __metadata("design:paramtypes", [mongoose_2.Model])
+], SettingService);
+exports.SettingService = SettingService;
+//# sourceMappingURL=setting.service.js.map

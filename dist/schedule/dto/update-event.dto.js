@@ -1,1 +1,35 @@
-'use strict';const a100_0x2200e0=a100_0x28de;(function(_0x222507,_0x5e1192){const _0x25630a=a100_0x28de,_0x3e98b3=_0x222507();while(!![]){try{const _0x5a5d61=-parseInt(_0x25630a(0x1da))/0x1*(parseInt(_0x25630a(0x1ec))/0x2)+-parseInt(_0x25630a(0x1dc))/0x3+-parseInt(_0x25630a(0x1e7))/0x4*(parseInt(_0x25630a(0x1df))/0x5)+parseInt(_0x25630a(0x1e8))/0x6*(-parseInt(_0x25630a(0x1e0))/0x7)+parseInt(_0x25630a(0x1ef))/0x8+parseInt(_0x25630a(0x1ee))/0x9*(-parseInt(_0x25630a(0x1de))/0xa)+parseInt(_0x25630a(0x1e2))/0xb;if(_0x5a5d61===_0x5e1192)break;else _0x3e98b3['push'](_0x3e98b3['shift']());}catch(_0x15ea97){_0x3e98b3['push'](_0x3e98b3['shift']());}}}(a100_0x3f7c,0x4c70b));Object[a100_0x2200e0(0x1e3)](exports,a100_0x2200e0(0x1ea),{'value':!![]}),exports[a100_0x2200e0(0x1eb)]=exports[a100_0x2200e0(0x1f9)]=exports[a100_0x2200e0(0x1f7)]=exports[a100_0x2200e0(0x1dd)]=exports[a100_0x2200e0(0x1e5)]=exports[a100_0x2200e0(0x1f6)]=exports[a100_0x2200e0(0x1e1)]=exports[a100_0x2200e0(0x1f3)]=void 0x0;const swagger_1=require(a100_0x2200e0(0x1f1)),create_event_dto_1=require(a100_0x2200e0(0x1e6)),enums_1=require('../../common/enums');class UpdateEventPlaySoundDto extends(0x0,swagger_1[a100_0x2200e0(0x1ed)])(create_event_dto_1[a100_0x2200e0(0x1f4)]){}exports[a100_0x2200e0(0x1f3)]=UpdateEventPlaySoundDto;class UpdateEventPlayMusicDto extends(0x0,swagger_1[a100_0x2200e0(0x1ed)])(create_event_dto_1['CreateEventPlayMusicDto']){}exports['UpdateEventPlayMusicDto']=UpdateEventPlayMusicDto;class UpdateEventPlayVoiceRecodedDto extends(0x0,swagger_1[a100_0x2200e0(0x1ed)])(create_event_dto_1[a100_0x2200e0(0x1e9)]){}exports[a100_0x2200e0(0x1f6)]=UpdateEventPlayVoiceRecodedDto;class UpdateEventPlayTextToAudioDto extends(0x0,swagger_1['PartialType'])(create_event_dto_1['CreateEventPlayTextToAudioDto']){}exports[a100_0x2200e0(0x1e5)]=UpdateEventPlayTextToAudioDto;const isUpdateEventPlaySoundDto=_0x4f42ec=>{const _0x1878b0=a100_0x2200e0;return _0x4f42ec[_0x1878b0(0x1f2)]===enums_1[_0x1878b0(0x1db)][_0x1878b0(0x1e4)];};function a100_0x3f7c(){const _0x290b83=['48390pnTCzL','CreateEventPlayVoiceRecordedDto','__esModule','isUpdateEventPlayTextToAudioDto','2PVHINn','PartialType','9ZEeQqV','3682424rxHcpz','PlayMusic','@nestjs/swagger','jobType','UpdateEventPlaySoundDto','CreateEventPlaySoundDto','PlayVoiceRecorded','UpdateEventPlayVoiceRecodedDto','isUpdateEventPlayMusicDto','PlayTextToAudio','isUpdateEventPlayVoiceRecordedDto','246638GGMpyN','JobType','1317483hKqTgC','isUpdateEventPlaySoundDto','4785530klimKD','729070yTReGn','476TULBZj','UpdateEventPlayMusicDto','18825202KNTrtx','defineProperty','PlaySound','UpdateEventPlayTextToAudioDto','./create-event.dto','4GbFpSv'];a100_0x3f7c=function(){return _0x290b83;};return a100_0x3f7c();}exports['isUpdateEventPlaySoundDto']=isUpdateEventPlaySoundDto;const isUpdateEventPlayMusicDto=_0x33c7c1=>{const _0x1805c4=a100_0x2200e0;return _0x33c7c1[_0x1805c4(0x1f2)]===enums_1[_0x1805c4(0x1db)][_0x1805c4(0x1f0)];};exports[a100_0x2200e0(0x1f7)]=isUpdateEventPlayMusicDto;const isUpdateEventPlayVoiceRecordedDto=_0x1a8305=>{const _0x104ce2=a100_0x2200e0;return _0x1a8305[_0x104ce2(0x1f2)]===enums_1[_0x104ce2(0x1db)][_0x104ce2(0x1f5)];};exports['isUpdateEventPlayVoiceRecordedDto']=isUpdateEventPlayVoiceRecordedDto;function a100_0x28de(_0xdc7279,_0xd307bd){const _0x3f7cdb=a100_0x3f7c();return a100_0x28de=function(_0x28deba,_0x4b7e0d){_0x28deba=_0x28deba-0x1da;let _0x3301a0=_0x3f7cdb[_0x28deba];return _0x3301a0;},a100_0x28de(_0xdc7279,_0xd307bd);}const isUpdateEventPlayTextToAudioDto=_0x134645=>{const _0x2fd7e9=a100_0x2200e0;return _0x134645['jobType']===enums_1[_0x2fd7e9(0x1db)][_0x2fd7e9(0x1f8)];};exports[a100_0x2200e0(0x1eb)]=isUpdateEventPlayTextToAudioDto;
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.isUpdateEventPlayTextToAudioDto = exports.isUpdateEventPlayVoiceRecordedDto = exports.isUpdateEventPlayMusicDto = exports.isUpdateEventPlaySoundDto = exports.UpdateEventPlayTextToAudioDto = exports.UpdateEventPlayVoiceRecodedDto = exports.UpdateEventPlayMusicDto = exports.UpdateEventPlaySoundDto = void 0;
+const swagger_1 = require("@nestjs/swagger");
+const create_event_dto_1 = require("./create-event.dto");
+const enums_1 = require("@root/src/common/enums");
+class UpdateEventPlaySoundDto extends (0, swagger_1.PartialType)(create_event_dto_1.CreateEventPlaySoundDto) {
+}
+exports.UpdateEventPlaySoundDto = UpdateEventPlaySoundDto;
+class UpdateEventPlayMusicDto extends (0, swagger_1.PartialType)(create_event_dto_1.CreateEventPlayMusicDto) {
+}
+exports.UpdateEventPlayMusicDto = UpdateEventPlayMusicDto;
+class UpdateEventPlayVoiceRecodedDto extends (0, swagger_1.PartialType)(create_event_dto_1.CreateEventPlayVoiceRecordedDto) {
+}
+exports.UpdateEventPlayVoiceRecodedDto = UpdateEventPlayVoiceRecodedDto;
+class UpdateEventPlayTextToAudioDto extends (0, swagger_1.PartialType)(create_event_dto_1.CreateEventPlayTextToAudioDto) {
+}
+exports.UpdateEventPlayTextToAudioDto = UpdateEventPlayTextToAudioDto;
+const isUpdateEventPlaySoundDto = (updateEventDto) => {
+    return updateEventDto.jobType === enums_1.JobType.PlaySound;
+};
+exports.isUpdateEventPlaySoundDto = isUpdateEventPlaySoundDto;
+const isUpdateEventPlayMusicDto = (updateEventDto) => {
+    return updateEventDto.jobType === enums_1.JobType.PlayMusic;
+};
+exports.isUpdateEventPlayMusicDto = isUpdateEventPlayMusicDto;
+const isUpdateEventPlayVoiceRecordedDto = (updateEventDto) => {
+    return updateEventDto.jobType === enums_1.JobType.PlayVoiceRecorded;
+};
+exports.isUpdateEventPlayVoiceRecordedDto = isUpdateEventPlayVoiceRecordedDto;
+const isUpdateEventPlayTextToAudioDto = (updateEventDto) => {
+    return updateEventDto.jobType === enums_1.JobType.PlayTextToAudio;
+};
+exports.isUpdateEventPlayTextToAudioDto = isUpdateEventPlayTextToAudioDto;
+//# sourceMappingURL=update-event.dto.js.map

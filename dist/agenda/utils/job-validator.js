@@ -1,1 +1,18 @@
-'use strict';const a19_0x3b0051=a19_0x2930;function a19_0x90e9(){const _0x31702d=['attrs','defineProperty','19566CQYSzq','startDate','3187940tDVGwm','126AInkRA','nextRunAt','4167984NCdmcZ','endDate','shouldRunJob','82rQgdCN','4497318bGSIKO','213972tYgyUE','__esModule','save','18920YkJNMm','remove','591849dYsDpT','150PrNUGU'];a19_0x90e9=function(){return _0x31702d;};return a19_0x90e9();}(function(_0x459fc2,_0x58d0d5){const _0x3a4e32=a19_0x2930,_0x1f522d=_0x459fc2();while(!![]){try{const _0x36eadf=-parseInt(_0x3a4e32(0x162))/0x1*(-parseInt(_0x3a4e32(0x16d))/0x2)+-parseInt(_0x3a4e32(0x169))/0x3+parseInt(_0x3a4e32(0x167))/0x4*(parseInt(_0x3a4e32(0x16a))/0x5)+-parseInt(_0x3a4e32(0x164))/0x6*(parseInt(_0x3a4e32(0x170))/0x7)+-parseInt(_0x3a4e32(0x172))/0x8+parseInt(_0x3a4e32(0x163))/0x9+parseInt(_0x3a4e32(0x16f))/0xa;if(_0x36eadf===_0x58d0d5)break;else _0x1f522d['push'](_0x1f522d['shift']());}catch(_0x47e290){_0x1f522d['push'](_0x1f522d['shift']());}}}(a19_0x90e9,0x623e5));function a19_0x2930(_0x4204ef,_0x2e84d1){const _0x90e9b5=a19_0x90e9();return a19_0x2930=function(_0x2930bf,_0xdd88d2){_0x2930bf=_0x2930bf-0x160;let _0x309d4a=_0x90e9b5[_0x2930bf];return _0x309d4a;},a19_0x2930(_0x4204ef,_0x2e84d1);}Object[a19_0x3b0051(0x16c)](exports,a19_0x3b0051(0x165),{'value':!![]}),exports[a19_0x3b0051(0x161)]=void 0x0;const shouldRunJob=async _0x3bead8=>{const _0x5b7ddb=a19_0x3b0051,_0x370046=new Date();if(_0x3bead8[_0x5b7ddb(0x16b)][_0x5b7ddb(0x16e)]&&_0x3bead8[_0x5b7ddb(0x16b)][_0x5b7ddb(0x16e)]>_0x370046)return _0x3bead8[_0x5b7ddb(0x16b)][_0x5b7ddb(0x171)]=new Date(_0x3bead8[_0x5b7ddb(0x16b)][_0x5b7ddb(0x16e)]),_0x3bead8[_0x5b7ddb(0x166)](),![];if(_0x3bead8[_0x5b7ddb(0x16b)]['endDate']&&_0x3bead8[_0x5b7ddb(0x16b)][_0x5b7ddb(0x160)]<_0x370046)return await _0x3bead8[_0x5b7ddb(0x168)](),![];return!![];};exports[a19_0x3b0051(0x161)]=shouldRunJob;
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.shouldRunJob = void 0;
+const shouldRunJob = async (job) => {
+    const current = new Date();
+    if (job.attrs.startDate && job.attrs.startDate > current) {
+        job.attrs.nextRunAt = new Date(job.attrs.startDate);
+        job.save();
+        return false;
+    }
+    if (job.attrs.endDate && job.attrs.endDate < current) {
+        await job.remove();
+        return false;
+    }
+    return true;
+};
+exports.shouldRunJob = shouldRunJob;
+//# sourceMappingURL=job-validator.js.map

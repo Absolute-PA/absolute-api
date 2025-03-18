@@ -1,1 +1,77 @@
-'use strict';function a58_0x514c(){const _0xc7f789=['Couldn\x27t\x20find\x20a\x20suitable\x20audio\x20player','556717aLdeSL','140148SuIyKU','spawn','play','opts','mplayer','child_process','2709xldZFq','cmdmp3','stdin','stdout','isArray','object','10spfsqV','error','Player\x20is\x20','No\x20audio\x20file\x20specified','671KTnTSh','join','defineProperty','1168149HHpxki','648EbyCeh','concat','aplay','log','__esModule','3163868LlFpRI','2AIQHII','exit','default','players','logger','Playing\x20Args:\x20','Unable\x20to\x20spawn\x20process\x20with\x20','3313413JeXTPk','cvlc','grep\x20process\x20exited\x20with\x20code\x20','stderr','player','2568lztypA','kill','9540EEaREK','powershell'];a58_0x514c=function(){return _0xc7f789;};return a58_0x514c();}function a58_0x481b(_0x25715d,_0x4a0869){const _0x514c19=a58_0x514c();return a58_0x481b=function(_0x481b23,_0x1c6260){_0x481b23=_0x481b23-0x1b8;let _0x1dfae2=_0x514c19[_0x481b23];return _0x1dfae2;},a58_0x481b(_0x25715d,_0x4a0869);}const a58_0xe46a03=a58_0x481b;(function(_0x586165,_0x27890b){const _0x4ddfb5=a58_0x481b,_0x54bdfb=_0x586165();while(!![]){try{const _0x44e039=parseInt(_0x4ddfb5(0x1ba))/0x1*(parseInt(_0x4ddfb5(0x1d5))/0x2)+-parseInt(_0x4ddfb5(0x1ce))/0x3+-parseInt(_0x4ddfb5(0x1d4))/0x4+parseInt(_0x4ddfb5(0x1e3))/0x5*(parseInt(_0x4ddfb5(0x1e1))/0x6)+parseInt(_0x4ddfb5(0x1c1))/0x7*(-parseInt(_0x4ddfb5(0x1cf))/0x8)+parseInt(_0x4ddfb5(0x1dc))/0x9*(-parseInt(_0x4ddfb5(0x1c7))/0xa)+-parseInt(_0x4ddfb5(0x1cb))/0xb*(-parseInt(_0x4ddfb5(0x1bb))/0xc);if(_0x44e039===_0x27890b)break;else _0x54bdfb['push'](_0x54bdfb['shift']());}catch(_0x5bdf35){_0x54bdfb['push'](_0x54bdfb['shift']());}}}(a58_0x514c,0x7b832));Object[a58_0xe46a03(0x1cd)](exports,a58_0xe46a03(0x1d3),{'value':!![]});const findExec=require('find-exec'),child_process_1=require(a58_0xe46a03(0x1c0)),players=[a58_0xe46a03(0x1bf),'mpg321','play','omxplayer',a58_0xe46a03(0x1d1),a58_0xe46a03(0x1c2),a58_0xe46a03(0x1dd),a58_0xe46a03(0x1b8),'vlc'];class Player{constructor(_0x1c1521={},_0x275f0c){const _0x13c3d5=a58_0xe46a03;this[_0x13c3d5(0x1be)]=_0x1c1521,this['logger']=_0x275f0c,this['players']=this['opts'][_0x13c3d5(0x1d8)]||players,this['player']=this[_0x13c3d5(0x1be)][_0x13c3d5(0x1e0)]||findExec(this['players']);}[a58_0xe46a03(0x1bd)](_0x493f17,_0x73b9e0,_0x236274=_0x59c83b=>null){const _0x262313=a58_0xe46a03;var _0x44888e,_0x32e211,_0x1e2503,_0x1b1702,_0x197e2a;_0x236274=typeof _0x73b9e0==='function'?_0x73b9e0:_0x236274,_0x73b9e0=typeof _0x73b9e0===_0x262313(0x1c6)?_0x73b9e0:{};if(!_0x493f17)return _0x236274(new Error(_0x262313(0x1ca)));if(!this['player'])return _0x236274(new Error(_0x262313(0x1b9)));this[_0x262313(0x1d9)][_0x262313(0x1d2)](_0x262313(0x1c9)+this['player']);const _0x337b3c=Array[_0x262313(0x1c5)](_0x73b9e0[this['player']])?_0x73b9e0[this['player']][_0x262313(0x1d0)](_0x493f17):[_0x493f17];this[_0x262313(0x1d9)][_0x262313(0x1d2)](_0x262313(0x1da)+_0x337b3c[_0x262313(0x1cc)]('\x20'));const _0x184438=(0x0,child_process_1[_0x262313(0x1bc)])(this[_0x262313(0x1e0)],_0x337b3c,_0x73b9e0);if(!_0x184438)return _0x236274(new Error(_0x262313(0x1db)+this[_0x262313(0x1e0)])),null;try{_0x184438['on']('close',function(_0x95aa36){_0x236274(_0x95aa36?_0x95aa36:null);}),_0x184438['on'](_0x262313(0x1c8),_0x3c596f=>{const _0x20d46a=_0x262313;this['logger'][_0x20d46a(0x1c8)](_0x3c596f);}),(_0x44888e=_0x184438[_0x262313(0x1c4)])===null||_0x44888e===void 0x0?void 0x0:_0x44888e['on']('data',_0x4ef7a4=>{}),(_0x32e211=_0x184438[_0x262313(0x1c4)])===null||_0x32e211===void 0x0?void 0x0:_0x32e211['on']('error',_0x4e0ccb=>{const _0x74ad7e=_0x262313;this[_0x74ad7e(0x1d9)][_0x74ad7e(0x1d2)](_0x4e0ccb);}),(_0x1e2503=_0x184438[_0x262313(0x1df)])===null||_0x1e2503===void 0x0?void 0x0:_0x1e2503['on'](_0x262313(0x1c8),_0x3ce92a=>{const _0x51beea=_0x262313;this[_0x51beea(0x1d9)][_0x51beea(0x1d2)](_0x3ce92a);}),(_0x1b1702=_0x184438[_0x262313(0x1df)])===null||_0x1b1702===void 0x0?void 0x0:_0x1b1702['on']('data',_0x520683=>{const _0x35608d=_0x262313;this['logger'][_0x35608d(0x1d2)]('stderr\x20data:\x20'+_0x520683);}),(_0x197e2a=_0x184438[_0x262313(0x1c3)])===null||_0x197e2a===void 0x0?void 0x0:_0x197e2a['on'](_0x262313(0x1c8),_0x134e7e=>{const _0x1ca669=_0x262313;this[_0x1ca669(0x1d9)][_0x1ca669(0x1d2)](_0x134e7e);}),_0x184438===null||_0x184438===void 0x0?void 0x0:_0x184438['on'](_0x262313(0x1d6),_0x5eff5c=>{const _0x69ce22=_0x262313;_0x184438[_0x69ce22(0x1e2)](),_0x5eff5c!==0x0&&this[_0x69ce22(0x1d9)][_0x69ce22(0x1d2)](_0x69ce22(0x1de)+_0x5eff5c);});}catch(_0xbd5d94){console[_0x262313(0x1d2)](_0xbd5d94);}return _0x184438;}}exports[a58_0xe46a03(0x1d7)]=Player;
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const findExec = require("find-exec");
+const child_process_1 = require("child_process");
+const players = [
+    'mplayer',
+    'mpg321',
+    'play',
+    'omxplayer',
+    'aplay',
+    'cmdmp3',
+    'cvlc',
+    'powershell',
+    'vlc',
+];
+class Player {
+    constructor(opts = {}, logger) {
+        this.opts = opts;
+        this.logger = logger;
+        this.players = this.opts.players || players;
+        this.player = this.opts.player || findExec(this.players);
+    }
+    play(what, options, next = (error) => null) {
+        var _a, _b, _c, _d, _e;
+        next = typeof options === 'function' ? options : next;
+        options = typeof options === 'object' ? options : {};
+        if (!what)
+            return next(new Error('No audio file specified'));
+        if (!this.player) {
+            return next(new Error("Couldn't find a suitable audio player"));
+        }
+        this.logger.log('Player is ' + this.player);
+        const args = Array.isArray(options[this.player])
+            ? options[this.player].concat(what)
+            : [what];
+        this.logger.log('Playing Args: ' + args.join(' '));
+        const process = (0, child_process_1.spawn)(this.player, args, options);
+        if (!process) {
+            next(new Error('Unable to spawn process with ' + this.player));
+            return null;
+        }
+        try {
+            process.on('close', function (err) {
+                next(err ? err : null);
+            });
+            process.on('error', (error) => {
+                this.logger.error(error);
+            });
+            (_a = process.stdout) === null || _a === void 0 ? void 0 : _a.on('data', (data) => {
+            });
+            (_b = process.stdout) === null || _b === void 0 ? void 0 : _b.on('error', (err) => {
+                this.logger.log(err);
+            });
+            (_c = process.stderr) === null || _c === void 0 ? void 0 : _c.on('error', (error) => {
+                this.logger.log(error);
+            });
+            (_d = process.stderr) === null || _d === void 0 ? void 0 : _d.on('data', (data) => {
+                this.logger.log('stderr data: ' + data);
+            });
+            (_e = process.stdin) === null || _e === void 0 ? void 0 : _e.on('error', (error) => {
+                this.logger.log(error);
+            });
+            process === null || process === void 0 ? void 0 : process.on('exit', (code) => {
+                process.kill();
+                if (code !== 0) {
+                    this.logger.log('grep process exited with code ' + code);
+                }
+            });
+        }
+        catch (error) {
+            console.log(error);
+        }
+        return process;
+    }
+}
+exports.default = Player;
+//# sourceMappingURL=player.js.map

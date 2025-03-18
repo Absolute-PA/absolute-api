@@ -1,1 +1,50 @@
-'use strict';const a49_0x475d25=a49_0x2e3d;(function(_0x542f30,_0x1e4fb3){const _0x83ac08=a49_0x2e3d,_0x21c5e1=_0x542f30();while(!![]){try{const _0x1b2d9a=parseInt(_0x83ac08(0x187))/0x1+-parseInt(_0x83ac08(0x175))/0x2*(-parseInt(_0x83ac08(0x177))/0x3)+-parseInt(_0x83ac08(0x178))/0x4+parseInt(_0x83ac08(0x195))/0x5+parseInt(_0x83ac08(0x176))/0x6*(-parseInt(_0x83ac08(0x18a))/0x7)+-parseInt(_0x83ac08(0x189))/0x8*(-parseInt(_0x83ac08(0x18f))/0x9)+-parseInt(_0x83ac08(0x17c))/0xa;if(_0x1b2d9a===_0x1e4fb3)break;else _0x21c5e1['push'](_0x21c5e1['shift']());}catch(_0x530af1){_0x21c5e1['push'](_0x21c5e1['shift']());}}}(a49_0x4dfb,0x1d006));function a49_0x2e3d(_0x235d24,_0x4706e){const _0x4dfb3c=a49_0x4dfb();return a49_0x2e3d=function(_0x2e3dbd,_0x394b69){_0x2e3dbd=_0x2e3dbd-0x171;let _0xa3d108=_0x4dfb3c[_0x2e3dbd];return _0xa3d108;},a49_0x2e3d(_0x235d24,_0x4706e);}var __decorate=this&&this[a49_0x475d25(0x18c)]||function(_0x648f13,_0x46b230,_0x58f5fc,_0x1b8c20){const _0xfede4d=a49_0x475d25;var _0x1bc501=arguments[_0xfede4d(0x180)],_0x4546cf=_0x1bc501<0x3?_0x46b230:_0x1b8c20===null?_0x1b8c20=Object['getOwnPropertyDescriptor'](_0x46b230,_0x58f5fc):_0x1b8c20,_0x505723;if(typeof Reflect===_0xfede4d(0x17f)&&typeof Reflect[_0xfede4d(0x183)]===_0xfede4d(0x174))_0x4546cf=Reflect['decorate'](_0x648f13,_0x46b230,_0x58f5fc,_0x1b8c20);else{for(var _0x23e6c7=_0x648f13['length']-0x1;_0x23e6c7>=0x0;_0x23e6c7--)if(_0x505723=_0x648f13[_0x23e6c7])_0x4546cf=(_0x1bc501<0x3?_0x505723(_0x4546cf):_0x1bc501>0x3?_0x505723(_0x46b230,_0x58f5fc,_0x4546cf):_0x505723(_0x46b230,_0x58f5fc))||_0x4546cf;}return _0x1bc501>0x3&&_0x4546cf&&Object[_0xfede4d(0x193)](_0x46b230,_0x58f5fc,_0x4546cf),_0x4546cf;},__metadata=this&&this[a49_0x475d25(0x179)]||function(_0x40d8ba,_0x2d8630){const _0x12cd28=a49_0x475d25;if(typeof Reflect===_0x12cd28(0x17f)&&typeof Reflect['metadata']==='function')return Reflect[_0x12cd28(0x185)](_0x40d8ba,_0x2d8630);};Object['defineProperty'](exports,a49_0x475d25(0x172),{'value':!![]}),exports['S3ExceptionFilter']=void 0x0;const common_1=require(a49_0x475d25(0x196)),s3_service_1=require(a49_0x475d25(0x181));let S3ExceptionFilter=class S3ExceptionFilter{constructor(_0x62cfd1){const _0x85c6a6=a49_0x475d25;this[_0x85c6a6(0x17e)]=_0x62cfd1;}async[a49_0x475d25(0x188)](_0x50bacc,_0x9a536e){const _0x59a7ab=a49_0x475d25,_0x2fcfae=_0x9a536e[_0x59a7ab(0x171)](),_0x1f6f33=_0x2fcfae[_0x59a7ab(0x18e)]();if(_0x50bacc instanceof common_1[_0x59a7ab(0x173)])_0x1f6f33['status'](_0x50bacc[_0x59a7ab(0x17d)]())['json'](_0x50bacc[_0x59a7ab(0x18e)]());else{const _0x3e1e8f=new Date()[_0x59a7ab(0x192)](),_0x11f50f='Exception\x20occurred\x20at\x20'+_0x3e1e8f+':\x0a'+_0x50bacc[_0x59a7ab(0x184)],_0x46b7b0=process[_0x59a7ab(0x18b)][_0x59a7ab(0x191)],_0x127a60=process[_0x59a7ab(0x18b)]['PI_NAME'],_0x578f2b=_0x59a7ab(0x18d)+_0x127a60+'-'+_0x3e1e8f+_0x59a7ab(0x197);try{const _0x25990f=await this[_0x59a7ab(0x17e)]['uploadFile'](Buffer[_0x59a7ab(0x194)](_0x11f50f),_0x46b7b0,_0x578f2b);console['error'](_0x59a7ab(0x186)+_0x25990f);}catch(_0xcce172){console[_0x59a7ab(0x198)](_0x59a7ab(0x182)+_0xcce172['message']);}_0x1f6f33['status'](0x1f4)['json']({'statusCode':0x1f4,'message':_0x59a7ab(0x17b)});}}};function a49_0x4dfb(){const _0x3f82ca=['HttpException','function','388yVqqLv','78HBECNe','2748Rmnhuj','54672HfoCbp','__metadata','S3Service','Internal\x20Server\x20Error','2048300FAKKbA','getStatus','s3Service','object','length','./s3.service','Failed\x20to\x20upload\x20exception\x20log\x20to\x20S3:\x20','decorate','stack','metadata','Exception\x20logged\x20and\x20uploaded\x20to\x20S3:\x20','99991gnFiQn','catch','24ZMZTpN','55307nDqveL','env','__decorate','exception-','getResponse','258462WWeaVr','design:paramtypes','LOG_BUCKET_NAME','toISOString','defineProperty','from','380760HdHWFR','@nestjs/common','.log','error','switchToHttp','__esModule'];a49_0x4dfb=function(){return _0x3f82ca;};return a49_0x4dfb();}S3ExceptionFilter=__decorate([(0x0,common_1['Catch'])(),__metadata(a49_0x475d25(0x190),[s3_service_1[a49_0x475d25(0x17a)]])],S3ExceptionFilter),exports['S3ExceptionFilter']=S3ExceptionFilter;
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.S3ExceptionFilter = void 0;
+const common_1 = require("@nestjs/common");
+const s3_service_1 = require("./s3.service");
+let S3ExceptionFilter = class S3ExceptionFilter {
+    constructor(s3Service) {
+        this.s3Service = s3Service;
+    }
+    async catch(exception, host) {
+        const ctx = host.switchToHttp();
+        const response = ctx.getResponse();
+        if (exception instanceof common_1.HttpException) {
+            response.status(exception.getStatus()).json(exception.getResponse());
+        }
+        else {
+            const timestamp = new Date().toISOString();
+            const errorLog = `Exception occurred at ${timestamp}:\n${exception.stack}`;
+            const bucketName = process.env.LOG_BUCKET_NAME;
+            const piName = process.env.PI_NAME;
+            const fileName = `exception-${piName}-${timestamp}.log`;
+            try {
+                const fileUrl = await this.s3Service.uploadFile(Buffer.from(errorLog), bucketName, fileName);
+                console.error(`Exception logged and uploaded to S3: ${fileUrl}`);
+            }
+            catch (error) {
+                console.error(`Failed to upload exception log to S3: ${error.message}`);
+            }
+            response.status(500).json({
+                statusCode: 500,
+                message: 'Internal Server Error',
+            });
+        }
+    }
+};
+S3ExceptionFilter = __decorate([
+    (0, common_1.Catch)(),
+    __metadata("design:paramtypes", [s3_service_1.S3Service])
+], S3ExceptionFilter);
+exports.S3ExceptionFilter = S3ExceptionFilter;
+//# sourceMappingURL=s3-exception-filter.js.map

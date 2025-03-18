@@ -1,1 +1,40 @@
-'use strict';var a48_0x14aa0d=a48_0x37b1;(function(_0x1e0606,_0x5a4dd7){var _0x56455e=a48_0x37b1,_0x8699fa=_0x1e0606();while(!![]){try{var _0x25b73d=-parseInt(_0x56455e(0x15c))/0x1+parseInt(_0x56455e(0x14b))/0x2+parseInt(_0x56455e(0x158))/0x3+parseInt(_0x56455e(0x15e))/0x4*(-parseInt(_0x56455e(0x155))/0x5)+parseInt(_0x56455e(0x157))/0x6*(-parseInt(_0x56455e(0x15d))/0x7)+parseInt(_0x56455e(0x154))/0x8*(-parseInt(_0x56455e(0x14f))/0x9)+parseInt(_0x56455e(0x151))/0xa;if(_0x25b73d===_0x5a4dd7)break;else _0x8699fa['push'](_0x8699fa['shift']());}catch(_0x40cb96){_0x8699fa['push'](_0x8699fa['shift']());}}}(a48_0x3158,0x640be));var __decorate=this&&this[a48_0x14aa0d(0x15b)]||function(_0x1035d9,_0x4bc480,_0x5c5c21,_0x255b45){var _0x26f07c=a48_0x14aa0d,_0x53f5c7=arguments[_0x26f07c(0x15a)],_0x48708f=_0x53f5c7<0x3?_0x4bc480:_0x255b45===null?_0x255b45=Object['getOwnPropertyDescriptor'](_0x4bc480,_0x5c5c21):_0x255b45,_0x1c7d0a;if(typeof Reflect==='object'&&typeof Reflect[_0x26f07c(0x153)]===_0x26f07c(0x159))_0x48708f=Reflect[_0x26f07c(0x153)](_0x1035d9,_0x4bc480,_0x5c5c21,_0x255b45);else{for(var _0x304b5b=_0x1035d9[_0x26f07c(0x15a)]-0x1;_0x304b5b>=0x0;_0x304b5b--)if(_0x1c7d0a=_0x1035d9[_0x304b5b])_0x48708f=(_0x53f5c7<0x3?_0x1c7d0a(_0x48708f):_0x53f5c7>0x3?_0x1c7d0a(_0x4bc480,_0x5c5c21,_0x48708f):_0x1c7d0a(_0x4bc480,_0x5c5c21))||_0x48708f;}return _0x53f5c7>0x3&&_0x48708f&&Object[_0x26f07c(0x15f)](_0x4bc480,_0x5c5c21,_0x48708f),_0x48708f;};Object[a48_0x14aa0d(0x15f)](exports,a48_0x14aa0d(0x14d),{'value':!![]}),exports[a48_0x14aa0d(0x149)]=void 0x0;function a48_0x37b1(_0xf87986,_0x5bcfb4){var _0x315876=a48_0x3158();return a48_0x37b1=function(_0x37b1c8,_0x46e45a){_0x37b1c8=_0x37b1c8-0x148;var _0x1318cf=_0x315876[_0x37b1c8];return _0x1318cf;},a48_0x37b1(_0xf87986,_0x5bcfb4);}const common_1=require(a48_0x14aa0d(0x150)),s3_service_1=require(a48_0x14aa0d(0x156)),AWS=require(a48_0x14aa0d(0x14c));let AwsModule=class AwsModule{};AwsModule=__decorate([(0x0,common_1[a48_0x14aa0d(0x148)])(),(0x0,common_1['Module'])({'providers':[{'provide':a48_0x14aa0d(0x14e),'useFactory':()=>({'accessKeyId':process[a48_0x14aa0d(0x14a)]['AWS_ACCESS_KEY_ID'],'secretAccessKey':process[a48_0x14aa0d(0x14a)]['AWS_SECRET_ACCESS_KEY'],'region':process[a48_0x14aa0d(0x14a)][a48_0x14aa0d(0x160)]})},{'provide':AWS['S3'],'useFactory':_0x281bf7=>{var _0x2b87fd=a48_0x14aa0d;return AWS[_0x2b87fd(0x152)]['update'](_0x281bf7),new AWS['S3']();},'inject':[a48_0x14aa0d(0x14e)]},s3_service_1['S3Service']]})],AwsModule),exports[a48_0x14aa0d(0x149)]=AwsModule;function a48_0x3158(){var _0x52109a=['aws-sdk','__esModule','AWS_SDK_CONFIG','5479371hfdxWg','@nestjs/common','21168560TptqWw','config','decorate','8ZnwlbW','5IHLwxM','./s3/s3.service','573366glpGOo','1726995zEnWiu','function','length','__decorate','791798tmMJab','42PXmqjJ','1670756cqaKLE','defineProperty','AWS_REGION','Global','AwsModule','env','217882rAeyUK'];a48_0x3158=function(){return _0x52109a;};return a48_0x3158();}
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.AwsModule = void 0;
+const common_1 = require("@nestjs/common");
+const s3_service_1 = require("./s3/s3.service");
+const AWS = require("aws-sdk");
+let AwsModule = class AwsModule {
+};
+AwsModule = __decorate([
+    (0, common_1.Global)(),
+    (0, common_1.Module)({
+        providers: [
+            {
+                provide: 'AWS_SDK_CONFIG',
+                useFactory: () => ({
+                    accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+                    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+                    region: process.env.AWS_REGION,
+                }),
+            },
+            {
+                provide: AWS.S3,
+                useFactory: (config) => {
+                    AWS.config.update(config);
+                    return new AWS.S3();
+                },
+                inject: ['AWS_SDK_CONFIG'],
+            },
+            s3_service_1.S3Service,
+        ],
+    })
+], AwsModule);
+exports.AwsModule = AwsModule;
+//# sourceMappingURL=aws.module.js.map

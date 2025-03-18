@@ -1,1 +1,36 @@
-'use strict';function a97_0x14fb(){const _0x3d7171=['460950wMEVOT','7678168wuZQmZ','PlayVoiceRecorded','CreateEventPlayTextToAudioDto','PlaySound','PlayMusic','__esModule','../../common/enums','isCreateEventPlayVoiceRecodedDto','3566360FPLKDv','CreateEventPlaySoundDto','isCreateEventPlayTextToAudioDto','7inOTab','CreateEventDtoBase','32IbBVbU','isCreateEventPlaySoundDto','144567zGoSxg','CreateEventPlayMusicDto','501410RMfLzx','183672PbCrgk','CreateEventPlayVoiceRecordedDto','isCreateEventPlayMusicDto','1033550aeguUJ','jobType','defineProperty','JobType','216lPiMqB'];a97_0x14fb=function(){return _0x3d7171;};return a97_0x14fb();}const a97_0x505f58=a97_0x268e;(function(_0x308f61,_0x3616b0){const _0xc4a1b=a97_0x268e,_0x4882d8=_0x308f61();while(!![]){try{const _0x1f978f=parseInt(_0xc4a1b(0x104))/0x1+-parseInt(_0xc4a1b(0xfb))/0x2+-parseInt(_0xc4a1b(0xf9))/0x3*(parseInt(_0xc4a1b(0xf7))/0x4)+-parseInt(_0xc4a1b(0x10d))/0x5+-parseInt(_0xc4a1b(0xfc))/0x6+-parseInt(_0xc4a1b(0xf5))/0x7*(parseInt(_0xc4a1b(0x105))/0x8)+-parseInt(_0xc4a1b(0x103))/0x9*(-parseInt(_0xc4a1b(0xff))/0xa);if(_0x1f978f===_0x3616b0)break;else _0x4882d8['push'](_0x4882d8['shift']());}catch(_0x35abb7){_0x4882d8['push'](_0x4882d8['shift']());}}}(a97_0x14fb,0x92dfe));Object[a97_0x505f58(0x101)](exports,a97_0x505f58(0x10a),{'value':!![]}),exports[a97_0x505f58(0x10f)]=exports['isCreateEventPlayVoiceRecodedDto']=exports[a97_0x505f58(0xfe)]=exports['isCreateEventPlaySoundDto']=exports[a97_0x505f58(0x107)]=exports[a97_0x505f58(0xfd)]=exports[a97_0x505f58(0xfa)]=exports[a97_0x505f58(0x10e)]=exports[a97_0x505f58(0xf6)]=void 0x0;const enums_1=require(a97_0x505f58(0x10b));class CreateEventDtoBase{}function a97_0x268e(_0x56922e,_0xb736db){const _0x14fbc7=a97_0x14fb();return a97_0x268e=function(_0x268e58,_0x2cd6c8){_0x268e58=_0x268e58-0xf5;let _0x38ddca=_0x14fbc7[_0x268e58];return _0x38ddca;},a97_0x268e(_0x56922e,_0xb736db);}exports[a97_0x505f58(0xf6)]=CreateEventDtoBase;class CreateEventPlaySoundDto extends CreateEventDtoBase{}exports[a97_0x505f58(0x10e)]=CreateEventPlaySoundDto;class CreateEventPlayMusicDto extends CreateEventDtoBase{}exports[a97_0x505f58(0xfa)]=CreateEventPlayMusicDto;class CreateEventPlayVoiceRecordedDto extends CreateEventDtoBase{}exports[a97_0x505f58(0xfd)]=CreateEventPlayVoiceRecordedDto;class CreateEventPlayTextToAudioDto extends CreateEventDtoBase{}exports[a97_0x505f58(0x107)]=CreateEventPlayTextToAudioDto;const isCreateEventPlaySoundDto=_0x59db63=>{const _0x383aed=a97_0x505f58;return _0x59db63[_0x383aed(0x100)]===enums_1[_0x383aed(0x102)][_0x383aed(0x108)];};exports[a97_0x505f58(0xf8)]=isCreateEventPlaySoundDto;const isCreateEventPlayMusicDto=_0x2065b8=>{const _0x20830b=a97_0x505f58;return _0x2065b8[_0x20830b(0x100)]===enums_1[_0x20830b(0x102)][_0x20830b(0x109)];};exports['isCreateEventPlayMusicDto']=isCreateEventPlayMusicDto;const isCreateEventPlayVoiceRecodedDto=_0xaacd6f=>{const _0xc82282=a97_0x505f58;return _0xaacd6f['jobType']===enums_1[_0xc82282(0x102)][_0xc82282(0x106)];};exports[a97_0x505f58(0x10c)]=isCreateEventPlayVoiceRecodedDto;const isCreateEventPlayTextToAudioDto=_0x2281b3=>{const _0x2febe2=a97_0x505f58;return _0x2281b3['jobType']===enums_1[_0x2febe2(0x102)]['PlayTextToAudio'];};exports['isCreateEventPlayTextToAudioDto']=isCreateEventPlayTextToAudioDto;
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.isCreateEventPlayTextToAudioDto = exports.isCreateEventPlayVoiceRecodedDto = exports.isCreateEventPlayMusicDto = exports.isCreateEventPlaySoundDto = exports.CreateEventPlayTextToAudioDto = exports.CreateEventPlayVoiceRecordedDto = exports.CreateEventPlayMusicDto = exports.CreateEventPlaySoundDto = exports.CreateEventDtoBase = void 0;
+const enums_1 = require("@root/src/common/enums");
+class CreateEventDtoBase {
+}
+exports.CreateEventDtoBase = CreateEventDtoBase;
+class CreateEventPlaySoundDto extends CreateEventDtoBase {
+}
+exports.CreateEventPlaySoundDto = CreateEventPlaySoundDto;
+class CreateEventPlayMusicDto extends CreateEventDtoBase {
+}
+exports.CreateEventPlayMusicDto = CreateEventPlayMusicDto;
+class CreateEventPlayVoiceRecordedDto extends CreateEventDtoBase {
+}
+exports.CreateEventPlayVoiceRecordedDto = CreateEventPlayVoiceRecordedDto;
+class CreateEventPlayTextToAudioDto extends CreateEventDtoBase {
+}
+exports.CreateEventPlayTextToAudioDto = CreateEventPlayTextToAudioDto;
+const isCreateEventPlaySoundDto = (createEventDto) => {
+    return createEventDto.jobType === enums_1.JobType.PlaySound;
+};
+exports.isCreateEventPlaySoundDto = isCreateEventPlaySoundDto;
+const isCreateEventPlayMusicDto = (createEventDto) => {
+    return createEventDto.jobType === enums_1.JobType.PlayMusic;
+};
+exports.isCreateEventPlayMusicDto = isCreateEventPlayMusicDto;
+const isCreateEventPlayVoiceRecodedDto = (createEventDto) => {
+    return createEventDto.jobType === enums_1.JobType.PlayVoiceRecorded;
+};
+exports.isCreateEventPlayVoiceRecodedDto = isCreateEventPlayVoiceRecodedDto;
+const isCreateEventPlayTextToAudioDto = (createEventDto) => {
+    return createEventDto.jobType === enums_1.JobType.PlayTextToAudio;
+};
+exports.isCreateEventPlayTextToAudioDto = isCreateEventPlayTextToAudioDto;
+//# sourceMappingURL=create-event.dto.js.map

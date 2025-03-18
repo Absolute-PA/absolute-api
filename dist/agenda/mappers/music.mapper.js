@@ -1,1 +1,12 @@
-'use strict';const a11_0x12f63d=a11_0x10d2;function a11_0x10d2(_0x3137ad,_0x5497b1){const _0x38f848=a11_0x38f8();return a11_0x10d2=function(_0x10d2eb,_0x4d470f){_0x10d2eb=_0x10d2eb-0x122;let _0x52a7cf=_0x38f848[_0x10d2eb];return _0x52a7cf;},a11_0x10d2(_0x3137ad,_0x5497b1);}(function(_0x73a0ca,_0x1af883){const _0x55284c=a11_0x10d2,_0x43be7f=_0x73a0ca();while(!![]){try{const _0x587f56=-parseInt(_0x55284c(0x12a))/0x1*(-parseInt(_0x55284c(0x123))/0x2)+-parseInt(_0x55284c(0x12b))/0x3+parseInt(_0x55284c(0x12e))/0x4*(parseInt(_0x55284c(0x122))/0x5)+parseInt(_0x55284c(0x132))/0x6+parseInt(_0x55284c(0x128))/0x7+-parseInt(_0x55284c(0x131))/0x8*(-parseInt(_0x55284c(0x12f))/0x9)+-parseInt(_0x55284c(0x133))/0xa*(parseInt(_0x55284c(0x130))/0xb);if(_0x587f56===_0x1af883)break;else _0x43be7f['push'](_0x43be7f['shift']());}catch(_0x5b0930){_0x43be7f['push'](_0x43be7f['shift']());}}}(a11_0x38f8,0xcb06d));Object[a11_0x12f63d(0x124)](exports,a11_0x12f63d(0x129),{'value':!![]}),exports['toPlayMusicCommand']=void 0x0;const toPlayMusicCommand=_0x29deac=>{const _0x525282=a11_0x12f63d;return{'playlistId':_0x29deac[_0x525282(0x127)][_0x525282(0x126)],'durationInSecond':Number(_0x29deac['attributes'][_0x525282(0x125)]),'audit':_0x29deac[_0x525282(0x12d)]};};exports[a11_0x12f63d(0x12c)]=toPlayMusicCommand;function a11_0x38f8(){const _0x40deba=['5963856HcvFTq','15670btVVMs','1570MHTCjh','663342CZCXMx','defineProperty','durationInSecond','playlistId','attributes','709709cLeLoU','__esModule','2TxVCmz','939045ZoIveR','toPlayMusicCommand','audit','13136BxoCkr','2475rAJbVq','12727kcSEzd','4880LfGLFi'];a11_0x38f8=function(){return _0x40deba;};return a11_0x38f8();}
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.toPlayMusicCommand = void 0;
+const toPlayMusicCommand = (dto) => {
+    return {
+        playlistId: dto.attributes.playlistId,
+        durationInSecond: Number(dto.attributes.durationInSecond),
+        audit: dto.audit,
+    };
+};
+exports.toPlayMusicCommand = toPlayMusicCommand;
+//# sourceMappingURL=music.mapper.js.map

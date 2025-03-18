@@ -1,1 +1,102 @@
-'use strict';const a149_0x5a6a29=a149_0x1029;(function(_0x261394,_0x316bb0){const _0x3d9ede=a149_0x1029,_0x23026c=_0x261394();while(!![]){try{const _0x16483e=-parseInt(_0x3d9ede(0xb4))/0x1+-parseInt(_0x3d9ede(0x9d))/0x2+parseInt(_0x3d9ede(0xa5))/0x3+parseInt(_0x3d9ede(0x97))/0x4*(-parseInt(_0x3d9ede(0xa7))/0x5)+-parseInt(_0x3d9ede(0xaf))/0x6+parseInt(_0x3d9ede(0x90))/0x7+-parseInt(_0x3d9ede(0xb2))/0x8*(-parseInt(_0x3d9ede(0x83))/0x9);if(_0x16483e===_0x316bb0)break;else _0x23026c['push'](_0x23026c['shift']());}catch(_0x19d13c){_0x23026c['push'](_0x23026c['shift']());}}}(a149_0x2096,0xd26d4));var __decorate=this&&this[a149_0x5a6a29(0x8c)]||function(_0x46ece7,_0x14870e,_0x2f46a2,_0x2bed8e){const _0x2ff247=a149_0x5a6a29;var _0x27530b=arguments['length'],_0x50900d=_0x27530b<0x3?_0x14870e:_0x2bed8e===null?_0x2bed8e=Object[_0x2ff247(0xb6)](_0x14870e,_0x2f46a2):_0x2bed8e,_0x6427a2;if(typeof Reflect===_0x2ff247(0xab)&&typeof Reflect[_0x2ff247(0xa9)]==='function')_0x50900d=Reflect[_0x2ff247(0xa9)](_0x46ece7,_0x14870e,_0x2f46a2,_0x2bed8e);else{for(var _0x407310=_0x46ece7[_0x2ff247(0x8f)]-0x1;_0x407310>=0x0;_0x407310--)if(_0x6427a2=_0x46ece7[_0x407310])_0x50900d=(_0x27530b<0x3?_0x6427a2(_0x50900d):_0x27530b>0x3?_0x6427a2(_0x14870e,_0x2f46a2,_0x50900d):_0x6427a2(_0x14870e,_0x2f46a2))||_0x50900d;}return _0x27530b>0x3&&_0x50900d&&Object['defineProperty'](_0x14870e,_0x2f46a2,_0x50900d),_0x50900d;},__metadata=this&&this['__metadata']||function(_0x59c590,_0x5643f4){const _0x42cd4f=a149_0x5a6a29;if(typeof Reflect===_0x42cd4f(0xab)&&typeof Reflect[_0x42cd4f(0xae)]===_0x42cd4f(0xba))return Reflect[_0x42cd4f(0xae)](_0x59c590,_0x5643f4);},__param=this&&this['__param']||function(_0x2acead,_0x3d26e2){return function(_0x11e3e3,_0x116736){_0x3d26e2(_0x11e3e3,_0x116736,_0x2acead);};};function a149_0x1029(_0x1c0ceb,_0x586e54){const _0x209644=a149_0x2096();return a149_0x1029=function(_0x1029ce,_0x44f47a){_0x1029ce=_0x1029ce-0x81;let _0x392cf5=_0x209644[_0x1029ce];return _0x392cf5;},a149_0x1029(_0x1c0ceb,_0x586e54);}function a149_0x2096(){const _0xfab31a=['Post','saveRecordedVoice','8sWKOjh','Controller','1473365DfLnmN','@nestjs/common','getOwnPropertyDescriptor','Admin','UseGuards','Roles','function','diskStorage','prototype','./dto/update-upload.dto','../common/constants','uploadService','FileInterceptor','multer','43761591UPwcDC','TMP_UPLOAD_DIR','UpdateUploadDto','../auth/decorators/roles.decorator','/temp',':id','uploadFile','../auth/guards/jwt.guard','design:returntype','__decorate','update','../auth/guards/roles.guard','length','379190ptvQmA','UploadController','Delete','RolesGuard','mimetype','uploadTemp','Role','64CpTTuQ','.wav','UploadService','./upload.service','Patch','upload','1939226AagLWT','../auth/enums/role.enum','/message','design:type','Param','voices','remove','UseInterceptors','1192452scqIgc','originalname','253615wIuMPV','User','decorate','design:paramtypes','object','Body','JwtAuthGuard','metadata','7185594WlrYXq'];a149_0x2096=function(){return _0xfab31a;};return a149_0x2096();}Object['defineProperty'](exports,'__esModule',{'value':!![]}),exports[a149_0x5a6a29(0x91)]=void 0x0;const common_1=require(a149_0x5a6a29(0xb5)),multer_1=require(a149_0x5a6a29(0x82)),platform_express_1=require('@nestjs/platform-express'),constants_1=require(a149_0x5a6a29(0xbe)),upload_service_1=require(a149_0x5a6a29(0x9a)),update_upload_dto_1=require(a149_0x5a6a29(0xbd)),utils_1=require('../common/utils'),roles_decorator_1=require(a149_0x5a6a29(0x86)),role_enum_1=require(a149_0x5a6a29(0x9e)),jwt_guard_1=require(a149_0x5a6a29(0x8a)),roles_guard_1=require(a149_0x5a6a29(0x8e));let UploadController=class UploadController{constructor(_0x252e4c){const _0x527629=a149_0x5a6a29;this[_0x527629(0xbf)]=_0x252e4c;}async[a149_0x5a6a29(0x89)](_0x13bcf6){const _0x36495f=a149_0x5a6a29;var _0x1fd358;const _0x56bd13=((_0x1fd358=_0x13bcf6===null||_0x13bcf6===void 0x0?void 0x0:_0x13bcf6[_0x36495f(0xa6)])===null||_0x1fd358===void 0x0?void 0x0:_0x1fd358['replace'](/[^\w]/gi,''))+_0x36495f(0x98),_0x3fe179=await this['uploadService']['saveFile'](_0x13bcf6,_0x36495f(0xa2),_0x56bd13);await this[_0x36495f(0xbf)][_0x36495f(0xb1)]({'filePath':_0x3fe179,'fileName':_0x13bcf6===null||_0x13bcf6===void 0x0?void 0x0:_0x13bcf6[_0x36495f(0xa6)],'mineType':_0x13bcf6[_0x36495f(0x94)]});}[a149_0x5a6a29(0x95)](_0x488a14){return _0x488a14;}['update'](_0x3144b8,_0x443a2b){const _0x665f90=a149_0x5a6a29;return this['uploadService'][_0x665f90(0x8d)](+_0x3144b8,_0x443a2b);}[a149_0x5a6a29(0xa3)](_0x52e83e){const _0x5b5982=a149_0x5a6a29;return this[_0x5b5982(0xbf)]['remove'](+_0x52e83e);}};__decorate([(0x0,common_1[a149_0x5a6a29(0xb0)])(a149_0x5a6a29(0x9f)),(0x0,common_1[a149_0x5a6a29(0xb8)])(jwt_guard_1['JwtAuthGuard'],roles_guard_1['RolesGuard']),(0x0,roles_decorator_1['Roles'])(role_enum_1[a149_0x5a6a29(0x96)]['Admin'],role_enum_1['Role'][a149_0x5a6a29(0xa8)]),(0x0,common_1[a149_0x5a6a29(0xa4)])((0x0,platform_express_1[a149_0x5a6a29(0x81)])('file')),__param(0x0,(0x0,common_1['UploadedFile'])()),__metadata(a149_0x5a6a29(0xa0),Function),__metadata(a149_0x5a6a29(0xaa),[Object]),__metadata('design:returntype',Promise)],UploadController[a149_0x5a6a29(0xbc)],a149_0x5a6a29(0x89),null),__decorate([(0x0,common_1['Post'])(a149_0x5a6a29(0x87)),(0x0,common_1[a149_0x5a6a29(0xb8)])(jwt_guard_1['JwtAuthGuard'],roles_guard_1[a149_0x5a6a29(0x93)]),(0x0,roles_decorator_1['Roles'])(role_enum_1['Role']['Admin'],role_enum_1[a149_0x5a6a29(0x96)]['User']),(0x0,common_1['UseInterceptors'])((0x0,platform_express_1[a149_0x5a6a29(0x81)])('file',{'storage':(0x0,multer_1[a149_0x5a6a29(0xbb)])({'destination':constants_1[a149_0x5a6a29(0x84)],'filename':(_0x2340c7,_0x5bc089,_0x344e3b)=>{return _0x344e3b(null,''+(0x0,utils_1['uuid'])()+(_0x5bc089===null||_0x5bc089===void 0x0?void 0x0:_0x5bc089['originalname']));}})})),__param(0x0,(0x0,common_1['UploadedFile'])()),__metadata(a149_0x5a6a29(0xa0),Function),__metadata('design:paramtypes',[Object]),__metadata(a149_0x5a6a29(0x8b),void 0x0)],UploadController[a149_0x5a6a29(0xbc)],'uploadTemp',null),__decorate([(0x0,common_1[a149_0x5a6a29(0x9b)])(a149_0x5a6a29(0x88)),(0x0,common_1[a149_0x5a6a29(0xb8)])(jwt_guard_1[a149_0x5a6a29(0xad)],roles_guard_1[a149_0x5a6a29(0x93)]),(0x0,roles_decorator_1['Roles'])(role_enum_1[a149_0x5a6a29(0x96)][a149_0x5a6a29(0xb7)],role_enum_1[a149_0x5a6a29(0x96)]['User']),__param(0x0,(0x0,common_1[a149_0x5a6a29(0xa1)])('id')),__param(0x1,(0x0,common_1[a149_0x5a6a29(0xac)])()),__metadata('design:type',Function),__metadata(a149_0x5a6a29(0xaa),[String,update_upload_dto_1[a149_0x5a6a29(0x85)]]),__metadata(a149_0x5a6a29(0x8b),void 0x0)],UploadController['prototype'],'update',null),__decorate([(0x0,common_1[a149_0x5a6a29(0x92)])(a149_0x5a6a29(0x88)),(0x0,common_1[a149_0x5a6a29(0xb8)])(jwt_guard_1[a149_0x5a6a29(0xad)],roles_guard_1[a149_0x5a6a29(0x93)]),(0x0,roles_decorator_1[a149_0x5a6a29(0xb9)])(role_enum_1[a149_0x5a6a29(0x96)][a149_0x5a6a29(0xb7)],role_enum_1['Role'][a149_0x5a6a29(0xa8)]),__param(0x0,(0x0,common_1[a149_0x5a6a29(0xa1)])('id')),__metadata(a149_0x5a6a29(0xa0),Function),__metadata(a149_0x5a6a29(0xaa),[String]),__metadata('design:returntype',void 0x0)],UploadController['prototype'],a149_0x5a6a29(0xa3),null),UploadController=__decorate([(0x0,common_1[a149_0x5a6a29(0xb3)])(a149_0x5a6a29(0x9c)),__metadata(a149_0x5a6a29(0xaa),[upload_service_1[a149_0x5a6a29(0x99)]])],UploadController),exports[a149_0x5a6a29(0x91)]=UploadController;
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __param = (this && this.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.UploadController = void 0;
+const common_1 = require("@nestjs/common");
+const multer_1 = require("multer");
+const platform_express_1 = require("@nestjs/platform-express");
+const constants_1 = require("@/common/constants");
+const upload_service_1 = require("./upload.service");
+const update_upload_dto_1 = require("./dto/update-upload.dto");
+const utils_1 = require("@/common/utils");
+const roles_decorator_1 = require("../auth/decorators/roles.decorator");
+const role_enum_1 = require("../auth/enums/role.enum");
+const jwt_guard_1 = require("../auth/guards/jwt.guard");
+const roles_guard_1 = require("../auth/guards/roles.guard");
+let UploadController = class UploadController {
+    constructor(uploadService) {
+        this.uploadService = uploadService;
+    }
+    async uploadFile(file) {
+        var _a;
+        const filename = ((_a = file === null || file === void 0 ? void 0 : file.originalname) === null || _a === void 0 ? void 0 : _a.replace(/[^\w]/gi, '')) + '.wav';
+        const filePath = await this.uploadService.saveFile(file, 'voices', filename);
+        await this.uploadService.saveRecordedVoice({
+            filePath,
+            fileName: file === null || file === void 0 ? void 0 : file.originalname,
+            mineType: file.mimetype,
+        });
+    }
+    uploadTemp(file) {
+        return file;
+    }
+    update(id, updateUploadDto) {
+        return this.uploadService.update(+id, updateUploadDto);
+    }
+    remove(id) {
+        return this.uploadService.remove(+id);
+    }
+};
+__decorate([
+    (0, common_1.Post)('/message'),
+    (0, common_1.UseGuards)(jwt_guard_1.JwtAuthGuard, roles_guard_1.RolesGuard),
+    (0, roles_decorator_1.Roles)(role_enum_1.Role.Admin, role_enum_1.Role.User),
+    (0, common_1.UseInterceptors)((0, platform_express_1.FileInterceptor)('file')),
+    __param(0, (0, common_1.UploadedFile)()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", Promise)
+], UploadController.prototype, "uploadFile", null);
+__decorate([
+    (0, common_1.Post)('/temp'),
+    (0, common_1.UseGuards)(jwt_guard_1.JwtAuthGuard, roles_guard_1.RolesGuard),
+    (0, roles_decorator_1.Roles)(role_enum_1.Role.Admin, role_enum_1.Role.User),
+    (0, common_1.UseInterceptors)((0, platform_express_1.FileInterceptor)('file', {
+        storage: (0, multer_1.diskStorage)({
+            destination: constants_1.TMP_UPLOAD_DIR,
+            filename: (req, file, cb) => {
+                return cb(null, `${(0, utils_1.uuid)()}${file === null || file === void 0 ? void 0 : file.originalname}`);
+            },
+        }),
+    })),
+    __param(0, (0, common_1.UploadedFile)()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", void 0)
+], UploadController.prototype, "uploadTemp", null);
+__decorate([
+    (0, common_1.Patch)(':id'),
+    (0, common_1.UseGuards)(jwt_guard_1.JwtAuthGuard, roles_guard_1.RolesGuard),
+    (0, roles_decorator_1.Roles)(role_enum_1.Role.Admin, role_enum_1.Role.User),
+    __param(0, (0, common_1.Param)('id')),
+    __param(1, (0, common_1.Body)()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [String, update_upload_dto_1.UpdateUploadDto]),
+    __metadata("design:returntype", void 0)
+], UploadController.prototype, "update", null);
+__decorate([
+    (0, common_1.Delete)(':id'),
+    (0, common_1.UseGuards)(jwt_guard_1.JwtAuthGuard, roles_guard_1.RolesGuard),
+    (0, roles_decorator_1.Roles)(role_enum_1.Role.Admin, role_enum_1.Role.User),
+    __param(0, (0, common_1.Param)('id')),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [String]),
+    __metadata("design:returntype", void 0)
+], UploadController.prototype, "remove", null);
+UploadController = __decorate([
+    (0, common_1.Controller)('upload'),
+    __metadata("design:paramtypes", [upload_service_1.UploadService])
+], UploadController);
+exports.UploadController = UploadController;
+//# sourceMappingURL=upload.controller.js.map

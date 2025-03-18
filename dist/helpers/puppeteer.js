@@ -1,1 +1,39 @@
-'use strict';const a77_0x4996ec=a77_0x5def;(function(_0x7f9298,_0x1e5a72){const _0x41c7e7=a77_0x5def,_0x5bc474=_0x7f9298();while(!![]){try{const _0x5757c5=parseInt(_0x41c7e7(0x166))/0x1*(-parseInt(_0x41c7e7(0x161))/0x2)+-parseInt(_0x41c7e7(0x152))/0x3+parseInt(_0x41c7e7(0x14f))/0x4+parseInt(_0x41c7e7(0x15c))/0x5+-parseInt(_0x41c7e7(0x157))/0x6+parseInt(_0x41c7e7(0x160))/0x7*(parseInt(_0x41c7e7(0x15a))/0x8)+parseInt(_0x41c7e7(0x15b))/0x9*(parseInt(_0x41c7e7(0x165))/0xa);if(_0x5757c5===_0x1e5a72)break;else _0x5bc474['push'](_0x5bc474['shift']());}catch(_0x44b4ad){_0x5bc474['push'](_0x5bc474['shift']());}}}(a77_0x4982,0xeda16));function a77_0x4982(){const _0x2362a3=['getBrowserUrls','37010lDJBkI','5947gaYDrg','env','openNewpage','--mute-audio','2857976YUeYSN','push','defineProperty','4482099eXvWxy','launch','--autoplay-policy=no-user-gesture-required','puppeteer','map','4028070efLtlZ','newPage','launchBrowser','2576Wtsnxu','1116ltVLrW','5929535uyexpS','--disable-setuid-sandbox','default','--no-sandbox','25088XvVIzS','126JVLDIo','all','forEach'];a77_0x4982=function(){return _0x2362a3;};return a77_0x4982();}function a77_0x5def(_0x3acfd7,_0xbea76a){const _0x4982de=a77_0x4982();return a77_0x5def=function(_0x5def82,_0x308740){_0x5def82=_0x5def82-0x14d;let _0x23247c=_0x4982de[_0x5def82];return _0x23247c;},a77_0x5def(_0x3acfd7,_0xbea76a);}Object[a77_0x4996ec(0x151)](exports,'__esModule',{'value':!![]}),exports[a77_0x4996ec(0x164)]=exports[a77_0x4996ec(0x14d)]=exports[a77_0x4996ec(0x159)]=void 0x0;const puppeteer_1=require(a77_0x4996ec(0x155)),launchBrowser=async()=>{const _0x384ff1=a77_0x4996ec;return puppeteer_1[_0x384ff1(0x15e)][_0x384ff1(0x153)]({'headless':!![],'args':[_0x384ff1(0x154),_0x384ff1(0x15f),_0x384ff1(0x15d)],'ignoreDefaultArgs':[_0x384ff1(0x14e)],'executablePath':process[_0x384ff1(0x167)]['CHROME_PATH'],'ignoreHTTPSErrors':!![]});};exports['launchBrowser']=launchBrowser;const openNewpage=async _0x4222c3=>{const _0x443231=a77_0x4996ec;if(_0x4222c3)return _0x4222c3[_0x443231(0x158)]();return _0x4222c3[_0x443231(0x158)]();};exports[a77_0x4996ec(0x14d)]=openNewpage;const getBrowserUrls=async _0x5752dd=>{const _0x5600c2=a77_0x4996ec,_0x1b6ee5=_0x5752dd['browserContexts'](),_0x318593=[];_0x1b6ee5[_0x5600c2(0x156)](_0x3128f5=>{_0x318593['push'](_0x3128f5['pages']());});const _0x508c4a=await Promise[_0x5600c2(0x162)](_0x318593),_0x154348=[];return _0x508c4a[_0x5600c2(0x163)](_0x48827e=>{const _0x240c07=_0x5600c2;_0x48827e[_0x240c07(0x163)](_0x4d698e=>_0x154348[_0x240c07(0x150)](_0x4d698e['url']()));}),_0x154348;};exports[a77_0x4996ec(0x164)]=getBrowserUrls;
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.getBrowserUrls = exports.openNewpage = exports.launchBrowser = void 0;
+const puppeteer_1 = require("puppeteer");
+const launchBrowser = async () => {
+    return puppeteer_1.default.launch({
+        headless: true,
+        args: [
+            '--autoplay-policy=no-user-gesture-required',
+            '--no-sandbox',
+            '--disable-setuid-sandbox',
+        ],
+        ignoreDefaultArgs: ['--mute-audio'],
+        executablePath: process.env.CHROME_PATH,
+        ignoreHTTPSErrors: true,
+    });
+};
+exports.launchBrowser = launchBrowser;
+const openNewpage = async (browser) => {
+    if (browser)
+        return browser.newPage();
+    return browser.newPage();
+};
+exports.openNewpage = openNewpage;
+const getBrowserUrls = async (browser) => {
+    const contexts = browser.browserContexts();
+    const pagesPromises = [];
+    contexts.map((context) => {
+        pagesPromises.push(context.pages());
+    });
+    const pages = await Promise.all(pagesPromises);
+    const urls = [];
+    pages.forEach((page) => {
+        page.forEach((p) => urls.push(p.url()));
+    });
+    return urls;
+};
+exports.getBrowserUrls = getBrowserUrls;
+//# sourceMappingURL=puppeteer.js.map

@@ -1,1 +1,187 @@
-'use strict';const a130_0x48b179=a130_0x1269;(function(_0x458971,_0x33a1cc){const _0x39ae70=a130_0x1269,_0x45642a=_0x458971();while(!![]){try{const _0x35bd0b=parseInt(_0x39ae70(0x1ae))/0x1*(-parseInt(_0x39ae70(0x186))/0x2)+-parseInt(_0x39ae70(0x1c0))/0x3*(parseInt(_0x39ae70(0x175))/0x4)+parseInt(_0x39ae70(0x181))/0x5*(parseInt(_0x39ae70(0x1c8))/0x6)+-parseInt(_0x39ae70(0x1c1))/0x7*(-parseInt(_0x39ae70(0x1b9))/0x8)+parseInt(_0x39ae70(0x1ab))/0x9*(parseInt(_0x39ae70(0x17f))/0xa)+parseInt(_0x39ae70(0x170))/0xb*(-parseInt(_0x39ae70(0x1b8))/0xc)+parseInt(_0x39ae70(0x1b0))/0xd*(-parseInt(_0x39ae70(0x180))/0xe);if(_0x35bd0b===_0x33a1cc)break;else _0x45642a['push'](_0x45642a['shift']());}catch(_0x488c41){_0x45642a['push'](_0x45642a['shift']());}}}(a130_0xcd68,0xf3acc));var __decorate=this&&this['__decorate']||function(_0x4f1cb8,_0x55e088,_0x1d366f,_0x296a60){const _0x1d835e=a130_0x1269;var _0x3903df=arguments[_0x1d835e(0x190)],_0x190944=_0x3903df<0x3?_0x55e088:_0x296a60===null?_0x296a60=Object[_0x1d835e(0x19d)](_0x55e088,_0x1d366f):_0x296a60,_0x49f1b6;if(typeof Reflect===_0x1d835e(0x179)&&typeof Reflect[_0x1d835e(0x1ac)]===_0x1d835e(0x1ca))_0x190944=Reflect['decorate'](_0x4f1cb8,_0x55e088,_0x1d366f,_0x296a60);else{for(var _0x558062=_0x4f1cb8[_0x1d835e(0x190)]-0x1;_0x558062>=0x0;_0x558062--)if(_0x49f1b6=_0x4f1cb8[_0x558062])_0x190944=(_0x3903df<0x3?_0x49f1b6(_0x190944):_0x3903df>0x3?_0x49f1b6(_0x55e088,_0x1d366f,_0x190944):_0x49f1b6(_0x55e088,_0x1d366f))||_0x190944;}return _0x3903df>0x3&&_0x190944&&Object[_0x1d835e(0x184)](_0x55e088,_0x1d366f,_0x190944),_0x190944;},__metadata=this&&this[a130_0x48b179(0x1a1)]||function(_0x388729,_0x4559ef){const _0x55f775=a130_0x48b179;if(typeof Reflect===_0x55f775(0x179)&&typeof Reflect['metadata']===_0x55f775(0x1ca))return Reflect[_0x55f775(0x17d)](_0x388729,_0x4559ef);},__param=this&&this[a130_0x48b179(0x174)]||function(_0x1afad8,_0x404bfd){return function(_0x45aff2,_0x29a00d){_0x404bfd(_0x45aff2,_0x29a00d,_0x1afad8);};};function a130_0x1269(_0xd49faa,_0x1d9cf6){const _0xcd6814=a130_0xcd68();return a130_0x1269=function(_0x126953,_0x434318){_0x126953=_0x126953-0x170;let _0x1a408e=_0xcd6814[_0x126953];return _0x1a408e;},a130_0x1269(_0xd49faa,_0x1d9cf6);}Object[a130_0x48b179(0x184)](exports,a130_0x48b179(0x195),{'value':!![]}),exports[a130_0x48b179(0x1a0)]=void 0x0;const common_1=require(a130_0x48b179(0x17a)),platform_express_1=require(a130_0x48b179(0x1a5)),multer_1=require(a130_0x48b179(0x1bf)),utils_1=require(a130_0x48b179(0x199)),constants_1=require(a130_0x48b179(0x1c5)),sound_service_1=require(a130_0x48b179(0x19b)),dto_1=require(a130_0x48b179(0x1be)),constants_2=require(a130_0x48b179(0x194)),roles_decorator_1=require('../auth/decorators/roles.decorator'),role_enum_1=require('../auth/enums/role.enum'),guards_1=require(a130_0x48b179(0x1c4)),enums_1=require(a130_0x48b179(0x178)),fileInterceptorOptions={'storage':(0x0,multer_1[a130_0x48b179(0x191)])({'destination':constants_1[a130_0x48b179(0x172)],'filename':(_0x21b025,_0x5ea255,_0x1b9daf)=>{const _0x4ba82d=a130_0x48b179;return _0x1b9daf(null,''+(0x0,utils_1[_0x4ba82d(0x187)])()+_0x5ea255[_0x4ba82d(0x1ad)]);}})};let SoundController=class SoundController{constructor(_0x4bde2c){const _0x2bb328=a130_0x48b179;this[_0x2bb328(0x1c2)]=_0x4bde2c;}async['create'](_0x21bada){const _0x31ac02=a130_0x48b179;return this['soundService'][_0x31ac02(0x1aa)](_0x21bada);}async[a130_0x48b179(0x1bb)](_0x24a71c,_0x59cab5){const _0x3eb2a6=a130_0x48b179;return this[_0x3eb2a6(0x1c2)][_0x3eb2a6(0x18b)](_0x59cab5,_0x24a71c);}async[a130_0x48b179(0x193)](_0x1030b4,_0x27ee3e){const _0x56fe17=a130_0x48b179,_0x206c7e={'name':_0x1030b4===null||_0x1030b4===void 0x0?void 0x0:_0x1030b4[_0x56fe17(0x1ad)],'type':_0x27ee3e},_0x1346d1=await this[_0x56fe17(0x1c2)][_0x56fe17(0x1aa)](_0x206c7e);return this[_0x56fe17(0x1c2)][_0x56fe17(0x18b)](_0x1346d1[_0x56fe17(0x197)],_0x1030b4);}async[a130_0x48b179(0x18a)](){const _0x57f297=a130_0x48b179;return this[_0x57f297(0x1c2)]['findByType'](constants_2['SoundType'][_0x57f297(0x1a3)]);}async[a130_0x48b179(0x1c6)](){const _0x45adbe=a130_0x48b179;return this[_0x45adbe(0x1c2)]['findByType'](constants_2['SoundType'][_0x45adbe(0x18f)]);}async[a130_0x48b179(0x19c)](_0x3c47b7,_0x179573){const _0x45fcd0=a130_0x48b179;return this['soundService'][_0x45fcd0(0x19c)](_0x3c47b7,_0x179573);}async['updateVolume'](_0x28d8d2,_0x20305d){const _0x315474=a130_0x48b179;return this[_0x315474(0x1c2)][_0x315474(0x196)](_0x28d8d2,_0x20305d);}async['delete'](_0x167444){const _0x28ece8=a130_0x48b179;return this[_0x28ece8(0x1c2)][_0x28ece8(0x1c9)](_0x167444);}async[a130_0x48b179(0x18c)](_0x3266cd,_0x2331b0){const _0x41b8cc=a130_0x48b179;return this['soundService'][_0x41b8cc(0x18c)](enums_1[_0x41b8cc(0x1b7)]['User'],_0x3266cd,_0x2331b0==='true');}async[a130_0x48b179(0x1a4)](_0x441a32){const _0x32a8d0=a130_0x48b179;return this[_0x32a8d0(0x1c2)][_0x32a8d0(0x1a4)](_0x441a32);}async[a130_0x48b179(0x1a9)](){const _0x1ccf51=a130_0x48b179;return this[_0x1ccf51(0x1c2)][_0x1ccf51(0x1a9)]();}};__decorate([(0x0,common_1[a130_0x48b179(0x185)])(),(0x0,common_1[a130_0x48b179(0x1c3)])(guards_1['JwtAuthGuard'],guards_1[a130_0x48b179(0x188)]),(0x0,roles_decorator_1[a130_0x48b179(0x1b6)])(role_enum_1[a130_0x48b179(0x1b1)]['Admin'],role_enum_1[a130_0x48b179(0x1b1)][a130_0x48b179(0x1a6)],role_enum_1[a130_0x48b179(0x1b1)][a130_0x48b179(0x1b4)]),__param(0x0,(0x0,common_1[a130_0x48b179(0x192)])()),__metadata(a130_0x48b179(0x1c7),Function),__metadata(a130_0x48b179(0x17c),[dto_1[a130_0x48b179(0x18d)]]),__metadata(a130_0x48b179(0x189),Promise)],SoundController[a130_0x48b179(0x19e)],a130_0x48b179(0x1aa),null),__decorate([(0x0,common_1[a130_0x48b179(0x185)])(':id/upload'),(0x0,common_1[a130_0x48b179(0x1c3)])(guards_1[a130_0x48b179(0x17e)],guards_1['RolesGuard']),(0x0,roles_decorator_1[a130_0x48b179(0x1b6)])(role_enum_1[a130_0x48b179(0x1b1)][a130_0x48b179(0x1a8)],role_enum_1[a130_0x48b179(0x1b1)][a130_0x48b179(0x1a6)],role_enum_1[a130_0x48b179(0x1b1)][a130_0x48b179(0x1b4)]),(0x0,common_1[a130_0x48b179(0x1ba)])((0x0,platform_express_1[a130_0x48b179(0x19a)])(a130_0x48b179(0x1af),fileInterceptorOptions)),__param(0x0,(0x0,common_1[a130_0x48b179(0x1b5)])()),__param(0x1,(0x0,common_1[a130_0x48b179(0x171)])('id')),__metadata(a130_0x48b179(0x1c7),Function),__metadata('design:paramtypes',[Object,String]),__metadata('design:returntype',Promise)],SoundController[a130_0x48b179(0x19e)],'uploadById',null),__decorate([(0x0,common_1['Post'])(a130_0x48b179(0x1b2)),(0x0,common_1[a130_0x48b179(0x1c3)])(guards_1[a130_0x48b179(0x17e)],guards_1['RolesGuard']),(0x0,roles_decorator_1[a130_0x48b179(0x1b6)])(role_enum_1[a130_0x48b179(0x1b1)][a130_0x48b179(0x1a8)],role_enum_1[a130_0x48b179(0x1b1)][a130_0x48b179(0x1a6)],role_enum_1[a130_0x48b179(0x1b1)]['Viewer']),(0x0,common_1['UseInterceptors'])((0x0,platform_express_1[a130_0x48b179(0x19a)])(a130_0x48b179(0x1af),fileInterceptorOptions)),__param(0x0,(0x0,common_1[a130_0x48b179(0x1b5)])()),__param(0x1,(0x0,common_1[a130_0x48b179(0x171)])(a130_0x48b179(0x182))),__metadata(a130_0x48b179(0x1c7),Function),__metadata('design:paramtypes',[Object,String]),__metadata(a130_0x48b179(0x189),Promise)],SoundController[a130_0x48b179(0x19e)],a130_0x48b179(0x193),null),__decorate([(0x0,common_1[a130_0x48b179(0x1b3)])('/tunes'),(0x0,common_1[a130_0x48b179(0x1c3)])(guards_1['JwtAuthGuard'],guards_1['RolesGuard']),(0x0,roles_decorator_1['Roles'])(role_enum_1['Role'][a130_0x48b179(0x1a8)],role_enum_1[a130_0x48b179(0x1b1)][a130_0x48b179(0x1a6)],role_enum_1['Role'][a130_0x48b179(0x1b4)]),__metadata(a130_0x48b179(0x1c7),Function),__metadata('design:paramtypes',[]),__metadata(a130_0x48b179(0x189),Promise)],SoundController[a130_0x48b179(0x19e)],a130_0x48b179(0x18a),null),__decorate([(0x0,common_1[a130_0x48b179(0x1b3)])(a130_0x48b179(0x17b)),(0x0,common_1[a130_0x48b179(0x1c3)])(guards_1[a130_0x48b179(0x17e)],guards_1[a130_0x48b179(0x188)]),(0x0,roles_decorator_1[a130_0x48b179(0x1b6)])(role_enum_1[a130_0x48b179(0x1b1)][a130_0x48b179(0x1a8)],role_enum_1['Role'][a130_0x48b179(0x1a6)],role_enum_1['Role'][a130_0x48b179(0x1b4)]),__metadata(a130_0x48b179(0x1c7),Function),__metadata('design:paramtypes',[]),__metadata(a130_0x48b179(0x189),Promise)],SoundController[a130_0x48b179(0x19e)],'findSongs',null),__decorate([(0x0,common_1[a130_0x48b179(0x177)])(a130_0x48b179(0x183)),(0x0,common_1['UseGuards'])(guards_1[a130_0x48b179(0x17e)],guards_1['RolesGuard']),(0x0,roles_decorator_1['Roles'])(role_enum_1[a130_0x48b179(0x1b1)][a130_0x48b179(0x1a8)],role_enum_1[a130_0x48b179(0x1b1)][a130_0x48b179(0x1a6)],role_enum_1['Role'][a130_0x48b179(0x1b4)]),__param(0x0,(0x0,common_1[a130_0x48b179(0x171)])('id')),__param(0x1,(0x0,common_1[a130_0x48b179(0x192)])()),__metadata(a130_0x48b179(0x1c7),Function),__metadata(a130_0x48b179(0x17c),[String,dto_1[a130_0x48b179(0x1a7)]]),__metadata(a130_0x48b179(0x189),Promise)],SoundController['prototype'],'update',null),__decorate([(0x0,common_1[a130_0x48b179(0x177)])(a130_0x48b179(0x1a2)),(0x0,common_1['UseGuards'])(guards_1[a130_0x48b179(0x17e)],guards_1[a130_0x48b179(0x188)]),(0x0,roles_decorator_1['Roles'])(role_enum_1[a130_0x48b179(0x1b1)][a130_0x48b179(0x1a8)],role_enum_1[a130_0x48b179(0x1b1)][a130_0x48b179(0x1a6)],role_enum_1[a130_0x48b179(0x1b1)][a130_0x48b179(0x1b4)]),__param(0x0,(0x0,common_1[a130_0x48b179(0x171)])('id')),__param(0x1,(0x0,common_1[a130_0x48b179(0x192)])()),__metadata(a130_0x48b179(0x1c7),Function),__metadata(a130_0x48b179(0x17c),[String,dto_1[a130_0x48b179(0x1a7)]]),__metadata(a130_0x48b179(0x189),Promise)],SoundController['prototype'],'updateVolume',null),__decorate([(0x0,common_1[a130_0x48b179(0x18e)])(a130_0x48b179(0x183)),(0x0,common_1[a130_0x48b179(0x1c3)])(guards_1[a130_0x48b179(0x17e)],guards_1[a130_0x48b179(0x188)]),(0x0,roles_decorator_1[a130_0x48b179(0x1b6)])(role_enum_1[a130_0x48b179(0x1b1)]['Admin'],role_enum_1[a130_0x48b179(0x1b1)][a130_0x48b179(0x1a6)],role_enum_1[a130_0x48b179(0x1b1)][a130_0x48b179(0x1b4)]),__param(0x0,(0x0,common_1[a130_0x48b179(0x171)])('id')),__metadata(a130_0x48b179(0x1c7),Function),__metadata('design:paramtypes',[String]),__metadata('design:returntype',Promise)],SoundController[a130_0x48b179(0x19e)],a130_0x48b179(0x1c9),null),__decorate([(0x0,common_1['Post'])(a130_0x48b179(0x198)),(0x0,common_1['UseGuards'])(guards_1[a130_0x48b179(0x17e)],guards_1['RolesGuard'],guards_1[a130_0x48b179(0x176)]),(0x0,roles_decorator_1['Roles'])(role_enum_1[a130_0x48b179(0x1b1)]['Admin'],role_enum_1['Role'][a130_0x48b179(0x1a6)],role_enum_1['Role'][a130_0x48b179(0x1b4)]),__param(0x0,(0x0,common_1[a130_0x48b179(0x171)])('id')),__param(0x1,(0x0,common_1['Query'])(a130_0x48b179(0x1bd))),__metadata(a130_0x48b179(0x1c7),Function),__metadata(a130_0x48b179(0x17c),[String,String]),__metadata(a130_0x48b179(0x189),Promise)],SoundController[a130_0x48b179(0x19e)],a130_0x48b179(0x18c),null),__decorate([(0x0,common_1['Post'])(a130_0x48b179(0x173)),(0x0,common_1[a130_0x48b179(0x1c3)])(guards_1[a130_0x48b179(0x17e)],guards_1[a130_0x48b179(0x188)]),(0x0,roles_decorator_1['Roles'])(role_enum_1[a130_0x48b179(0x1b1)][a130_0x48b179(0x1a8)],role_enum_1[a130_0x48b179(0x1b1)][a130_0x48b179(0x1a6)],role_enum_1[a130_0x48b179(0x1b1)][a130_0x48b179(0x1b4)]),__param(0x0,(0x0,common_1[a130_0x48b179(0x171)])('id')),__metadata('design:type',Function),__metadata(a130_0x48b179(0x17c),[String]),__metadata(a130_0x48b179(0x189),Promise)],SoundController['prototype'],'stop',null),__decorate([(0x0,common_1['Post'])(a130_0x48b179(0x1bc)),(0x0,common_1[a130_0x48b179(0x1c3)])(guards_1['JwtAuthGuard'],guards_1[a130_0x48b179(0x188)]),(0x0,roles_decorator_1[a130_0x48b179(0x1b6)])(role_enum_1['Role']['Master']),__metadata(a130_0x48b179(0x1c7),Function),__metadata(a130_0x48b179(0x17c),[]),__metadata('design:returntype',Promise)],SoundController[a130_0x48b179(0x19e)],a130_0x48b179(0x1a9),null),SoundController=__decorate([(0x0,common_1[a130_0x48b179(0x19f)])('sound'),__metadata('design:paramtypes',[sound_service_1['SoundService']])],SoundController),exports[a130_0x48b179(0x1a0)]=SoundController;function a130_0xcd68(){const _0x5373d9=['uuid','RolesGuard','design:returntype','findTunes','upload','play','CreateSoundDto','Delete','Song','length','diskStorage','Body','uploadByType','./constants','__esModule','updateVolume','_id',':id/play','../common/utils','FileInterceptor','./sound.service','update','getOwnPropertyDescriptor','prototype','Controller','SoundController','__metadata',':id/volume','Tune','stop','@nestjs/platform-express','User','UpdateSoundDto','Admin','resetTunes','create','1359uthfOc','decorate','originalname','311ANaZZG','file','13IlLzzP','Role','/upload/:type','Get','Viewer','UploadedFile','Roles','AuditActor','12wYADFJ','81808QmrlpZ','UseInterceptors','uploadById','/resetTunes','repeat','./dto','multer','813279XDhbzg','973MwEJQc','soundService','UseGuards','../auth/guards','../common/constants','findSongs','design:type','12tlSyZJ','delete','function','5675153zeHvTT','Param','TMP_UPLOAD_DIR',':id/stop','__param','20hDyCNG','LicenseGuard','Patch','../common/enums','object','@nestjs/common','/songs','design:paramtypes','metadata','JwtAuthGuard','4670gatUMV','168994BqLQJC','4536115iPXdMF','type',':id','defineProperty','Post','2732gcmrBC'];a130_0xcd68=function(){return _0x5373d9;};return a130_0xcd68();}
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __param = (this && this.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.SoundController = void 0;
+const common_1 = require("@nestjs/common");
+const platform_express_1 = require("@nestjs/platform-express");
+const multer_1 = require("multer");
+const utils_1 = require("@/common/utils");
+const constants_1 = require("@/common/constants");
+const sound_service_1 = require("./sound.service");
+const dto_1 = require("./dto");
+const constants_2 = require("./constants");
+const roles_decorator_1 = require("../auth/decorators/roles.decorator");
+const role_enum_1 = require("../auth/enums/role.enum");
+const guards_1 = require("../auth/guards");
+const enums_1 = require("../common/enums");
+const fileInterceptorOptions = {
+    storage: (0, multer_1.diskStorage)({
+        destination: constants_1.TMP_UPLOAD_DIR,
+        filename: (req, file, cb) => {
+            return cb(null, `${(0, utils_1.uuid)()}${file.originalname}`);
+        },
+    }),
+};
+let SoundController = class SoundController {
+    constructor(soundService) {
+        this.soundService = soundService;
+    }
+    async create(createSoundDto) {
+        return this.soundService.create(createSoundDto);
+    }
+    async uploadById(file, id) {
+        return this.soundService.upload(id, file);
+    }
+    async uploadByType(file, type) {
+        const createSoundDto = {
+            name: file === null || file === void 0 ? void 0 : file.originalname,
+            type: type,
+        };
+        const sound = await this.soundService.create(createSoundDto);
+        return this.soundService.upload(sound._id, file);
+    }
+    async findTunes() {
+        return this.soundService.findByType(constants_2.SoundType.Tune);
+    }
+    async findSongs() {
+        return this.soundService.findByType(constants_2.SoundType.Song);
+    }
+    async update(id, updateSoundDto) {
+        return this.soundService.update(id, updateSoundDto);
+    }
+    async updateVolume(id, updateSoundDto) {
+        return this.soundService.updateVolume(id, updateSoundDto);
+    }
+    async delete(id) {
+        return this.soundService.delete(id);
+    }
+    async play(id, repeat) {
+        return this.soundService.play(enums_1.AuditActor.User, id, repeat === 'true');
+    }
+    async stop(id) {
+        return this.soundService.stop(id);
+    }
+    async resetTunes() {
+        return this.soundService.resetTunes();
+    }
+};
+__decorate([
+    (0, common_1.Post)(),
+    (0, common_1.UseGuards)(guards_1.JwtAuthGuard, guards_1.RolesGuard),
+    (0, roles_decorator_1.Roles)(role_enum_1.Role.Admin, role_enum_1.Role.User, role_enum_1.Role.Viewer),
+    __param(0, (0, common_1.Body)()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [dto_1.CreateSoundDto]),
+    __metadata("design:returntype", Promise)
+], SoundController.prototype, "create", null);
+__decorate([
+    (0, common_1.Post)(':id/upload'),
+    (0, common_1.UseGuards)(guards_1.JwtAuthGuard, guards_1.RolesGuard),
+    (0, roles_decorator_1.Roles)(role_enum_1.Role.Admin, role_enum_1.Role.User, role_enum_1.Role.Viewer),
+    (0, common_1.UseInterceptors)((0, platform_express_1.FileInterceptor)('file', fileInterceptorOptions)),
+    __param(0, (0, common_1.UploadedFile)()),
+    __param(1, (0, common_1.Param)('id')),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object, String]),
+    __metadata("design:returntype", Promise)
+], SoundController.prototype, "uploadById", null);
+__decorate([
+    (0, common_1.Post)('/upload/:type'),
+    (0, common_1.UseGuards)(guards_1.JwtAuthGuard, guards_1.RolesGuard),
+    (0, roles_decorator_1.Roles)(role_enum_1.Role.Admin, role_enum_1.Role.User, role_enum_1.Role.Viewer),
+    (0, common_1.UseInterceptors)((0, platform_express_1.FileInterceptor)('file', fileInterceptorOptions)),
+    __param(0, (0, common_1.UploadedFile)()),
+    __param(1, (0, common_1.Param)('type')),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object, String]),
+    __metadata("design:returntype", Promise)
+], SoundController.prototype, "uploadByType", null);
+__decorate([
+    (0, common_1.Get)('/tunes'),
+    (0, common_1.UseGuards)(guards_1.JwtAuthGuard, guards_1.RolesGuard),
+    (0, roles_decorator_1.Roles)(role_enum_1.Role.Admin, role_enum_1.Role.User, role_enum_1.Role.Viewer),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", Promise)
+], SoundController.prototype, "findTunes", null);
+__decorate([
+    (0, common_1.Get)('/songs'),
+    (0, common_1.UseGuards)(guards_1.JwtAuthGuard, guards_1.RolesGuard),
+    (0, roles_decorator_1.Roles)(role_enum_1.Role.Admin, role_enum_1.Role.User, role_enum_1.Role.Viewer),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", Promise)
+], SoundController.prototype, "findSongs", null);
+__decorate([
+    (0, common_1.Patch)(':id'),
+    (0, common_1.UseGuards)(guards_1.JwtAuthGuard, guards_1.RolesGuard),
+    (0, roles_decorator_1.Roles)(role_enum_1.Role.Admin, role_enum_1.Role.User, role_enum_1.Role.Viewer),
+    __param(0, (0, common_1.Param)('id')),
+    __param(1, (0, common_1.Body)()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [String, dto_1.UpdateSoundDto]),
+    __metadata("design:returntype", Promise)
+], SoundController.prototype, "update", null);
+__decorate([
+    (0, common_1.Patch)(':id/volume'),
+    (0, common_1.UseGuards)(guards_1.JwtAuthGuard, guards_1.RolesGuard),
+    (0, roles_decorator_1.Roles)(role_enum_1.Role.Admin, role_enum_1.Role.User, role_enum_1.Role.Viewer),
+    __param(0, (0, common_1.Param)('id')),
+    __param(1, (0, common_1.Body)()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [String, dto_1.UpdateSoundDto]),
+    __metadata("design:returntype", Promise)
+], SoundController.prototype, "updateVolume", null);
+__decorate([
+    (0, common_1.Delete)(':id'),
+    (0, common_1.UseGuards)(guards_1.JwtAuthGuard, guards_1.RolesGuard),
+    (0, roles_decorator_1.Roles)(role_enum_1.Role.Admin, role_enum_1.Role.User, role_enum_1.Role.Viewer),
+    __param(0, (0, common_1.Param)('id')),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [String]),
+    __metadata("design:returntype", Promise)
+], SoundController.prototype, "delete", null);
+__decorate([
+    (0, common_1.Post)(':id/play'),
+    (0, common_1.UseGuards)(guards_1.JwtAuthGuard, guards_1.RolesGuard, guards_1.LicenseGuard),
+    (0, roles_decorator_1.Roles)(role_enum_1.Role.Admin, role_enum_1.Role.User, role_enum_1.Role.Viewer),
+    __param(0, (0, common_1.Param)('id')),
+    __param(1, (0, common_1.Query)('repeat')),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [String, String]),
+    __metadata("design:returntype", Promise)
+], SoundController.prototype, "play", null);
+__decorate([
+    (0, common_1.Post)(':id/stop'),
+    (0, common_1.UseGuards)(guards_1.JwtAuthGuard, guards_1.RolesGuard),
+    (0, roles_decorator_1.Roles)(role_enum_1.Role.Admin, role_enum_1.Role.User, role_enum_1.Role.Viewer),
+    __param(0, (0, common_1.Param)('id')),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [String]),
+    __metadata("design:returntype", Promise)
+], SoundController.prototype, "stop", null);
+__decorate([
+    (0, common_1.Post)('/resetTunes'),
+    (0, common_1.UseGuards)(guards_1.JwtAuthGuard, guards_1.RolesGuard),
+    (0, roles_decorator_1.Roles)(role_enum_1.Role.Master),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", Promise)
+], SoundController.prototype, "resetTunes", null);
+SoundController = __decorate([
+    (0, common_1.Controller)('sound'),
+    __metadata("design:paramtypes", [sound_service_1.SoundService])
+], SoundController);
+exports.SoundController = SoundController;
+//# sourceMappingURL=sound.controller.js.map

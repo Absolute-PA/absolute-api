@@ -1,1 +1,45 @@
-'use strict';var a119_0x48b207=a119_0x2ad2;(function(_0x8051b,_0x6a6e47){var _0x6448ed=a119_0x2ad2,_0x4bdae9=_0x8051b();while(!![]){try{var _0x432ed6=-parseInt(_0x6448ed(0x1ca))/0x1*(-parseInt(_0x6448ed(0x1d1))/0x2)+parseInt(_0x6448ed(0x1c5))/0x3*(-parseInt(_0x6448ed(0x1d2))/0x4)+parseInt(_0x6448ed(0x1d6))/0x5*(parseInt(_0x6448ed(0x1d9))/0x6)+-parseInt(_0x6448ed(0x1e2))/0x7*(-parseInt(_0x6448ed(0x1e3))/0x8)+-parseInt(_0x6448ed(0x1c7))/0x9+parseInt(_0x6448ed(0x1e0))/0xa*(-parseInt(_0x6448ed(0x1df))/0xb)+-parseInt(_0x6448ed(0x1dd))/0xc*(parseInt(_0x6448ed(0x1d0))/0xd);if(_0x432ed6===_0x6a6e47)break;else _0x4bdae9['push'](_0x4bdae9['shift']());}catch(_0x32598d){_0x4bdae9['push'](_0x4bdae9['shift']());}}}(a119_0x4c4e,0xb2259));function a119_0x4c4e(){var _0x1d9605=['defineProperty','8659KTJyEo','6184rFpxNn','SchemaFactory','now','isExpired','528417NfmczU','licenseKey','1043127eyQXBc','length','__metadata','661MSGwFE','decorate','prototype','schoolId','getOwnPropertyDescriptor','Prop','13bBBeQt','4216eSsYNF','12ggUjsH','object','function','@nestjs/mongoose','5UBciSx','createdAtUtc','Setting','5159916udfDNX','design:type','metadata','SettingSchema','8078556vrCSon','createForClass','4261961sfVXTf','30TOaArb'];a119_0x4c4e=function(){return _0x1d9605;};return a119_0x4c4e();}var __decorate=this&&this['__decorate']||function(_0x46a5dd,_0x235030,_0x99879d,_0x44bab5){var _0x304018=a119_0x2ad2,_0x3acc13=arguments[_0x304018(0x1c8)],_0x375e42=_0x3acc13<0x3?_0x235030:_0x44bab5===null?_0x44bab5=Object[_0x304018(0x1ce)](_0x235030,_0x99879d):_0x44bab5,_0x51b898;if(typeof Reflect==='object'&&typeof Reflect[_0x304018(0x1cb)]===_0x304018(0x1d4))_0x375e42=Reflect[_0x304018(0x1cb)](_0x46a5dd,_0x235030,_0x99879d,_0x44bab5);else{for(var _0x30b279=_0x46a5dd['length']-0x1;_0x30b279>=0x0;_0x30b279--)if(_0x51b898=_0x46a5dd[_0x30b279])_0x375e42=(_0x3acc13<0x3?_0x51b898(_0x375e42):_0x3acc13>0x3?_0x51b898(_0x235030,_0x99879d,_0x375e42):_0x51b898(_0x235030,_0x99879d))||_0x375e42;}return _0x3acc13>0x3&&_0x375e42&&Object[_0x304018(0x1e1)](_0x235030,_0x99879d,_0x375e42),_0x375e42;},__metadata=this&&this[a119_0x48b207(0x1c9)]||function(_0x2dc81a,_0x29a99a){var _0x37e7b5=a119_0x48b207;if(typeof Reflect===_0x37e7b5(0x1d3)&&typeof Reflect['metadata']===_0x37e7b5(0x1d4))return Reflect[_0x37e7b5(0x1db)](_0x2dc81a,_0x29a99a);};function a119_0x2ad2(_0x595d04,_0x3d7125){var _0x4c4ecb=a119_0x4c4e();return a119_0x2ad2=function(_0x2ad23b,_0x46a21d){_0x2ad23b=_0x2ad23b-0x1c5;var _0x5f3052=_0x4c4ecb[_0x2ad23b];return _0x5f3052;},a119_0x2ad2(_0x595d04,_0x3d7125);}Object['defineProperty'](exports,'__esModule',{'value':!![]}),exports[a119_0x48b207(0x1dc)]=exports[a119_0x48b207(0x1d8)]=void 0x0;const mongoose_1=require(a119_0x48b207(0x1d5));let Setting=class Setting{};__decorate([(0x0,mongoose_1[a119_0x48b207(0x1cf)])(),__metadata(a119_0x48b207(0x1da),String)],Setting[a119_0x48b207(0x1cc)],a119_0x48b207(0x1cd),void 0x0),__decorate([(0x0,mongoose_1[a119_0x48b207(0x1cf)])(),__metadata(a119_0x48b207(0x1da),String)],Setting[a119_0x48b207(0x1cc)],a119_0x48b207(0x1c6),void 0x0),__decorate([(0x0,mongoose_1[a119_0x48b207(0x1cf)])({'default':!![]}),__metadata('design:type',Boolean)],Setting[a119_0x48b207(0x1cc)],a119_0x48b207(0x1e6),void 0x0),__decorate([(0x0,mongoose_1[a119_0x48b207(0x1cf)])({'type':Object}),__metadata(a119_0x48b207(0x1da),Object)],Setting[a119_0x48b207(0x1cc)],'userSetting',void 0x0),__decorate([(0x0,mongoose_1[a119_0x48b207(0x1cf)])({'default':Date[a119_0x48b207(0x1e5)]}),__metadata(a119_0x48b207(0x1da),Date)],Setting[a119_0x48b207(0x1cc)],a119_0x48b207(0x1d7),void 0x0),__decorate([(0x0,mongoose_1['Prop'])({'default':Date[a119_0x48b207(0x1e5)]}),__metadata(a119_0x48b207(0x1da),Date)],Setting['prototype'],'updatedAtUtc',void 0x0),Setting=__decorate([(0x0,mongoose_1['Schema'])()],Setting),exports[a119_0x48b207(0x1d8)]=Setting,exports[a119_0x48b207(0x1dc)]=mongoose_1[a119_0x48b207(0x1e4)][a119_0x48b207(0x1de)](Setting);
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.SettingSchema = exports.Setting = void 0;
+const mongoose_1 = require("@nestjs/mongoose");
+let Setting = class Setting {
+};
+__decorate([
+    (0, mongoose_1.Prop)(),
+    __metadata("design:type", String)
+], Setting.prototype, "schoolId", void 0);
+__decorate([
+    (0, mongoose_1.Prop)(),
+    __metadata("design:type", String)
+], Setting.prototype, "licenseKey", void 0);
+__decorate([
+    (0, mongoose_1.Prop)({ default: true }),
+    __metadata("design:type", Boolean)
+], Setting.prototype, "isExpired", void 0);
+__decorate([
+    (0, mongoose_1.Prop)({ type: Object }),
+    __metadata("design:type", Object)
+], Setting.prototype, "userSetting", void 0);
+__decorate([
+    (0, mongoose_1.Prop)({ default: Date.now }),
+    __metadata("design:type", Date)
+], Setting.prototype, "createdAtUtc", void 0);
+__decorate([
+    (0, mongoose_1.Prop)({ default: Date.now }),
+    __metadata("design:type", Date)
+], Setting.prototype, "updatedAtUtc", void 0);
+Setting = __decorate([
+    (0, mongoose_1.Schema)()
+], Setting);
+exports.Setting = Setting;
+exports.SettingSchema = mongoose_1.SchemaFactory.createForClass(Setting);
+//# sourceMappingURL=setting.schema.js.map

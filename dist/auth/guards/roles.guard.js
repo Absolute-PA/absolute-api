@@ -1,1 +1,42 @@
-'use strict';function a43_0x63a5(){const _0x1c79f2=['5657868xNKuDr','Injectable','../decorators/roles.decorator','getRequest','7WHBOPU','roles','964168BEaxSK','168EgTVMn','RolesGuard','1822868KylSSW','metadata','Reflector','__decorate','1574700eWnEUN','@nestjs/common','../enums/role.enum','includes','27780oTndar','reflector','getClass','2805440LcUUBz','722502cmcgWI','Master','decorate','object','some','__metadata','getOwnPropertyDescriptor','@nestjs/core','defineProperty','length','design:paramtypes','Role','getAllAndOverride'];a43_0x63a5=function(){return _0x1c79f2;};return a43_0x63a5();}const a43_0x5443d6=a43_0xb4cc;(function(_0x3f46f7,_0x1ce412){const _0x36ebff=a43_0xb4cc,_0x437758=_0x3f46f7();while(!![]){try{const _0x2fd8da=parseInt(_0x36ebff(0xec))/0x1+parseInt(_0x36ebff(0xe0))/0x2+-parseInt(_0x36ebff(0xe4))/0x3+parseInt(_0x36ebff(0xff))/0x4+-parseInt(_0x36ebff(0xe8))/0x5*(-parseInt(_0x36ebff(0x100))/0x6)+-parseInt(_0x36ebff(0xfd))/0x7*(parseInt(_0x36ebff(0xeb))/0x8)+-parseInt(_0x36ebff(0xf9))/0x9;if(_0x2fd8da===_0x1ce412)break;else _0x437758['push'](_0x437758['shift']());}catch(_0x95c35){_0x437758['push'](_0x437758['shift']());}}}(a43_0x63a5,0x807ea));var __decorate=this&&this[a43_0x5443d6(0xe3)]||function(_0x780132,_0x3bf9db,_0x311a8a,_0x3d879e){const _0x27f2a1=a43_0x5443d6;var _0x1733c9=arguments[_0x27f2a1(0xf5)],_0xce4b7=_0x1733c9<0x3?_0x3bf9db:_0x3d879e===null?_0x3d879e=Object[_0x27f2a1(0xf2)](_0x3bf9db,_0x311a8a):_0x3d879e,_0x169379;if(typeof Reflect==='object'&&typeof Reflect[_0x27f2a1(0xee)]==='function')_0xce4b7=Reflect[_0x27f2a1(0xee)](_0x780132,_0x3bf9db,_0x311a8a,_0x3d879e);else{for(var _0x5eb71a=_0x780132[_0x27f2a1(0xf5)]-0x1;_0x5eb71a>=0x0;_0x5eb71a--)if(_0x169379=_0x780132[_0x5eb71a])_0xce4b7=(_0x1733c9<0x3?_0x169379(_0xce4b7):_0x1733c9>0x3?_0x169379(_0x3bf9db,_0x311a8a,_0xce4b7):_0x169379(_0x3bf9db,_0x311a8a))||_0xce4b7;}return _0x1733c9>0x3&&_0xce4b7&&Object['defineProperty'](_0x3bf9db,_0x311a8a,_0xce4b7),_0xce4b7;},__metadata=this&&this[a43_0x5443d6(0xf1)]||function(_0xef0394,_0x1047ac){const _0x531b1c=a43_0x5443d6;if(typeof Reflect===_0x531b1c(0xef)&&typeof Reflect[_0x531b1c(0xe1)]==='function')return Reflect[_0x531b1c(0xe1)](_0xef0394,_0x1047ac);};Object[a43_0x5443d6(0xf4)](exports,'__esModule',{'value':!![]}),exports['RolesGuard']=void 0x0;function a43_0xb4cc(_0x3a3df1,_0x58ab25){const _0x63a5da=a43_0x63a5();return a43_0xb4cc=function(_0xb4cc20,_0x489512){_0xb4cc20=_0xb4cc20-0xdf;let _0x16f630=_0x63a5da[_0xb4cc20];return _0x16f630;},a43_0xb4cc(_0x3a3df1,_0x58ab25);}const common_1=require(a43_0x5443d6(0xe5)),core_1=require(a43_0x5443d6(0xf3)),role_enum_1=require(a43_0x5443d6(0xe6)),roles_decorator_1=require(a43_0x5443d6(0xfb));let RolesGuard=class RolesGuard{constructor(_0x100dd1){const _0x47ea5f=a43_0x5443d6;this[_0x47ea5f(0xe9)]=_0x100dd1;}['canActivate'](_0x27377b){const _0x4f2495=a43_0x5443d6,_0x2fcbd9=this[_0x4f2495(0xe9)][_0x4f2495(0xf8)](roles_decorator_1['ROLES_KEY'],[_0x27377b['getHandler'](),_0x27377b[_0x4f2495(0xea)]()]);if(!_0x2fcbd9)return!![];const {user:_0x4586c1}=_0x27377b['switchToHttp']()[_0x4f2495(0xfc)]();if(!_0x4586c1)return![];if(_0x4586c1[_0x4f2495(0xfe)][_0x4f2495(0xe7)](role_enum_1[_0x4f2495(0xf7)][_0x4f2495(0xed)]))return!![];return _0x2fcbd9[_0x4f2495(0xf0)](_0x2cc611=>{const _0x5101fa=_0x4f2495;var _0x2c1507;return(_0x2c1507=_0x4586c1[_0x5101fa(0xfe)])===null||_0x2c1507===void 0x0?void 0x0:_0x2c1507[_0x5101fa(0xe7)](_0x2cc611);});}};RolesGuard=__decorate([(0x0,common_1[a43_0x5443d6(0xfa)])(),__metadata(a43_0x5443d6(0xf6),[core_1[a43_0x5443d6(0xe2)]])],RolesGuard),exports[a43_0x5443d6(0xdf)]=RolesGuard;
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.RolesGuard = void 0;
+const common_1 = require("@nestjs/common");
+const core_1 = require("@nestjs/core");
+const role_enum_1 = require("../enums/role.enum");
+const roles_decorator_1 = require("../decorators/roles.decorator");
+let RolesGuard = class RolesGuard {
+    constructor(reflector) {
+        this.reflector = reflector;
+    }
+    canActivate(context) {
+        const requiredRoles = this.reflector.getAllAndOverride(roles_decorator_1.ROLES_KEY, [
+            context.getHandler(),
+            context.getClass(),
+        ]);
+        if (!requiredRoles) {
+            return true;
+        }
+        const { user } = context.switchToHttp().getRequest();
+        if (!user)
+            return false;
+        if (user.roles.includes(role_enum_1.Role.Master))
+            return true;
+        return requiredRoles.some((role) => { var _a; return (_a = user.roles) === null || _a === void 0 ? void 0 : _a.includes(role); });
+    }
+};
+RolesGuard = __decorate([
+    (0, common_1.Injectable)(),
+    __metadata("design:paramtypes", [core_1.Reflector])
+], RolesGuard);
+exports.RolesGuard = RolesGuard;
+//# sourceMappingURL=roles.guard.js.map

@@ -1,1 +1,54 @@
-'use strict';function a132_0x3974(){const _0xfd163f=['Upload','getOwnPropertyDescriptor','16231ZukCnG','UserService','../streaming/streaming.gateway','42aDOknC','4grdjey','32SyUICz','../user/user.service','forFeature','../upload/schemas/upload.schema','7876080nYBPej','../agenda/agenda.module','SoundModule','2474709hGNtda','./schemas','__esModule','../setting/setting.module','./sound.gateway','1218456botita','SoundService','object','__decorate','defineProperty','SoundGateway','./sound.service','StreamingService','@nestjs/common','Sound','26518437DSiEUN','UserSchema','./sound.controller','SoundController','TextToAudioService','4667628PRWbfL','length','MessageSchema','MongooseModule','../text-to-audio/schemas/message.schema','../streaming/streaming.service','../user/schemas/user.schema','StreamingGateway','1981465NbzqFv','10xEBGxk','function'];a132_0x3974=function(){return _0xfd163f;};return a132_0x3974();}const a132_0x3d55b9=a132_0x2c0d;(function(_0x5f36ed,_0x33471e){const _0x2462b8=a132_0x2c0d,_0x1a5a5f=_0x5f36ed();while(!![]){try{const _0x59aff8=parseInt(_0x2462b8(0x174))/0x1*(parseInt(_0x2462b8(0x179))/0x2)+-parseInt(_0x2462b8(0x180))/0x3+-parseInt(_0x2462b8(0x178))/0x4*(parseInt(_0x2462b8(0x19c))/0x5)+-parseInt(_0x2462b8(0x194))/0x6+parseInt(_0x2462b8(0x177))/0x7*(parseInt(_0x2462b8(0x185))/0x8)+-parseInt(_0x2462b8(0x17d))/0x9+-parseInt(_0x2462b8(0x19d))/0xa*(-parseInt(_0x2462b8(0x18f))/0xb);if(_0x59aff8===_0x33471e)break;else _0x1a5a5f['push'](_0x1a5a5f['shift']());}catch(_0x4d0dbc){_0x1a5a5f['push'](_0x1a5a5f['shift']());}}}(a132_0x3974,0xad5a3));function a132_0x2c0d(_0x2e798a,_0x3d9812){const _0x397465=a132_0x3974();return a132_0x2c0d=function(_0x2c0d7c,_0x437b47){_0x2c0d7c=_0x2c0d7c-0x172;let _0x3c60cd=_0x397465[_0x2c0d7c];return _0x3c60cd;},a132_0x2c0d(_0x2e798a,_0x3d9812);}var __decorate=this&&this[a132_0x3d55b9(0x188)]||function(_0x4612af,_0x23831b,_0x5b2986,_0x8ea6f1){const _0x23cb22=a132_0x3d55b9;var _0x2a1cc4=arguments[_0x23cb22(0x195)],_0x2b1d23=_0x2a1cc4<0x3?_0x23831b:_0x8ea6f1===null?_0x8ea6f1=Object[_0x23cb22(0x173)](_0x23831b,_0x5b2986):_0x8ea6f1,_0x467d03;if(typeof Reflect===_0x23cb22(0x187)&&typeof Reflect['decorate']===_0x23cb22(0x19e))_0x2b1d23=Reflect['decorate'](_0x4612af,_0x23831b,_0x5b2986,_0x8ea6f1);else{for(var _0x1d9775=_0x4612af['length']-0x1;_0x1d9775>=0x0;_0x1d9775--)if(_0x467d03=_0x4612af[_0x1d9775])_0x2b1d23=(_0x2a1cc4<0x3?_0x467d03(_0x2b1d23):_0x2a1cc4>0x3?_0x467d03(_0x23831b,_0x5b2986,_0x2b1d23):_0x467d03(_0x23831b,_0x5b2986))||_0x2b1d23;}return _0x2a1cc4>0x3&&_0x2b1d23&&Object[_0x23cb22(0x189)](_0x23831b,_0x5b2986,_0x2b1d23),_0x2b1d23;};Object[a132_0x3d55b9(0x189)](exports,a132_0x3d55b9(0x182),{'value':!![]}),exports[a132_0x3d55b9(0x17f)]=void 0x0;const common_1=require(a132_0x3d55b9(0x18d)),mongoose_1=require('@nestjs/mongoose'),agenda_module_1=require(a132_0x3d55b9(0x17e)),setting_module_1=require(a132_0x3d55b9(0x183)),sound_service_1=require(a132_0x3d55b9(0x18b)),sound_controller_1=require(a132_0x3d55b9(0x191)),schemas_1=require(a132_0x3d55b9(0x181)),sound_gateway_1=require(a132_0x3d55b9(0x184)),upload_service_1=require('../upload/upload.service'),upload_schema_1=require(a132_0x3d55b9(0x17c)),streaming_service_1=require(a132_0x3d55b9(0x199)),text_to_audio_service_1=require('../text-to-audio/text-to-audio.service'),message_schema_1=require(a132_0x3d55b9(0x198)),user_service_1=require(a132_0x3d55b9(0x17a)),user_schema_1=require(a132_0x3d55b9(0x19a)),streaming_gateway_1=require(a132_0x3d55b9(0x176));let SoundModule=class SoundModule{};SoundModule=__decorate([(0x0,common_1['Module'])({'imports':[agenda_module_1['AgendaModule'],setting_module_1['SettingModule'],mongoose_1[a132_0x3d55b9(0x197)][a132_0x3d55b9(0x17b)]([{'name':a132_0x3d55b9(0x18e),'schema':schemas_1['SoundSchema']},{'name':a132_0x3d55b9(0x172),'schema':upload_schema_1['UploadSchema']},{'name':'Message','schema':message_schema_1[a132_0x3d55b9(0x196)]},{'name':'User','schema':user_schema_1[a132_0x3d55b9(0x190)]}])],'providers':[sound_service_1[a132_0x3d55b9(0x186)],sound_gateway_1[a132_0x3d55b9(0x18a)],upload_service_1['UploadService'],text_to_audio_service_1[a132_0x3d55b9(0x193)],streaming_service_1[a132_0x3d55b9(0x18c)],user_service_1[a132_0x3d55b9(0x175)],streaming_gateway_1[a132_0x3d55b9(0x19b)]],'controllers':[sound_controller_1[a132_0x3d55b9(0x192)]],'exports':[sound_service_1[a132_0x3d55b9(0x186)],sound_gateway_1['SoundGateway']]})],SoundModule),exports[a132_0x3d55b9(0x17f)]=SoundModule;
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.SoundModule = void 0;
+const common_1 = require("@nestjs/common");
+const mongoose_1 = require("@nestjs/mongoose");
+const agenda_module_1 = require("@/agenda/agenda.module");
+const setting_module_1 = require("@/setting/setting.module");
+const sound_service_1 = require("./sound.service");
+const sound_controller_1 = require("./sound.controller");
+const schemas_1 = require("./schemas");
+const sound_gateway_1 = require("./sound.gateway");
+const upload_service_1 = require("../upload/upload.service");
+const upload_schema_1 = require("../upload/schemas/upload.schema");
+const streaming_service_1 = require("../streaming/streaming.service");
+const text_to_audio_service_1 = require("../text-to-audio/text-to-audio.service");
+const message_schema_1 = require("../text-to-audio/schemas/message.schema");
+const user_service_1 = require("../user/user.service");
+const user_schema_1 = require("../user/schemas/user.schema");
+const streaming_gateway_1 = require("../streaming/streaming.gateway");
+let SoundModule = class SoundModule {
+};
+SoundModule = __decorate([
+    (0, common_1.Module)({
+        imports: [
+            agenda_module_1.AgendaModule,
+            setting_module_1.SettingModule,
+            mongoose_1.MongooseModule.forFeature([
+                { name: 'Sound', schema: schemas_1.SoundSchema },
+                { name: 'Upload', schema: upload_schema_1.UploadSchema },
+                { name: 'Message', schema: message_schema_1.MessageSchema },
+                { name: 'User', schema: user_schema_1.UserSchema },
+            ]),
+        ],
+        providers: [
+            sound_service_1.SoundService,
+            sound_gateway_1.SoundGateway,
+            upload_service_1.UploadService,
+            text_to_audio_service_1.TextToAudioService,
+            streaming_service_1.StreamingService,
+            user_service_1.UserService,
+            streaming_gateway_1.StreamingGateway,
+        ],
+        controllers: [sound_controller_1.SoundController],
+        exports: [sound_service_1.SoundService, sound_gateway_1.SoundGateway],
+    })
+], SoundModule);
+exports.SoundModule = SoundModule;
+//# sourceMappingURL=sound.module.js.map

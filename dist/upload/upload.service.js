@@ -1,1 +1,84 @@
-'use strict';const a151_0xa2420a=a151_0x2067;(function(_0x5864b1,_0x2735cc){const _0x514771=a151_0x2067,_0x31993a=_0x5864b1();while(!![]){try{const _0x3312fa=-parseInt(_0x514771(0x1bd))/0x1*(parseInt(_0x514771(0x1e4))/0x2)+parseInt(_0x514771(0x1e5))/0x3*(parseInt(_0x514771(0x1dd))/0x4)+-parseInt(_0x514771(0x1c6))/0x5*(parseInt(_0x514771(0x1e2))/0x6)+-parseInt(_0x514771(0x1d4))/0x7+parseInt(_0x514771(0x1e1))/0x8*(parseInt(_0x514771(0x1d6))/0x9)+-parseInt(_0x514771(0x1b5))/0xa+parseInt(_0x514771(0x1e7))/0xb;if(_0x3312fa===_0x2735cc)break;else _0x31993a['push'](_0x31993a['shift']());}catch(_0x53dea3){_0x31993a['push'](_0x31993a['shift']());}}}(a151_0x5a98,0x376f7));function a151_0x2067(_0x174250,_0x4f3f6e){const _0x5a98cd=a151_0x5a98();return a151_0x2067=function(_0x206713,_0x4647b1){_0x206713=_0x206713-0x1b3;let _0x5f2593=_0x5a98cd[_0x206713];return _0x5f2593;},a151_0x2067(_0x174250,_0x4f3f6e);}function a151_0x5a98(){const _0x3f2e2e=['Injectable','2xHksdQ','find','saveRecordedVoice','decorate','defineProperty','mongoose','object','updateVoiceRecord','cwd','455765GdhLQs','saveFile','__metadata','__decorate','name','getOwnPropertyDescriptor','buffer','voice-recorded','This\x20action\x20returns\x20all\x20upload','length','logger','sort','findAll','log','355047OMVUsZ','__esModule','9JxTSOb','uploadModel','Upload','@nestjs/mongoose','remove','findOneAndDelete','getAllVoicesRecorded','56GygRbg','findVoiceRecoredById','Logger','This\x20action\x20removes\x20a\x20#','2727584VLLdff','18lDbppO','__param','12500yHePEz','42648nhtDqE','function','1355508OcFWcu','UploadService','Model','994570HCSvuk','deleteVoiceRecord','InjectModel','create','findByIdAndUpdate','This\x20action\x20updates\x20a\x20#','metadata'];a151_0x5a98=function(){return _0x3f2e2e;};return a151_0x5a98();}var __decorate=this&&this[a151_0xa2420a(0x1c9)]||function(_0xfee13a,_0x5a3535,_0x11a7d9,_0x2b0fd5){const _0x371647=a151_0xa2420a;var _0x490090=arguments[_0x371647(0x1cf)],_0x126187=_0x490090<0x3?_0x5a3535:_0x2b0fd5===null?_0x2b0fd5=Object[_0x371647(0x1cb)](_0x5a3535,_0x11a7d9):_0x2b0fd5,_0x368f2d;if(typeof Reflect==='object'&&typeof Reflect['decorate']===_0x371647(0x1e6))_0x126187=Reflect[_0x371647(0x1c0)](_0xfee13a,_0x5a3535,_0x11a7d9,_0x2b0fd5);else{for(var _0xe645c7=_0xfee13a['length']-0x1;_0xe645c7>=0x0;_0xe645c7--)if(_0x368f2d=_0xfee13a[_0xe645c7])_0x126187=(_0x490090<0x3?_0x368f2d(_0x126187):_0x490090>0x3?_0x368f2d(_0x5a3535,_0x11a7d9,_0x126187):_0x368f2d(_0x5a3535,_0x11a7d9))||_0x126187;}return _0x490090>0x3&&_0x126187&&Object[_0x371647(0x1c1)](_0x5a3535,_0x11a7d9,_0x126187),_0x126187;},__metadata=this&&this[a151_0xa2420a(0x1c8)]||function(_0xf1f4ae,_0x434ef4){const _0x581066=a151_0xa2420a;if(typeof Reflect===_0x581066(0x1c3)&&typeof Reflect[_0x581066(0x1bb)]===_0x581066(0x1e6))return Reflect['metadata'](_0xf1f4ae,_0x434ef4);},__param=this&&this[a151_0xa2420a(0x1e3)]||function(_0x1a3f12,_0x4efcca){return function(_0x44a2a6,_0x98cde){_0x4efcca(_0x44a2a6,_0x98cde,_0x1a3f12);};},UploadService_1;Object[a151_0xa2420a(0x1c1)](exports,a151_0xa2420a(0x1d5),{'value':!![]}),exports[a151_0xa2420a(0x1b3)]=void 0x0;const common_1=require('@nestjs/common'),fs=require('fs'),path_1=require('path'),mongoose_1=require(a151_0xa2420a(0x1d9)),mongoose_2=require(a151_0xa2420a(0x1c2));let UploadService=UploadService_1=class UploadService{constructor(_0x442c05){const _0x40e6dc=a151_0xa2420a;this['uploadModel']=_0x442c05,this[_0x40e6dc(0x1d0)]=new common_1[(_0x40e6dc(0x1df))](UploadService_1[_0x40e6dc(0x1ca)]);}[a151_0xa2420a(0x1b8)](_0x5925e0){return'This\x20action\x20adds\x20a\x20new\x20upload';}[a151_0xa2420a(0x1c7)](_0x41a33d,_0x12d1d5,_0x8ff1b9){const _0x461fd8=a151_0xa2420a;try{const _0x501c59='/assets/'+_0x12d1d5+'/'+_0x8ff1b9,_0x43de3f=(0x0,path_1['join'])(process[_0x461fd8(0x1c5)](),_0x501c59);return fs['writeFileSync'](_0x43de3f,_0x41a33d[_0x461fd8(0x1cc)]),_0x501c59;}catch(_0x39e092){this['logger'][_0x461fd8(0x1d3)](_0x39e092);}}async[a151_0xa2420a(0x1bf)]({fileName:_0x405869,filePath:_0x3d95cc,mineType:_0x4e9315}){const _0x24871f=a151_0xa2420a;await this[_0x24871f(0x1d7)][_0x24871f(0x1b8)]({'fileName':_0x405869,'filePath':_0x3d95cc,'mineType':_0x4e9315,'fileType':_0x24871f(0x1cd)});}async[a151_0xa2420a(0x1dc)](){const _0x1d0667=a151_0xa2420a,_0x3674bc=await this[_0x1d0667(0x1d7)][_0x1d0667(0x1be)]({'fileType':_0x1d0667(0x1cd)})[_0x1d0667(0x1d1)]({'createdAt':-0x1});return _0x3674bc;}async[a151_0xa2420a(0x1b6)](_0xebbf21){const _0x35b00f=a151_0xa2420a,_0x5d5750=await this[_0x35b00f(0x1d7)][_0x35b00f(0x1db)]({'_id':_0xebbf21});return _0x5d5750;}async[a151_0xa2420a(0x1c4)](_0x4fedcd){const _0x54087d=a151_0xa2420a;return await this[_0x54087d(0x1d7)][_0x54087d(0x1b9)](_0x4fedcd['id'],Object['assign']({},_0x4fedcd),{'new':!![]});}[a151_0xa2420a(0x1d2)](){const _0x322553=a151_0xa2420a;return _0x322553(0x1ce);}async[a151_0xa2420a(0x1de)](_0x40e663){const _0x4d80b6=a151_0xa2420a;return await this[_0x4d80b6(0x1d7)]['findOne']({'fileType':'voice-recorded','_id':_0x40e663});}['update'](_0x186147,_0x9140a3){const _0x3aa8ca=a151_0xa2420a;return _0x3aa8ca(0x1ba)+_0x186147+'\x20upload';}[a151_0xa2420a(0x1da)](_0x4788e6){const _0x61bd1e=a151_0xa2420a;return _0x61bd1e(0x1e0)+_0x4788e6+'\x20upload';}};UploadService=UploadService_1=__decorate([(0x0,common_1[a151_0xa2420a(0x1bc)])(),__param(0x0,(0x0,mongoose_1[a151_0xa2420a(0x1b7)])(a151_0xa2420a(0x1d8))),__metadata('design:paramtypes',[mongoose_2[a151_0xa2420a(0x1b4)]])],UploadService),exports[a151_0xa2420a(0x1b3)]=UploadService;
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __param = (this && this.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
+var UploadService_1;
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.UploadService = void 0;
+const common_1 = require("@nestjs/common");
+const fs = require("fs");
+const path_1 = require("path");
+const mongoose_1 = require("@nestjs/mongoose");
+const mongoose_2 = require("mongoose");
+let UploadService = UploadService_1 = class UploadService {
+    constructor(uploadModel) {
+        this.uploadModel = uploadModel;
+        this.logger = new common_1.Logger(UploadService_1.name);
+    }
+    create(createUploadDto) {
+        return 'This action adds a new upload';
+    }
+    saveFile(file, directory, filename) {
+        try {
+            const path = `/assets/${directory}/${filename}`;
+            const absolutePath = (0, path_1.join)(process.cwd(), path);
+            fs.writeFileSync(absolutePath, file.buffer);
+            return path;
+        }
+        catch (error) {
+            this.logger.log(error);
+        }
+    }
+    async saveRecordedVoice({ fileName, filePath, mineType, }) {
+        await this.uploadModel.create({
+            fileName,
+            filePath,
+            mineType,
+            fileType: 'voice-recorded',
+        });
+    }
+    async getAllVoicesRecorded() {
+        const files = await this.uploadModel
+            .find({ fileType: 'voice-recorded' })
+            .sort({ createdAt: -1 });
+        return files;
+    }
+    async deleteVoiceRecord(id) {
+        const files = await this.uploadModel.findOneAndDelete({ _id: id });
+        return files;
+    }
+    async updateVoiceRecord(voiceData) {
+        return await this.uploadModel.findByIdAndUpdate(voiceData.id, Object.assign({}, voiceData), { new: true });
+    }
+    findAll() {
+        return `This action returns all upload`;
+    }
+    async findVoiceRecoredById(id) {
+        return await this.uploadModel.findOne({
+            fileType: 'voice-recorded',
+            _id: id,
+        });
+    }
+    update(id, updateUploadDto) {
+        return `This action updates a #${id} upload`;
+    }
+    remove(id) {
+        return `This action removes a #${id} upload`;
+    }
+};
+UploadService = UploadService_1 = __decorate([
+    (0, common_1.Injectable)(),
+    __param(0, (0, mongoose_1.InjectModel)('Upload')),
+    __metadata("design:paramtypes", [mongoose_2.Model])
+], UploadService);
+exports.UploadService = UploadService;
+//# sourceMappingURL=upload.service.js.map

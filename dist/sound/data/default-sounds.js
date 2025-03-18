@@ -1,1 +1,56 @@
-'use strict';function a124_0x2bbd(){const _0x58ccca=['SoundType','Evac','DEFAULT_TUNES','3SaGxdC','announcement.wav','14292pmhWSt','__esModule','16YDqHcC','evac.mp3','9JAakSu','95jXsxxE','3143932FBoWFe','Alert','5277503OadgoN','2784626qGqhsO','Custom\x20Tune\x201','331992RQNawn','lockdown.mp3','400720XKRxiw','Custom\x20Tune\x202','Tune','2387612Qghsbx','bell.mp3','Lockdown'];a124_0x2bbd=function(){return _0x58ccca;};return a124_0x2bbd();}const a124_0x1ac6a8=a124_0x1708;(function(_0x351e52,_0x18dde6){const _0x2bc5cc=a124_0x1708,_0x4319ce=_0x351e52();while(!![]){try{const _0x4d23a7=parseInt(_0x2bc5cc(0x201))/0x1+-parseInt(_0x2bc5cc(0x1ff))/0x2+-parseInt(_0x2bc5cc(0x1f4))/0x3*(-parseInt(_0x2bc5cc(0x206))/0x4)+parseInt(_0x2bc5cc(0x1fb))/0x5*(parseInt(_0x2bc5cc(0x1f6))/0x6)+parseInt(_0x2bc5cc(0x1fe))/0x7*(parseInt(_0x2bc5cc(0x1f8))/0x8)+parseInt(_0x2bc5cc(0x1fa))/0x9*(-parseInt(_0x2bc5cc(0x203))/0xa)+-parseInt(_0x2bc5cc(0x1fc))/0xb;if(_0x4d23a7===_0x18dde6)break;else _0x4319ce['push'](_0x4319ce['shift']());}catch(_0x3652c7){_0x4319ce['push'](_0x4319ce['shift']());}}}(a124_0x2bbd,0xba7a6));Object['defineProperty'](exports,a124_0x1ac6a8(0x1f7),{'value':!![]}),exports[a124_0x1ac6a8(0x1f3)]=void 0x0;const constants_1=require('../constants');function a124_0x1708(_0x167ff5,_0x3d367d){const _0x2bbdec=a124_0x2bbd();return a124_0x1708=function(_0x1708be,_0x474ecb){_0x1708be=_0x1708be-0x1ef;let _0x4b4382=_0x2bbdec[_0x1708be];return _0x4b4382;},a124_0x1708(_0x167ff5,_0x3d367d);}exports['DEFAULT_TUNES']=[{'name':'Bell','type':constants_1[a124_0x1ac6a8(0x1f1)][a124_0x1ac6a8(0x205)],'fileName':a124_0x1ac6a8(0x1ef),'isDefault':!![],'volume':0x32},{'name':a124_0x1ac6a8(0x1f2),'type':constants_1['SoundType'][a124_0x1ac6a8(0x205)],'fileName':a124_0x1ac6a8(0x1f9),'isDefault':!![],'volume':0x32},{'name':a124_0x1ac6a8(0x1fd),'type':constants_1[a124_0x1ac6a8(0x1f1)][a124_0x1ac6a8(0x205)],'fileName':'alert.mp3','isDefault':!![],'volume':0x32},{'name':a124_0x1ac6a8(0x1f0),'type':constants_1[a124_0x1ac6a8(0x1f1)][a124_0x1ac6a8(0x205)],'fileName':a124_0x1ac6a8(0x202),'isDefault':!![],'volume':0x32},{'name':'Chime','type':constants_1[a124_0x1ac6a8(0x1f1)]['Tune'],'fileName':a124_0x1ac6a8(0x1f5),'isDefault':!![],'volume':0x32},{'name':a124_0x1ac6a8(0x200),'type':constants_1['SoundType'][a124_0x1ac6a8(0x205)],'fileName':null,'isDefault':![],'volume':0x32},{'name':a124_0x1ac6a8(0x204),'type':constants_1[a124_0x1ac6a8(0x1f1)][a124_0x1ac6a8(0x205)],'fileName':null,'isDefault':![],'volume':0x32}];
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.DEFAULT_TUNES = void 0;
+const constants_1 = require("../constants");
+exports.DEFAULT_TUNES = [
+    {
+        name: 'Bell',
+        type: constants_1.SoundType.Tune,
+        fileName: 'bell.mp3',
+        isDefault: true,
+        volume: 50,
+    },
+    {
+        name: 'Evac',
+        type: constants_1.SoundType.Tune,
+        fileName: 'evac.mp3',
+        isDefault: true,
+        volume: 50,
+    },
+    {
+        name: 'Alert',
+        type: constants_1.SoundType.Tune,
+        fileName: 'alert.mp3',
+        isDefault: true,
+        volume: 50,
+    },
+    {
+        name: 'Lockdown',
+        type: constants_1.SoundType.Tune,
+        fileName: 'lockdown.mp3',
+        isDefault: true,
+        volume: 50,
+    },
+    {
+        name: 'Chime',
+        type: constants_1.SoundType.Tune,
+        fileName: 'announcement.wav',
+        isDefault: true,
+        volume: 50,
+    },
+    {
+        name: 'Custom Tune 1',
+        type: constants_1.SoundType.Tune,
+        fileName: null,
+        isDefault: false,
+        volume: 50,
+    },
+    {
+        name: 'Custom Tune 2',
+        type: constants_1.SoundType.Tune,
+        fileName: null,
+        isDefault: false,
+        volume: 50,
+    },
+];
+//# sourceMappingURL=default-sounds.js.map

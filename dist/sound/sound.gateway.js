@@ -1,1 +1,40 @@
-'use strict';function a131_0x5086(){var _0x2193f0=['emit','handleDisconnect','4317948VeQLUb','228XDhfbc','__esModule','prototype','@nestjs/websockets','SoundGateway','handleConnection','Server','__metadata','handshake','33eYPtFT','819760gTaZIA','7626330slkWPw','socket.io','22867356XMLBWf','@nestjs/common','342944BloASO','defineProperty','16ujVAkX','name','3963159lWOkcY','broadcastPlaying','WebSocketGateway','design:type','147fFOViA','wss','35ePQbqk','afterInit','metadata','query','length','22510tWDftB','__decorate','decorate','WebSocketServer','Initialized','object','function'];a131_0x5086=function(){return _0x2193f0;};return a131_0x5086();}var a131_0x16821d=a131_0x39eb;(function(_0x52cb76,_0x413220){var _0x315b01=a131_0x39eb,_0x32b9e9=_0x52cb76();while(!![]){try{var _0x4f212f=parseInt(_0x315b01(0x14d))/0x1*(parseInt(_0x315b01(0x154))/0x2)+-parseInt(_0x315b01(0x15d))/0x3+-parseInt(_0x315b01(0x168))/0x4*(parseInt(_0x315b01(0x14f))/0x5)+-parseInt(_0x315b01(0x15e))/0x6*(parseInt(_0x315b01(0x145))/0x7)+parseInt(_0x315b01(0x147))/0x8*(-parseInt(_0x315b01(0x149))/0x9)+-parseInt(_0x315b01(0x169))/0xa+-parseInt(_0x315b01(0x167))/0xb*(-parseInt(_0x315b01(0x16b))/0xc);if(_0x4f212f===_0x413220)break;else _0x32b9e9['push'](_0x32b9e9['shift']());}catch(_0x7702c9){_0x32b9e9['push'](_0x32b9e9['shift']());}}}(a131_0x5086,0xf248d));var __decorate=this&&this[a131_0x16821d(0x155)]||function(_0x9c0855,_0x44becc,_0x49682e,_0x171985){var _0x380815=a131_0x16821d,_0x20db5a=arguments[_0x380815(0x153)],_0x56c5d7=_0x20db5a<0x3?_0x44becc:_0x171985===null?_0x171985=Object['getOwnPropertyDescriptor'](_0x44becc,_0x49682e):_0x171985,_0x3c245c;if(typeof Reflect===_0x380815(0x159)&&typeof Reflect[_0x380815(0x156)]===_0x380815(0x15a))_0x56c5d7=Reflect['decorate'](_0x9c0855,_0x44becc,_0x49682e,_0x171985);else{for(var _0x3c3bb0=_0x9c0855[_0x380815(0x153)]-0x1;_0x3c3bb0>=0x0;_0x3c3bb0--)if(_0x3c245c=_0x9c0855[_0x3c3bb0])_0x56c5d7=(_0x20db5a<0x3?_0x3c245c(_0x56c5d7):_0x20db5a>0x3?_0x3c245c(_0x44becc,_0x49682e,_0x56c5d7):_0x3c245c(_0x44becc,_0x49682e))||_0x56c5d7;}return _0x20db5a>0x3&&_0x56c5d7&&Object[_0x380815(0x146)](_0x44becc,_0x49682e,_0x56c5d7),_0x56c5d7;},__metadata=this&&this[a131_0x16821d(0x165)]||function(_0x5c9676,_0x1d4225){var _0x3a9871=a131_0x16821d;if(typeof Reflect===_0x3a9871(0x159)&&typeof Reflect[_0x3a9871(0x151)]==='function')return Reflect[_0x3a9871(0x151)](_0x5c9676,_0x1d4225);};Object['defineProperty'](exports,a131_0x16821d(0x15f),{'value':!![]}),exports[a131_0x16821d(0x162)]=void 0x0;function a131_0x39eb(_0x159e6a,_0x5f33e2){var _0x5086db=a131_0x5086();return a131_0x39eb=function(_0x39eb9f,_0x5449b7){_0x39eb9f=_0x39eb9f-0x144;var _0x17d2fe=_0x5086db[_0x39eb9f];return _0x17d2fe;},a131_0x39eb(_0x159e6a,_0x5f33e2);}const common_1=require(a131_0x16821d(0x144)),websockets_1=require(a131_0x16821d(0x161)),socket_io_1=require(a131_0x16821d(0x16a));let SoundGateway=class SoundGateway{constructor(){var _0x2444c1=a131_0x16821d;this['logger']=new common_1['Logger'](_0x2444c1(0x162));}[a131_0x16821d(0x150)](_0x33c673){var _0x1974c2=a131_0x16821d;this['logger']['log'](_0x1974c2(0x158));}[a131_0x16821d(0x15c)](_0x38916f){var _0x53e5c9=a131_0x16821d;const _0x3ae9fe=_0x38916f[_0x53e5c9(0x166)][_0x53e5c9(0x152)][_0x53e5c9(0x148)];}[a131_0x16821d(0x163)](_0x139134,..._0xfff6e2){}async[a131_0x16821d(0x14a)](_0x560d08){var _0x5c1bbc=a131_0x16821d;this[_0x5c1bbc(0x14e)][_0x5c1bbc(0x15b)]('playing',_0x560d08);}};__decorate([(0x0,websockets_1[a131_0x16821d(0x157)])(),__metadata(a131_0x16821d(0x14c),socket_io_1[a131_0x16821d(0x164)])],SoundGateway[a131_0x16821d(0x160)],a131_0x16821d(0x14e),void 0x0),SoundGateway=__decorate([(0x0,common_1['Injectable'])(),(0x0,websockets_1[a131_0x16821d(0x14b)])({'cors':!![]})],SoundGateway),exports[a131_0x16821d(0x162)]=SoundGateway;
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.SoundGateway = void 0;
+const common_1 = require("@nestjs/common");
+const websockets_1 = require("@nestjs/websockets");
+const socket_io_1 = require("socket.io");
+let SoundGateway = class SoundGateway {
+    constructor() {
+        this.logger = new common_1.Logger('SoundGateway');
+    }
+    afterInit(server) {
+        this.logger.log('Initialized');
+    }
+    handleDisconnect(client) {
+        const socketName = client.handshake.query.name;
+    }
+    handleConnection(client, ...args) { }
+    async broadcastPlaying(data) {
+        this.wss.emit("playing", data);
+    }
+};
+__decorate([
+    (0, websockets_1.WebSocketServer)(),
+    __metadata("design:type", socket_io_1.Server)
+], SoundGateway.prototype, "wss", void 0);
+SoundGateway = __decorate([
+    (0, common_1.Injectable)(),
+    (0, websockets_1.WebSocketGateway)({ cors: true })
+], SoundGateway);
+exports.SoundGateway = SoundGateway;
+//# sourceMappingURL=sound.gateway.js.map

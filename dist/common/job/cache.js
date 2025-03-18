@@ -1,1 +1,28 @@
-'use strict';var a71_0x22f32a=a71_0x42be;function a71_0x2317(){var _0x4b4611=['34783fImRwM','101993tOARNG','addProcess','5909230ngEnzh','killAll','88198bIndPu','14ldoPhJ','keys','36IJifZw','12807730yHQMEI','568iXZgfr','3201550SeZYXT','6dEJyuR','killProcess','processMap','kill','PROCESS_CACHE','defineProperty','624uMAnvd','36vkMqLI','329608ofkGWm'];a71_0x2317=function(){return _0x4b4611;};return a71_0x2317();}function a71_0x42be(_0x597982,_0x3ba2fb){var _0x23174f=a71_0x2317();return a71_0x42be=function(_0x42be22,_0x33abfd){_0x42be22=_0x42be22-0x18d;var _0x57fcc2=_0x23174f[_0x42be22];return _0x57fcc2;},a71_0x42be(_0x597982,_0x3ba2fb);}(function(_0x1a5696,_0xc80967){var _0x46fcb3=a71_0x42be,_0x37d1a0=_0x1a5696();while(!![]){try{var _0x480f0b=parseInt(_0x46fcb3(0x191))/0x1*(parseInt(_0x46fcb3(0x196))/0x2)+-parseInt(_0x46fcb3(0x18e))/0x3*(parseInt(_0x46fcb3(0x18f))/0x4)+-parseInt(_0x46fcb3(0x193))/0x5*(-parseInt(_0x46fcb3(0x19c))/0x6)+parseInt(_0x46fcb3(0x190))/0x7*(-parseInt(_0x46fcb3(0x19a))/0x8)+parseInt(_0x46fcb3(0x198))/0x9*(-parseInt(_0x46fcb3(0x19b))/0xa)+-parseInt(_0x46fcb3(0x195))/0xb*(-parseInt(_0x46fcb3(0x18d))/0xc)+parseInt(_0x46fcb3(0x199))/0xd;if(_0x480f0b===_0xc80967)break;else _0x37d1a0['push'](_0x37d1a0['shift']());}catch(_0x3dd5a0){_0x37d1a0['push'](_0x37d1a0['shift']());}}}(a71_0x2317,0xa4f74));Object[a71_0x22f32a(0x1a1)](exports,'__esModule',{'value':!![]}),exports['PROCESS_CACHE']=void 0x0;class ProcessCache{constructor(){this['processMap']={};}[a71_0x22f32a(0x192)](_0x487fe3,_0x4b58f5){this['processMap'][_0x487fe3]=_0x4b58f5;}['getProcess'](_0x26b0ac){var _0x1e1398=a71_0x22f32a;return this[_0x1e1398(0x19e)][_0x26b0ac];}[a71_0x22f32a(0x19d)](_0x5724b1){var _0x5bc546=a71_0x22f32a;this[_0x5bc546(0x19e)][_0x5724b1]&&(this['processMap'][_0x5724b1][_0x5bc546(0x19f)](),delete this[_0x5bc546(0x19e)][_0x5724b1]);}[a71_0x22f32a(0x194)](){var _0x19e1df=a71_0x22f32a;Object[_0x19e1df(0x197)](this[_0x19e1df(0x19e)])['forEach'](_0x50f849=>{var _0x3eb1b0=_0x19e1df;this[_0x3eb1b0(0x19e)][_0x50f849]['kill']();}),this[_0x19e1df(0x19e)]={};}}exports[a71_0x22f32a(0x1a0)]=new ProcessCache();
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.PROCESS_CACHE = void 0;
+class ProcessCache {
+    constructor() {
+        this.processMap = {};
+    }
+    addProcess(id, process) {
+        this.processMap[id] = process;
+    }
+    getProcess(id) {
+        return this.processMap[id];
+    }
+    killProcess(id) {
+        if (this.processMap[id]) {
+            this.processMap[id].kill();
+            delete this.processMap[id];
+        }
+    }
+    killAll() {
+        Object.keys(this.processMap).forEach((key) => {
+            this.processMap[key].kill();
+        });
+        this.processMap = {};
+    }
+}
+exports.PROCESS_CACHE = new ProcessCache();
+//# sourceMappingURL=cache.js.map

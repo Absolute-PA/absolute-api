@@ -1,1 +1,41 @@
-'use strict';function a143_0x1eab(_0x5094bd,_0x432364){const _0x3e2b22=a143_0x3e2b();return a143_0x1eab=function(_0x1eaba5,_0x3ceb50){_0x1eaba5=_0x1eaba5-0x16c;let _0x3baca5=_0x3e2b22[_0x1eaba5];return _0x3baca5;},a143_0x1eab(_0x5094bd,_0x432364);}const a143_0x156626=a143_0x1eab;(function(_0x2355ab,_0x4117f4){const _0xb43631=a143_0x1eab,_0x49dee7=_0x2355ab();while(!![]){try{const _0xc0e8fd=-parseInt(_0xb43631(0x189))/0x1+parseInt(_0xb43631(0x17e))/0x2*(-parseInt(_0xb43631(0x185))/0x3)+-parseInt(_0xb43631(0x17f))/0x4+-parseInt(_0xb43631(0x175))/0x5+-parseInt(_0xb43631(0x186))/0x6+-parseInt(_0xb43631(0x172))/0x7+parseInt(_0xb43631(0x188))/0x8;if(_0xc0e8fd===_0x4117f4)break;else _0x49dee7['push'](_0x49dee7['shift']());}catch(_0x33b159){_0x49dee7['push'](_0x49dee7['shift']());}}}(a143_0x3e2b,0xc3442));var __decorate=this&&this[a143_0x156626(0x183)]||function(_0x42e129,_0x3d138d,_0xfaa751,_0x6a11c2){const _0x139322=a143_0x156626;var _0x50adba=arguments['length'],_0x5db08f=_0x50adba<0x3?_0x3d138d:_0x6a11c2===null?_0x6a11c2=Object[_0x139322(0x16d)](_0x3d138d,_0xfaa751):_0x6a11c2,_0x42ee96;if(typeof Reflect==='object'&&typeof Reflect['decorate']===_0x139322(0x18a))_0x5db08f=Reflect[_0x139322(0x171)](_0x42e129,_0x3d138d,_0xfaa751,_0x6a11c2);else{for(var _0x16ac7c=_0x42e129[_0x139322(0x182)]-0x1;_0x16ac7c>=0x0;_0x16ac7c--)if(_0x42ee96=_0x42e129[_0x16ac7c])_0x5db08f=(_0x50adba<0x3?_0x42ee96(_0x5db08f):_0x50adba>0x3?_0x42ee96(_0x3d138d,_0xfaa751,_0x5db08f):_0x42ee96(_0x3d138d,_0xfaa751))||_0x5db08f;}return _0x50adba>0x3&&_0x5db08f&&Object[_0x139322(0x17b)](_0x3d138d,_0xfaa751,_0x5db08f),_0x5db08f;};Object[a143_0x156626(0x17b)](exports,'__esModule',{'value':!![]}),exports[a143_0x156626(0x18b)]=void 0x0;const common_1=require(a143_0x156626(0x180)),text_to_audio_controller_1=require(a143_0x156626(0x181)),text_to_audio_service_1=require(a143_0x156626(0x179)),streaming_service_1=require(a143_0x156626(0x176)),mongoose_1=require(a143_0x156626(0x173)),message_schema_1=require('./schemas/message.schema'),streaming_gateway_1=require(a143_0x156626(0x170)),user_service_1=require(a143_0x156626(0x17c)),user_schema_1=require(a143_0x156626(0x16e)),setting_module_1=require('../setting/setting.module');function a143_0x3e2b(){const _0x5a7d41=['./text-to-audio.controller','length','__decorate','forFeature','1992MnaZAT','8664372QElwue','MongooseModule','48966344mbBkOR','929058ymgTan','function','TextToAudioModule','Module','getOwnPropertyDescriptor','../user/schemas/user.schema','User','../streaming/streaming.gateway','decorate','3938144QoATUd','@nestjs/mongoose','MessageSchema','4928610xiBdQW','../streaming/streaming.service','StreamingService','Message','./text-to-audio.service','UserSchema','defineProperty','../user/user.service','TextToAudioService','838MRfEuO','4485332JXXbGZ','@nestjs/common'];a143_0x3e2b=function(){return _0x5a7d41;};return a143_0x3e2b();}let TextToAudioModule=class TextToAudioModule{};TextToAudioModule=__decorate([(0x0,common_1[a143_0x156626(0x16c)])({'imports':[mongoose_1[a143_0x156626(0x187)][a143_0x156626(0x184)]([{'name':a143_0x156626(0x178),'schema':message_schema_1[a143_0x156626(0x174)]},{'name':a143_0x156626(0x16f),'schema':user_schema_1[a143_0x156626(0x17a)]}]),setting_module_1['SettingModule']],'controllers':[text_to_audio_controller_1['TextToAudioController']],'providers':[text_to_audio_service_1[a143_0x156626(0x17d)],streaming_service_1[a143_0x156626(0x177)],streaming_gateway_1['StreamingGateway'],user_service_1['UserService']]})],TextToAudioModule),exports[a143_0x156626(0x18b)]=TextToAudioModule;
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.TextToAudioModule = void 0;
+const common_1 = require("@nestjs/common");
+const text_to_audio_controller_1 = require("./text-to-audio.controller");
+const text_to_audio_service_1 = require("./text-to-audio.service");
+const streaming_service_1 = require("@root/src/streaming/streaming.service");
+const mongoose_1 = require("@nestjs/mongoose");
+const message_schema_1 = require("./schemas/message.schema");
+const streaming_gateway_1 = require("../streaming/streaming.gateway");
+const user_service_1 = require("../user/user.service");
+const user_schema_1 = require("../user/schemas/user.schema");
+const setting_module_1 = require("../setting/setting.module");
+let TextToAudioModule = class TextToAudioModule {
+};
+TextToAudioModule = __decorate([
+    (0, common_1.Module)({
+        imports: [
+            mongoose_1.MongooseModule.forFeature([
+                { name: 'Message', schema: message_schema_1.MessageSchema },
+                { name: 'User', schema: user_schema_1.UserSchema },
+            ]),
+            setting_module_1.SettingModule,
+        ],
+        controllers: [text_to_audio_controller_1.TextToAudioController],
+        providers: [
+            text_to_audio_service_1.TextToAudioService,
+            streaming_service_1.StreamingService,
+            streaming_gateway_1.StreamingGateway,
+            user_service_1.UserService,
+        ],
+    })
+], TextToAudioModule);
+exports.TextToAudioModule = TextToAudioModule;
+//# sourceMappingURL=text-to-audio.module.js.map

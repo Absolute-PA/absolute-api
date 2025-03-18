@@ -1,1 +1,91 @@
-'use strict';function a94_0x4df1(_0x1a897e,_0x20b1c1){const _0x25c144=a94_0x25c1();return a94_0x4df1=function(_0x4df14e,_0x1e606d){_0x4df14e=_0x4df14e-0x12b;let _0x1300c2=_0x25c144[_0x4df14e];return _0x1300c2;},a94_0x4df1(_0x1a897e,_0x20b1c1);}const a94_0x4de08f=a94_0x4df1;(function(_0x248023,_0x56a0b6){const _0x2261ec=a94_0x4df1,_0x5cf564=_0x248023();while(!![]){try{const _0x5f0c94=parseInt(_0x2261ec(0x137))/0x1*(parseInt(_0x2261ec(0x15e))/0x2)+-parseInt(_0x2261ec(0x149))/0x3*(-parseInt(_0x2261ec(0x147))/0x4)+-parseInt(_0x2261ec(0x151))/0x5*(-parseInt(_0x2261ec(0x160))/0x6)+parseInt(_0x2261ec(0x13e))/0x7*(parseInt(_0x2261ec(0x15c))/0x8)+-parseInt(_0x2261ec(0x13f))/0x9*(parseInt(_0x2261ec(0x13a))/0xa)+-parseInt(_0x2261ec(0x134))/0xb+-parseInt(_0x2261ec(0x12f))/0xc;if(_0x5f0c94===_0x56a0b6)break;else _0x5cf564['push'](_0x5cf564['shift']());}catch(_0x369534){_0x5cf564['push'](_0x5cf564['shift']());}}}(a94_0x25c1,0x42441));var __decorate=this&&this[a94_0x4de08f(0x146)]||function(_0x1a4a0d,_0x238f4b,_0x2c0999,_0x7e660a){const _0x46a5fb=a94_0x4de08f;var _0x49ec52=arguments[_0x46a5fb(0x161)],_0x546a64=_0x49ec52<0x3?_0x238f4b:_0x7e660a===null?_0x7e660a=Object['getOwnPropertyDescriptor'](_0x238f4b,_0x2c0999):_0x7e660a,_0x4e96db;if(typeof Reflect===_0x46a5fb(0x158)&&typeof Reflect['decorate']===_0x46a5fb(0x138))_0x546a64=Reflect[_0x46a5fb(0x145)](_0x1a4a0d,_0x238f4b,_0x2c0999,_0x7e660a);else{for(var _0x4e0075=_0x1a4a0d[_0x46a5fb(0x161)]-0x1;_0x4e0075>=0x0;_0x4e0075--)if(_0x4e96db=_0x1a4a0d[_0x4e0075])_0x546a64=(_0x49ec52<0x3?_0x4e96db(_0x546a64):_0x49ec52>0x3?_0x4e96db(_0x238f4b,_0x2c0999,_0x546a64):_0x4e96db(_0x238f4b,_0x2c0999))||_0x546a64;}return _0x49ec52>0x3&&_0x546a64&&Object[_0x46a5fb(0x153)](_0x238f4b,_0x2c0999,_0x546a64),_0x546a64;},__metadata=this&&this['__metadata']||function(_0x1e9b0c,_0x13fe12){const _0x40dbfc=a94_0x4de08f;if(typeof Reflect===_0x40dbfc(0x158)&&typeof Reflect[_0x40dbfc(0x132)]===_0x40dbfc(0x138))return Reflect['metadata'](_0x1e9b0c,_0x13fe12);},__param=this&&this[a94_0x4de08f(0x139)]||function(_0x2ffef6,_0xd996d9){return function(_0x1f5f26,_0x4351a8){_0xd996d9(_0x1f5f26,_0x4351a8,_0x2ffef6);};};function a94_0x25c1(){const _0x20513c=['deleteProduct','find','description','macOS','join','3973764uGkqcm','exec','create','metadata','Playing\x20sound...','5088468TYOIbh','afplay\x20','updateProduct','56563zkQtsK','function','__param','1247790vHJqeU','logger','mongoose','macOS\x20detected!\x20Playing\x20sound...','7BWCpyu','9mFTwVM','productModel','mpg123\x20','../common/utils','ProductService','getProduct','decorate','__decorate','24ABLmKb','Logger','267558qUczLW','Linux\x20detected!\x20Playing\x20sound...','assets','addProduct','audio','log','includes','getAllProducts','5JshopU','detectOs','defineProperty','@nestjs/mongoose','Injectable','error','Error\x20playing\x20sound:\x20','object','getFilteredProducts','findByIdAndRemove','Product','845912OiacoX','filter','2lbfJzF','child_process','2955126JkZELx','length','findByIdAndUpdate','@nestjs/common','design:paramtypes','omxplayer\x20','name'];a94_0x25c1=function(){return _0x20513c;};return a94_0x25c1();}Object[a94_0x4de08f(0x153)](exports,'__esModule',{'value':!![]}),exports['ProductService']=void 0x0;const common_1=require(a94_0x4de08f(0x163)),mongoose_1=require(a94_0x4de08f(0x13c)),mongoose_2=require(a94_0x4de08f(0x154)),path=require('path'),child_process_1=require(a94_0x4de08f(0x15f)),utils_1=require(a94_0x4de08f(0x142));let ProductService=class ProductService{constructor(_0xe2b636){const _0x5b6d57=a94_0x4de08f;this[_0x5b6d57(0x140)]=_0xe2b636,this[_0x5b6d57(0x13b)]=new common_1[(_0x5b6d57(0x148))]('ProductService');}async[a94_0x4de08f(0x159)](_0x4566){const _0x2a5f0b=a94_0x4de08f,{category:_0x9da3ef,search:_0x51bf6a}=_0x4566;let _0x5a31b8=await this[_0x2a5f0b(0x150)]();return _0x51bf6a&&(_0x5a31b8=_0x5a31b8[_0x2a5f0b(0x15d)](_0x2fec96=>_0x2fec96[_0x2a5f0b(0x166)][_0x2a5f0b(0x14f)](_0x51bf6a)||_0x2fec96[_0x2a5f0b(0x12c)][_0x2a5f0b(0x14f)](_0x51bf6a))),_0x9da3ef&&(_0x5a31b8=_0x5a31b8[_0x2a5f0b(0x15d)](_0x248ca3=>_0x248ca3['category']===_0x9da3ef)),_0x5a31b8;}async['getAllProducts'](){const _0xe228fb=a94_0x4de08f,_0x8bb08=await this[_0xe228fb(0x140)][_0xe228fb(0x12b)]()[_0xe228fb(0x130)]();return _0x8bb08;}async[a94_0x4de08f(0x144)](_0x481b65){const _0x316918=a94_0x4de08f,_0x4868d=await this[_0x316918(0x140)]['findById'](_0x481b65)[_0x316918(0x130)](),_0x145132=path[_0x316918(0x12e)](__dirname,'..','..',_0x316918(0x14b),_0x316918(0x14d),'BassSample.mp3');this[_0x316918(0x13b)]['log'](_0x316918(0x133),_0x145132);if((0x0,utils_1['isRaspberryPi'])())this[_0x316918(0x13b)][_0x316918(0x14e)]('Raspberry\x20Pi\x20detected!\x20Playing\x20sound...'),(0x0,child_process_1[_0x316918(0x130)])(_0x316918(0x165)+_0x145132,_0x5dd4fb=>{const _0x1e1e88=_0x316918;_0x5dd4fb&&this[_0x1e1e88(0x13b)]['error']('Error\x20playing\x20sound:\x20'+_0x5dd4fb);});else(0x0,utils_1[_0x316918(0x152)])()===_0x316918(0x12d)?(this[_0x316918(0x13b)][_0x316918(0x14e)](_0x316918(0x13d)),(0x0,child_process_1[_0x316918(0x130)])(_0x316918(0x135)+_0x145132,_0x221720=>{_0x221720&&this['logger']['error']('Error\x20playing\x20sound:\x20'+_0x221720);})):(this[_0x316918(0x13b)][_0x316918(0x14e)](_0x316918(0x14a)),(0x0,child_process_1[_0x316918(0x130)])(_0x316918(0x141)+_0x145132,_0x212246=>{const _0xbeea48=_0x316918;_0x212246&&this[_0xbeea48(0x13b)][_0xbeea48(0x156)](_0xbeea48(0x157)+_0x212246);}));return _0x4868d;}async[a94_0x4de08f(0x14c)](_0x2e41a8){const _0x28684f=a94_0x4de08f,_0x797d1b=await this[_0x28684f(0x140)][_0x28684f(0x131)](_0x2e41a8);return _0x797d1b['save']();}async[a94_0x4de08f(0x136)](_0x112241,_0x2073b9){const _0x4b25ca=a94_0x4de08f,_0x45a4c7=await this[_0x4b25ca(0x140)][_0x4b25ca(0x162)](_0x112241,_0x2073b9,{'new':!![]});return _0x45a4c7;}async[a94_0x4de08f(0x167)](_0x548ed9){const _0x184617=a94_0x4de08f,_0x5e9e49=await this['productModel'][_0x184617(0x15a)](_0x548ed9);return _0x5e9e49;}};ProductService=__decorate([(0x0,common_1[a94_0x4de08f(0x155)])(),__param(0x0,(0x0,mongoose_2['InjectModel'])(a94_0x4de08f(0x15b))),__metadata(a94_0x4de08f(0x164),[mongoose_1['Model']])],ProductService),exports[a94_0x4de08f(0x143)]=ProductService;
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __param = (this && this.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.ProductService = void 0;
+const common_1 = require("@nestjs/common");
+const mongoose_1 = require("mongoose");
+const mongoose_2 = require("@nestjs/mongoose");
+const path = require("path");
+const child_process_1 = require("child_process");
+const utils_1 = require("../common/utils");
+let ProductService = class ProductService {
+    constructor(productModel) {
+        this.productModel = productModel;
+        this.logger = new common_1.Logger('ProductService');
+    }
+    async getFilteredProducts(filterProductDTO) {
+        const { category, search } = filterProductDTO;
+        let products = await this.getAllProducts();
+        if (search) {
+            products = products.filter((product) => product.name.includes(search) || product.description.includes(search));
+        }
+        if (category) {
+            products = products.filter((product) => product.category === category);
+        }
+        return products;
+    }
+    async getAllProducts() {
+        const products = await this.productModel.find().exec();
+        return products;
+    }
+    async getProduct(id) {
+        const product = await this.productModel.findById(id).exec();
+        const audioPath = path.join(__dirname, '..', '..', 'assets', 'audio', 'BassSample.mp3');
+        this.logger.log('Playing sound...', audioPath);
+        if ((0, utils_1.isRaspberryPi)()) {
+            this.logger.log('Raspberry Pi detected! Playing sound...');
+            (0, child_process_1.exec)(`omxplayer ${audioPath}`, (err) => {
+                if (err) {
+                    this.logger.error(`Error playing sound: ${err}`);
+                }
+            });
+        }
+        else if ((0, utils_1.detectOs)() === 'macOS') {
+            this.logger.log('macOS detected! Playing sound...');
+            (0, child_process_1.exec)(`afplay ${audioPath}`, (err) => {
+                if (err) {
+                    this.logger.error(`Error playing sound: ${err}`);
+                }
+            });
+        }
+        else {
+            this.logger.log('Linux detected! Playing sound...');
+            (0, child_process_1.exec)(`mpg123 ${audioPath}`, (err) => {
+                if (err) {
+                    this.logger.error(`Error playing sound: ${err}`);
+                }
+            });
+        }
+        return product;
+    }
+    async addProduct(createProductDTO) {
+        const newProduct = await this.productModel.create(createProductDTO);
+        return newProduct.save();
+    }
+    async updateProduct(id, createProductDTO) {
+        const updatedProduct = await this.productModel.findByIdAndUpdate(id, createProductDTO, { new: true });
+        return updatedProduct;
+    }
+    async deleteProduct(id) {
+        const deletedProduct = await this.productModel.findByIdAndRemove(id);
+        return deletedProduct;
+    }
+};
+ProductService = __decorate([
+    (0, common_1.Injectable)(),
+    __param(0, (0, mongoose_2.InjectModel)('Product')),
+    __metadata("design:paramtypes", [mongoose_1.Model])
+], ProductService);
+exports.ProductService = ProductService;
+//# sourceMappingURL=product.service.js.map

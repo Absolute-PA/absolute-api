@@ -1,1 +1,49 @@
-'use strict';function a102_0x147b(){const _0x4361ed=['46415vJWrmu','__param','findById','events','object','mongoose','updateEvent','scheduleModel','removeEvent','findIndex','filter','Schedule','3262720oLlfal','18mbuqQq','Injectable','length','42871pPtYdC','114htwedz','exec','455TqiZde','getOwnPropertyDescriptor','73380KnOdRR','__esModule','function','6pwHWwQ','133292HSQFDP','__metadata','EventService','__decorate','@nestjs/mongoose','decorate','InjectModel','2330kKEdtK','55DuOoGU','save','updatedAtUtc','7ryyMUp','5373OEzlTY','metadata','defineProperty','push','214382TOiuPS'];a102_0x147b=function(){return _0x4361ed;};return a102_0x147b();}const a102_0x38df3a=a102_0x1ebb;(function(_0x18d8f4,_0x5ded92){const _0x605f83=a102_0x1ebb,_0x8e2f0d=_0x18d8f4();while(!![]){try{const _0x5781c0=parseInt(_0x605f83(0x16e))/0x1*(parseInt(_0x605f83(0x16b))/0x2)+parseInt(_0x605f83(0x176))/0x3*(parseInt(_0x605f83(0x177))/0x4)+-parseInt(_0x605f83(0x188))/0x5*(parseInt(_0x605f83(0x16f))/0x6)+-parseInt(_0x605f83(0x182))/0x7*(parseInt(_0x605f83(0x16a))/0x8)+-parseInt(_0x605f83(0x183))/0x9*(parseInt(_0x605f83(0x17e))/0xa)+parseInt(_0x605f83(0x17f))/0xb*(-parseInt(_0x605f83(0x173))/0xc)+parseInt(_0x605f83(0x171))/0xd*(parseInt(_0x605f83(0x187))/0xe);if(_0x5781c0===_0x5ded92)break;else _0x8e2f0d['push'](_0x8e2f0d['shift']());}catch(_0x95ad19){_0x8e2f0d['push'](_0x8e2f0d['shift']());}}}(a102_0x147b,0x39433));var __decorate=this&&this[a102_0x38df3a(0x17a)]||function(_0x518d8c,_0x5f2596,_0x13e13d,_0x5f1590){const _0x278b35=a102_0x38df3a;var _0x15cbeb=arguments[_0x278b35(0x16d)],_0x2a2a28=_0x15cbeb<0x3?_0x5f2596:_0x5f1590===null?_0x5f1590=Object[_0x278b35(0x172)](_0x5f2596,_0x13e13d):_0x5f1590,_0x1ba38a;if(typeof Reflect===_0x278b35(0x18c)&&typeof Reflect[_0x278b35(0x17c)]==='function')_0x2a2a28=Reflect[_0x278b35(0x17c)](_0x518d8c,_0x5f2596,_0x13e13d,_0x5f1590);else{for(var _0x2979e1=_0x518d8c[_0x278b35(0x16d)]-0x1;_0x2979e1>=0x0;_0x2979e1--)if(_0x1ba38a=_0x518d8c[_0x2979e1])_0x2a2a28=(_0x15cbeb<0x3?_0x1ba38a(_0x2a2a28):_0x15cbeb>0x3?_0x1ba38a(_0x5f2596,_0x13e13d,_0x2a2a28):_0x1ba38a(_0x5f2596,_0x13e13d))||_0x2a2a28;}return _0x15cbeb>0x3&&_0x2a2a28&&Object[_0x278b35(0x185)](_0x5f2596,_0x13e13d,_0x2a2a28),_0x2a2a28;},__metadata=this&&this[a102_0x38df3a(0x178)]||function(_0x17cc54,_0x2361ed){const _0x32096d=a102_0x38df3a;if(typeof Reflect==='object'&&typeof Reflect[_0x32096d(0x184)]===_0x32096d(0x175))return Reflect['metadata'](_0x17cc54,_0x2361ed);},__param=this&&this[a102_0x38df3a(0x189)]||function(_0x2fc9c4,_0x24857a){return function(_0x1655e1,_0x500725){_0x24857a(_0x1655e1,_0x500725,_0x2fc9c4);};};Object[a102_0x38df3a(0x185)](exports,a102_0x38df3a(0x174),{'value':!![]}),exports['EventService']=void 0x0;function a102_0x1ebb(_0x10b875,_0xab9007){const _0x147b38=a102_0x147b();return a102_0x1ebb=function(_0x1ebb6b,_0x3b6903){_0x1ebb6b=_0x1ebb6b-0x168;let _0x20fa0a=_0x147b38[_0x1ebb6b];return _0x20fa0a;},a102_0x1ebb(_0x10b875,_0xab9007);}const common_1=require('@nestjs/common'),mongoose_1=require(a102_0x38df3a(0x17b)),mongoose_2=require(a102_0x38df3a(0x18d));let EventService=class EventService{constructor(_0x221f96){this['scheduleModel']=_0x221f96;}async['addEvent'](_0x1208b8,_0x352123){const _0x59cbfc=a102_0x38df3a,_0x547e0c=await this[_0x59cbfc(0x18f)][_0x59cbfc(0x18a)](_0x1208b8)[_0x59cbfc(0x170)]();return _0x547e0c[_0x59cbfc(0x18b)][_0x59cbfc(0x186)](_0x352123),_0x547e0c[_0x59cbfc(0x181)]=new Date(),_0x547e0c[_0x59cbfc(0x180)]();}async[a102_0x38df3a(0x190)](_0x145ec3,_0x258592){const _0x4cbdb6=a102_0x38df3a,_0xb7a458=await this['scheduleModel']['findById'](_0x145ec3)[_0x4cbdb6(0x170)]();return _0xb7a458[_0x4cbdb6(0x18b)]=_0xb7a458[_0x4cbdb6(0x18b)][_0x4cbdb6(0x168)](_0x4cc55e=>_0x4cc55e['id']!==_0x258592),_0xb7a458['updatedAtUtc']=new Date(),_0xb7a458[_0x4cbdb6(0x180)]();}async[a102_0x38df3a(0x18e)](_0x136ef9,_0x539ee0){const _0x142e4d=a102_0x38df3a,_0x34ee0d=await this[_0x142e4d(0x18f)][_0x142e4d(0x18a)](_0x136ef9)[_0x142e4d(0x170)](),_0x4425b6=_0x34ee0d[_0x142e4d(0x18b)][_0x142e4d(0x191)](_0x279faa=>_0x279faa['id']===_0x539ee0['id']);return _0x34ee0d[_0x142e4d(0x18b)][_0x4425b6]=_0x539ee0,_0x34ee0d['updatedAtUtc']=new Date(),_0x34ee0d[_0x142e4d(0x180)]();}};EventService=__decorate([(0x0,common_1[a102_0x38df3a(0x16c)])(),__param(0x0,(0x0,mongoose_1[a102_0x38df3a(0x17d)])(a102_0x38df3a(0x169))),__metadata('design:paramtypes',[mongoose_2['Model']])],EventService),exports[a102_0x38df3a(0x179)]=EventService;
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __param = (this && this.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.EventService = void 0;
+const common_1 = require("@nestjs/common");
+const mongoose_1 = require("@nestjs/mongoose");
+const mongoose_2 = require("mongoose");
+let EventService = class EventService {
+    constructor(scheduleModel) {
+        this.scheduleModel = scheduleModel;
+    }
+    async addEvent(id, event) {
+        const schedule = await this.scheduleModel.findById(id).exec();
+        schedule.events.push(event);
+        schedule.updatedAtUtc = new Date();
+        return schedule.save();
+    }
+    async removeEvent(id, eventId) {
+        const schedule = await this.scheduleModel.findById(id).exec();
+        schedule.events = schedule.events.filter((e) => e.id !== eventId);
+        schedule.updatedAtUtc = new Date();
+        return schedule.save();
+    }
+    async updateEvent(id, event) {
+        const schedule = await this.scheduleModel.findById(id).exec();
+        const index = schedule.events.findIndex((e) => e.id === event.id);
+        schedule.events[index] = event;
+        schedule.updatedAtUtc = new Date();
+        return schedule.save();
+    }
+};
+EventService = __decorate([
+    (0, common_1.Injectable)(),
+    __param(0, (0, mongoose_1.InjectModel)('Schedule')),
+    __metadata("design:paramtypes", [mongoose_2.Model])
+], EventService);
+exports.EventService = EventService;
+//# sourceMappingURL=event.service.js.map

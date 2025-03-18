@@ -1,1 +1,98 @@
-'use strict';const a92_0x1b695a=a92_0x3d5a;(function(_0x3cc589,_0x180479){const _0x3853ff=a92_0x3d5a,_0xd2225a=_0x3cc589();while(!![]){try{const _0x1dc86b=parseInt(_0x3853ff(0x10e))/0x1+-parseInt(_0x3853ff(0xfc))/0x2*(parseInt(_0x3853ff(0xe1))/0x3)+-parseInt(_0x3853ff(0x110))/0x4+-parseInt(_0x3853ff(0x107))/0x5*(parseInt(_0x3853ff(0xe3))/0x6)+-parseInt(_0x3853ff(0xf9))/0x7+parseInt(_0x3853ff(0xf0))/0x8*(parseInt(_0x3853ff(0xea))/0x9)+parseInt(_0x3853ff(0xe5))/0xa*(parseInt(_0x3853ff(0xe4))/0xb);if(_0x1dc86b===_0x180479)break;else _0xd2225a['push'](_0xd2225a['shift']());}catch(_0x243858){_0xd2225a['push'](_0xd2225a['shift']());}}}(a92_0xf8a9,0xb9174));var __decorate=this&&this[a92_0x1b695a(0x103)]||function(_0x4a04c5,_0x13207f,_0x1f2550,_0x379ad9){const _0x34222c=a92_0x1b695a;var _0xbbd3a7=arguments['length'],_0x265165=_0xbbd3a7<0x3?_0x13207f:_0x379ad9===null?_0x379ad9=Object[_0x34222c(0xf7)](_0x13207f,_0x1f2550):_0x379ad9,_0x42bd47;if(typeof Reflect===_0x34222c(0xf3)&&typeof Reflect[_0x34222c(0x109)]===_0x34222c(0x10b))_0x265165=Reflect[_0x34222c(0x109)](_0x4a04c5,_0x13207f,_0x1f2550,_0x379ad9);else{for(var _0xae18e1=_0x4a04c5[_0x34222c(0xfe)]-0x1;_0xae18e1>=0x0;_0xae18e1--)if(_0x42bd47=_0x4a04c5[_0xae18e1])_0x265165=(_0xbbd3a7<0x3?_0x42bd47(_0x265165):_0xbbd3a7>0x3?_0x42bd47(_0x13207f,_0x1f2550,_0x265165):_0x42bd47(_0x13207f,_0x1f2550))||_0x265165;}return _0xbbd3a7>0x3&&_0x265165&&Object[_0x34222c(0xf2)](_0x13207f,_0x1f2550,_0x265165),_0x265165;},__metadata=this&&this[a92_0x1b695a(0xf4)]||function(_0xaa3937,_0x32bf4e){const _0x113fd1=a92_0x1b695a;if(typeof Reflect===_0x113fd1(0xf3)&&typeof Reflect['metadata']==='function')return Reflect[_0x113fd1(0xe9)](_0xaa3937,_0x32bf4e);},__param=this&&this['__param']||function(_0x4c94b8,_0x4c3a23){return function(_0x1f3c7b,_0x3f311f){_0x4c3a23(_0x1f3c7b,_0x3f311f,_0x4c94b8);};};function a92_0x3d5a(_0x2e1719,_0x541b1e){const _0xf8a981=a92_0xf8a9();return a92_0x3d5a=function(_0x3d5a87,_0x54b5b7){_0x3d5a87=_0x3d5a87-0xe0;let _0x49123c=_0xf8a981[_0x3d5a87];return _0x49123c;},a92_0x3d5a(_0x2e1719,_0x541b1e);}Object[a92_0x1b695a(0xf2)](exports,a92_0x1b695a(0x108),{'value':!![]}),exports[a92_0x1b695a(0xee)]=void 0x0;const common_1=require(a92_0x1b695a(0x100)),product_service_1=require('./product.service'),create_product_dto_1=require(a92_0x1b695a(0xf6)),filter_product_dto_1=require('./dtos/filter-product.dto');let ProductController=class ProductController{constructor(_0x2a1ca5){const _0x3034a6=a92_0x1b695a;this[_0x3034a6(0x105)]=_0x2a1ca5;}async[a92_0x1b695a(0xfb)](_0x40ba85){const _0x22f1a4=a92_0x1b695a;if(Object[_0x22f1a4(0x101)](_0x40ba85)['length']){const _0x41e1d5=await this['productService']['getFilteredProducts'](_0x40ba85);return _0x41e1d5;}else{const _0x2994c3=await this[_0x22f1a4(0x105)]['getAllProducts']();return _0x2994c3;}}async[a92_0x1b695a(0x106)](_0x39bac9){const _0x8f8531=a92_0x1b695a,_0x3cde3e=await this[_0x8f8531(0x105)][_0x8f8531(0x106)](_0x39bac9);if(!_0x3cde3e)throw new common_1[(_0x8f8531(0x102))](_0x8f8531(0xe6));return _0x3cde3e;}async['addProduct'](_0x567d96){const _0x3170f4=a92_0x1b695a,_0x4c3c23=await this[_0x3170f4(0x105)][_0x3170f4(0x10c)](_0x567d96);return _0x4c3c23;}async[a92_0x1b695a(0xfd)](_0x5f1d44,_0x17f14b){const _0x37187e=a92_0x1b695a,_0x419586=await this[_0x37187e(0x105)][_0x37187e(0xfd)](_0x5f1d44,_0x17f14b);if(!_0x419586)throw new common_1['NotFoundException'](_0x37187e(0xe6));return _0x419586;}async['deleteProduct'](_0x1b3e3c){const _0x26f144=a92_0x1b695a,_0x5b2bce=await this[_0x26f144(0x105)][_0x26f144(0xe2)](_0x1b3e3c);if(!_0x5b2bce)throw new common_1[(_0x26f144(0x102))](_0x26f144(0x10d));return _0x5b2bce;}};__decorate([(0x0,common_1['Get'])('/'),__param(0x0,(0x0,common_1[a92_0x1b695a(0xef)])()),__metadata(a92_0x1b695a(0xfa),Function),__metadata(a92_0x1b695a(0xf1),[filter_product_dto_1[a92_0x1b695a(0x10a)]]),__metadata(a92_0x1b695a(0xe8),Promise)],ProductController[a92_0x1b695a(0xed)],a92_0x1b695a(0xfb),null),__decorate([(0x0,common_1[a92_0x1b695a(0xf5)])(a92_0x1b695a(0xec)),__param(0x0,(0x0,common_1[a92_0x1b695a(0xeb)])('id')),__metadata(a92_0x1b695a(0xfa),Function),__metadata(a92_0x1b695a(0xf1),[String]),__metadata(a92_0x1b695a(0xe8),Promise)],ProductController[a92_0x1b695a(0xed)],a92_0x1b695a(0x106),null),__decorate([(0x0,common_1[a92_0x1b695a(0xe0)])('/'),__param(0x0,(0x0,common_1[a92_0x1b695a(0x104)])()),__metadata(a92_0x1b695a(0xfa),Function),__metadata(a92_0x1b695a(0xf1),[create_product_dto_1[a92_0x1b695a(0xff)]]),__metadata(a92_0x1b695a(0xe8),Promise)],ProductController[a92_0x1b695a(0xed)],a92_0x1b695a(0x10c),null),__decorate([(0x0,common_1[a92_0x1b695a(0x111)])('/:id'),__param(0x0,(0x0,common_1[a92_0x1b695a(0xeb)])('id')),__param(0x1,(0x0,common_1[a92_0x1b695a(0x104)])()),__metadata(a92_0x1b695a(0xfa),Function),__metadata(a92_0x1b695a(0xf1),[String,create_product_dto_1['CreateProductDTO']]),__metadata(a92_0x1b695a(0xe8),Promise)],ProductController[a92_0x1b695a(0xed)],'updateProduct',null),__decorate([(0x0,common_1[a92_0x1b695a(0xf8)])(a92_0x1b695a(0xec)),__param(0x0,(0x0,common_1['Param'])('id')),__metadata(a92_0x1b695a(0xfa),Function),__metadata(a92_0x1b695a(0xf1),[String]),__metadata(a92_0x1b695a(0xe8),Promise)],ProductController['prototype'],a92_0x1b695a(0xe2),null),ProductController=__decorate([(0x0,common_1[a92_0x1b695a(0x10f)])(a92_0x1b695a(0x112)),__metadata('design:paramtypes',[product_service_1[a92_0x1b695a(0xe7)]])],ProductController),exports[a92_0x1b695a(0xee)]=ProductController;function a92_0xf8a9(){const _0x2c502d=['FilterProductDTO','function','addProduct','Product\x20does\x20not\x20exist','474302vFfHmm','Controller','3967968AlvyyI','Put','store/products','Post','9GAwOHf','deleteProduct','246lrIVtl','36359191IjNMkv','10nXHQxJ','Product\x20does\x20not\x20exist!','ProductService','design:returntype','metadata','9dOCDWx','Param','/:id','prototype','ProductController','Query','8879528MhqdfM','design:paramtypes','defineProperty','object','__metadata','Get','./dtos/create-product.dto','getOwnPropertyDescriptor','Delete','3961741LiSKkc','design:type','getProducts','794804xUEqlG','updateProduct','length','CreateProductDTO','@nestjs/common','keys','NotFoundException','__decorate','Body','productService','getProduct','168455yRQKTk','__esModule','decorate'];a92_0xf8a9=function(){return _0x2c502d;};return a92_0xf8a9();}
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __param = (this && this.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.ProductController = void 0;
+const common_1 = require("@nestjs/common");
+const product_service_1 = require("./product.service");
+const create_product_dto_1 = require("./dtos/create-product.dto");
+const filter_product_dto_1 = require("./dtos/filter-product.dto");
+let ProductController = class ProductController {
+    constructor(productService) {
+        this.productService = productService;
+    }
+    async getProducts(filterProductDTO) {
+        if (Object.keys(filterProductDTO).length) {
+            const filteredProducts = await this.productService.getFilteredProducts(filterProductDTO);
+            return filteredProducts;
+        }
+        else {
+            const allProducts = await this.productService.getAllProducts();
+            return allProducts;
+        }
+    }
+    async getProduct(id) {
+        const product = await this.productService.getProduct(id);
+        if (!product)
+            throw new common_1.NotFoundException('Product does not exist!');
+        return product;
+    }
+    async addProduct(createProductDTO) {
+        const product = await this.productService.addProduct(createProductDTO);
+        return product;
+    }
+    async updateProduct(id, createProductDTO) {
+        const product = await this.productService.updateProduct(id, createProductDTO);
+        if (!product)
+            throw new common_1.NotFoundException('Product does not exist!');
+        return product;
+    }
+    async deleteProduct(id) {
+        const product = await this.productService.deleteProduct(id);
+        if (!product)
+            throw new common_1.NotFoundException('Product does not exist');
+        return product;
+    }
+};
+__decorate([
+    (0, common_1.Get)('/'),
+    __param(0, (0, common_1.Query)()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [filter_product_dto_1.FilterProductDTO]),
+    __metadata("design:returntype", Promise)
+], ProductController.prototype, "getProducts", null);
+__decorate([
+    (0, common_1.Get)('/:id'),
+    __param(0, (0, common_1.Param)('id')),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [String]),
+    __metadata("design:returntype", Promise)
+], ProductController.prototype, "getProduct", null);
+__decorate([
+    (0, common_1.Post)('/'),
+    __param(0, (0, common_1.Body)()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [create_product_dto_1.CreateProductDTO]),
+    __metadata("design:returntype", Promise)
+], ProductController.prototype, "addProduct", null);
+__decorate([
+    (0, common_1.Put)('/:id'),
+    __param(0, (0, common_1.Param)('id')),
+    __param(1, (0, common_1.Body)()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [String, create_product_dto_1.CreateProductDTO]),
+    __metadata("design:returntype", Promise)
+], ProductController.prototype, "updateProduct", null);
+__decorate([
+    (0, common_1.Delete)('/:id'),
+    __param(0, (0, common_1.Param)('id')),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [String]),
+    __metadata("design:returntype", Promise)
+], ProductController.prototype, "deleteProduct", null);
+ProductController = __decorate([
+    (0, common_1.Controller)('store/products'),
+    __metadata("design:paramtypes", [product_service_1.ProductService])
+], ProductController);
+exports.ProductController = ProductController;
+//# sourceMappingURL=product.controller.js.map

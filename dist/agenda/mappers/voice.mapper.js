@@ -1,1 +1,12 @@
-'use strict';const a14_0x1a7486=a14_0x42cb;function a14_0x42cb(_0x24e99f,_0x314230){const _0x2bdd33=a14_0x2bdd();return a14_0x42cb=function(_0x42cbb3,_0x1a7e74){_0x42cbb3=_0x42cbb3-0x146;let _0x4355f4=_0x2bdd33[_0x42cbb3];return _0x4355f4;},a14_0x42cb(_0x24e99f,_0x314230);}(function(_0xe53e6b,_0x40e5aa){const _0x20bd17=a14_0x42cb,_0x4bc994=_0xe53e6b();while(!![]){try{const _0x33138b=parseInt(_0x20bd17(0x14d))/0x1*(-parseInt(_0x20bd17(0x154))/0x2)+-parseInt(_0x20bd17(0x150))/0x3+parseInt(_0x20bd17(0x14f))/0x4*(parseInt(_0x20bd17(0x153))/0x5)+-parseInt(_0x20bd17(0x14b))/0x6+-parseInt(_0x20bd17(0x146))/0x7*(parseInt(_0x20bd17(0x149))/0x8)+-parseInt(_0x20bd17(0x14a))/0x9+-parseInt(_0x20bd17(0x148))/0xa*(-parseInt(_0x20bd17(0x14c))/0xb);if(_0x33138b===_0x40e5aa)break;else _0x4bc994['push'](_0x4bc994['shift']());}catch(_0x54a70a){_0x4bc994['push'](_0x4bc994['shift']());}}}(a14_0x2bdd,0xd0176));Object[a14_0x1a7486(0x156)](exports,a14_0x1a7486(0x14e),{'value':!![]}),exports[a14_0x1a7486(0x152)]=void 0x0;const toPlayVoiceCommand=_0x333936=>{const _0x5c69f8=a14_0x1a7486;return{'voiceId':_0x333936['attributes'][_0x5c69f8(0x155)],'durationInSecond':Number(_0x333936[_0x5c69f8(0x147)][_0x5c69f8(0x151)]),'audit':_0x333936['audit']};};exports[a14_0x1a7486(0x152)]=toPlayVoiceCommand;function a14_0x2bdd(){const _0x1d4333=['3404416uvLRvO','4025565VMJALy','3377238tXvDyi','209uwJIAh','1zWePMN','__esModule','3236PGHnLN','4551537MZdKUK','durationInSecond','toPlayVoiceCommand','3235ytEubp','2289074jQGOKe','voiceId','defineProperty','14baTFhj','attributes','2553630XEtomV'];a14_0x2bdd=function(){return _0x1d4333;};return a14_0x2bdd();}
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.toPlayVoiceCommand = void 0;
+const toPlayVoiceCommand = (dto) => {
+    return {
+        voiceId: dto.attributes.voiceId,
+        durationInSecond: Number(dto.attributes.durationInSecond),
+        audit: dto.audit,
+    };
+};
+exports.toPlayVoiceCommand = toPlayVoiceCommand;
+//# sourceMappingURL=voice.mapper.js.map

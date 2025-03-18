@@ -1,1 +1,138 @@
-'use strict';function a87_0x23a4(){const _0x370036=['findByIdAndUpdate','__esModule','design:type','design:returntype','AudioPlayer','design:paramtypes','16339248mjzBdb','stop','../common/path','Play\x20Music\x20Playlist:\x20','isShuffle','playFromEvent','@nestjs/event-emitter','update','JobType','1424340BbfdZC','log','findById','audio','filter','2414492zhWwxY','path','cancelJob','findByIdAndDelete','__param','save','../common/events','soundGateway','PROCESS_CACHE','4310548ZRJbFI','findAll','soundIds','mongoose','2547825YZOnHm','map','push','decorate','length','agendaService','Logger','fileName','5OcOdVN','PlaylistEvent','object','name','__metadata','810095tfGWQx','SoundService','../sound/sound.service','\x20-\x20','addSong','all','../sound/sound.gateway','delete','playAsync','Play','2546901NCDzNP','play','findByIds','playlistModel','OnEvent','findOne','AgendaService','function','../common/audio/audio-player','mapToDto','scheduleJob','../common/enums','exec','soundService','broadcastPlaying','assign','@nestjs/mongoose','Model'];a87_0x23a4=function(){return _0x370036;};return a87_0x23a4();}const a87_0x471699=a87_0x2d30;(function(_0x261cb1,_0x5c9442){const _0x39a61b=a87_0x2d30,_0x12f382=_0x261cb1();while(!![]){try{const _0x3bb7b1=-parseInt(_0x39a61b(0x174))/0x1+parseInt(_0x39a61b(0x15a))/0x2+-parseInt(_0x39a61b(0x134))/0x3+-parseInt(_0x39a61b(0x163))/0x4*(parseInt(_0x39a61b(0x16f))/0x5)+-parseInt(_0x39a61b(0x155))/0x6+parseInt(_0x39a61b(0x167))/0x7+parseInt(_0x39a61b(0x14c))/0x8;if(_0x3bb7b1===_0x5c9442)break;else _0x12f382['push'](_0x12f382['shift']());}catch(_0x3b1328){_0x12f382['push'](_0x12f382['shift']());}}}(a87_0x23a4,0x9c232));var __decorate=this&&this['__decorate']||function(_0x28bf69,_0x2f6565,_0x4ba6d2,_0x4ae913){const _0x48a991=a87_0x2d30;var _0x48ed82=arguments['length'],_0x3c2594=_0x48ed82<0x3?_0x2f6565:_0x4ae913===null?_0x4ae913=Object['getOwnPropertyDescriptor'](_0x2f6565,_0x4ba6d2):_0x4ae913,_0xfe2512;if(typeof Reflect===_0x48a991(0x171)&&typeof Reflect[_0x48a991(0x16a)]===_0x48a991(0x13b))_0x3c2594=Reflect[_0x48a991(0x16a)](_0x28bf69,_0x2f6565,_0x4ba6d2,_0x4ae913);else{for(var _0x555558=_0x28bf69[_0x48a991(0x16b)]-0x1;_0x555558>=0x0;_0x555558--)if(_0xfe2512=_0x28bf69[_0x555558])_0x3c2594=(_0x48ed82<0x3?_0xfe2512(_0x3c2594):_0x48ed82>0x3?_0xfe2512(_0x2f6565,_0x4ba6d2,_0x3c2594):_0xfe2512(_0x2f6565,_0x4ba6d2))||_0x3c2594;}return _0x48ed82>0x3&&_0x3c2594&&Object['defineProperty'](_0x2f6565,_0x4ba6d2,_0x3c2594),_0x3c2594;},__metadata=this&&this[a87_0x471699(0x173)]||function(_0x3d1b8f,_0x151d58){const _0xcb0b62=a87_0x471699;if(typeof Reflect===_0xcb0b62(0x171)&&typeof Reflect['metadata']===_0xcb0b62(0x13b))return Reflect['metadata'](_0x3d1b8f,_0x151d58);},__param=this&&this[a87_0x471699(0x15e)]||function(_0x23154a,_0x3a19e6){return function(_0x1451dc,_0x197ada){_0x3a19e6(_0x1451dc,_0x197ada,_0x23154a);};},PlaylistService_1;Object['defineProperty'](exports,a87_0x471699(0x147),{'value':!![]}),exports['PlaylistService']=void 0x0;function a87_0x2d30(_0x40a0e3,_0x3c7dc1){const _0x23a417=a87_0x23a4();return a87_0x2d30=function(_0x2d309c,_0x50f280){_0x2d309c=_0x2d309c-0x132;let _0x2f4d22=_0x23a417[_0x2d309c];return _0x2f4d22;},a87_0x2d30(_0x40a0e3,_0x3c7dc1);}const common_1=require('@nestjs/common'),mongoose_1=require(a87_0x471699(0x166)),mongoose_2=require(a87_0x471699(0x144)),event_emitter_1=require(a87_0x471699(0x152)),sound_service_1=require(a87_0x471699(0x176)),job_1=require('../common/job'),events_1=require(a87_0x471699(0x160)),agenda_service_1=require('../agenda/agenda.service'),playlist_mapper_1=require('./mapper/playlist.mapper'),enums_1=require(a87_0x471699(0x13f)),path=require(a87_0x471699(0x15b)),path_1=require(a87_0x471699(0x14e)),audio_player_1=require(a87_0x471699(0x13c)),sound_gateway_1=require(a87_0x471699(0x17a));let PlaylistService=PlaylistService_1=class PlaylistService{constructor(_0x14e45f,_0x551d9a,_0x1842e9,_0x57f335){const _0xfd889e=a87_0x471699;this[_0xfd889e(0x137)]=_0x14e45f,this['soundService']=_0x551d9a,this['agendaService']=_0x1842e9,this[_0xfd889e(0x161)]=_0x57f335,this['logger']=new common_1[(_0xfd889e(0x16d))](PlaylistService_1[_0xfd889e(0x172)]);}async['create'](_0x90b414){const _0x1f1cb6=a87_0x471699,_0x5eeaf5=new this[(_0x1f1cb6(0x137))](_0x90b414);return _0x5eeaf5[_0x1f1cb6(0x15f)]();}async[a87_0x471699(0x164)](){const _0x5bcc2b=a87_0x471699,_0x2619f7=await this[_0x5bcc2b(0x137)]['find']()[_0x5bcc2b(0x140)](),_0x585108=_0x2619f7[_0x5bcc2b(0x168)](async _0x4f0f19=>{const _0xf2b7f2=_0x5bcc2b,_0x11e534=await this['soundService'][_0xf2b7f2(0x136)](_0x4f0f19[_0xf2b7f2(0x165)]);return(0x0,playlist_mapper_1['mapToDto'])(_0x4f0f19,_0x11e534);});return await Promise[_0x5bcc2b(0x179)](_0x585108);}async['findOne'](_0x4f32cc){const _0x5856ad=a87_0x471699,_0x5582d0=await this[_0x5856ad(0x137)][_0x5856ad(0x157)](_0x4f32cc),_0xcd6933=await this[_0x5856ad(0x141)]['findByIds'](_0x5582d0['soundIds']);return(0x0,playlist_mapper_1[_0x5856ad(0x13d)])(_0x5582d0,_0xcd6933);}async[a87_0x471699(0x153)](_0x8ac654,_0x582ab6){const _0x9ba010=a87_0x471699,_0xfbec8e=await this[_0x9ba010(0x137)][_0x9ba010(0x146)](_0x8ac654,Object['assign'](Object[_0x9ba010(0x143)]({},_0x582ab6),{'updatedAtUtc':new Date()}),{'new':!![]}),_0x2d9f9b=await this[_0x9ba010(0x141)][_0x9ba010(0x136)](_0xfbec8e[_0x9ba010(0x165)]);return(0x0,playlist_mapper_1['mapToDto'])(_0xfbec8e,_0x2d9f9b);}async[a87_0x471699(0x17b)](_0x1b9e1b){const _0x3be823=a87_0x471699;return await this[_0x3be823(0x137)][_0x3be823(0x15d)](_0x1b9e1b);}async[a87_0x471699(0x178)](_0x508543,_0x1658b9){const _0x13f337=a87_0x471699,_0xcab9a6=await this[_0x13f337(0x137)][_0x13f337(0x157)](_0x508543);return _0xcab9a6[_0x13f337(0x165)][_0x13f337(0x169)](_0x1658b9),await _0xcab9a6[_0x13f337(0x15f)]();}async['removeSong'](_0x2fd4b6,_0x58295e){const _0x311bcd=a87_0x471699,_0x514d4b=await this['playlistModel'][_0x311bcd(0x157)](_0x2fd4b6);return _0x514d4b[_0x311bcd(0x165)]=_0x514d4b[_0x311bcd(0x165)][_0x311bcd(0x159)](_0x13abe8=>_0x13abe8!==_0x58295e),await _0x514d4b['save']();}async[a87_0x471699(0x135)](_0x741864,_0x33e5eb){const _0x4a0325=a87_0x471699,_0x1f8f6c={'when':'now','jobType':enums_1[_0x4a0325(0x154)]['PlayMusic'],'attributes':{'playlistId':_0x33e5eb},'audit':{'actor':_0x741864,'name':enums_1[_0x4a0325(0x154)]['PlayMusic'],'message':_0x4a0325(0x14f)+_0x33e5eb}},{jobId:_0x546f81}=await this['agendaService'][_0x4a0325(0x13e)](_0x1f8f6c);return this['update'](_0x33e5eb,{'jobId':_0x546f81});}async[a87_0x471699(0x14d)](_0x5ad30e){const _0x4ea506=a87_0x471699;let _0x1f2108=await this[_0x4ea506(0x139)](_0x5ad30e);const {jobId:_0x577e99}=_0x1f2108||{};if(_0x577e99){const {success:_0x5a8318}=await this[_0x4ea506(0x16c)][_0x4ea506(0x15c)](_0x577e99);_0x5a8318&&(_0x1f2108=await this[_0x4ea506(0x153)](_0x5ad30e,{'jobId':null}));}return this[_0x4ea506(0x161)][_0x4ea506(0x142)]({'id':_0x1f2108['_id'],'isPlaying':![]}),_0x1f2108;}async['playFromEvent'](_0x5d68d6){const _0x2aff16=a87_0x471699,{playlistId:_0x583c43,jobId:_0x3e02f3,durationInSecond:_0x3e1d3d}=_0x5d68d6,_0x1ce278=await this[_0x2aff16(0x137)][_0x2aff16(0x157)](_0x583c43),_0x8f122b=[..._0x1ce278['soundIds']],_0x493820=await this[_0x2aff16(0x141)][_0x2aff16(0x136)](_0x8f122b),_0x14645d=_0x493820[_0x2aff16(0x168)](_0x56c957=>path['join'](path_1['processRootPath'],'assets',_0x2aff16(0x158),_0x56c957[_0x2aff16(0x16e)]));job_1[_0x2aff16(0x162)]['killAll'](),this['logger'][_0x2aff16(0x156)]('Playing\x20playlist:\x20'+_0x583c43+_0x2aff16(0x177)+_0x1ce278['name']),(0x0,job_1['executeJob'])({'jobId':_0x3e02f3,'run':()=>audio_player_1[_0x2aff16(0x14a)][_0x2aff16(0x132)](_0x14645d,0x32,_0x1ce278[_0x2aff16(0x150)]),'durationInSecond':_0x3e1d3d,'next':()=>this['stop'](_0x583c43)}),this[_0x2aff16(0x161)][_0x2aff16(0x142)]({'id':_0x583c43,'isPlaying':!![]});}};__decorate([(0x0,event_emitter_1[a87_0x471699(0x138)])(events_1[a87_0x471699(0x170)][a87_0x471699(0x133)]),__metadata(a87_0x471699(0x148),Function),__metadata(a87_0x471699(0x14b),[Object]),__metadata(a87_0x471699(0x149),Promise)],PlaylistService['prototype'],a87_0x471699(0x151),null),PlaylistService=PlaylistService_1=__decorate([(0x0,common_1['Injectable'])(),__param(0x0,(0x0,mongoose_2['InjectModel'])('Playlist')),__param(0x3,(0x0,common_1['Inject'])(sound_gateway_1['SoundGateway'])),__metadata(a87_0x471699(0x14b),[mongoose_1[a87_0x471699(0x145)],sound_service_1[a87_0x471699(0x175)],agenda_service_1[a87_0x471699(0x13a)],sound_gateway_1['SoundGateway']])],PlaylistService),exports['PlaylistService']=PlaylistService;
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __param = (this && this.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
+var PlaylistService_1;
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.PlaylistService = void 0;
+const common_1 = require("@nestjs/common");
+const mongoose_1 = require("mongoose");
+const mongoose_2 = require("@nestjs/mongoose");
+const event_emitter_1 = require("@nestjs/event-emitter");
+const sound_service_1 = require("@/sound/sound.service");
+const job_1 = require("@/common/job");
+const events_1 = require("@/common/events");
+const agenda_service_1 = require("@/agenda/agenda.service");
+const playlist_mapper_1 = require("./mapper/playlist.mapper");
+const enums_1 = require("../common/enums");
+const path = require("path");
+const path_1 = require("../common/path");
+const audio_player_1 = require("../common/audio/audio-player");
+const sound_gateway_1 = require("../sound/sound.gateway");
+let PlaylistService = PlaylistService_1 = class PlaylistService {
+    constructor(playlistModel, soundService, agendaService, soundGateway) {
+        this.playlistModel = playlistModel;
+        this.soundService = soundService;
+        this.agendaService = agendaService;
+        this.soundGateway = soundGateway;
+        this.logger = new common_1.Logger(PlaylistService_1.name);
+    }
+    async create(createPlaylistDto) {
+        const newPlaylist = new this.playlistModel(createPlaylistDto);
+        return newPlaylist.save();
+    }
+    async findAll() {
+        const playlists = await this.playlistModel.find().exec();
+        const promises = playlists.map(async (playlist) => {
+            const sounds = await this.soundService.findByIds(playlist.soundIds);
+            return (0, playlist_mapper_1.mapToDto)(playlist, sounds);
+        });
+        return await Promise.all(promises);
+    }
+    async findOne(id) {
+        const playlist = await this.playlistModel.findById(id);
+        const sounds = await this.soundService.findByIds(playlist.soundIds);
+        return (0, playlist_mapper_1.mapToDto)(playlist, sounds);
+    }
+    async update(id, updateDto) {
+        const playlist = await this.playlistModel.findByIdAndUpdate(id, Object.assign(Object.assign({}, updateDto), { updatedAtUtc: new Date() }), { new: true });
+        const sounds = await this.soundService.findByIds(playlist.soundIds);
+        return (0, playlist_mapper_1.mapToDto)(playlist, sounds);
+    }
+    async delete(id) {
+        return await this.playlistModel.findByIdAndDelete(id);
+    }
+    async addSong(id, songId) {
+        const playlist = await this.playlistModel.findById(id);
+        playlist.soundIds.push(songId);
+        return await playlist.save();
+    }
+    async removeSong(id, songId) {
+        const playlist = await this.playlistModel.findById(id);
+        playlist.soundIds = playlist.soundIds.filter((id) => id !== songId);
+        return await playlist.save();
+    }
+    async play(actor, id) {
+        const jobDto = {
+            when: 'now',
+            jobType: enums_1.JobType.PlayMusic,
+            attributes: {
+                playlistId: id,
+            },
+            audit: {
+                actor,
+                name: enums_1.JobType.PlayMusic,
+                message: `Play Music Playlist: ${id}`,
+            },
+        };
+        const { jobId } = await this.agendaService.scheduleJob(jobDto);
+        return this.update(id, { jobId });
+    }
+    async stop(id) {
+        let playlist = await this.findOne(id);
+        const { jobId } = playlist || {};
+        if (jobId) {
+            const { success } = await this.agendaService.cancelJob(jobId);
+            if (success) {
+                playlist = await this.update(id, { jobId: null });
+            }
+        }
+        this.soundGateway.broadcastPlaying({
+            id: playlist._id,
+            isPlaying: false,
+        });
+        return playlist;
+    }
+    async playFromEvent(payload) {
+        const { playlistId, jobId, durationInSecond } = payload;
+        const playlist = await this.playlistModel.findById(playlistId);
+        const soundIds = [...playlist.soundIds];
+        const songs = await this.soundService.findByIds(soundIds);
+        const paths = songs.map((song) => path.join(path_1.processRootPath, 'assets', 'audio', song.fileName));
+        job_1.PROCESS_CACHE.killAll();
+        this.logger.log(`Playing playlist: ${playlistId} - ${playlist.name}`);
+        (0, job_1.executeJob)({
+            jobId,
+            run: () => audio_player_1.AudioPlayer.playAsync(paths, 50, playlist.isShuffle),
+            durationInSecond,
+            next: () => this.stop(playlistId),
+        });
+        this.soundGateway.broadcastPlaying({ id: playlistId, isPlaying: true });
+    }
+};
+__decorate([
+    (0, event_emitter_1.OnEvent)(events_1.PlaylistEvent.Play),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", Promise)
+], PlaylistService.prototype, "playFromEvent", null);
+PlaylistService = PlaylistService_1 = __decorate([
+    (0, common_1.Injectable)(),
+    __param(0, (0, mongoose_2.InjectModel)('Playlist')),
+    __param(3, (0, common_1.Inject)(sound_gateway_1.SoundGateway)),
+    __metadata("design:paramtypes", [mongoose_1.Model,
+        sound_service_1.SoundService,
+        agenda_service_1.AgendaService,
+        sound_gateway_1.SoundGateway])
+], PlaylistService);
+exports.PlaylistService = PlaylistService;
+//# sourceMappingURL=playlist.service.js.map

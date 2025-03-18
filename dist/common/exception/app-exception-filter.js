@@ -1,1 +1,34 @@
-'use strict';var a69_0x406d15=a69_0x3880;(function(_0x6e0161,_0x27bf37){var _0x350b62=a69_0x3880,_0x4c3cb5=_0x6e0161();while(!![]){try{var _0x2b62e8=-parseInt(_0x350b62(0xc8))/0x1*(-parseInt(_0x350b62(0xc6))/0x2)+-parseInt(_0x350b62(0xd7))/0x3*(-parseInt(_0x350b62(0xde))/0x4)+-parseInt(_0x350b62(0xcf))/0x5*(parseInt(_0x350b62(0xc5))/0x6)+parseInt(_0x350b62(0xd8))/0x7*(parseInt(_0x350b62(0xdc))/0x8)+-parseInt(_0x350b62(0xcc))/0x9*(-parseInt(_0x350b62(0xd0))/0xa)+-parseInt(_0x350b62(0xc2))/0xb+parseInt(_0x350b62(0xcd))/0xc;if(_0x2b62e8===_0x27bf37)break;else _0x4c3cb5['push'](_0x4c3cb5['shift']());}catch(_0x101645){_0x4c3cb5['push'](_0x4c3cb5['shift']());}}}(a69_0x3c4e,0x6439e));var __decorate=this&&this[a69_0x406d15(0xce)]||function(_0x4dfb5b,_0x2e2f13,_0x114365,_0x2477ff){var _0x3e5d65=a69_0x406d15,_0x4c17da=arguments['length'],_0x23cd21=_0x4c17da<0x3?_0x2e2f13:_0x2477ff===null?_0x2477ff=Object[_0x3e5d65(0xc1)](_0x2e2f13,_0x114365):_0x2477ff,_0x53fa32;if(typeof Reflect===_0x3e5d65(0xd4)&&typeof Reflect[_0x3e5d65(0xca)]===_0x3e5d65(0xbf))_0x23cd21=Reflect[_0x3e5d65(0xca)](_0x4dfb5b,_0x2e2f13,_0x114365,_0x2477ff);else{for(var _0x20984e=_0x4dfb5b[_0x3e5d65(0xc4)]-0x1;_0x20984e>=0x0;_0x20984e--)if(_0x53fa32=_0x4dfb5b[_0x20984e])_0x23cd21=(_0x4c17da<0x3?_0x53fa32(_0x23cd21):_0x4c17da>0x3?_0x53fa32(_0x2e2f13,_0x114365,_0x23cd21):_0x53fa32(_0x2e2f13,_0x114365))||_0x23cd21;}return _0x4c17da>0x3&&_0x23cd21&&Object[_0x3e5d65(0xcb)](_0x2e2f13,_0x114365,_0x23cd21),_0x23cd21;};Object['defineProperty'](exports,a69_0x406d15(0xd1),{'value':!![]}),exports[a69_0x406d15(0xd2)]=void 0x0;function a69_0x3c4e(){var _0x17166c=['AppException','status','getResponse','112aYKHMM','Logger','716PSPxVY','function','error','getOwnPropertyDescriptor','2158706vRaYSh','switchToHttp','length','6kkHFIY','2LOrWdM','json','61037PmkHPF','getStatus','decorate','defineProperty','9YOHhuG','259428IUDKEX','__decorate','3551395EJHNPv','3909920ZHDrAS','__esModule','AppExceptionFilter','logger','object','@nestjs/common','Internal\x20Server\x20Error','6117dMiGdx','239211NzZIEV'];a69_0x3c4e=function(){return _0x17166c;};return a69_0x3c4e();}const common_1=require(a69_0x406d15(0xd5));let AppExceptionFilter=class AppExceptionFilter{constructor(){var _0x4ee44d=a69_0x406d15;this[_0x4ee44d(0xd3)]=new common_1[(_0x4ee44d(0xdd))](_0x4ee44d(0xd9));}async['catch'](_0x569e9a,_0x48e5b0){var _0x597b78=a69_0x406d15;const _0x4d00b2=_0x48e5b0[_0x597b78(0xc3)](),_0x29ec45=_0x4d00b2[_0x597b78(0xdb)]();this['logger'][_0x597b78(0xc0)](_0x569e9a),_0x569e9a instanceof common_1['HttpException']?_0x29ec45['status'](_0x569e9a[_0x597b78(0xc9)]())[_0x597b78(0xc7)](_0x569e9a['getResponse']()):_0x29ec45[_0x597b78(0xda)](0x1f4)['json']({'statusCode':0x1f4,'message':_0x597b78(0xd6)});}};function a69_0x3880(_0x44c6fb,_0x5e6bf8){var _0x3c4ebe=a69_0x3c4e();return a69_0x3880=function(_0x388058,_0x448e78){_0x388058=_0x388058-0xbf;var _0x502c27=_0x3c4ebe[_0x388058];return _0x502c27;},a69_0x3880(_0x44c6fb,_0x5e6bf8);}AppExceptionFilter=__decorate([(0x0,common_1['Catch'])()],AppExceptionFilter),exports[a69_0x406d15(0xd2)]=AppExceptionFilter;
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.AppExceptionFilter = void 0;
+const common_1 = require("@nestjs/common");
+let AppExceptionFilter = class AppExceptionFilter {
+    constructor() {
+        this.logger = new common_1.Logger('AppException');
+    }
+    async catch(exception, host) {
+        const ctx = host.switchToHttp();
+        const response = ctx.getResponse();
+        this.logger.error(exception);
+        if (exception instanceof common_1.HttpException) {
+            response.status(exception.getStatus()).json(exception.getResponse());
+        }
+        else {
+            response.status(500).json({
+                statusCode: 500,
+                message: 'Internal Server Error',
+            });
+        }
+    }
+};
+AppExceptionFilter = __decorate([
+    (0, common_1.Catch)()
+], AppExceptionFilter);
+exports.AppExceptionFilter = AppExceptionFilter;
+//# sourceMappingURL=app-exception-filter.js.map

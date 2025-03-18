@@ -1,1 +1,49 @@
-'use strict';const a15_0x5dd9ab=a15_0x3f95;(function(_0x5a2ae6,_0x267b94){const _0x152323=a15_0x3f95,_0x2e44dc=_0x5a2ae6();while(!![]){try{const _0xefc45a=-parseInt(_0x152323(0xbb))/0x1*(-parseInt(_0x152323(0xba))/0x2)+-parseInt(_0x152323(0xd1))/0x3*(-parseInt(_0x152323(0xc6))/0x4)+parseInt(_0x152323(0xca))/0x5*(-parseInt(_0x152323(0xc5))/0x6)+-parseInt(_0x152323(0xbc))/0x7+parseInt(_0x152323(0xd6))/0x8*(-parseInt(_0x152323(0xcd))/0x9)+-parseInt(_0x152323(0xb7))/0xa+parseInt(_0x152323(0xce))/0xb;if(_0xefc45a===_0x267b94)break;else _0x2e44dc['push'](_0x2e44dc['shift']());}catch(_0x1f133c){_0x2e44dc['push'](_0x2e44dc['shift']());}}}(a15_0x16ae,0xe99fb));function a15_0x3f95(_0x34c2f4,_0x15a444){const _0x16aea6=a15_0x16ae();return a15_0x3f95=function(_0x3f952f,_0x1ee93d){_0x3f952f=_0x3f952f-0xb2;let _0x2d5df5=_0x16aea6[_0x3f952f];return _0x2d5df5;},a15_0x3f95(_0x34c2f4,_0x15a444);}var __decorate=this&&this['__decorate']||function(_0x135dd1,_0x3fd3b9,_0x3ddf85,_0x131858){const _0xea60fe=a15_0x3f95;var _0x5415c6=arguments['length'],_0x5c873a=_0x5415c6<0x3?_0x3fd3b9:_0x131858===null?_0x131858=Object[_0xea60fe(0xd8)](_0x3fd3b9,_0x3ddf85):_0x131858,_0x33c8ff;if(typeof Reflect===_0xea60fe(0xd5)&&typeof Reflect[_0xea60fe(0xdc)]===_0xea60fe(0xbd))_0x5c873a=Reflect[_0xea60fe(0xdc)](_0x135dd1,_0x3fd3b9,_0x3ddf85,_0x131858);else{for(var _0x2dee8e=_0x135dd1['length']-0x1;_0x2dee8e>=0x0;_0x2dee8e--)if(_0x33c8ff=_0x135dd1[_0x2dee8e])_0x5c873a=(_0x5415c6<0x3?_0x33c8ff(_0x5c873a):_0x5415c6>0x3?_0x33c8ff(_0x3fd3b9,_0x3ddf85,_0x5c873a):_0x33c8ff(_0x3fd3b9,_0x3ddf85))||_0x5c873a;}return _0x5415c6>0x3&&_0x5c873a&&Object[_0xea60fe(0xd9)](_0x3fd3b9,_0x3ddf85,_0x5c873a),_0x5c873a;},__metadata=this&&this[a15_0x5dd9ab(0xc7)]||function(_0x536105,_0x3bfeda){const _0x331998=a15_0x5dd9ab;if(typeof Reflect===_0x331998(0xd5)&&typeof Reflect[_0x331998(0xe1)]==='function')return Reflect['metadata'](_0x536105,_0x3bfeda);},MusicProcessor_1;Object['defineProperty'](exports,a15_0x5dd9ab(0xc3),{'value':!![]}),exports[a15_0x5dd9ab(0xd0)]=void 0x0;const common_1=require(a15_0x5dd9ab(0xb6)),nestjs_agenda_1=require(a15_0x5dd9ab(0xe5)),agenda_1=require(a15_0x5dd9ab(0xc9)),event_emitter_1=require(a15_0x5dd9ab(0xd4)),enums_1=require(a15_0x5dd9ab(0xc0)),events_1=require(a15_0x5dd9ab(0xb2)),audit_service_1=require(a15_0x5dd9ab(0xe2));let MusicProcessor=MusicProcessor_1=class MusicProcessor{constructor(_0x12ff66,_0x52092c){const _0x2c8f1b=a15_0x5dd9ab;this[_0x2c8f1b(0xdb)]=_0x12ff66,this[_0x2c8f1b(0xe0)]=_0x52092c,this[_0x2c8f1b(0xc1)]=new common_1[(_0x2c8f1b(0xde))](MusicProcessor_1[_0x2c8f1b(0xcf)]);}async[a15_0x5dd9ab(0xd7)](_0x1b9086){const _0x41b4a5=a15_0x5dd9ab,_0x5029b0={'playlistId':_0x1b9086[_0x41b4a5(0xc8)][_0x41b4a5(0xbf)][_0x41b4a5(0xd3)],'jobId':_0x1b9086[_0x41b4a5(0xc8)][_0x41b4a5(0xb8)][_0x41b4a5(0xb5)](),'durationInSecond':_0x1b9086[_0x41b4a5(0xc8)]['data'][_0x41b4a5(0xb9)]};this[_0x41b4a5(0xe0)][_0x41b4a5(0xe3)](_0x1b9086['attrs'][_0x41b4a5(0xbf)][_0x41b4a5(0xcb)]),this[_0x41b4a5(0xdb)][_0x41b4a5(0xcc)](events_1[_0x41b4a5(0xd2)][_0x41b4a5(0xc2)],_0x5029b0);}};function a15_0x16ae(){const _0x105dde=['auditService','metadata','../audit/audit.service','create','JobType','@agent-ly/nestjs-agenda','Job','design:returntype','../common/events','Processor','design:paramtypes','toString','@nestjs/common','2417610Gjabov','_id','durationInSecond','16RcBPCF','37913OQXpZW','5846169SfJeOI','function','EventEmitter2','data','../common/enums','logger','Play','__esModule','AuditService','673386oerSSL','4jCoNTl','__metadata','attrs','agenda','25hwwAEv','audit','emit','2071899TPypEC','39884229ikyovV','name','MusicProcessor','141387YrQzhs','PlaylistEvent','playlistId','@nestjs/event-emitter','object','48yoOsEF','playMusic','getOwnPropertyDescriptor','defineProperty','prototype','eventEmitter','decorate','PlayMusic','Logger','design:type'];a15_0x16ae=function(){return _0x105dde;};return a15_0x16ae();}__decorate([(0x0,nestjs_agenda_1['Define'])(enums_1[a15_0x5dd9ab(0xe4)][a15_0x5dd9ab(0xdd)]),__metadata(a15_0x5dd9ab(0xdf),Function),__metadata(a15_0x5dd9ab(0xb4),[agenda_1[a15_0x5dd9ab(0xe6)]]),__metadata(a15_0x5dd9ab(0xe7),Promise)],MusicProcessor[a15_0x5dd9ab(0xda)],'playMusic',null),MusicProcessor=MusicProcessor_1=__decorate([(0x0,nestjs_agenda_1[a15_0x5dd9ab(0xb3)])(),__metadata('design:paramtypes',[event_emitter_1[a15_0x5dd9ab(0xbe)],audit_service_1[a15_0x5dd9ab(0xc4)]])],MusicProcessor),exports[a15_0x5dd9ab(0xd0)]=MusicProcessor;
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var MusicProcessor_1;
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.MusicProcessor = void 0;
+const common_1 = require("@nestjs/common");
+const nestjs_agenda_1 = require("@agent-ly/nestjs-agenda");
+const agenda_1 = require("agenda");
+const event_emitter_1 = require("@nestjs/event-emitter");
+const enums_1 = require("@/common/enums");
+const events_1 = require("@/common/events");
+const audit_service_1 = require("@/audit/audit.service");
+let MusicProcessor = MusicProcessor_1 = class MusicProcessor {
+    constructor(eventEmitter, auditService) {
+        this.eventEmitter = eventEmitter;
+        this.auditService = auditService;
+        this.logger = new common_1.Logger(MusicProcessor_1.name);
+    }
+    async playMusic(job) {
+        const payload = {
+            playlistId: job.attrs.data.playlistId,
+            jobId: job.attrs._id.toString(),
+            durationInSecond: job.attrs.data.durationInSecond,
+        };
+        this.auditService.create(job.attrs.data.audit);
+        this.eventEmitter.emit(events_1.PlaylistEvent.Play, payload);
+    }
+};
+__decorate([
+    (0, nestjs_agenda_1.Define)(enums_1.JobType.PlayMusic),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [agenda_1.Job]),
+    __metadata("design:returntype", Promise)
+], MusicProcessor.prototype, "playMusic", null);
+MusicProcessor = MusicProcessor_1 = __decorate([
+    (0, nestjs_agenda_1.Processor)(),
+    __metadata("design:paramtypes", [event_emitter_1.EventEmitter2,
+        audit_service_1.AuditService])
+], MusicProcessor);
+exports.MusicProcessor = MusicProcessor;
+//# sourceMappingURL=music.processor.js.map

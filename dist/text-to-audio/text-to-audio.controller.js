@@ -1,1 +1,152 @@
-'use strict';function a142_0x1679(_0x5e4b98,_0x1f8faa){const _0x328458=a142_0x3284();return a142_0x1679=function(_0x167931,_0x418b99){_0x167931=_0x167931-0xfd;let _0x2132f0=_0x328458[_0x167931];return _0x2132f0;},a142_0x1679(_0x5e4b98,_0x1f8faa);}const a142_0xdec75e=a142_0x1679;(function(_0x40894a,_0x46b606){const _0x4b79d8=a142_0x1679,_0x59f793=_0x40894a();while(!![]){try{const _0x466575=-parseInt(_0x4b79d8(0x116))/0x1+-parseInt(_0x4b79d8(0x13a))/0x2+parseInt(_0x4b79d8(0x137))/0x3+parseInt(_0x4b79d8(0x130))/0x4*(-parseInt(_0x4b79d8(0x101))/0x5)+-parseInt(_0x4b79d8(0x12d))/0x6+-parseInt(_0x4b79d8(0x127))/0x7+parseInt(_0x4b79d8(0x12e))/0x8;if(_0x466575===_0x46b606)break;else _0x59f793['push'](_0x59f793['shift']());}catch(_0x140535){_0x59f793['push'](_0x59f793['shift']());}}}(a142_0x3284,0x5b556));function a142_0x3284(){const _0x4fb660=['getMessages','textToAudioService','/:id','length','getOwnPropertyDescriptor','.wav','1195VLuOyo','../auth/guards/roles.guard','function','Controller','../common/audio/audio-player','There\x20is\x20no\x20message\x20to\x20play','Put','logger','defineProperty','processRootPath','../common/file','Role','Success\x20save\x20text:\x20','Admin','updateTextMessage','./dtos/text.dto','prototype','UseGuards','deleteTextMessage','@nestjs/common','User','668136Xsfgtk','createFolder','decorate','Roles','../streaming/streaming.service','Get','TextToAudioController','playAudioFile','text','log','design:paramtypes','join','metadata','textToAudio','AUDIO_TO_MESSAGE_DIR','AudioPlayer','JwtAuthGuard','2004520VJOSEO','Res','../common/path','design:returntype','saveStreamToFile','send','1892448MIaMof','14963096AsBHTW','error','68RbElgS','Post','object','assign','Body','./text-to-audio.service','Param','945375YwcwJC','TextDTO','design:type','1074886tuXSKN','Success\x20play\x20text\x20to\x20audio:\x20','Logger','getAllMessage','volume','./saveStreamToFile','RolesGuard','TextToAudioService','error\x20','saveMessage','../auth/decorators/roles.decorator','../auth/guards/jwt.guard','isFileExist','play','__param','StreamingService'];a142_0x3284=function(){return _0x4fb660;};return a142_0x3284();}var __decorate=this&&this['__decorate']||function(_0x19a154,_0x580892,_0x427b26,_0x13151c){const _0x3c0761=a142_0x1679;var _0x196d88=arguments['length'],_0x134c3f=_0x196d88<0x3?_0x580892:_0x13151c===null?_0x13151c=Object[_0x3c0761(0xff)](_0x580892,_0x427b26):_0x13151c,_0x386dd5;if(typeof Reflect===_0x3c0761(0x132)&&typeof Reflect[_0x3c0761(0x118)]===_0x3c0761(0x103))_0x134c3f=Reflect['decorate'](_0x19a154,_0x580892,_0x427b26,_0x13151c);else{for(var _0x45cdb8=_0x19a154[_0x3c0761(0xfe)]-0x1;_0x45cdb8>=0x0;_0x45cdb8--)if(_0x386dd5=_0x19a154[_0x45cdb8])_0x134c3f=(_0x196d88<0x3?_0x386dd5(_0x134c3f):_0x196d88>0x3?_0x386dd5(_0x580892,_0x427b26,_0x134c3f):_0x386dd5(_0x580892,_0x427b26))||_0x134c3f;}return _0x196d88>0x3&&_0x134c3f&&Object[_0x3c0761(0x109)](_0x580892,_0x427b26,_0x134c3f),_0x134c3f;},__metadata=this&&this['__metadata']||function(_0x35d1e0,_0x54d22d){const _0x455a4c=a142_0x1679;if(typeof Reflect==='object'&&typeof Reflect[_0x455a4c(0x122)]===_0x455a4c(0x103))return Reflect[_0x455a4c(0x122)](_0x35d1e0,_0x54d22d);},__param=this&&this[a142_0xdec75e(0x148)]||function(_0x1724cc,_0x2b08eb){return function(_0x4daff5,_0x31ceaf){_0x2b08eb(_0x4daff5,_0x31ceaf,_0x1724cc);};},TextToAudioController_1;Object[a142_0xdec75e(0x109)](exports,'__esModule',{'value':!![]}),exports[a142_0xdec75e(0x11c)]=void 0x0;const common_1=require(a142_0xdec75e(0x114)),text_to_audio_service_1=require(a142_0xdec75e(0x135)),text_dto_1=require(a142_0xdec75e(0x110)),streaming_service_1=require(a142_0xdec75e(0x11a)),roles_decorator_1=require(a142_0xdec75e(0x144)),role_enum_1=require('../auth/enums/role.enum'),jwt_guard_1=require(a142_0xdec75e(0x145)),roles_guard_1=require(a142_0xdec75e(0x102)),saveStreamToFile_1=require(a142_0xdec75e(0x13f)),path=require('path'),path_1=require(a142_0xdec75e(0x129)),constants_1=require('../common/constants'),file_1=require(a142_0xdec75e(0x10b)),audio_player_1=require(a142_0xdec75e(0x105));let TextToAudioController=TextToAudioController_1=class TextToAudioController{constructor(_0x367a5f,_0x594b7d){const _0x28f619=a142_0xdec75e;this[_0x28f619(0x14b)]=_0x367a5f,this['streamingService']=_0x594b7d,this[_0x28f619(0x108)]=new common_1[(_0x28f619(0x13c))](TextToAudioController_1['name']);}async[a142_0xdec75e(0x11d)](_0x33c9a4,_0x45cb66){const _0x288052=a142_0xdec75e;try{const _0x590faa=_0x45cb66[_0x288052(0x11e)];if(!_0x590faa){_0x33c9a4[_0x288052(0x12c)]('There\x20is\x20no\x20message\x20to\x20play');return;}const {id:_0x47e832,volume:_0x1dd9dd}=await this[_0x288052(0x14b)][_0x288052(0x143)](_0x590faa);!(0x0,file_1[_0x288052(0x146)])(constants_1[_0x288052(0x124)])&&(0x0,file_1[_0x288052(0x117)])(constants_1[_0x288052(0x124)]);const _0x1ba014=path[_0x288052(0x121)](path_1[_0x288052(0x10a)],constants_1[_0x288052(0x124)]),_0x3beea0=_0x1ba014+'/'+_0x47e832+_0x288052(0x100);!(0x0,file_1['isFileExist'])(_0x3beea0)?await this['textToAudioService'][_0x288052(0x123)](_0x45cb66[_0x288052(0x11e)],async _0x2f25a1=>{const _0x4cd84b=_0x288052;await(0x0,saveStreamToFile_1[_0x4cd84b(0x12b)])(_0x2f25a1,_0x1ba014+'/'+_0x47e832+_0x4cd84b(0x100)),audio_player_1[_0x4cd84b(0x125)][_0x4cd84b(0x147)](_0x3beea0,_0x1dd9dd!==null&&_0x1dd9dd!==void 0x0?_0x1dd9dd:0x32);}):audio_player_1[_0x288052(0x125)][_0x288052(0x147)](_0x3beea0,_0x1dd9dd!==null&&_0x1dd9dd!==void 0x0?_0x1dd9dd:0x32),_0x33c9a4[_0x288052(0x12c)](_0x288052(0x13b)+_0x45cb66['text']);}catch(_0x1f9f97){return this[_0x288052(0x108)][_0x288052(0x11f)](_0x1f9f97,_0x288052(0x12f)),'';}}async['saveMessage'](_0x3db86f,_0x2a7bc6){const _0x2e121e=a142_0xdec75e;try{const _0x12e607=_0x2a7bc6[_0x2e121e(0x11e)];if(!_0x12e607){_0x3db86f['send'](_0x2e121e(0x106));return;}await this[_0x2e121e(0x14b)][_0x2e121e(0x143)](_0x12e607),_0x3db86f['send'](_0x2e121e(0x10d)+_0x2a7bc6['text']);}catch(_0x1918b4){return this['logger'][_0x2e121e(0x11f)](_0x1918b4,_0x2e121e(0x142)),'';}}async[a142_0xdec75e(0x13d)](){const _0x5566b6=a142_0xdec75e;try{const _0x2ffb6e=await this['textToAudioService'][_0x5566b6(0x14a)]();return _0x2ffb6e!==null&&_0x2ffb6e!==void 0x0?_0x2ffb6e:[];}catch(_0x15210d){return this[_0x5566b6(0x108)][_0x5566b6(0x11f)](_0x15210d,'error'),'';}}[a142_0xdec75e(0x113)](_0xdbfa45){const _0x147fbc=a142_0xdec75e;return this[_0x147fbc(0x14b)]['deleteTextMessage'](_0xdbfa45);}[a142_0xdec75e(0x10f)](_0x535c35,_0x3e0313){const _0x3cf052=a142_0xdec75e;var _0x468c67;return this[_0x3cf052(0x14b)][_0x3cf052(0x10f)](_0x535c35,Object[_0x3cf052(0x133)](Object[_0x3cf052(0x133)]({},_0x3e0313),{'volume':(_0x468c67=_0x3e0313[_0x3cf052(0x13e)])!==null&&_0x468c67!==void 0x0?_0x468c67:0x32}));}};__decorate([(0x0,common_1['Post'])('/'),(0x0,common_1[a142_0xdec75e(0x112)])(jwt_guard_1[a142_0xdec75e(0x126)],roles_guard_1[a142_0xdec75e(0x140)]),(0x0,roles_decorator_1[a142_0xdec75e(0x119)])(role_enum_1[a142_0xdec75e(0x10c)][a142_0xdec75e(0x10e)],role_enum_1[a142_0xdec75e(0x10c)][a142_0xdec75e(0x115)]),__param(0x0,(0x0,common_1[a142_0xdec75e(0x128)])({'passthrough':!![]})),__param(0x1,(0x0,common_1[a142_0xdec75e(0x134)])()),__metadata(a142_0xdec75e(0x139),Function),__metadata(a142_0xdec75e(0x120),[Object,text_dto_1[a142_0xdec75e(0x138)]]),__metadata(a142_0xdec75e(0x12a),Promise)],TextToAudioController['prototype'],a142_0xdec75e(0x11d),null),__decorate([(0x0,common_1[a142_0xdec75e(0x131)])(a142_0xdec75e(0x143)),(0x0,common_1[a142_0xdec75e(0x112)])(jwt_guard_1[a142_0xdec75e(0x126)],roles_guard_1[a142_0xdec75e(0x140)]),(0x0,roles_decorator_1[a142_0xdec75e(0x119)])(role_enum_1[a142_0xdec75e(0x10c)][a142_0xdec75e(0x10e)],role_enum_1[a142_0xdec75e(0x10c)][a142_0xdec75e(0x115)]),__param(0x0,(0x0,common_1[a142_0xdec75e(0x128)])({'passthrough':!![]})),__param(0x1,(0x0,common_1[a142_0xdec75e(0x134)])()),__metadata(a142_0xdec75e(0x139),Function),__metadata(a142_0xdec75e(0x120),[Object,text_dto_1[a142_0xdec75e(0x138)]]),__metadata(a142_0xdec75e(0x12a),Promise)],TextToAudioController[a142_0xdec75e(0x111)],a142_0xdec75e(0x143),null),__decorate([(0x0,common_1[a142_0xdec75e(0x11b)])('/message'),(0x0,common_1[a142_0xdec75e(0x112)])(jwt_guard_1['JwtAuthGuard'],roles_guard_1[a142_0xdec75e(0x140)]),(0x0,roles_decorator_1[a142_0xdec75e(0x119)])(role_enum_1[a142_0xdec75e(0x10c)][a142_0xdec75e(0x10e)],role_enum_1[a142_0xdec75e(0x10c)][a142_0xdec75e(0x115)]),__metadata(a142_0xdec75e(0x139),Function),__metadata(a142_0xdec75e(0x120),[]),__metadata('design:returntype',Promise)],TextToAudioController[a142_0xdec75e(0x111)],a142_0xdec75e(0x13d),null),__decorate([(0x0,common_1['Delete'])(a142_0xdec75e(0xfd)),(0x0,common_1['UseGuards'])(jwt_guard_1['JwtAuthGuard'],roles_guard_1[a142_0xdec75e(0x140)]),(0x0,roles_decorator_1['Roles'])(role_enum_1['Role'][a142_0xdec75e(0x10e)],role_enum_1[a142_0xdec75e(0x10c)][a142_0xdec75e(0x115)]),__param(0x0,(0x0,common_1[a142_0xdec75e(0x136)])('id')),__metadata(a142_0xdec75e(0x139),Function),__metadata('design:paramtypes',[String]),__metadata(a142_0xdec75e(0x12a),void 0x0)],TextToAudioController[a142_0xdec75e(0x111)],a142_0xdec75e(0x113),null),__decorate([(0x0,common_1[a142_0xdec75e(0x107)])(a142_0xdec75e(0xfd)),(0x0,common_1[a142_0xdec75e(0x112)])(jwt_guard_1[a142_0xdec75e(0x126)],roles_guard_1[a142_0xdec75e(0x140)]),(0x0,roles_decorator_1[a142_0xdec75e(0x119)])(role_enum_1[a142_0xdec75e(0x10c)][a142_0xdec75e(0x10e)],role_enum_1[a142_0xdec75e(0x10c)][a142_0xdec75e(0x115)]),__param(0x0,(0x0,common_1[a142_0xdec75e(0x136)])('id')),__param(0x1,(0x0,common_1[a142_0xdec75e(0x134)])()),__metadata(a142_0xdec75e(0x139),Function),__metadata(a142_0xdec75e(0x120),[String,text_dto_1[a142_0xdec75e(0x138)]]),__metadata(a142_0xdec75e(0x12a),void 0x0)],TextToAudioController[a142_0xdec75e(0x111)],a142_0xdec75e(0x10f),null),TextToAudioController=TextToAudioController_1=__decorate([(0x0,common_1[a142_0xdec75e(0x104)])('textToAudio'),__metadata('design:paramtypes',[text_to_audio_service_1[a142_0xdec75e(0x141)],streaming_service_1[a142_0xdec75e(0x149)]])],TextToAudioController),exports['TextToAudioController']=TextToAudioController;
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __param = (this && this.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
+var TextToAudioController_1;
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.TextToAudioController = void 0;
+const common_1 = require("@nestjs/common");
+const text_to_audio_service_1 = require("./text-to-audio.service");
+const text_dto_1 = require("./dtos/text.dto");
+const streaming_service_1 = require("@root/src/streaming/streaming.service");
+const roles_decorator_1 = require("../auth/decorators/roles.decorator");
+const role_enum_1 = require("../auth/enums/role.enum");
+const jwt_guard_1 = require("../auth/guards/jwt.guard");
+const roles_guard_1 = require("../auth/guards/roles.guard");
+const saveStreamToFile_1 = require("./saveStreamToFile");
+const path = require("path");
+const path_1 = require("../common/path");
+const constants_1 = require("../common/constants");
+const file_1 = require("../common/file");
+const audio_player_1 = require("../common/audio/audio-player");
+let TextToAudioController = TextToAudioController_1 = class TextToAudioController {
+    constructor(textToAudioService, streamingService) {
+        this.textToAudioService = textToAudioService;
+        this.streamingService = streamingService;
+        this.logger = new common_1.Logger(TextToAudioController_1.name);
+    }
+    async playAudioFile(res, text) {
+        try {
+            const message = text.text;
+            if (!message) {
+                res.send('There is no message to play');
+                return;
+            }
+            const { id, volume } = await this.textToAudioService.saveMessage(message);
+            if (!(0, file_1.isFileExist)(constants_1.AUDIO_TO_MESSAGE_DIR)) {
+                (0, file_1.createFolder)(constants_1.AUDIO_TO_MESSAGE_DIR);
+            }
+            const textToAudioPath = path.join(path_1.processRootPath, constants_1.AUDIO_TO_MESSAGE_DIR);
+            const audioPath = textToAudioPath + '/' + id + '.wav';
+            if (!(0, file_1.isFileExist)(audioPath)) {
+                await this.textToAudioService.textToAudio(text.text, async (stream) => {
+                    await (0, saveStreamToFile_1.saveStreamToFile)(stream, textToAudioPath + '/' + id + '.wav');
+                    audio_player_1.AudioPlayer.play(audioPath, volume !== null && volume !== void 0 ? volume : 50);
+                });
+            }
+            else {
+                audio_player_1.AudioPlayer.play(audioPath, volume !== null && volume !== void 0 ? volume : 50);
+            }
+            res.send(`Success play text to audio: ${text.text}`);
+        }
+        catch (error) {
+            this.logger.log(error, 'error');
+            return '';
+        }
+    }
+    async saveMessage(res, text) {
+        try {
+            const message = text.text;
+            if (!message) {
+                res.send('There is no message to play');
+                return;
+            }
+            await this.textToAudioService.saveMessage(message);
+            res.send(`Success save text: ${text.text}`);
+        }
+        catch (error) {
+            this.logger.log(error, 'error ');
+            return '';
+        }
+    }
+    async getAllMessage() {
+        try {
+            const messages = await this.textToAudioService.getMessages();
+            return messages !== null && messages !== void 0 ? messages : [];
+        }
+        catch (error) {
+            this.logger.log(error, 'error');
+            return '';
+        }
+    }
+    deleteTextMessage(id) {
+        return this.textToAudioService.deleteTextMessage(id);
+    }
+    updateTextMessage(id, text) {
+        var _a;
+        return this.textToAudioService.updateTextMessage(id, Object.assign(Object.assign({}, text), { volume: (_a = text.volume) !== null && _a !== void 0 ? _a : 50 }));
+    }
+};
+__decorate([
+    (0, common_1.Post)('/'),
+    (0, common_1.UseGuards)(jwt_guard_1.JwtAuthGuard, roles_guard_1.RolesGuard),
+    (0, roles_decorator_1.Roles)(role_enum_1.Role.Admin, role_enum_1.Role.User),
+    __param(0, (0, common_1.Res)({ passthrough: true })),
+    __param(1, (0, common_1.Body)()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object, text_dto_1.TextDTO]),
+    __metadata("design:returntype", Promise)
+], TextToAudioController.prototype, "playAudioFile", null);
+__decorate([
+    (0, common_1.Post)('saveMessage'),
+    (0, common_1.UseGuards)(jwt_guard_1.JwtAuthGuard, roles_guard_1.RolesGuard),
+    (0, roles_decorator_1.Roles)(role_enum_1.Role.Admin, role_enum_1.Role.User),
+    __param(0, (0, common_1.Res)({ passthrough: true })),
+    __param(1, (0, common_1.Body)()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object, text_dto_1.TextDTO]),
+    __metadata("design:returntype", Promise)
+], TextToAudioController.prototype, "saveMessage", null);
+__decorate([
+    (0, common_1.Get)('/message'),
+    (0, common_1.UseGuards)(jwt_guard_1.JwtAuthGuard, roles_guard_1.RolesGuard),
+    (0, roles_decorator_1.Roles)(role_enum_1.Role.Admin, role_enum_1.Role.User),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", Promise)
+], TextToAudioController.prototype, "getAllMessage", null);
+__decorate([
+    (0, common_1.Delete)('/:id'),
+    (0, common_1.UseGuards)(jwt_guard_1.JwtAuthGuard, roles_guard_1.RolesGuard),
+    (0, roles_decorator_1.Roles)(role_enum_1.Role.Admin, role_enum_1.Role.User),
+    __param(0, (0, common_1.Param)('id')),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [String]),
+    __metadata("design:returntype", void 0)
+], TextToAudioController.prototype, "deleteTextMessage", null);
+__decorate([
+    (0, common_1.Put)('/:id'),
+    (0, common_1.UseGuards)(jwt_guard_1.JwtAuthGuard, roles_guard_1.RolesGuard),
+    (0, roles_decorator_1.Roles)(role_enum_1.Role.Admin, role_enum_1.Role.User),
+    __param(0, (0, common_1.Param)('id')),
+    __param(1, (0, common_1.Body)()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [String, text_dto_1.TextDTO]),
+    __metadata("design:returntype", void 0)
+], TextToAudioController.prototype, "updateTextMessage", null);
+TextToAudioController = TextToAudioController_1 = __decorate([
+    (0, common_1.Controller)('textToAudio'),
+    __metadata("design:paramtypes", [text_to_audio_service_1.TextToAudioService,
+        streaming_service_1.StreamingService])
+], TextToAudioController);
+exports.TextToAudioController = TextToAudioController;
+//# sourceMappingURL=text-to-audio.controller.js.map

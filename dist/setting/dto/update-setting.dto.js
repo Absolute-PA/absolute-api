@@ -1,1 +1,9 @@
-'use strict';const a115_0x5ea3b2=a115_0x3046;(function(_0x2e176d,_0x21a5c7){const _0x1a758e=a115_0x3046,_0x1b9126=_0x2e176d();while(!![]){try{const _0x261b28=parseInt(_0x1a758e(0x93))/0x1*(parseInt(_0x1a758e(0x9e))/0x2)+parseInt(_0x1a758e(0x9d))/0x3+parseInt(_0x1a758e(0xa2))/0x4+parseInt(_0x1a758e(0x9c))/0x5*(-parseInt(_0x1a758e(0xa0))/0x6)+parseInt(_0x1a758e(0x95))/0x7+parseInt(_0x1a758e(0x97))/0x8*(-parseInt(_0x1a758e(0x9f))/0x9)+-parseInt(_0x1a758e(0x94))/0xa;if(_0x261b28===_0x21a5c7)break;else _0x1b9126['push'](_0x1b9126['shift']());}catch(_0x132607){_0x1b9126['push'](_0x1b9126['shift']());}}}(a115_0xa16b,0xc7c6b));function a115_0x3046(_0xf996a,_0x485b85){const _0xa16b3=a115_0xa16b();return a115_0x3046=function(_0x3046de,_0x285961){_0x3046de=_0x3046de-0x93;let _0x30d84a=_0xa16b3[_0x3046de];return _0x30d84a;},a115_0x3046(_0xf996a,_0x485b85);}function a115_0xa16b(){const _0x421051=['1696278SDyNdM','defineProperty','2003116zPcjuO','10783xJAzHJ','1180790IGEoXS','1252881nkjRUI','@nestjs/swagger','980512QkXOcu','UpdateSettingDto','__esModule','./create-setting.dto','PartialType','15aWxqJo','2743788daPoEH','58ehlXhA','9CQSeMi'];a115_0xa16b=function(){return _0x421051;};return a115_0xa16b();}Object[a115_0x5ea3b2(0xa1)](exports,a115_0x5ea3b2(0x99),{'value':!![]}),exports[a115_0x5ea3b2(0x98)]=void 0x0;const swagger_1=require(a115_0x5ea3b2(0x96)),create_setting_dto_1=require(a115_0x5ea3b2(0x9a));class UpdateSettingDto extends(0x0,swagger_1[a115_0x5ea3b2(0x9b)])(create_setting_dto_1['CreateSettingDto']){}exports[a115_0x5ea3b2(0x98)]=UpdateSettingDto;
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.UpdateSettingDto = void 0;
+const swagger_1 = require("@nestjs/swagger");
+const create_setting_dto_1 = require("./create-setting.dto");
+class UpdateSettingDto extends (0, swagger_1.PartialType)(create_setting_dto_1.CreateSettingDto) {
+}
+exports.UpdateSettingDto = UpdateSettingDto;
+//# sourceMappingURL=update-setting.dto.js.map

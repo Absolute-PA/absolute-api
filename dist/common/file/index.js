@@ -1,1 +1,75 @@
-'use strict';const a70_0x4302bf=a70_0x1207;(function(_0x2be267,_0x148a98){const _0x512c03=a70_0x1207,_0x51b3c0=_0x2be267();while(!![]){try{const _0x49db87=-parseInt(_0x512c03(0xe8))/0x1+-parseInt(_0x512c03(0xf1))/0x2*(parseInt(_0x512c03(0x100))/0x3)+-parseInt(_0x512c03(0xfa))/0x4*(parseInt(_0x512c03(0xe6))/0x5)+parseInt(_0x512c03(0xf2))/0x6*(parseInt(_0x512c03(0xfb))/0x7)+parseInt(_0x512c03(0xf0))/0x8+parseInt(_0x512c03(0xf7))/0x9+parseInt(_0x512c03(0xfd))/0xa*(parseInt(_0x512c03(0xf4))/0xb);if(_0x49db87===_0x148a98)break;else _0x51b3c0['push'](_0x51b3c0['shift']());}catch(_0x1e718c){_0x51b3c0['push'](_0x51b3c0['shift']());}}}(a70_0x1573,0x92228));Object[a70_0x4302bf(0xeb)](exports,a70_0x4302bf(0xf6),{'value':!![]}),exports[a70_0x4302bf(0xff)]=exports[a70_0x4302bf(0xec)]=exports[a70_0x4302bf(0xe5)]=exports[a70_0x4302bf(0xf5)]=exports[a70_0x4302bf(0xfc)]=exports[a70_0x4302bf(0xfe)]=void 0x0;const fs_1=require('fs'),path=require(a70_0x4302bf(0xee)),moveFile=async(_0x27271c,_0x2c58a8)=>{const _0x38f70d=a70_0x4302bf;try{await fs_1[_0x38f70d(0xe9)]['access'](_0x27271c),await fs_1[_0x38f70d(0xe9)][_0x38f70d(0xea)](_0x27271c,''+_0x2c58a8);}catch(_0x27cba0){throw new Error('Failed\x20to\x20move\x20and\x20rename\x20file:\x20'+_0x27cba0[_0x38f70d(0x101)]);}};exports[a70_0x4302bf(0xfe)]=moveFile;const deleteFile=_0x44694c=>{const _0x4bf75b=a70_0x4302bf;try{(0x0,fs_1[_0x4bf75b(0xe4)])(_0x44694c);}catch(_0x462663){throw new Error(_0x4bf75b(0xe7)+_0x462663[_0x4bf75b(0x101)]);}};exports[a70_0x4302bf(0xfc)]=deleteFile;const deleteFilesInFolder=async _0x31c8c7=>{const _0x3e3782=a70_0x4302bf;try{const _0x206728=await fs_1[_0x3e3782(0xe9)][_0x3e3782(0xf9)](_0x31c8c7);for(const _0x3d53ba of _0x206728){const _0x4204aa=path[_0x3e3782(0xef)](_0x31c8c7,_0x3d53ba);await fs_1[_0x3e3782(0xe9)]['unlink'](_0x4204aa);}return{'success':!![]};}catch(_0x39c305){return console[_0x3e3782(0xf3)]('Error\x20while\x20deleting\x20files:',_0x39c305),{'success':![],'message':_0x39c305[_0x3e3782(0x101)]};}};exports['deleteFilesInFolder']=deleteFilesInFolder;const isFileExist=_0x53bbd3=>{const _0x733569=a70_0x4302bf;return(0x0,fs_1[_0x733569(0xf8)])(_0x53bbd3);};exports[a70_0x4302bf(0xe5)]=isFileExist;const copyFiles=async(_0x195fc7,_0x3f732f)=>{const _0x4ffae8=a70_0x4302bf;try{const _0x39773a=await fs_1[_0x4ffae8(0xe9)]['readdir'](_0x195fc7);for(const _0x44a0e9 of _0x39773a){const _0x5a960f=path[_0x4ffae8(0xef)](_0x195fc7,_0x44a0e9),_0x26baea=path['join'](_0x3f732f,_0x44a0e9);await fs_1[_0x4ffae8(0xe9)]['copyFile'](_0x5a960f,_0x26baea),console[_0x4ffae8(0x102)](_0x44a0e9+_0x4ffae8(0xed));}}catch(_0xd7ce15){console['error'](_0x4ffae8(0xe3),_0xd7ce15);}};exports[a70_0x4302bf(0xec)]=copyFiles;const createFolder=async _0x553567=>{const _0x1998c0=a70_0x4302bf;!(0x0,fs_1[_0x1998c0(0xf8)])(_0x553567)?(0x0,fs_1['mkdir'])(_0x553567,{'recursive':!![]},_0x2c3246=>{const _0x24888e=_0x1998c0;if(_0x2c3246)throw _0x2c3246;console[_0x24888e(0x102)]('New\x20folder\x20created\x20successfully!');}):console[_0x1998c0(0x102)]('The\x20folder\x20already\x20exists.');};function a70_0x1207(_0xf5d097,_0x3676a9){const _0x157349=a70_0x1573();return a70_0x1207=function(_0x12079e,_0x2bbf7a){_0x12079e=_0x12079e-0xe3;let _0x40a161=_0x157349[_0x12079e];return _0x40a161;},a70_0x1207(_0xf5d097,_0x3676a9);}exports[a70_0x4302bf(0xff)]=createFolder;function a70_0x1573(){const _0x201b76=['Error\x20copying\x20files:','unlinkSync','isFileExist','3594085tgHnad','Failed\x20to\x20delete\x20file:\x20','1054030tEzHOO','promises','rename','defineProperty','copyFiles','\x20copied\x20successfully.','path','join','6844352okPEAe','1162ZMtzQg','162nBJTHb','error','892859jswkan','deleteFilesInFolder','__esModule','4983012SSVeQq','existsSync','readdir','4boGcYq','3633ohhPxu','deleteFile','170hfZlgq','moveFile','createFolder','2229sUEpZB','message','log'];a70_0x1573=function(){return _0x201b76;};return a70_0x1573();}
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.createFolder = exports.copyFiles = exports.isFileExist = exports.deleteFilesInFolder = exports.deleteFile = exports.moveFile = void 0;
+const fs_1 = require("fs");
+const path = require("path");
+const moveFile = async (sourcePath, destinationPath) => {
+    try {
+        await fs_1.promises.access(sourcePath);
+        await fs_1.promises.rename(sourcePath, `${destinationPath}`);
+    }
+    catch (error) {
+        throw new Error(`Failed to move and rename file: ${error.message}`);
+    }
+};
+exports.moveFile = moveFile;
+const deleteFile = (filePath) => {
+    try {
+        (0, fs_1.unlinkSync)(filePath);
+    }
+    catch (error) {
+        throw new Error(`Failed to delete file: ${error.message}`);
+    }
+};
+exports.deleteFile = deleteFile;
+const deleteFilesInFolder = async (folderPath) => {
+    try {
+        const files = await fs_1.promises.readdir(folderPath);
+        for (const file of files) {
+            const filePath = path.join(folderPath, file);
+            await fs_1.promises.unlink(filePath);
+        }
+        return { success: true };
+    }
+    catch (error) {
+        console.error('Error while deleting files:', error);
+        return {
+            success: false,
+            message: error.message,
+        };
+    }
+};
+exports.deleteFilesInFolder = deleteFilesInFolder;
+const isFileExist = (filePath) => {
+    return (0, fs_1.existsSync)(filePath);
+};
+exports.isFileExist = isFileExist;
+const copyFiles = async (sourceDir, destinationDir) => {
+    try {
+        const files = await fs_1.promises.readdir(sourceDir);
+        for (const file of files) {
+            const sourceFilePath = path.join(sourceDir, file);
+            const destinationFilePath = path.join(destinationDir, file);
+            await fs_1.promises.copyFile(sourceFilePath, destinationFilePath);
+            console.log(`${file} copied successfully.`);
+        }
+    }
+    catch (err) {
+        console.error('Error copying files:', err);
+    }
+};
+exports.copyFiles = copyFiles;
+const createFolder = async (filePath) => {
+    if (!(0, fs_1.existsSync)(filePath)) {
+        (0, fs_1.mkdir)(filePath, { recursive: true }, (err) => {
+            if (err)
+                throw err;
+            console.log('New folder created successfully!');
+        });
+    }
+    else {
+        console.log('The folder already exists.');
+    }
+};
+exports.createFolder = createFolder;
+//# sourceMappingURL=index.js.map

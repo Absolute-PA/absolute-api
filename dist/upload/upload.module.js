@@ -1,1 +1,27 @@
-'use strict';function a150_0x2db0(_0x1a7f5e,_0x43f9fe){const _0x410b75=a150_0x410b();return a150_0x2db0=function(_0x2db08b,_0x2ccf29){_0x2db08b=_0x2db08b-0xce;let _0x19747e=_0x410b75[_0x2db08b];return _0x19747e;},a150_0x2db0(_0x1a7f5e,_0x43f9fe);}const a150_0x9594a2=a150_0x2db0;(function(_0x1af63d,_0x524fa4){const _0x3da241=a150_0x2db0,_0x177b1c=_0x1af63d();while(!![]){try{const _0x5d7f85=parseInt(_0x3da241(0xcf))/0x1*(-parseInt(_0x3da241(0xde))/0x2)+-parseInt(_0x3da241(0xd8))/0x3+-parseInt(_0x3da241(0xe6))/0x4*(-parseInt(_0x3da241(0xd5))/0x5)+parseInt(_0x3da241(0xe2))/0x6*(parseInt(_0x3da241(0xe0))/0x7)+parseInt(_0x3da241(0xdf))/0x8*(-parseInt(_0x3da241(0xd1))/0x9)+-parseInt(_0x3da241(0xd9))/0xa+-parseInt(_0x3da241(0xe1))/0xb*(-parseInt(_0x3da241(0xd7))/0xc);if(_0x5d7f85===_0x524fa4)break;else _0x177b1c['push'](_0x177b1c['shift']());}catch(_0x228ab8){_0x177b1c['push'](_0x177b1c['shift']());}}}(a150_0x410b,0x85a5f));var __decorate=this&&this[a150_0x9594a2(0xd2)]||function(_0x10a6c8,_0xad62dc,_0x25cc50,_0x4e0672){const _0x200ed5=a150_0x9594a2;var _0x570ab3=arguments[_0x200ed5(0xe7)],_0x59ebf5=_0x570ab3<0x3?_0xad62dc:_0x4e0672===null?_0x4e0672=Object[_0x200ed5(0xdb)](_0xad62dc,_0x25cc50):_0x4e0672,_0x4180eb;if(typeof Reflect==='object'&&typeof Reflect[_0x200ed5(0xe4)]===_0x200ed5(0xce))_0x59ebf5=Reflect['decorate'](_0x10a6c8,_0xad62dc,_0x25cc50,_0x4e0672);else{for(var _0x3357a2=_0x10a6c8[_0x200ed5(0xe7)]-0x1;_0x3357a2>=0x0;_0x3357a2--)if(_0x4180eb=_0x10a6c8[_0x3357a2])_0x59ebf5=(_0x570ab3<0x3?_0x4180eb(_0x59ebf5):_0x570ab3>0x3?_0x4180eb(_0xad62dc,_0x25cc50,_0x59ebf5):_0x4180eb(_0xad62dc,_0x25cc50))||_0x59ebf5;}return _0x570ab3>0x3&&_0x59ebf5&&Object[_0x200ed5(0xdd)](_0xad62dc,_0x25cc50,_0x59ebf5),_0x59ebf5;};Object[a150_0x9594a2(0xdd)](exports,'__esModule',{'value':!![]}),exports[a150_0x9594a2(0xda)]=void 0x0;const common_1=require('@nestjs/common'),upload_service_1=require('./upload.service'),upload_controller_1=require('./upload.controller'),mongoose_1=require(a150_0x9594a2(0xe5)),upload_schema_1=require('./schemas/upload.schema');function a150_0x410b(){const _0x15b9f7=['24toNnjW','2389583plXYoI','22FCDftx','6XgQHiK','UploadSchema','decorate','@nestjs/mongoose','1308waTQUx','length','function','74269TmXmNC','Module','1849941OnrjzB','__decorate','UploadController','Upload','2535TLrXPV','UploadService','17752908WIdLZP','2511366NghvAI','7963630uMOjJd','UploadModule','getOwnPropertyDescriptor','forFeature','defineProperty','18ekgqqK'];a150_0x410b=function(){return _0x15b9f7;};return a150_0x410b();}let UploadModule=class UploadModule{};UploadModule=__decorate([(0x0,common_1[a150_0x9594a2(0xd0)])({'imports':[mongoose_1['MongooseModule'][a150_0x9594a2(0xdc)]([{'name':a150_0x9594a2(0xd4),'schema':upload_schema_1[a150_0x9594a2(0xe3)]}])],'controllers':[upload_controller_1[a150_0x9594a2(0xd3)]],'providers':[upload_service_1[a150_0x9594a2(0xd6)]]})],UploadModule),exports[a150_0x9594a2(0xda)]=UploadModule;
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.UploadModule = void 0;
+const common_1 = require("@nestjs/common");
+const upload_service_1 = require("./upload.service");
+const upload_controller_1 = require("./upload.controller");
+const mongoose_1 = require("@nestjs/mongoose");
+const upload_schema_1 = require("./schemas/upload.schema");
+let UploadModule = class UploadModule {
+};
+UploadModule = __decorate([
+    (0, common_1.Module)({
+        imports: [
+            mongoose_1.MongooseModule.forFeature([{ name: 'Upload', schema: upload_schema_1.UploadSchema }]),
+        ],
+        controllers: [upload_controller_1.UploadController],
+        providers: [upload_service_1.UploadService],
+    })
+], UploadModule);
+exports.UploadModule = UploadModule;
+//# sourceMappingURL=upload.module.js.map

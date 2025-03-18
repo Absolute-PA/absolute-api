@@ -1,1 +1,16 @@
-'use strict';const a84_0xaf57f4=a84_0x4d8b;(function(_0x402c03,_0x5579d3){const _0x38af19=a84_0x4d8b,_0x3119d3=_0x402c03();while(!![]){try{const _0xfa0956=parseInt(_0x38af19(0xce))/0x1+parseInt(_0x38af19(0xc2))/0x2*(-parseInt(_0x38af19(0xca))/0x3)+parseInt(_0x38af19(0xc1))/0x4*(parseInt(_0x38af19(0xc4))/0x5)+parseInt(_0x38af19(0xcb))/0x6+parseInt(_0x38af19(0xc8))/0x7*(parseInt(_0x38af19(0xc5))/0x8)+-parseInt(_0x38af19(0xcc))/0x9+-parseInt(_0x38af19(0xd0))/0xa;if(_0xfa0956===_0x5579d3)break;else _0x3119d3['push'](_0x3119d3['shift']());}catch(_0x3d1eb2){_0x3119d3['push'](_0x3119d3['shift']());}}}(a84_0x1a01,0xd7bf0));Object[a84_0xaf57f4(0xcd)](exports,a84_0xaf57f4(0xc7),{'value':!![]}),exports['mapToDto']=void 0x0;function a84_0x4d8b(_0x4c3f83,_0x44f071){const _0x1a0134=a84_0x1a01();return a84_0x4d8b=function(_0x4d8be1,_0x461010){_0x4d8be1=_0x4d8be1-0xc1;let _0x184a71=_0x1a0134[_0x4d8be1];return _0x184a71;},a84_0x4d8b(_0x4c3f83,_0x44f071);}function a84_0x1a01(){const _0x8bb78d=['5sLZerT','240bvwrHH','createdAtUtc','__esModule','256746LZpPgm','jobId','3MzRmtm','6779622aOAPBB','9932427tMFtkr','defineProperty','1144225jnVRdR','name','9455260gDaoOX','mapToDto','3519296cAvKzM','2643002GEyZVk','_id'];a84_0x1a01=function(){return _0x8bb78d;};return a84_0x1a01();}const mapToDto=(_0x30797c,_0x5baea1)=>{const _0xe70eb9=a84_0xaf57f4;return{'_id':_0x30797c[_0xe70eb9(0xc3)],'name':_0x30797c[_0xe70eb9(0xcf)],'sounds':[..._0x5baea1],'isShuffle':_0x30797c['isShuffle'],'jobId':_0x30797c[_0xe70eb9(0xc9)],'createdAtUtc':_0x30797c[_0xe70eb9(0xc6)],'updatedAtUtc':_0x30797c['updatedAtUtc']};};exports[a84_0xaf57f4(0xd1)]=mapToDto;
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.mapToDto = void 0;
+const mapToDto = (playlist, sounds) => {
+    return {
+        _id: playlist._id,
+        name: playlist.name,
+        sounds: [...sounds],
+        isShuffle: playlist.isShuffle,
+        jobId: playlist.jobId,
+        createdAtUtc: playlist.createdAtUtc,
+        updatedAtUtc: playlist.updatedAtUtc,
+    };
+};
+exports.mapToDto = mapToDto;
+//# sourceMappingURL=playlist.mapper.js.map

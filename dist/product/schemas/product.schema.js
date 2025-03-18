@@ -1,1 +1,37 @@
-'use strict';var a95_0x2ef2ac=a95_0x3278;(function(_0x4062a9,_0x159415){var _0x45140a=a95_0x3278,_0x1960f5=_0x4062a9();while(!![]){try{var _0x2bf8d8=parseInt(_0x45140a(0x197))/0x1*(parseInt(_0x45140a(0x1a4))/0x2)+-parseInt(_0x45140a(0x1a8))/0x3+-parseInt(_0x45140a(0x195))/0x4*(-parseInt(_0x45140a(0x1a7))/0x5)+-parseInt(_0x45140a(0x194))/0x6+-parseInt(_0x45140a(0x1a6))/0x7+parseInt(_0x45140a(0x1a1))/0x8+parseInt(_0x45140a(0x19a))/0x9*(-parseInt(_0x45140a(0x19b))/0xa);if(_0x2bf8d8===_0x159415)break;else _0x1960f5['push'](_0x1960f5['shift']());}catch(_0x3a583a){_0x1960f5['push'](_0x1960f5['shift']());}}}(a95_0x2b7c,0x53c74));var __decorate=this&&this[a95_0x2ef2ac(0x1ad)]||function(_0x4e3f13,_0x33e467,_0x3983f1,_0x18c843){var _0x1a974c=a95_0x2ef2ac,_0x594cfa=arguments['length'],_0x111d22=_0x594cfa<0x3?_0x33e467:_0x18c843===null?_0x18c843=Object[_0x1a974c(0x1ac)](_0x33e467,_0x3983f1):_0x18c843,_0x36445f;if(typeof Reflect===_0x1a974c(0x19c)&&typeof Reflect[_0x1a974c(0x196)]===_0x1a974c(0x1a2))_0x111d22=Reflect[_0x1a974c(0x196)](_0x4e3f13,_0x33e467,_0x3983f1,_0x18c843);else{for(var _0x333085=_0x4e3f13[_0x1a974c(0x1ab)]-0x1;_0x333085>=0x0;_0x333085--)if(_0x36445f=_0x4e3f13[_0x333085])_0x111d22=(_0x594cfa<0x3?_0x36445f(_0x111d22):_0x594cfa>0x3?_0x36445f(_0x33e467,_0x3983f1,_0x111d22):_0x36445f(_0x33e467,_0x3983f1))||_0x111d22;}return _0x594cfa>0x3&&_0x111d22&&Object[_0x1a974c(0x199)](_0x33e467,_0x3983f1,_0x111d22),_0x111d22;},__metadata=this&&this[a95_0x2ef2ac(0x1a9)]||function(_0x2118d3,_0x55b5a9){var _0x29b248=a95_0x2ef2ac;if(typeof Reflect===_0x29b248(0x19c)&&typeof Reflect[_0x29b248(0x19d)]===_0x29b248(0x1a2))return Reflect[_0x29b248(0x19d)](_0x2118d3,_0x55b5a9);};Object['defineProperty'](exports,a95_0x2ef2ac(0x19e),{'value':!![]}),exports[a95_0x2ef2ac(0x1a3)]=exports[a95_0x2ef2ac(0x1a5)]=void 0x0;function a95_0x3278(_0x237118,_0x5a93f8){var _0x2b7cc4=a95_0x2b7c();return a95_0x3278=function(_0x3278ba,_0x301648){_0x3278ba=_0x3278ba-0x194;var _0xde113b=_0x2b7cc4[_0x3278ba];return _0xde113b;},a95_0x3278(_0x237118,_0x5a93f8);}function a95_0x2b7c(){var _0xf59ecf=['Schema','1124100AcGuFG','4TrMTlY','decorate','8626aeOqvA','Prop','defineProperty','36vdBUMC','963080WvsAoD','object','metadata','__esModule','@nestjs/mongoose','description','4549680dwfqCn','function','ProductSchema','118DbseMQ','Product','445641FPNVLk','1141765AshwSG','979788bukcJq','__metadata','price','length','getOwnPropertyDescriptor','__decorate','prototype','category','name','design:type'];a95_0x2b7c=function(){return _0xf59ecf;};return a95_0x2b7c();}const mongoose_1=require(a95_0x2ef2ac(0x19f));let Product=class Product{};__decorate([(0x0,mongoose_1[a95_0x2ef2ac(0x198)])(),__metadata(a95_0x2ef2ac(0x1b1),String)],Product['prototype'],a95_0x2ef2ac(0x1b0),void 0x0),__decorate([(0x0,mongoose_1[a95_0x2ef2ac(0x198)])(),__metadata(a95_0x2ef2ac(0x1b1),String)],Product['prototype'],a95_0x2ef2ac(0x1a0),void 0x0),__decorate([(0x0,mongoose_1['Prop'])(),__metadata(a95_0x2ef2ac(0x1b1),Number)],Product[a95_0x2ef2ac(0x1ae)],a95_0x2ef2ac(0x1aa),void 0x0),__decorate([(0x0,mongoose_1[a95_0x2ef2ac(0x198)])(),__metadata(a95_0x2ef2ac(0x1b1),String)],Product[a95_0x2ef2ac(0x1ae)],a95_0x2ef2ac(0x1af),void 0x0),Product=__decorate([(0x0,mongoose_1[a95_0x2ef2ac(0x1b2)])()],Product),exports['Product']=Product,exports[a95_0x2ef2ac(0x1a3)]=mongoose_1['SchemaFactory']['createForClass'](Product);
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.ProductSchema = exports.Product = void 0;
+const mongoose_1 = require("@nestjs/mongoose");
+let Product = class Product {
+};
+__decorate([
+    (0, mongoose_1.Prop)(),
+    __metadata("design:type", String)
+], Product.prototype, "name", void 0);
+__decorate([
+    (0, mongoose_1.Prop)(),
+    __metadata("design:type", String)
+], Product.prototype, "description", void 0);
+__decorate([
+    (0, mongoose_1.Prop)(),
+    __metadata("design:type", Number)
+], Product.prototype, "price", void 0);
+__decorate([
+    (0, mongoose_1.Prop)(),
+    __metadata("design:type", String)
+], Product.prototype, "category", void 0);
+Product = __decorate([
+    (0, mongoose_1.Schema)()
+], Product);
+exports.Product = Product;
+exports.ProductSchema = mongoose_1.SchemaFactory.createForClass(Product);
+//# sourceMappingURL=product.schema.js.map

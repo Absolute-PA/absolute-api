@@ -1,1 +1,79 @@
-'use strict';const a78_0x465e1f=a78_0x4177;(function(_0x4499d5,_0xd9ad1b){const _0x3f95ed=a78_0x4177,_0x5ca8a2=_0x4499d5();while(!![]){try{const _0x5d3ceb=-parseInt(_0x3f95ed(0x1a8))/0x1+-parseInt(_0x3f95ed(0x1ab))/0x2*(-parseInt(_0x3f95ed(0x1c2))/0x3)+-parseInt(_0x3f95ed(0x1a5))/0x4+-parseInt(_0x3f95ed(0x1d0))/0x5*(-parseInt(_0x3f95ed(0x1a1))/0x6)+-parseInt(_0x3f95ed(0x1bd))/0x7+parseInt(_0x3f95ed(0x19e))/0x8+parseInt(_0x3f95ed(0x19d))/0x9;if(_0x5d3ceb===_0xd9ad1b)break;else _0x5ca8a2['push'](_0x5ca8a2['shift']());}catch(_0x370bc3){_0x5ca8a2['push'](_0x5ca8a2['shift']());}}}(a78_0x3582,0xcbdd1));function a78_0x4177(_0x137bbb,_0x4794ae){const _0x358210=a78_0x3582();return a78_0x4177=function(_0x417700,_0xc29b4){_0x417700=_0x417700-0x197;let _0x27b99f=_0x358210[_0x417700];return _0x27b99f;},a78_0x4177(_0x137bbb,_0x4794ae);}Object['defineProperty'](exports,'__esModule',{'value':!![]});const core_1=require('@nestjs/core'),swagger_1=require(a78_0x465e1f(0x1c3)),nest_winston_1=require(a78_0x465e1f(0x1cd)),winston_1=require(a78_0x465e1f(0x1be)),peer_1=require(a78_0x465e1f(0x1d5)),fs=require('fs');function a78_0x3582(){const _0x573250=['use','setup','timestamp','true','production','HTTPS','DailyRotateFile','./app.module','cli','nest-winston','uncaughtException','./certificates/localhost.crt','9390BiOUwc','join','winston-cloudwatch','pi-logs','AppModule','peer','createLogger','listen','setTitle','winston-daily-rotate-file','AWS_SECRET_ACCESS_KEY','build','/peer','NODE_ENV','90d','1.0','api','message','8004726TkarmQ','693792FFZtKN','./certificates/localhost.key','path','4086vZtgkM','ExpressPeerServer','transports','cwd','6140988eeMUcQ','format','PI_NAME','1187136JQhwqu','WinstonModule','AWS_ACCESS_KEY_ID','10dGxySX','createDocument','error','create','DocumentBuilder','YYYY-MM-DD','NestFactory','setDescription','30d','blob/logs/','Console','env','setVersion','combine','The\x20Absolute\x20PA\x20API\x20description','readFileSync','-%DATE%-combined.log','PORT','1825691DQVkgA','winston','splat','log','json','937899tyEZED','@nestjs/swagger'];a78_0x3582=function(){return _0x573250;};return a78_0x3582();}require(a78_0x465e1f(0x1d9));const path_1=require(a78_0x465e1f(0x1a0)),app_module_1=require(a78_0x465e1f(0x1cb)),WinstonCloudWatch=require(a78_0x465e1f(0x1d2)),PI_NAME=process[a78_0x465e1f(0x1b6)][a78_0x465e1f(0x1a7)]||'PI';async function bootstrap(){const _0x20d22b=a78_0x465e1f,_0x2c5074={'key':fs[_0x20d22b(0x1ba)]((0x0,path_1[_0x20d22b(0x1d1)])(process[_0x20d22b(0x1a4)](),_0x20d22b(0x19f))),'cert':fs[_0x20d22b(0x1ba)]((0x0,path_1[_0x20d22b(0x1d1)])(process[_0x20d22b(0x1a4)](),_0x20d22b(0x1cf)))},_0x837fc5=[new winston_1[(_0x20d22b(0x1a3))][(_0x20d22b(0x1ca))]({'filename':_0x20d22b(0x1b4)+PI_NAME+'-%DATE%-error.log','level':_0x20d22b(0x1ad),'format':winston_1[_0x20d22b(0x1a6)]['combine'](winston_1[_0x20d22b(0x1a6)][_0x20d22b(0x1c6)](),winston_1['format'][_0x20d22b(0x1c1)]()),'datePattern':_0x20d22b(0x1b0),'zippedArchive':![],'maxFiles':process[_0x20d22b(0x1b6)][_0x20d22b(0x198)]===_0x20d22b(0x1c8)?_0x20d22b(0x199):_0x20d22b(0x1b3)}),new winston_1['transports'][(_0x20d22b(0x1ca))]({'filename':_0x20d22b(0x1b4)+PI_NAME+_0x20d22b(0x1bb),'format':winston_1['format'][_0x20d22b(0x1b8)](winston_1[_0x20d22b(0x1a6)][_0x20d22b(0x1c6)](),winston_1[_0x20d22b(0x1a6)][_0x20d22b(0x1c1)]()),'datePattern':_0x20d22b(0x1b0),'zippedArchive':![],'maxFiles':process[_0x20d22b(0x1b6)][_0x20d22b(0x198)]===_0x20d22b(0x1c8)?'90d':_0x20d22b(0x1b3)}),new winston_1['transports'][(_0x20d22b(0x1b5))]({'format':winston_1['format']['combine'](winston_1['format'][_0x20d22b(0x1cc)](),winston_1['format'][_0x20d22b(0x1bf)](),winston_1[_0x20d22b(0x1a6)][_0x20d22b(0x1c6)](),winston_1[_0x20d22b(0x1a6)]['errors']({'stack':!![]}),winston_1[_0x20d22b(0x1a6)]['printf'](_0x173b9d=>{const _0x467759=_0x20d22b;return _0x173b9d[_0x467759(0x1c6)]+'\x20'+_0x173b9d['level']+':\x20'+_0x173b9d[_0x467759(0x19c)];}))})];(process[_0x20d22b(0x1b6)][_0x20d22b(0x198)]===_0x20d22b(0x1c8)||process[_0x20d22b(0x1b6)][_0x20d22b(0x198)]==='qa')&&_0x837fc5['push'](new WinstonCloudWatch({'logGroupName':process[_0x20d22b(0x1b6)]['LOG_GROUP_NAME']||_0x20d22b(0x1d3),'logStreamName':PI_NAME,'awsAccessKeyId':process[_0x20d22b(0x1b6)][_0x20d22b(0x1aa)],'awsSecretKey':process[_0x20d22b(0x1b6)][_0x20d22b(0x1da)],'awsRegion':process[_0x20d22b(0x1b6)]['AWS_REGION']}));const _0x14c55e={'httpsOptions':process[_0x20d22b(0x1b6)][_0x20d22b(0x1c9)]===_0x20d22b(0x1c7)?_0x2c5074:undefined,'logger':nest_winston_1[_0x20d22b(0x1a9)][_0x20d22b(0x1d6)]({'transports':_0x837fc5})},_0x3286bf=await core_1[_0x20d22b(0x1b1)][_0x20d22b(0x1ae)](app_module_1[_0x20d22b(0x1d4)],_0x14c55e);process['on'](_0x20d22b(0x1ce),function(_0x5b80a3){const _0x31d9ef=_0x20d22b;console[_0x31d9ef(0x1c0)](_0x5b80a3);}),_0x3286bf['enableCors']();const _0x395622=new swagger_1[(_0x20d22b(0x1af))]()[_0x20d22b(0x1d8)]('Absolute\x20PA\x20application')[_0x20d22b(0x1b2)](_0x20d22b(0x1b9))[_0x20d22b(0x1b7)](_0x20d22b(0x19a))['addTag']('PA')[_0x20d22b(0x1db)](),_0xe0dfed=swagger_1['SwaggerModule'][_0x20d22b(0x1ac)](_0x3286bf,_0x395622);swagger_1['SwaggerModule'][_0x20d22b(0x1c5)](_0x20d22b(0x19b),_0x3286bf,_0xe0dfed);const _0xfc3263=_0x3286bf['getHttpServer'](),_0x17b77a=(0x0,peer_1[_0x20d22b(0x1a2)])(_0xfc3263,{'path':'/streaming'});_0x3286bf[_0x20d22b(0x1c4)](_0x20d22b(0x197),_0x17b77a);const _0x421115=process['env'][_0x20d22b(0x1bc)]||0x1f90;await _0x3286bf[_0x20d22b(0x1d7)](_0x421115),console[_0x20d22b(0x1c0)]('App\x20listening\x20on\x20port:\x20'+_0x421115);}bootstrap();
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const core_1 = require("@nestjs/core");
+const swagger_1 = require("@nestjs/swagger");
+const nest_winston_1 = require("nest-winston");
+const winston_1 = require("winston");
+const peer_1 = require("peer");
+const fs = require("fs");
+require("winston-daily-rotate-file");
+const path_1 = require("path");
+const app_module_1 = require("./app.module");
+const WinstonCloudWatch = require('winston-cloudwatch');
+const PI_NAME = process.env.PI_NAME || 'PI';
+async function bootstrap() {
+    const httpsOptions = {
+        key: fs.readFileSync((0, path_1.join)(process.cwd(), './certificates/localhost.key')),
+        cert: fs.readFileSync((0, path_1.join)(process.cwd(), './certificates/localhost.crt')),
+    };
+    const logTransports = [
+        new winston_1.transports.DailyRotateFile({
+            filename: `blob/logs/${PI_NAME}-%DATE%-error.log`,
+            level: 'error',
+            format: winston_1.format.combine(winston_1.format.timestamp(), winston_1.format.json()),
+            datePattern: 'YYYY-MM-DD',
+            zippedArchive: false,
+            maxFiles: process.env.NODE_ENV === 'production' ? '90d' : '30d',
+        }),
+        new winston_1.transports.DailyRotateFile({
+            filename: `blob/logs/${PI_NAME}-%DATE%-combined.log`,
+            format: winston_1.format.combine(winston_1.format.timestamp(), winston_1.format.json()),
+            datePattern: 'YYYY-MM-DD',
+            zippedArchive: false,
+            maxFiles: process.env.NODE_ENV === 'production' ? '90d' : '30d',
+        }),
+        new winston_1.transports.Console({
+            format: winston_1.format.combine(winston_1.format.cli(), winston_1.format.splat(), winston_1.format.timestamp(), winston_1.format.errors({ stack: true }), winston_1.format.printf((info) => {
+                return `${info.timestamp} ${info.level}: ${info.message}`;
+            })),
+        }),
+    ];
+    if (process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'qa') {
+        logTransports.push(new WinstonCloudWatch({
+            logGroupName: process.env.LOG_GROUP_NAME || 'pi-logs',
+            logStreamName: PI_NAME,
+            awsAccessKeyId: process.env.AWS_ACCESS_KEY_ID,
+            awsSecretKey: process.env.AWS_SECRET_ACCESS_KEY,
+            awsRegion: process.env.AWS_REGION,
+        }));
+    }
+    const appOption = {
+        httpsOptions: process.env.HTTPS === 'true' ? httpsOptions : undefined,
+        logger: nest_winston_1.WinstonModule.createLogger({
+            transports: logTransports,
+        }),
+    };
+    const app = await core_1.NestFactory.create(app_module_1.AppModule, appOption);
+    process.on('uncaughtException', function (exception) {
+        console.log(exception);
+    });
+    app.enableCors();
+    const config = new swagger_1.DocumentBuilder()
+        .setTitle('Absolute PA application')
+        .setDescription('The Absolute PA API description')
+        .setVersion('1.0')
+        .addTag('PA')
+        .build();
+    const document = swagger_1.SwaggerModule.createDocument(app, config);
+    swagger_1.SwaggerModule.setup('api', app, document);
+    const httpServer = app.getHttpServer();
+    const peerServer = (0, peer_1.ExpressPeerServer)(httpServer, {
+        path: '/streaming',
+    });
+    app.use('/peer', peerServer);
+    const port = process.env.PORT || 8080;
+    await app.listen(port);
+    console.log('App listening on port: ' + port);
+}
+bootstrap();
+//# sourceMappingURL=main.js.map

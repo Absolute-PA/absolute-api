@@ -1,1 +1,50 @@
-'use strict';const a17_0x36c48b=a17_0x325f;function a17_0x325f(_0x112b0b,_0x38163f){const _0x2d1534=a17_0x2d15();return a17_0x325f=function(_0x325f58,_0x367a58){_0x325f58=_0x325f58-0x7e;let _0x44a8cb=_0x2d1534[_0x325f58];return _0x44a8cb;},a17_0x325f(_0x112b0b,_0x38163f);}(function(_0x3378c2,_0x5194c1){const _0x321107=a17_0x325f,_0x5b7537=_0x3378c2();while(!![]){try{const _0x5cf726=-parseInt(_0x321107(0x9b))/0x1*(-parseInt(_0x321107(0xad))/0x2)+-parseInt(_0x321107(0x95))/0x3+-parseInt(_0x321107(0x7f))/0x4+-parseInt(_0x321107(0x9e))/0x5+-parseInt(_0x321107(0x8c))/0x6*(parseInt(_0x321107(0xa7))/0x7)+-parseInt(_0x321107(0x9f))/0x8*(-parseInt(_0x321107(0x89))/0x9)+parseInt(_0x321107(0x91))/0xa;if(_0x5cf726===_0x5194c1)break;else _0x5b7537['push'](_0x5b7537['shift']());}catch(_0x2f5b65){_0x5b7537['push'](_0x5b7537['shift']());}}}(a17_0x2d15,0x31fef));var __decorate=this&&this[a17_0x36c48b(0x86)]||function(_0x405bec,_0x1a43a8,_0x51292e,_0x1b9253){const _0x10f424=a17_0x36c48b;var _0x38d5c4=arguments[_0x10f424(0x83)],_0x11f89c=_0x38d5c4<0x3?_0x1a43a8:_0x1b9253===null?_0x1b9253=Object['getOwnPropertyDescriptor'](_0x1a43a8,_0x51292e):_0x1b9253,_0x3267e1;if(typeof Reflect===_0x10f424(0x97)&&typeof Reflect['decorate']===_0x10f424(0xa0))_0x11f89c=Reflect['decorate'](_0x405bec,_0x1a43a8,_0x51292e,_0x1b9253);else{for(var _0x388585=_0x405bec[_0x10f424(0x83)]-0x1;_0x388585>=0x0;_0x388585--)if(_0x3267e1=_0x405bec[_0x388585])_0x11f89c=(_0x38d5c4<0x3?_0x3267e1(_0x11f89c):_0x38d5c4>0x3?_0x3267e1(_0x1a43a8,_0x51292e,_0x11f89c):_0x3267e1(_0x1a43a8,_0x51292e))||_0x11f89c;}return _0x38d5c4>0x3&&_0x11f89c&&Object[_0x10f424(0x90)](_0x1a43a8,_0x51292e,_0x11f89c),_0x11f89c;},__metadata=this&&this['__metadata']||function(_0x391100,_0x195e19){const _0x3b2bc9=a17_0x36c48b;if(typeof Reflect===_0x3b2bc9(0x97)&&typeof Reflect['metadata']===_0x3b2bc9(0xa0))return Reflect[_0x3b2bc9(0xa5)](_0x391100,_0x195e19);},TextToAudioProcessor_1;function a17_0x2d15(){const _0x44b1b5=['6719390BtLWcS','log','Processor','design:paramtypes','707130HaDrXW','EventEmitter2','object','textToAudioId','JobType','@agent-ly/nestjs-agenda','194015nyBrkv','Job','../common/events','1332065CpPBLE','8ISgIlh','function','emit','design:returntype','Define','TextToAudioProcessor','metadata','TextToAudio','3136lAOGRV','../audit/audit.service','design:type','_id','attrs','auditService','2ychejR','toString','1065900abXJcW','Logger','SoundEvent','durationInSecond','length','@nestjs/common','@nestjs/event-emitter','__decorate','../common/enums','eventEmitter','3474747FqufDL','create','data','3732SAbIZj','playTextToAudio','AuditService','__esModule','defineProperty'];a17_0x2d15=function(){return _0x44b1b5;};return a17_0x2d15();}Object[a17_0x36c48b(0x90)](exports,a17_0x36c48b(0x8f),{'value':!![]}),exports[a17_0x36c48b(0xa4)]=void 0x0;const common_1=require(a17_0x36c48b(0x84)),nestjs_agenda_1=require(a17_0x36c48b(0x9a)),agenda_1=require('agenda'),event_emitter_1=require(a17_0x36c48b(0x85)),enums_1=require(a17_0x36c48b(0x87)),events_1=require(a17_0x36c48b(0x9d)),audit_service_1=require(a17_0x36c48b(0xa8));let TextToAudioProcessor=TextToAudioProcessor_1=class TextToAudioProcessor{constructor(_0x507e9e,_0x36a483){const _0x41b64b=a17_0x36c48b;this['eventEmitter']=_0x507e9e,this[_0x41b64b(0xac)]=_0x36a483,this['logger']=new common_1[(_0x41b64b(0x80))](TextToAudioProcessor_1['name']);}async[a17_0x36c48b(0x8d)](_0x5a68b9){const _0x5820e1=a17_0x36c48b,_0x287859={'textToAudioId':_0x5a68b9[_0x5820e1(0xab)]['data'][_0x5820e1(0x98)],'jobId':_0x5a68b9[_0x5820e1(0xab)][_0x5820e1(0xaa)][_0x5820e1(0x7e)](),'durationInSecond':_0x5a68b9[_0x5820e1(0xab)][_0x5820e1(0x8b)][_0x5820e1(0x82)]};console[_0x5820e1(0x92)](_0x5a68b9,'job'),this[_0x5820e1(0xac)][_0x5820e1(0x8a)](_0x5a68b9['attrs'][_0x5820e1(0x8b)]['audit']),this[_0x5820e1(0x88)][_0x5820e1(0xa1)](events_1[_0x5820e1(0x81)][_0x5820e1(0xa6)],_0x287859);}};__decorate([(0x0,nestjs_agenda_1[a17_0x36c48b(0xa3)])(enums_1[a17_0x36c48b(0x99)]['PlayTextToAudio']),__metadata(a17_0x36c48b(0xa9),Function),__metadata(a17_0x36c48b(0x94),[agenda_1[a17_0x36c48b(0x9c)]]),__metadata(a17_0x36c48b(0xa2),Promise)],TextToAudioProcessor['prototype'],a17_0x36c48b(0x8d),null),TextToAudioProcessor=TextToAudioProcessor_1=__decorate([(0x0,nestjs_agenda_1[a17_0x36c48b(0x93)])(),__metadata(a17_0x36c48b(0x94),[event_emitter_1[a17_0x36c48b(0x96)],audit_service_1[a17_0x36c48b(0x8e)]])],TextToAudioProcessor),exports[a17_0x36c48b(0xa4)]=TextToAudioProcessor;
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var TextToAudioProcessor_1;
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.TextToAudioProcessor = void 0;
+const common_1 = require("@nestjs/common");
+const nestjs_agenda_1 = require("@agent-ly/nestjs-agenda");
+const agenda_1 = require("agenda");
+const event_emitter_1 = require("@nestjs/event-emitter");
+const enums_1 = require("@/common/enums");
+const events_1 = require("@/common/events");
+const audit_service_1 = require("@/audit/audit.service");
+let TextToAudioProcessor = TextToAudioProcessor_1 = class TextToAudioProcessor {
+    constructor(eventEmitter, auditService) {
+        this.eventEmitter = eventEmitter;
+        this.auditService = auditService;
+        this.logger = new common_1.Logger(TextToAudioProcessor_1.name);
+    }
+    async playTextToAudio(job) {
+        const payload = {
+            textToAudioId: job.attrs.data.textToAudioId,
+            jobId: job.attrs._id.toString(),
+            durationInSecond: job.attrs.data.durationInSecond,
+        };
+        console.log(job, 'job');
+        this.auditService.create(job.attrs.data.audit);
+        this.eventEmitter.emit(events_1.SoundEvent.TextToAudio, payload);
+    }
+};
+__decorate([
+    (0, nestjs_agenda_1.Define)(enums_1.JobType.PlayTextToAudio),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [agenda_1.Job]),
+    __metadata("design:returntype", Promise)
+], TextToAudioProcessor.prototype, "playTextToAudio", null);
+TextToAudioProcessor = TextToAudioProcessor_1 = __decorate([
+    (0, nestjs_agenda_1.Processor)(),
+    __metadata("design:paramtypes", [event_emitter_1.EventEmitter2,
+        audit_service_1.AuditService])
+], TextToAudioProcessor);
+exports.TextToAudioProcessor = TextToAudioProcessor;
+//# sourceMappingURL=textToAudio.processor.js.map

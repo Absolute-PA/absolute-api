@@ -1,1 +1,12 @@
-'use strict';const a13_0x5d81e3=a13_0x237c;function a13_0x28e7(){const _0x166ab0=['1711116dvescs','18003517pxKRXI','2738991yobzNE','1473112tMAdit','audit','attributes','toPlayTextToAudioCommand','2024474oFLrfo','defineProperty','1172385zuHRmk','textToAudioId','__esModule','372827sGXMyp'];a13_0x28e7=function(){return _0x166ab0;};return a13_0x28e7();}(function(_0x52f82e,_0xdb88bb){const _0x56e11a=a13_0x237c,_0x4bfcb1=_0x52f82e();while(!![]){try{const _0x22dd8c=-parseInt(_0x56e11a(0x164))/0x1+-parseInt(_0x56e11a(0x15f))/0x2+-parseInt(_0x56e11a(0x167))/0x3+parseInt(_0x56e11a(0x168))/0x4+-parseInt(_0x56e11a(0x161))/0x5+parseInt(_0x56e11a(0x165))/0x6+parseInt(_0x56e11a(0x166))/0x7;if(_0x22dd8c===_0xdb88bb)break;else _0x4bfcb1['push'](_0x4bfcb1['shift']());}catch(_0x2b1296){_0x4bfcb1['push'](_0x4bfcb1['shift']());}}}(a13_0x28e7,0xa9279));Object[a13_0x5d81e3(0x160)](exports,a13_0x5d81e3(0x163),{'value':!![]}),exports[a13_0x5d81e3(0x15e)]=void 0x0;const toPlayTextToAudioCommand=_0x1a0369=>{const _0x292841=a13_0x5d81e3;return{'textToAudioId':_0x1a0369[_0x292841(0x15d)][_0x292841(0x162)],'durationInSecond':Number(_0x1a0369['attributes']['durationInSecond']),'audit':_0x1a0369[_0x292841(0x15c)]};};function a13_0x237c(_0x323e7f,_0x4755bf){const _0x28e783=a13_0x28e7();return a13_0x237c=function(_0x237c46,_0x51cd62){_0x237c46=_0x237c46-0x15c;let _0x545927=_0x28e783[_0x237c46];return _0x545927;},a13_0x237c(_0x323e7f,_0x4755bf);}exports[a13_0x5d81e3(0x15e)]=toPlayTextToAudioCommand;
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.toPlayTextToAudioCommand = void 0;
+const toPlayTextToAudioCommand = (dto) => {
+    return {
+        textToAudioId: dto.attributes.textToAudioId,
+        durationInSecond: Number(dto.attributes.durationInSecond),
+        audit: dto.audit,
+    };
+};
+exports.toPlayTextToAudioCommand = toPlayTextToAudioCommand;
+//# sourceMappingURL=textToAudio.mapper.js.map

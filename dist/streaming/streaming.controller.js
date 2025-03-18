@@ -1,1 +1,85 @@
-'use strict';const a134_0x450931=a134_0x51c0;(function(_0x1d7262,_0x5a8ad8){const _0x5d447a=a134_0x51c0,_0x20b92c=_0x1d7262();while(!![]){try{const _0x518ce6=-parseInt(_0x5d447a(0x17c))/0x1*(-parseInt(_0x5d447a(0x172))/0x2)+parseInt(_0x5d447a(0x164))/0x3*(parseInt(_0x5d447a(0x169))/0x4)+parseInt(_0x5d447a(0x177))/0x5+-parseInt(_0x5d447a(0x193))/0x6*(-parseInt(_0x5d447a(0x186))/0x7)+-parseInt(_0x5d447a(0x188))/0x8+parseInt(_0x5d447a(0x16a))/0x9*(-parseInt(_0x5d447a(0x195))/0xa)+parseInt(_0x5d447a(0x16b))/0xb;if(_0x518ce6===_0x5a8ad8)break;else _0x20b92c['push'](_0x20b92c['shift']());}catch(_0x3ea9fb){_0x20b92c['push'](_0x20b92c['shift']());}}}(a134_0x33b4,0x364b9));function a134_0x33b4(){const _0x349fb0=['object','Admin','function','User','1ZkSBYg','prototype','JwtAuthGuard','audioService','createStreamFromFile','filePath','Roles','__param','/stop','../auth/enums/role.enum','19201DxvPnH','playStreamAudio','2644880WZMQpL','cwd','Res','__decorate','Viewer','audio','design:returntype','UseGuards','__metadata','StreamingController','RolesGuard','42QtXUhy','../auth/guards/roles.guard','81660xRtDWB','./streaming.service','Success\x20play\x20sound:\x20','length','Logger','log','Get','startStreaming','logger','stopStreamAudio','design:type','Post','7053juBXWo','send','design:paramtypes','@nestjs/common','metadata','72JpAZaJ','369jkeRxm','4944192eEbzHc','join','decorate','defineProperty','openServerUIStream','name','Role','737768UcDfbn','playAudioFile','Controller','StreamingService','__esModule','39670fWRCXN'];a134_0x33b4=function(){return _0x349fb0;};return a134_0x33b4();}var __decorate=this&&this[a134_0x450931(0x18b)]||function(_0x54ef5c,_0x46ef81,_0x3586e7,_0x43b5cf){const _0x467348=a134_0x450931;var _0x17f81a=arguments[_0x467348(0x15b)],_0x5909b5=_0x17f81a<0x3?_0x46ef81:_0x43b5cf===null?_0x43b5cf=Object['getOwnPropertyDescriptor'](_0x46ef81,_0x3586e7):_0x43b5cf,_0xe204ac;if(typeof Reflect===_0x467348(0x178)&&typeof Reflect[_0x467348(0x16d)]===_0x467348(0x17a))_0x5909b5=Reflect['decorate'](_0x54ef5c,_0x46ef81,_0x3586e7,_0x43b5cf);else{for(var _0x2307ff=_0x54ef5c[_0x467348(0x15b)]-0x1;_0x2307ff>=0x0;_0x2307ff--)if(_0xe204ac=_0x54ef5c[_0x2307ff])_0x5909b5=(_0x17f81a<0x3?_0xe204ac(_0x5909b5):_0x17f81a>0x3?_0xe204ac(_0x46ef81,_0x3586e7,_0x5909b5):_0xe204ac(_0x46ef81,_0x3586e7))||_0x5909b5;}return _0x17f81a>0x3&&_0x5909b5&&Object[_0x467348(0x16e)](_0x46ef81,_0x3586e7,_0x5909b5),_0x5909b5;},__metadata=this&&this[a134_0x450931(0x190)]||function(_0x381d2c,_0x1a88dd){const _0xedc427=a134_0x450931;if(typeof Reflect===_0xedc427(0x178)&&typeof Reflect[_0xedc427(0x168)]===_0xedc427(0x17a))return Reflect[_0xedc427(0x168)](_0x381d2c,_0x1a88dd);},__param=this&&this[a134_0x450931(0x183)]||function(_0x4335e2,_0x479aa1){return function(_0x321450,_0x521cca){_0x479aa1(_0x321450,_0x521cca,_0x4335e2);};},StreamingController_1;Object['defineProperty'](exports,a134_0x450931(0x176),{'value':!![]}),exports['StreamingController']=void 0x0;function a134_0x51c0(_0x34ffe0,_0x435dd4){const _0x33b424=a134_0x33b4();return a134_0x51c0=function(_0x51c08d,_0x42fb24){_0x51c08d=_0x51c08d-0x159;let _0x2380d1=_0x33b424[_0x51c08d];return _0x2380d1;},a134_0x51c0(_0x34ffe0,_0x435dd4);}const common_1=require(a134_0x450931(0x167)),path_1=require('path'),streaming_service_1=require(a134_0x450931(0x159)),roles_decorator_1=require('../auth/decorators/roles.decorator'),role_enum_1=require(a134_0x450931(0x185)),jwt_guard_1=require('../auth/guards/jwt.guard'),roles_guard_1=require(a134_0x450931(0x194));let StreamingController=StreamingController_1=class StreamingController{constructor(_0x3ed9ff){const _0x5ea442=a134_0x450931;this[_0x5ea442(0x17f)]=_0x3ed9ff,this[_0x5ea442(0x160)]=new common_1[(_0x5ea442(0x15c))](StreamingController_1[_0x5ea442(0x170)]);}async['playAudioFile'](_0x1ac6c0,_0x21ceab){const _0x553715=a134_0x450931;try{const _0x238a70=(0x0,path_1[_0x553715(0x16c)])(process[_0x553715(0x189)](),_0x1ac6c0),_0x4fbe5c=this[_0x553715(0x17f)][_0x553715(0x180)](_0x238a70);this[_0x553715(0x17f)][_0x553715(0x187)](_0x4fbe5c),_0x21ceab[_0x553715(0x165)](_0x553715(0x15a)+_0x238a70);}catch(_0x398626){return this[_0x553715(0x160)]['log'](_0x398626,'error'),'';}}async[a134_0x450931(0x15f)](){const _0x530f9e=a134_0x450931;try{this[_0x530f9e(0x17f)][_0x530f9e(0x16f)]();}catch(_0x4d732c){this['logger'][_0x530f9e(0x15d)](_0x4d732c);}}async[a134_0x450931(0x161)](_0x5142c3){const _0x59ee19=a134_0x450931;this['audioService'][_0x59ee19(0x161)]();}};__decorate([(0x0,common_1[a134_0x450931(0x163)])('/play/'),(0x0,common_1[a134_0x450931(0x18f)])(jwt_guard_1['JwtAuthGuard'],roles_guard_1[a134_0x450931(0x192)]),(0x0,roles_decorator_1[a134_0x450931(0x182)])(role_enum_1[a134_0x450931(0x171)][a134_0x450931(0x179)],role_enum_1['Role']['User'],role_enum_1[a134_0x450931(0x171)][a134_0x450931(0x18c)]),__param(0x0,(0x0,common_1['Query'])(a134_0x450931(0x181))),__param(0x1,(0x0,common_1[a134_0x450931(0x18a)])({'passthrough':!![]})),__metadata(a134_0x450931(0x162),Function),__metadata(a134_0x450931(0x166),[String,Object]),__metadata(a134_0x450931(0x18e),Promise)],StreamingController[a134_0x450931(0x17d)],a134_0x450931(0x173),null),__decorate([(0x0,common_1['Get'])('stream/start'),(0x0,common_1[a134_0x450931(0x18f)])(jwt_guard_1[a134_0x450931(0x17e)],roles_guard_1[a134_0x450931(0x192)]),(0x0,roles_decorator_1[a134_0x450931(0x182)])(role_enum_1['Role']['Admin'],role_enum_1[a134_0x450931(0x171)]['User'],role_enum_1[a134_0x450931(0x171)][a134_0x450931(0x18c)]),__metadata(a134_0x450931(0x162),Function),__metadata(a134_0x450931(0x166),[]),__metadata(a134_0x450931(0x18e),Promise)],StreamingController[a134_0x450931(0x17d)],'startStreaming',null),__decorate([(0x0,common_1[a134_0x450931(0x15e)])(a134_0x450931(0x184)),(0x0,common_1[a134_0x450931(0x18f)])(jwt_guard_1[a134_0x450931(0x17e)],roles_guard_1[a134_0x450931(0x192)]),(0x0,roles_decorator_1[a134_0x450931(0x182)])(role_enum_1['Role'][a134_0x450931(0x179)],role_enum_1[a134_0x450931(0x171)][a134_0x450931(0x17b)],role_enum_1[a134_0x450931(0x171)][a134_0x450931(0x18c)]),__param(0x0,(0x0,common_1[a134_0x450931(0x18a)])({'passthrough':!![]})),__metadata(a134_0x450931(0x162),Function),__metadata(a134_0x450931(0x166),[Object]),__metadata(a134_0x450931(0x18e),Promise)],StreamingController[a134_0x450931(0x17d)],a134_0x450931(0x161),null),StreamingController=StreamingController_1=__decorate([(0x0,common_1[a134_0x450931(0x174)])(a134_0x450931(0x18d)),__metadata(a134_0x450931(0x166),[streaming_service_1[a134_0x450931(0x175)]])],StreamingController),exports[a134_0x450931(0x191)]=StreamingController;
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __param = (this && this.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
+var StreamingController_1;
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.StreamingController = void 0;
+const common_1 = require("@nestjs/common");
+const path_1 = require("path");
+const streaming_service_1 = require("./streaming.service");
+const roles_decorator_1 = require("../auth/decorators/roles.decorator");
+const role_enum_1 = require("../auth/enums/role.enum");
+const jwt_guard_1 = require("../auth/guards/jwt.guard");
+const roles_guard_1 = require("../auth/guards/roles.guard");
+let StreamingController = StreamingController_1 = class StreamingController {
+    constructor(audioService) {
+        this.audioService = audioService;
+        this.logger = new common_1.Logger(StreamingController_1.name);
+    }
+    async playAudioFile(filePath, res) {
+        try {
+            const fullFilePath = (0, path_1.join)(process.cwd(), filePath);
+            const audioStream = this.audioService.createStreamFromFile(fullFilePath);
+            this.audioService.playStreamAudio(audioStream);
+            res.send('Success play sound: ' + fullFilePath);
+        }
+        catch (error) {
+            this.logger.log(error, 'error');
+            return '';
+        }
+    }
+    async startStreaming() {
+        try {
+            this.audioService.openServerUIStream();
+        }
+        catch (error) {
+            this.logger.log(error);
+        }
+    }
+    async stopStreamAudio(res) {
+        this.audioService.stopStreamAudio();
+    }
+};
+__decorate([
+    (0, common_1.Post)('/play/'),
+    (0, common_1.UseGuards)(jwt_guard_1.JwtAuthGuard, roles_guard_1.RolesGuard),
+    (0, roles_decorator_1.Roles)(role_enum_1.Role.Admin, role_enum_1.Role.User, role_enum_1.Role.Viewer),
+    __param(0, (0, common_1.Query)('filePath')),
+    __param(1, (0, common_1.Res)({ passthrough: true })),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [String, Object]),
+    __metadata("design:returntype", Promise)
+], StreamingController.prototype, "playAudioFile", null);
+__decorate([
+    (0, common_1.Get)('stream/start'),
+    (0, common_1.UseGuards)(jwt_guard_1.JwtAuthGuard, roles_guard_1.RolesGuard),
+    (0, roles_decorator_1.Roles)(role_enum_1.Role.Admin, role_enum_1.Role.User, role_enum_1.Role.Viewer),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", Promise)
+], StreamingController.prototype, "startStreaming", null);
+__decorate([
+    (0, common_1.Get)('/stop'),
+    (0, common_1.UseGuards)(jwt_guard_1.JwtAuthGuard, roles_guard_1.RolesGuard),
+    (0, roles_decorator_1.Roles)(role_enum_1.Role.Admin, role_enum_1.Role.User, role_enum_1.Role.Viewer),
+    __param(0, (0, common_1.Res)({ passthrough: true })),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", Promise)
+], StreamingController.prototype, "stopStreamAudio", null);
+StreamingController = StreamingController_1 = __decorate([
+    (0, common_1.Controller)('audio'),
+    __metadata("design:paramtypes", [streaming_service_1.StreamingService])
+], StreamingController);
+exports.StreamingController = StreamingController;
+//# sourceMappingURL=streaming.controller.js.map

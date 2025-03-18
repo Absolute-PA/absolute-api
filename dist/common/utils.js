@@ -1,1 +1,40 @@
-'use strict';const a75_0x5dd134=a75_0x14b7;(function(_0x2c6f76,_0x119527){const _0xd5f15a=a75_0x14b7,_0x26a2d1=_0x2c6f76();while(!![]){try{const _0x1b6a24=parseInt(_0xd5f15a(0xd6))/0x1+parseInt(_0xd5f15a(0xd5))/0x2*(parseInt(_0xd5f15a(0xd0))/0x3)+parseInt(_0xd5f15a(0xbc))/0x4*(-parseInt(_0xd5f15a(0xcd))/0x5)+-parseInt(_0xd5f15a(0xc3))/0x6*(-parseInt(_0xd5f15a(0xd4))/0x7)+-parseInt(_0xd5f15a(0xc5))/0x8*(parseInt(_0xd5f15a(0xbe))/0x9)+parseInt(_0xd5f15a(0xd8))/0xa+-parseInt(_0xd5f15a(0xbd))/0xb*(parseInt(_0xd5f15a(0xce))/0xc);if(_0x1b6a24===_0x119527)break;else _0x26a2d1['push'](_0x26a2d1['shift']());}catch(_0xf1b040){_0x26a2d1['push'](_0x26a2d1['shift']());}}}(a75_0x3c95,0x5cef3));Object['defineProperty'](exports,a75_0x5dd134(0xc0),{'value':!![]}),exports['uuid']=exports[a75_0x5dd134(0xcf)]=exports[a75_0x5dd134(0xd2)]=void 0x0;const fs=require('fs'),os=require('os');function isRaspberryPi(){const _0x299a05=a75_0x5dd134;try{const _0x55d358=fs[_0x299a05(0xcb)](_0x299a05(0xd7),'utf8');return _0x55d358[_0x299a05(0xc2)](_0x299a05(0xd1));}catch(_0xba343c){return![];}}exports['isRaspberryPi']=isRaspberryPi;function detectOs(){const _0x4dd6e2=a75_0x5dd134,_0x498cbf=os['platform']();if(_0x498cbf===_0x4dd6e2(0xca))return _0x4dd6e2(0xbf);else{if(_0x498cbf==='linux')return'Linux';else return _0x498cbf===_0x4dd6e2(0xc6)?_0x4dd6e2(0xc9):_0x4dd6e2(0xc4);}}exports[a75_0x5dd134(0xcf)]=detectOs;function a75_0x14b7(_0x4365fc,_0x4e656c){const _0x3c9517=a75_0x3c95();return a75_0x14b7=function(_0x14b76e,_0x2c88dd){_0x14b76e=_0x14b76e-0xbc;let _0x26b3f5=_0x3c9517[_0x14b76e];return _0x26b3f5;},a75_0x14b7(_0x4365fc,_0x4e656c);}function a75_0x3c95(){const _0x252e58=['darwin','replace','toString','macOS','win32','readFileSync','xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx','5wsSMVB','120UxKIGX','detectOs','1842uHtTHt','BCM','isRaspberryPi','random','3442859WDlQcT','2478NOeDtS','225396lMVhLm','/proc/cpuinfo','7561170WdXIEI','2564788RvGYds','1284767UHAhIt','2097DAOtUE','Windows','__esModule','uuid','includes','6eWjLil','Unknown','1520IzrOKP'];a75_0x3c95=function(){return _0x252e58;};return a75_0x3c95();}function uuid(){const _0x4c344c=a75_0x5dd134;return _0x4c344c(0xcc)[_0x4c344c(0xc7)](/[xy]/g,function(_0x40eb24){const _0x34e3ea=_0x4c344c,_0x531cc9=Math[_0x34e3ea(0xd3)]()*0x10|0x0,_0x1c7775=_0x40eb24==='x'?_0x531cc9:_0x531cc9&0x3|0x8;return _0x1c7775[_0x34e3ea(0xc8)](0x10);});}exports[a75_0x5dd134(0xc1)]=uuid;
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.uuid = exports.detectOs = exports.isRaspberryPi = void 0;
+const fs = require("fs");
+const os = require("os");
+function isRaspberryPi() {
+    try {
+        const cpuInfo = fs.readFileSync('/proc/cpuinfo', 'utf8');
+        return cpuInfo.includes('BCM');
+    }
+    catch (error) {
+        return false;
+    }
+}
+exports.isRaspberryPi = isRaspberryPi;
+function detectOs() {
+    const platform = os.platform();
+    if (platform === 'win32') {
+        return 'Windows';
+    }
+    else if (platform === 'linux') {
+        return 'Linux';
+    }
+    else if (platform === 'darwin') {
+        return 'macOS';
+    }
+    else {
+        return 'Unknown';
+    }
+}
+exports.detectOs = detectOs;
+function uuid() {
+    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+        const r = (Math.random() * 16) | 0;
+        const v = c === 'x' ? r : (r & 0x3) | 0x8;
+        return v.toString(16);
+    });
+}
+exports.uuid = uuid;
+//# sourceMappingURL=utils.js.map

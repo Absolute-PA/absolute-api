@@ -1,1 +1,44 @@
-'use strict';var a24_0x3d076d=a24_0x4f83;(function(_0x8c9217,_0x6a7a78){var _0x2cb068=a24_0x4f83,_0x22986b=_0x8c9217();while(!![]){try{var _0x1960fa=-parseInt(_0x2cb068(0x1d3))/0x1+-parseInt(_0x2cb068(0x1e4))/0x2*(parseInt(_0x2cb068(0x1c6))/0x3)+-parseInt(_0x2cb068(0x1de))/0x4*(-parseInt(_0x2cb068(0x1d7))/0x5)+parseInt(_0x2cb068(0x1da))/0x6*(parseInt(_0x2cb068(0x1e6))/0x7)+-parseInt(_0x2cb068(0x1c3))/0x8*(parseInt(_0x2cb068(0x1d9))/0x9)+-parseInt(_0x2cb068(0x1d4))/0xa+-parseInt(_0x2cb068(0x1cd))/0xb*(-parseInt(_0x2cb068(0x1d5))/0xc);if(_0x1960fa===_0x6a7a78)break;else _0x22986b['push'](_0x22986b['shift']());}catch(_0x323d7b){_0x22986b['push'](_0x22986b['shift']());}}}(a24_0x5761,0xefa20));var __decorate=this&&this[a24_0x3d076d(0x1e3)]||function(_0x325715,_0x462ea1,_0x3539cb,_0x7a7d0b){var _0x5953ce=a24_0x3d076d,_0x63bf73=arguments[_0x5953ce(0x1ec)],_0x1d51da=_0x63bf73<0x3?_0x462ea1:_0x7a7d0b===null?_0x7a7d0b=Object[_0x5953ce(0x1e0)](_0x462ea1,_0x3539cb):_0x7a7d0b,_0x36babf;if(typeof Reflect===_0x5953ce(0x1ce)&&typeof Reflect[_0x5953ce(0x1dd)]==='function')_0x1d51da=Reflect['decorate'](_0x325715,_0x462ea1,_0x3539cb,_0x7a7d0b);else{for(var _0x215fc8=_0x325715['length']-0x1;_0x215fc8>=0x0;_0x215fc8--)if(_0x36babf=_0x325715[_0x215fc8])_0x1d51da=(_0x63bf73<0x3?_0x36babf(_0x1d51da):_0x63bf73>0x3?_0x36babf(_0x462ea1,_0x3539cb,_0x1d51da):_0x36babf(_0x462ea1,_0x3539cb))||_0x1d51da;}return _0x63bf73>0x3&&_0x1d51da&&Object[_0x5953ce(0x1d2)](_0x462ea1,_0x3539cb,_0x1d51da),_0x1d51da;},__metadata=this&&this[a24_0x3d076d(0x1d8)]||function(_0x3aea56,_0x41caab){var _0x560c87=a24_0x3d076d;if(typeof Reflect==='object'&&typeof Reflect[_0x560c87(0x1cf)]===_0x560c87(0x1c5))return Reflect[_0x560c87(0x1cf)](_0x3aea56,_0x41caab);},__param=this&&this[a24_0x3d076d(0x1db)]||function(_0x30de02,_0x39996d){return function(_0x38c5ed,_0x14f0f3){_0x39996d(_0x38c5ed,_0x14f0f3,_0x30de02);};};Object[a24_0x3d076d(0x1d2)](exports,a24_0x3d076d(0x1e5),{'value':!![]}),exports[a24_0x3d076d(0x1c9)]=void 0x0;const common_1=require('@nestjs/common'),audit_service_1=require('./audit.service'),guards_1=require(a24_0x3d076d(0x1cc)),role_enum_1=require(a24_0x3d076d(0x1c2)),roles_decorator_1=require('../auth/decorators/roles.decorator');function a24_0x5761(){var _0x18de5f=['design:type','Get','Controller','length','../auth/enums/role.enum','24CqAcHh','auditService','function','190125pUDery','UseGuards','Roles','AuditController','limit','page','../auth/guards','999372oYsfMA','object','metadata','findHistory','AuditService','defineProperty','1375940RCwZsk','5605230JZEPpR','348bzvbnX','Role','190gtBYUD','__metadata','254781BmwIHD','6eXNSzS','__param','design:paramtypes','decorate','115404AuiGgk','prototype','getOwnPropertyDescriptor','Query','audit','__decorate','50VcdKhB','__esModule','5993785lfgZmF','findAuditsPaginated','RolesGuard'];a24_0x5761=function(){return _0x18de5f;};return a24_0x5761();}let AuditController=class AuditController{constructor(_0x1f5af0){var _0x2fa7fe=a24_0x3d076d;this[_0x2fa7fe(0x1c4)]=_0x1f5af0;}async[a24_0x3d076d(0x1d0)](_0x143d02,_0x5daa32){var _0x5d7171=a24_0x3d076d;return await this[_0x5d7171(0x1c4)][_0x5d7171(0x1e7)](parseInt(_0x143d02),parseInt(_0x5daa32));}};function a24_0x4f83(_0x4dca25,_0xf90949){var _0x5761a9=a24_0x5761();return a24_0x4f83=function(_0x4f8366,_0xffdce8){_0x4f8366=_0x4f8366-0x1c2;var _0x34d1be=_0x5761a9[_0x4f8366];return _0x34d1be;},a24_0x4f83(_0x4dca25,_0xf90949);}__decorate([(0x0,common_1[a24_0x3d076d(0x1ea)])('/history'),(0x0,common_1[a24_0x3d076d(0x1c7)])(guards_1['JwtAuthGuard'],guards_1[a24_0x3d076d(0x1e8)]),(0x0,roles_decorator_1[a24_0x3d076d(0x1c8)])(role_enum_1[a24_0x3d076d(0x1d6)]['Admin'],role_enum_1[a24_0x3d076d(0x1d6)]['User']),__param(0x0,(0x0,common_1[a24_0x3d076d(0x1e1)])(a24_0x3d076d(0x1cb))),__param(0x1,(0x0,common_1[a24_0x3d076d(0x1e1)])(a24_0x3d076d(0x1ca))),__metadata(a24_0x3d076d(0x1e9),Function),__metadata(a24_0x3d076d(0x1dc),[String,String]),__metadata('design:returntype',Promise)],AuditController[a24_0x3d076d(0x1df)],'findHistory',null),AuditController=__decorate([(0x0,common_1[a24_0x3d076d(0x1eb)])(a24_0x3d076d(0x1e2)),__metadata('design:paramtypes',[audit_service_1[a24_0x3d076d(0x1d1)]])],AuditController),exports[a24_0x3d076d(0x1c9)]=AuditController;
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __param = (this && this.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.AuditController = void 0;
+const common_1 = require("@nestjs/common");
+const audit_service_1 = require("./audit.service");
+const guards_1 = require("../auth/guards");
+const role_enum_1 = require("../auth/enums/role.enum");
+const roles_decorator_1 = require("../auth/decorators/roles.decorator");
+let AuditController = class AuditController {
+    constructor(auditService) {
+        this.auditService = auditService;
+    }
+    async findHistory(page, limit) {
+        return await this.auditService.findAuditsPaginated(parseInt(page), parseInt(limit));
+    }
+};
+__decorate([
+    (0, common_1.Get)('/history'),
+    (0, common_1.UseGuards)(guards_1.JwtAuthGuard, guards_1.RolesGuard),
+    (0, roles_decorator_1.Roles)(role_enum_1.Role.Admin, role_enum_1.Role.User),
+    __param(0, (0, common_1.Query)('page')),
+    __param(1, (0, common_1.Query)('limit')),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [String, String]),
+    __metadata("design:returntype", Promise)
+], AuditController.prototype, "findHistory", null);
+AuditController = __decorate([
+    (0, common_1.Controller)('audit'),
+    __metadata("design:paramtypes", [audit_service_1.AuditService])
+], AuditController);
+exports.AuditController = AuditController;
+//# sourceMappingURL=audit.controller.js.map

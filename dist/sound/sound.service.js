@@ -1,1 +1,262 @@
-'use strict';const a133_0x3e70a8=a133_0x3a42;(function(_0x2ec07c,_0x4f735a){const _0x58bfd6=a133_0x3a42,_0x22a640=_0x2ec07c();while(!![]){try{const _0x3831f2=-parseInt(_0x58bfd6(0x1ae))/0x1+parseInt(_0x58bfd6(0x14b))/0x2+parseInt(_0x58bfd6(0x1c1))/0x3+parseInt(_0x58bfd6(0x176))/0x4*(parseInt(_0x58bfd6(0x1a5))/0x5)+-parseInt(_0x58bfd6(0x1b0))/0x6+-parseInt(_0x58bfd6(0x160))/0x7*(-parseInt(_0x58bfd6(0x155))/0x8)+-parseInt(_0x58bfd6(0x18f))/0x9;if(_0x3831f2===_0x4f735a)break;else _0x22a640['push'](_0x22a640['shift']());}catch(_0x11001f){_0x22a640['push'](_0x22a640['shift']());}}}(a133_0x23d1,0xdf11b));function a133_0x23d1(){const _0x38de8f=['filePath','__decorate','TextToAudio','Injectable','name','../agenda/agenda.service','validateAndMoveFileAsync','killAll','../common/constants','play','Tune','getMessageById','_id','delete','../streaming/streaming.service','Inject','assets','soundModel','uuid','UploadService','AudioPlayer','@nestjs/common','moveFile','playSoundOnEvent','23406741KEnmOd','forEach','DEFAULT_TUNES_DIR','deleteFile','all','../common/events/sound','VoiceRecorded','Play\x20sound:\x20','findById','originalname','../common/utils','metadata','StreamingService','design:returntype','SoundGateway','Playing\x20sound:\x20','./constants','findByIds','Play','join','PlaySound','findVoiceRecoredById','55erAIug','../common/job','fileName','function','stop','File\x20not\x20found!','design:paramtypes','audio','getNewFileName','416930vtliqo','error','1704852reYlYY','executeJob','soundGateway','playTextToAudioRecorded','TMP_UPLOAD_DIR','PROCESS_CACHE','defineProperty','find','resetTunes','SoundEvent','../common/file','volume','Logger','path','object','DEFAULT_TUNES','agendaService','2123760MNMIZa','OnEvent','@nestjs/event-emitter','./sound.gateway','AUDIO_DIR','AgendaService','textToAudio','1890866HdeXxx','findOne','findByIdAndUpdate','findByType','../text-to-audio/text-to-audio.service','__param','design:type','textToAudioService','\x20-\x20','../common/audio/audio-player','872pqxrsi','isFileExist','SoundService','prototype','push','update','../common/path','log','Playing\x20voice\x20recorded:\x20','playVoiceRecorded','InjectModel','90356zNvDQg','__metadata','processRootPath','broadcastPlaying','./data/default-sounds','getOwnPropertyDescriptor','decorate','JobType','assign','logger','Model','create','exec','length','playAsync','cwd','upload','SoundType','Sound\x20not\x20found!','updateVolume','uploadService','createFolder','420068opzxaX'];a133_0x23d1=function(){return _0x38de8f;};return a133_0x23d1();}var __decorate=this&&this[a133_0x3e70a8(0x178)]||function(_0x22629d,_0x5c8a3b,_0x1411ef,_0x13435f){const _0x1cfa8f=a133_0x3e70a8;var _0x5d43a2=arguments[_0x1cfa8f(0x16d)],_0x4cb924=_0x5d43a2<0x3?_0x5c8a3b:_0x13435f===null?_0x13435f=Object[_0x1cfa8f(0x165)](_0x5c8a3b,_0x1411ef):_0x13435f,_0x3c458a;if(typeof Reflect===_0x1cfa8f(0x1be)&&typeof Reflect[_0x1cfa8f(0x166)]==='function')_0x4cb924=Reflect['decorate'](_0x22629d,_0x5c8a3b,_0x1411ef,_0x13435f);else{for(var _0x37c8c8=_0x22629d[_0x1cfa8f(0x16d)]-0x1;_0x37c8c8>=0x0;_0x37c8c8--)if(_0x3c458a=_0x22629d[_0x37c8c8])_0x4cb924=(_0x5d43a2<0x3?_0x3c458a(_0x4cb924):_0x5d43a2>0x3?_0x3c458a(_0x5c8a3b,_0x1411ef,_0x4cb924):_0x3c458a(_0x5c8a3b,_0x1411ef))||_0x4cb924;}return _0x5d43a2>0x3&&_0x4cb924&&Object['defineProperty'](_0x5c8a3b,_0x1411ef,_0x4cb924),_0x4cb924;},__metadata=this&&this[a133_0x3e70a8(0x161)]||function(_0x4048fd,_0x247c9c){const _0x255bec=a133_0x3e70a8;if(typeof Reflect===_0x255bec(0x1be)&&typeof Reflect[_0x255bec(0x19a)]===_0x255bec(0x1a8))return Reflect[_0x255bec(0x19a)](_0x4048fd,_0x247c9c);},__param=this&&this[a133_0x3e70a8(0x150)]||function(_0x126e93,_0xcaa4fc){return function(_0x46d48c,_0x19fdca){_0xcaa4fc(_0x46d48c,_0x19fdca,_0x126e93);};},SoundService_1;Object[a133_0x3e70a8(0x1b6)](exports,'__esModule',{'value':!![]}),exports['SoundService']=void 0x0;const common_1=require(a133_0x3e70a8(0x18c)),mongoose_1=require('@nestjs/mongoose'),mongoose_2=require('mongoose'),path=require(a133_0x3e70a8(0x1bd)),event_emitter_1=require(a133_0x3e70a8(0x1c3)),file_1=require(a133_0x3e70a8(0x1ba)),agenda_service_1=require(a133_0x3e70a8(0x17c)),enums_1=require('../common/enums'),constants_1=require(a133_0x3e70a8(0x17f)),utils_1=require(a133_0x3e70a8(0x199)),path_1=require(a133_0x3e70a8(0x15b)),audio_player_1=require(a133_0x3e70a8(0x154)),sound_1=require(a133_0x3e70a8(0x194)),job_1=require(a133_0x3e70a8(0x1a6)),constants_2=require(a133_0x3e70a8(0x19f)),default_sounds_1=require(a133_0x3e70a8(0x164)),sound_gateway_1=require(a133_0x3e70a8(0x1c4)),path_2=require(a133_0x3e70a8(0x1bd)),upload_service_1=require('../upload/upload.service'),text_to_audio_service_1=require(a133_0x3e70a8(0x14f)),streaming_service_1=require(a133_0x3e70a8(0x185));let SoundService=SoundService_1=class SoundService{constructor(_0x3b75df,_0x1af9f5,_0x1c57fe,_0x349405,_0x23103b,_0x12cde6){const _0x136b27=a133_0x3e70a8;this[_0x136b27(0x188)]=_0x3b75df,this[_0x136b27(0x1c0)]=_0x1af9f5,this[_0x136b27(0x174)]=_0x1c57fe,this['textToAudioService']=_0x349405,this['streamingService']=_0x23103b,this[_0x136b27(0x1b2)]=_0x12cde6,this['logger']=new common_1[(_0x136b27(0x1bc))](SoundService_1['name']);}async[a133_0x3e70a8(0x16b)](_0x5c57f0){await this['validateAndMoveFileAsync'](_0x5c57f0,null);const _0x46a37b=new this['soundModel'](_0x5c57f0);return _0x46a37b['save']();}async['findByType'](_0xf6693c){const _0x70211b=a133_0x3e70a8,_0x2e6ae9=await this[_0x70211b(0x188)][_0x70211b(0x1b7)]({'type':_0xf6693c})[_0x70211b(0x16c)]();return _0x2e6ae9;}async[a133_0x3e70a8(0x14c)](_0x21a232){const _0x2e408f=a133_0x3e70a8,_0x194923=await this[_0x2e408f(0x188)][_0x2e408f(0x197)](_0x21a232);return _0x194923;}async[a133_0x3e70a8(0x1a0)](_0x55ec49){const _0x27d16c=a133_0x3e70a8,_0x5276c2=await this[_0x27d16c(0x188)]['find']({'_id':{'$in':_0x55ec49}});return _0x5276c2;}async[a133_0x3e70a8(0x15a)](_0x5a8f9c,_0x2e2daf){const _0x7970b=a133_0x3e70a8,_0x30201c=await this[_0x7970b(0x188)][_0x7970b(0x197)](_0x5a8f9c)[_0x7970b(0x16c)]();if(!_0x30201c)throw new Error(_0x7970b(0x172));await this[_0x7970b(0x17d)](_0x2e2daf,_0x30201c===null||_0x30201c===void 0x0?void 0x0:_0x30201c[_0x7970b(0x1a7)]);const _0x22cd85=await this['soundModel'][_0x7970b(0x14d)](_0x5a8f9c,Object[_0x7970b(0x168)](Object[_0x7970b(0x168)]({},_0x2e2daf),{'updatedAtUtc':new Date()}),{'new':!![]});return _0x22cd85;}async[a133_0x3e70a8(0x173)](_0x7d1296,_0x4289cc){const _0x2bb9b2=a133_0x3e70a8,_0x18a33f=await this[_0x2bb9b2(0x188)]['findById'](_0x7d1296)['exec']();if(!_0x18a33f)throw new Error(_0x2bb9b2(0x172));const _0x397489=await this[_0x2bb9b2(0x188)][_0x2bb9b2(0x14d)](_0x7d1296,Object[_0x2bb9b2(0x168)](Object[_0x2bb9b2(0x168)]({},_0x4289cc),{'updatedAtUtc':new Date()}),{'new':!![]});return _0x397489;}async[a133_0x3e70a8(0x184)](_0x5425a0){const _0x5e83fd=a133_0x3e70a8,_0x36e6d4=await this[_0x5e83fd(0x188)]['findByIdAndDelete'](_0x5425a0);if(_0x36e6d4['fileName']){const _0x91b7ae=constants_1[_0x5e83fd(0x148)]+'/'+_0x36e6d4[_0x5e83fd(0x1a7)];try{(0x0,file_1[_0x5e83fd(0x192)])(_0x91b7ae);}catch(_0x3aa5b5){this['logger'][_0x5e83fd(0x1af)](_0x3aa5b5);}}return _0x36e6d4;}async[a133_0x3e70a8(0x170)](_0x316c49,_0x5627c4){const _0x1c6a4a=a133_0x3e70a8,_0x5825c3=await this[_0x1c6a4a(0x188)][_0x1c6a4a(0x197)](_0x316c49)[_0x1c6a4a(0x16c)](),_0x3b87c2=_0x5825c3===null||_0x5825c3===void 0x0?void 0x0:_0x5825c3[_0x1c6a4a(0x1a7)],_0x5d9b6e=this[_0x1c6a4a(0x1ad)](_0x5627c4[_0x1c6a4a(0x198)]),_0x385868=constants_1[_0x1c6a4a(0x148)]+'/'+_0x5d9b6e;await(0x0,file_1[_0x1c6a4a(0x18d)])(_0x5627c4['path'],_0x385868);const _0x4637d6={'fileName':_0x5d9b6e},_0x31aa7a=await this[_0x1c6a4a(0x188)]['findByIdAndUpdate'](_0x316c49,Object[_0x1c6a4a(0x168)](Object[_0x1c6a4a(0x168)]({},_0x4637d6),{'updatedAtUtc':new Date()}),{'new':!![]});if(_0x3b87c2){const _0x323ec3=constants_1[_0x1c6a4a(0x148)]+'/'+_0x3b87c2;(0x0,file_1[_0x1c6a4a(0x192)])(_0x323ec3);}return _0x31aa7a;}async[a133_0x3e70a8(0x18e)](_0x116ff0){const _0x344425=a133_0x3e70a8,{soundId:_0x293ae6,jobId:_0x3c4782,durationInSecond:_0x5881d0}=_0x116ff0,_0x513106=await this['findOne'](_0x293ae6),_0xd7e638=path['join'](path_1[_0x344425(0x162)],_0x344425(0x187),_0x344425(0x1ac),_0x513106['fileName']);job_1[_0x344425(0x1b5)][_0x344425(0x17e)](),this[_0x344425(0x169)][_0x344425(0x15c)](_0x344425(0x19e)+_0x293ae6+_0x344425(0x153)+_0x513106[_0x344425(0x17b)]),(0x0,job_1['executeJob'])({'jobId':_0x3c4782,'run':()=>audio_player_1[_0x344425(0x18b)][_0x344425(0x16e)](_0xd7e638,_0x513106[_0x344425(0x1bb)]),'next':()=>this['stop'](_0x293ae6),'durationInSecond':_0x5881d0}),this[_0x344425(0x1b2)][_0x344425(0x163)]({'id':_0x293ae6,'isPlaying':!![]});}async[a133_0x3e70a8(0x15e)](_0x2d67f6){const _0x1f65f3=a133_0x3e70a8,{voiceId:_0x379175,jobId:_0x97df2,durationInSecond:_0x563113}=_0x2d67f6,_0x2a30a1=await this['uploadService'][_0x1f65f3(0x1a4)](_0x379175),_0x2e043c=_0x2a30a1[_0x1f65f3(0x177)],_0x329ab9=(0x0,path_2[_0x1f65f3(0x1a2)])(process[_0x1f65f3(0x16f)](),_0x2e043c);job_1[_0x1f65f3(0x1b5)]['killAll'](),this[_0x1f65f3(0x169)][_0x1f65f3(0x15c)](_0x1f65f3(0x15d)+_0x379175),(0x0,job_1['executeJob'])({'jobId':_0x97df2,'run':()=>audio_player_1[_0x1f65f3(0x18b)][_0x1f65f3(0x16e)](_0x329ab9),'durationInSecond':_0x563113,'next':()=>null});}async[a133_0x3e70a8(0x1b3)](_0x585836){const _0x2bf25b=a133_0x3e70a8,{textToAudioId:_0x1bc90,jobId:_0x4e9101,durationInSecond:_0x3fdd1b}=_0x585836,{message:_0x500936}=await this['textToAudioService'][_0x2bf25b(0x182)](_0x1bc90);job_1['PROCESS_CACHE'][_0x2bf25b(0x17e)](),(0x0,job_1[_0x2bf25b(0x1b1)])({'jobId':_0x4e9101,'run':()=>{const _0x2d150f=_0x2bf25b;let _0x294403=null;return this[_0x2d150f(0x152)][_0x2d150f(0x14a)](_0x500936,_0x291249=>{_0x294403=this['streamingService']['playStreamAudioAsync'](_0x291249);}),_0x294403;},'durationInSecond':_0x3fdd1b,'next':()=>null});}async[a133_0x3e70a8(0x180)](_0x3045ea,_0x2f872d,_0x3d54a0=![]){const _0x1d203f=a133_0x3e70a8,_0x16e0a9={'when':'now','jobType':enums_1[_0x1d203f(0x167)]['PlaySound'],'attributes':{'soundId':_0x2f872d,'durationInSecond':_0x3d54a0?0x15180:undefined},'audit':{'actor':_0x3045ea,'name':enums_1[_0x1d203f(0x167)][_0x1d203f(0x1a3)],'message':_0x1d203f(0x196)+_0x2f872d}},_0x21bfae=await this[_0x1d203f(0x188)][_0x1d203f(0x14c)]({'jobId':{'$ne':null}});_0x21bfae&&await this[_0x1d203f(0x1a9)](_0x21bfae['id']);const {jobId:_0x48d9ea}=await this[_0x1d203f(0x1c0)]['scheduleJob'](_0x16e0a9);return this[_0x1d203f(0x15a)](_0x2f872d,{'jobId':_0x48d9ea});}async[a133_0x3e70a8(0x1a9)](_0x347796){const _0x4f2036=a133_0x3e70a8;let _0xcb24d8=await this[_0x4f2036(0x14c)](_0x347796);const {jobId:_0x2ede4c}=_0xcb24d8||{};if(_0x2ede4c){const {success:_0x131d50}=await this['agendaService']['cancelJob'](_0x2ede4c);_0x131d50&&(_0xcb24d8=await this[_0x4f2036(0x15a)](_0x347796,{'jobId':null}));}return this['soundGateway'][_0x4f2036(0x163)]({'id':_0xcb24d8['id'],'isPlaying':![]}),_0xcb24d8;}async[a133_0x3e70a8(0x1b8)](){const _0x1c5c7e=a133_0x3e70a8,_0x7ab2e6=await this[_0x1c5c7e(0x14e)](constants_2[_0x1c5c7e(0x171)][_0x1c5c7e(0x181)]);if(_0x7ab2e6[_0x1c5c7e(0x16d)]>0x0){const _0x145a49=[];_0x7ab2e6[_0x1c5c7e(0x190)](_0x44fa30=>{const _0x55764c=_0x1c5c7e;_0x145a49['push'](this['delete'](_0x44fa30[_0x55764c(0x183)]));}),await Promise[_0x1c5c7e(0x193)](_0x145a49);}await(0x0,file_1['copyFiles'])(constants_1[_0x1c5c7e(0x191)],constants_1[_0x1c5c7e(0x1b4)]);const _0xb5d58c=[];return default_sounds_1[_0x1c5c7e(0x1bf)][_0x1c5c7e(0x190)](_0x312b8e=>{const _0x5bfa34=_0x1c5c7e;_0xb5d58c[_0x5bfa34(0x159)](this[_0x5bfa34(0x16b)](Object['assign']({},_0x312b8e)));}),await Promise[_0x1c5c7e(0x193)](_0xb5d58c),!![];}[a133_0x3e70a8(0x1ad)](_0x5dce1e){const _0x485c38=a133_0x3e70a8,_0x4e6ea4=_0x5dce1e['split']('.')['pop']();return(0x0,utils_1[_0x485c38(0x189)])()+'.'+_0x4e6ea4;}async[a133_0x3e70a8(0x17d)](_0x1eccf6,_0x47926f){const _0x7d8c4=a133_0x3e70a8;if(!_0x1eccf6[_0x7d8c4(0x1a7)])return;const _0x4dc2ed=constants_1[_0x7d8c4(0x1b4)]+'/'+_0x1eccf6[_0x7d8c4(0x1a7)],_0x206f27=_0x47926f||this[_0x7d8c4(0x1ad)](_0x1eccf6['fileName']),_0x186a7e=constants_1[_0x7d8c4(0x148)]+'/'+_0x206f27;if(!(0x0,file_1[_0x7d8c4(0x156)])(_0x4dc2ed))throw new Error(_0x7d8c4(0x1aa));!(0x0,file_1[_0x7d8c4(0x156)])(constants_1[_0x7d8c4(0x148)])&&(0x0,file_1[_0x7d8c4(0x175)])(constants_1[_0x7d8c4(0x148)]),await(0x0,file_1[_0x7d8c4(0x18d)])(_0x4dc2ed,_0x186a7e),_0x1eccf6[_0x7d8c4(0x1a7)]=_0x206f27;}};function a133_0x3a42(_0x4616d3,_0x34b1fc){const _0x23d1de=a133_0x23d1();return a133_0x3a42=function(_0x3a42d5,_0x4b6f26){_0x3a42d5=_0x3a42d5-0x148;let _0x24b48d=_0x23d1de[_0x3a42d5];return _0x24b48d;},a133_0x3a42(_0x4616d3,_0x34b1fc);}__decorate([(0x0,event_emitter_1[a133_0x3e70a8(0x1c2)])(sound_1['SoundEvent'][a133_0x3e70a8(0x1a1)]),__metadata(a133_0x3e70a8(0x151),Function),__metadata(a133_0x3e70a8(0x1ab),[Object]),__metadata(a133_0x3e70a8(0x19c),Promise)],SoundService[a133_0x3e70a8(0x158)],'playSoundOnEvent',null),__decorate([(0x0,event_emitter_1[a133_0x3e70a8(0x1c2)])(sound_1['SoundEvent'][a133_0x3e70a8(0x195)]),__metadata(a133_0x3e70a8(0x151),Function),__metadata(a133_0x3e70a8(0x1ab),[Object]),__metadata('design:returntype',Promise)],SoundService['prototype'],a133_0x3e70a8(0x15e),null),__decorate([(0x0,event_emitter_1['OnEvent'])(sound_1[a133_0x3e70a8(0x1b9)][a133_0x3e70a8(0x179)]),__metadata(a133_0x3e70a8(0x151),Function),__metadata(a133_0x3e70a8(0x1ab),[Object]),__metadata('design:returntype',Promise)],SoundService[a133_0x3e70a8(0x158)],a133_0x3e70a8(0x1b3),null),SoundService=SoundService_1=__decorate([(0x0,common_1[a133_0x3e70a8(0x17a)])(),__param(0x0,(0x0,mongoose_1[a133_0x3e70a8(0x15f)])('Sound')),__param(0x5,(0x0,common_1[a133_0x3e70a8(0x186)])(sound_gateway_1[a133_0x3e70a8(0x19d)])),__metadata(a133_0x3e70a8(0x1ab),[mongoose_2[a133_0x3e70a8(0x16a)],agenda_service_1[a133_0x3e70a8(0x149)],upload_service_1[a133_0x3e70a8(0x18a)],text_to_audio_service_1['TextToAudioService'],streaming_service_1[a133_0x3e70a8(0x19b)],sound_gateway_1[a133_0x3e70a8(0x19d)]])],SoundService),exports[a133_0x3e70a8(0x157)]=SoundService;
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __param = (this && this.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
+var SoundService_1;
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.SoundService = void 0;
+const common_1 = require("@nestjs/common");
+const mongoose_1 = require("@nestjs/mongoose");
+const mongoose_2 = require("mongoose");
+const path = require("path");
+const event_emitter_1 = require("@nestjs/event-emitter");
+const file_1 = require("@/common/file");
+const agenda_service_1 = require("@/agenda/agenda.service");
+const enums_1 = require("@/common/enums");
+const constants_1 = require("@/common/constants");
+const utils_1 = require("@/common/utils");
+const path_1 = require("@/common/path");
+const audio_player_1 = require("@/common/audio/audio-player");
+const sound_1 = require("@/common/events/sound");
+const job_1 = require("@/common/job");
+const constants_2 = require("./constants");
+const default_sounds_1 = require("./data/default-sounds");
+const sound_gateway_1 = require("./sound.gateway");
+const path_2 = require("path");
+const upload_service_1 = require("../upload/upload.service");
+const text_to_audio_service_1 = require("../text-to-audio/text-to-audio.service");
+const streaming_service_1 = require("../streaming/streaming.service");
+let SoundService = SoundService_1 = class SoundService {
+    constructor(soundModel, agendaService, uploadService, textToAudioService, streamingService, soundGateway) {
+        this.soundModel = soundModel;
+        this.agendaService = agendaService;
+        this.uploadService = uploadService;
+        this.textToAudioService = textToAudioService;
+        this.streamingService = streamingService;
+        this.soundGateway = soundGateway;
+        this.logger = new common_1.Logger(SoundService_1.name);
+    }
+    async create(createSoundDto) {
+        await this.validateAndMoveFileAsync(createSoundDto, null);
+        const newSound = new this.soundModel(createSoundDto);
+        return newSound.save();
+    }
+    async findByType(type) {
+        const sounds = await this.soundModel.find({ type }).exec();
+        return sounds;
+    }
+    async findOne(id) {
+        const sound = await this.soundModel.findById(id);
+        return sound;
+    }
+    async findByIds(ids) {
+        const sounds = await this.soundModel.find({ _id: { $in: ids } });
+        return sounds;
+    }
+    async update(id, updateSoundDto) {
+        const existingSound = await this.soundModel.findById(id).exec();
+        if (!existingSound) {
+            throw new Error('Sound not found!');
+        }
+        await this.validateAndMoveFileAsync(updateSoundDto, existingSound === null || existingSound === void 0 ? void 0 : existingSound.fileName);
+        const sound = await this.soundModel.findByIdAndUpdate(id, Object.assign(Object.assign({}, updateSoundDto), { updatedAtUtc: new Date() }), { new: true });
+        return sound;
+    }
+    async updateVolume(id, updateSoundDto) {
+        const existingSound = await this.soundModel.findById(id).exec();
+        if (!existingSound) {
+            throw new Error('Sound not found!');
+        }
+        const sound = await this.soundModel.findByIdAndUpdate(id, Object.assign(Object.assign({}, updateSoundDto), { updatedAtUtc: new Date() }), { new: true });
+        return sound;
+    }
+    async delete(id) {
+        const sound = await this.soundModel.findByIdAndDelete(id);
+        if (sound.fileName) {
+            const soundPath = `${constants_1.AUDIO_DIR}/${sound.fileName}`;
+            try {
+                (0, file_1.deleteFile)(soundPath);
+            }
+            catch (e) {
+                this.logger.error(e);
+            }
+        }
+        return sound;
+    }
+    async upload(id, file) {
+        const existingSound = await this.soundModel.findById(id).exec();
+        const existingFileName = existingSound === null || existingSound === void 0 ? void 0 : existingSound.fileName;
+        const fileName = this.getNewFileName(file.originalname);
+        const soundPath = `${constants_1.AUDIO_DIR}/${fileName}`;
+        await (0, file_1.moveFile)(file.path, soundPath);
+        const updateSoundDto = {
+            fileName,
+        };
+        const sound = await this.soundModel.findByIdAndUpdate(id, Object.assign(Object.assign({}, updateSoundDto), { updatedAtUtc: new Date() }), { new: true });
+        if (existingFileName) {
+            const existingSoundPath = `${constants_1.AUDIO_DIR}/${existingFileName}`;
+            (0, file_1.deleteFile)(existingSoundPath);
+        }
+        return sound;
+    }
+    async playSoundOnEvent(payload) {
+        const { soundId, jobId, durationInSecond } = payload;
+        const sound = await this.findOne(soundId);
+        const soundPath = path.join(path_1.processRootPath, 'assets', 'audio', sound.fileName);
+        job_1.PROCESS_CACHE.killAll();
+        this.logger.log(`Playing sound: ${soundId} - ${sound.name}`);
+        (0, job_1.executeJob)({
+            jobId,
+            run: () => audio_player_1.AudioPlayer.playAsync(soundPath, sound.volume),
+            next: () => this.stop(soundId),
+            durationInSecond,
+        });
+        this.soundGateway.broadcastPlaying({ id: soundId, isPlaying: true });
+    }
+    async playVoiceRecorded(payload) {
+        const { voiceId, jobId, durationInSecond } = payload;
+        const voice = await this.uploadService.findVoiceRecoredById(voiceId);
+        const filePath = voice.filePath;
+        const fullFilePath = (0, path_2.join)(process.cwd(), filePath);
+        job_1.PROCESS_CACHE.killAll();
+        this.logger.log(`Playing voice recorded: ${voiceId}`);
+        (0, job_1.executeJob)({
+            jobId,
+            run: () => audio_player_1.AudioPlayer.playAsync(fullFilePath),
+            durationInSecond,
+            next: () => null,
+        });
+    }
+    async playTextToAudioRecorded(payload) {
+        const { textToAudioId, jobId, durationInSecond } = payload;
+        const { message } = await this.textToAudioService.getMessageById(textToAudioId);
+        job_1.PROCESS_CACHE.killAll();
+        (0, job_1.executeJob)({
+            jobId,
+            run: () => {
+                let result = null;
+                this.textToAudioService.textToAudio(message, (stream) => {
+                    result = this.streamingService.playStreamAudioAsync(stream);
+                });
+                return result;
+            },
+            durationInSecond,
+            next: () => null,
+        });
+    }
+    async play(actor, id, isRepeat = false) {
+        const jobDto = {
+            when: 'now',
+            jobType: enums_1.JobType.PlaySound,
+            attributes: {
+                soundId: id,
+                durationInSecond: isRepeat ? 86400 : undefined,
+            },
+            audit: {
+                actor,
+                name: enums_1.JobType.PlaySound,
+                message: `Play sound: ${id}`,
+            },
+        };
+        const playingSound = await this.soundModel.findOne({
+            jobId: { $ne: null },
+        });
+        if (playingSound) {
+            await this.stop(playingSound.id);
+        }
+        const { jobId } = await this.agendaService.scheduleJob(jobDto);
+        return this.update(id, { jobId });
+    }
+    async stop(id) {
+        let sound = await this.findOne(id);
+        const { jobId } = sound || {};
+        if (jobId) {
+            const { success } = await this.agendaService.cancelJob(jobId);
+            if (success) {
+                sound = await this.update(id, { jobId: null });
+            }
+        }
+        this.soundGateway.broadcastPlaying({
+            id: sound.id,
+            isPlaying: false,
+        });
+        return sound;
+    }
+    async resetTunes() {
+        const tunes = await this.findByType(constants_2.SoundType.Tune);
+        if (tunes.length > 0) {
+            const deletingPromises = [];
+            tunes.forEach((tune) => {
+                deletingPromises.push(this.delete(tune._id));
+            });
+            await Promise.all(deletingPromises);
+        }
+        await (0, file_1.copyFiles)(constants_1.DEFAULT_TUNES_DIR, constants_1.TMP_UPLOAD_DIR);
+        const creatingPromises = [];
+        default_sounds_1.DEFAULT_TUNES.forEach((sound) => {
+            creatingPromises.push(this.create(Object.assign({}, sound)));
+        });
+        await Promise.all(creatingPromises);
+        return true;
+    }
+    getNewFileName(originalName) {
+        const fileExt = originalName.split('.').pop();
+        return `${(0, utils_1.uuid)()}.${fileExt}`;
+    }
+    async validateAndMoveFileAsync(dto, existingFileName) {
+        if (!dto.fileName) {
+            return;
+        }
+        const tempPath = `${constants_1.TMP_UPLOAD_DIR}/${dto.fileName}`;
+        const destFileName = existingFileName || this.getNewFileName(dto.fileName);
+        const soundPath = `${constants_1.AUDIO_DIR}/${destFileName}`;
+        if (!(0, file_1.isFileExist)(tempPath)) {
+            throw new Error('File not found!');
+        }
+        if (!(0, file_1.isFileExist)(constants_1.AUDIO_DIR)) {
+            (0, file_1.createFolder)(constants_1.AUDIO_DIR);
+        }
+        await (0, file_1.moveFile)(tempPath, soundPath);
+        dto.fileName = destFileName;
+    }
+};
+__decorate([
+    (0, event_emitter_1.OnEvent)(sound_1.SoundEvent.Play),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", Promise)
+], SoundService.prototype, "playSoundOnEvent", null);
+__decorate([
+    (0, event_emitter_1.OnEvent)(sound_1.SoundEvent.VoiceRecorded),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", Promise)
+], SoundService.prototype, "playVoiceRecorded", null);
+__decorate([
+    (0, event_emitter_1.OnEvent)(sound_1.SoundEvent.TextToAudio),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", Promise)
+], SoundService.prototype, "playTextToAudioRecorded", null);
+SoundService = SoundService_1 = __decorate([
+    (0, common_1.Injectable)(),
+    __param(0, (0, mongoose_1.InjectModel)('Sound')),
+    __param(5, (0, common_1.Inject)(sound_gateway_1.SoundGateway)),
+    __metadata("design:paramtypes", [mongoose_2.Model,
+        agenda_service_1.AgendaService,
+        upload_service_1.UploadService,
+        text_to_audio_service_1.TextToAudioService,
+        streaming_service_1.StreamingService,
+        sound_gateway_1.SoundGateway])
+], SoundService);
+exports.SoundService = SoundService;
+//# sourceMappingURL=sound.service.js.map

@@ -1,1 +1,18 @@
-'use strict';const a117_0x63ae36=a117_0x4835;function a117_0x4835(_0x186df8,_0x4a6b05){const _0x463f99=a117_0x463f();return a117_0x4835=function(_0x48358a,_0x1ca4cf){_0x48358a=_0x48358a-0x170;let _0x122775=_0x463f99[_0x48358a];return _0x122775;},a117_0x4835(_0x186df8,_0x4a6b05);}function a117_0x463f(){const _0x3b88d1=['344iUHWXf','schoolId','129vdIkQD','userSetting','defineProperty','1481aXbsut','toISOString','npm_package_version','3326760DGdCtJ','5579976qjrWcT','createdAtUtc','licenseKey','mapSettingDocumentToDto','22472CQYoWI','46684hxhyhO','346409bhJGuh','env','2752590dgswvn','isExpired','9Anmwvw','970mMqHYJ','updatedAtUtc'];a117_0x463f=function(){return _0x3b88d1;};return a117_0x463f();}(function(_0x1c0f82,_0x497f25){const _0x58bb7e=a117_0x4835,_0x3dd311=_0x1c0f82();while(!![]){try{const _0x376088=parseInt(_0x58bb7e(0x17d))/0x1*(parseInt(_0x58bb7e(0x178))/0x2)+parseInt(_0x58bb7e(0x17a))/0x3*(parseInt(_0x58bb7e(0x185))/0x4)+-parseInt(_0x58bb7e(0x173))/0x5+-parseInt(_0x58bb7e(0x180))/0x6+-parseInt(_0x58bb7e(0x171))/0x7+parseInt(_0x58bb7e(0x181))/0x8*(parseInt(_0x58bb7e(0x175))/0x9)+parseInt(_0x58bb7e(0x176))/0xa*(parseInt(_0x58bb7e(0x170))/0xb);if(_0x376088===_0x497f25)break;else _0x3dd311['push'](_0x3dd311['shift']());}catch(_0x335c45){_0x3dd311['push'](_0x3dd311['shift']());}}}(a117_0x463f,0x6e1be));Object[a117_0x63ae36(0x17c)](exports,'__esModule',{'value':!![]}),exports[a117_0x63ae36(0x184)]=void 0x0;const mapSettingDocumentToDto=(_0x47b1ab,_0x1024d6)=>{const _0x297a4f=a117_0x63ae36;return{'_id':_0x47b1ab['_id'],'schoolId':_0x47b1ab[_0x297a4f(0x179)],'licenseKey':_0x47b1ab[_0x297a4f(0x183)],'isExpired':_0x47b1ab[_0x297a4f(0x174)],'userSetting':_0x47b1ab[_0x297a4f(0x17b)],'createdAtUtc':_0x47b1ab[_0x297a4f(0x182)]['toISOString'](),'updatedAtUtc':_0x47b1ab[_0x297a4f(0x177)][_0x297a4f(0x17e)](),'expiryDate':_0x1024d6,'appVersion':process[_0x297a4f(0x172)][_0x297a4f(0x17f)]};};exports[a117_0x63ae36(0x184)]=mapSettingDocumentToDto;
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.mapSettingDocumentToDto = void 0;
+const mapSettingDocumentToDto = (settingDocument, expiryDate) => {
+    return {
+        _id: settingDocument._id,
+        schoolId: settingDocument.schoolId,
+        licenseKey: settingDocument.licenseKey,
+        isExpired: settingDocument.isExpired,
+        userSetting: settingDocument.userSetting,
+        createdAtUtc: settingDocument.createdAtUtc.toISOString(),
+        updatedAtUtc: settingDocument.updatedAtUtc.toISOString(),
+        expiryDate,
+        appVersion: process.env.npm_package_version,
+    };
+};
+exports.mapSettingDocumentToDto = mapSettingDocumentToDto;
+//# sourceMappingURL=setting.mapper.js.map

@@ -1,1 +1,56 @@
-'use strict';const a57_0x4c77ba=a57_0x2cb7;(function(_0x3c3528,_0xe7c5ac){const _0x121cf8=a57_0x2cb7,_0x47e29a=_0x3c3528();while(!![]){try{const _0x31cd4a=-parseInt(_0x121cf8(0x15e))/0x1*(parseInt(_0x121cf8(0x160))/0x2)+parseInt(_0x121cf8(0x167))/0x3*(-parseInt(_0x121cf8(0x162))/0x4)+-parseInt(_0x121cf8(0x16f))/0x5+parseInt(_0x121cf8(0x15b))/0x6+-parseInt(_0x121cf8(0x15c))/0x7*(-parseInt(_0x121cf8(0x16e))/0x8)+-parseInt(_0x121cf8(0x16d))/0x9+parseInt(_0x121cf8(0x16a))/0xa;if(_0x31cd4a===_0xe7c5ac)break;else _0x47e29a['push'](_0x47e29a['shift']());}catch(_0x2a3f0f){_0x47e29a['push'](_0x47e29a['shift']());}}}(a57_0x5e90,0xe7a37));var _a;Object['defineProperty'](exports,a57_0x4c77ba(0x15f),{'value':!![]}),exports[a57_0x4c77ba(0x165)]=void 0x0;const common_1=require('@nestjs/common'),player_1=require('./player');class AudioPlayer{static[a57_0x4c77ba(0x164)](_0x599b9b,_0x16d4a8){const _0x34e440=a57_0x4c77ba;this[_0x34e440(0x158)][_0x34e440(0x16b)](_0x34e440(0x169)+_0x599b9b);try{this[_0x34e440(0x16c)][_0x34e440(0x164)](_0x599b9b,{'afplay':_0x16d4a8?['-v',_0x16d4a8]:[],'mplayer':_0x16d4a8?['-volume',_0x16d4a8]:[]},_0x159adf=>{const _0x157fe9=_0x34e440;_0x159adf!==0x1&&this['logger'][_0x157fe9(0x16b)]('Error\x20playing\x20sound:\x20'+_0x159adf);});}catch(_0x1151a5){this['logger'][_0x34e440(0x16b)](_0x34e440(0x161)+_0x1151a5);}}static[a57_0x4c77ba(0x15a)](_0x1491da,_0x110d18,_0x313b43){let _0x425c40;const _0x3d5037=()=>{const _0x5a1637=a57_0x2cb7,_0x3da426=[];return typeof _0x110d18===_0x5a1637(0x159)&&_0x110d18>=0x0&&_0x3da426['push']('-volume',_0x110d18),_0x313b43&&_0x3da426[_0x5a1637(0x166)](_0x5a1637(0x163)),_0x3da426;},_0x571a54=new Promise((_0x27b24c,_0x4ea0fd)=>{const _0x56d710=a57_0x2cb7;this[_0x56d710(0x158)][_0x56d710(0x16b)](_0x56d710(0x169)+_0x1491da),_0x425c40=this[_0x56d710(0x16c)][_0x56d710(0x164)](_0x1491da,{'afplay':_0x110d18?['-v',_0x110d18]:[],'mplayer':_0x3d5037()},_0x5e3557=>{const _0x30dcad=_0x56d710;if(_0x5e3557&&_0x5e3557!==0x1)return this[_0x30dcad(0x158)][_0x30dcad(0x16b)](_0x30dcad(0x161)+_0x5e3557),_0x4ea0fd(![]);_0x27b24c(!![]);});});return{'process':_0x425c40,'promise':_0x571a54};}}function a57_0x2cb7(_0x42e824,_0x1069ef){const _0x5e906a=a57_0x5e90();return a57_0x2cb7=function(_0x2cb733,_0x450c6f){_0x2cb733=_0x2cb733-0x158;let _0xfd9701=_0x5e906a[_0x2cb733];return _0xfd9701;},a57_0x2cb7(_0x42e824,_0x1069ef);}function a57_0x5e90(){const _0x1faa9f=['player','290997zSEFNT','2008fOryHq','1633755VpUphB','logger','number','playAsync','44466Lgpofs','33551HCoXca','Logger','1fXxoEY','__esModule','1325734fDNWYW','Error\x20playing\x20sound:\x20','7088YSprQg','-shuffle','play','AudioPlayer','push','2298CrwDGW','default','Playing\x20sound:\x20','21176400mYNrfd','log'];a57_0x5e90=function(){return _0x1faa9f;};return a57_0x5e90();}exports['AudioPlayer']=AudioPlayer,_a=AudioPlayer,AudioPlayer[a57_0x4c77ba(0x158)]=new common_1[(a57_0x4c77ba(0x15d))](AudioPlayer['name']),AudioPlayer[a57_0x4c77ba(0x16c)]=new player_1[(a57_0x4c77ba(0x168))]({},_a[a57_0x4c77ba(0x158)]);
+"use strict";
+var _a;
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.AudioPlayer = void 0;
+const common_1 = require("@nestjs/common");
+const player_1 = require("./player");
+class AudioPlayer {
+    static play(audioPath, volume) {
+        this.logger.log(`Playing sound: ${audioPath}`);
+        try {
+            this.player.play(audioPath, {
+                afplay: volume ? ['-v', volume] : [],
+                mplayer: volume ? ['-volume', volume] : [],
+            }, (err) => {
+                if (err !== 1) {
+                    this.logger.log(`Error playing sound: ${err}`);
+                }
+            });
+        }
+        catch (error) {
+            this.logger.log(`Error playing sound: ${error}`);
+        }
+    }
+    static playAsync(audioPath, volume, shuffle) {
+        let process;
+        const getMplayerOptions = () => {
+            const options = [];
+            if (typeof volume === 'number' && volume >= 0) {
+                options.push('-volume', volume);
+            }
+            if (shuffle) {
+                options.push('-shuffle');
+            }
+            return options;
+        };
+        const promise = new Promise((resolve, reject) => {
+            this.logger.log(`Playing sound: ${audioPath}`);
+            process = this.player.play(audioPath, {
+                afplay: volume ? ['-v', volume] : [],
+                mplayer: getMplayerOptions(),
+            }, (err) => {
+                if (err && err !== 1) {
+                    this.logger.log(`Error playing sound: ${err}`);
+                    return reject(false);
+                }
+                resolve(true);
+            });
+        });
+        return { process, promise };
+    }
+}
+exports.AudioPlayer = AudioPlayer;
+_a = AudioPlayer;
+AudioPlayer.logger = new common_1.Logger(AudioPlayer.name);
+AudioPlayer.player = new player_1.default({}, _a.logger);
+//# sourceMappingURL=audio-player.js.map

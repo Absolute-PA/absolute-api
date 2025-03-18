@@ -1,1 +1,41 @@
-'use strict';const a73_0x5592b8=a73_0x4cef;(function(_0x267506,_0x91f6b0){const _0x39b80b=a73_0x4cef,_0x531468=_0x267506();while(!![]){try{const _0x125e56=parseInt(_0x39b80b(0x180))/0x1+-parseInt(_0x39b80b(0x17e))/0x2*(-parseInt(_0x39b80b(0x172))/0x3)+parseInt(_0x39b80b(0x17c))/0x4*(-parseInt(_0x39b80b(0x17a))/0x5)+-parseInt(_0x39b80b(0x184))/0x6+-parseInt(_0x39b80b(0x181))/0x7*(parseInt(_0x39b80b(0x182))/0x8)+parseInt(_0x39b80b(0x174))/0x9*(parseInt(_0x39b80b(0x17f))/0xa)+parseInt(_0x39b80b(0x171))/0xb;if(_0x125e56===_0x91f6b0)break;else _0x531468['push'](_0x531468['shift']());}catch(_0x242793){_0x531468['push'](_0x531468['shift']());}}}(a73_0x2180,0x89a2a));function a73_0x2180(){const _0x470a36=['235064tSnEnJ','error','2799648GcaPhT','addProcess','__esModule','killProcess','PROCESS_CACHE','2343242qRWnpS','114681VwIdtg','isBefore','2829231WgNKrx','dayjs','executeJob','add','getProcess','defineProperty','230dpHSUn','toDate','6752gUmodK','./cache','26PCrjvy','20TfhDaL','415745vOaFtC','154zvYPgA'];a73_0x2180=function(){return _0x470a36;};return a73_0x2180();}Object[a73_0x5592b8(0x179)](exports,a73_0x5592b8(0x186),{'value':!![]}),exports[a73_0x5592b8(0x176)]=void 0x0;const dayjs=require(a73_0x5592b8(0x175)),cache_1=require(a73_0x5592b8(0x17d)),executeJob=async({jobId:_0x5bbbb9,run:_0x53ec5b,next:_0x2fb25d,durationInSecond:_0x8227d9})=>{const _0x50c212=a73_0x5592b8;if(!_0x8227d9){const {process:_0x2fbf10,promise:_0x3cceca}=_0x53ec5b();cache_1['PROCESS_CACHE'][_0x50c212(0x185)](_0x5bbbb9,_0x2fbf10);const _0x41b1b5=await _0x3cceca;_0x2fb25d(_0x2fbf10,_0x41b1b5);}else{const _0x1dbea8=dayjs()[_0x50c212(0x177)](_0x8227d9,'second')[_0x50c212(0x17b)]();setTimeout(async()=>{const _0x3bae67=_0x50c212;cache_1['PROCESS_CACHE'][_0x3bae67(0x16f)](_0x5bbbb9);},_0x8227d9*0x3e8);while(dayjs()[_0x50c212(0x173)](_0x1dbea8)){const {process:_0x111706,promise:_0x43ce4c}=_0x53ec5b();cache_1[_0x50c212(0x170)][_0x50c212(0x185)](_0x5bbbb9,_0x111706);try{await _0x43ce4c;if(!cache_1[_0x50c212(0x170)][_0x50c212(0x178)](_0x5bbbb9)){_0x2fb25d(_0x111706,!![]);break;}}catch(_0xb19716){if(!cache_1[_0x50c212(0x170)][_0x50c212(0x178)](_0x5bbbb9)){_0x2fb25d(_0x111706,!![]);break;}console[_0x50c212(0x183)]('Error\x20repeating\x20process:\x20'+_0xb19716),_0x2fb25d(_0x111706,![]);break;}}}};function a73_0x4cef(_0x10f1b1,_0x1d4393){const _0x2180dc=a73_0x2180();return a73_0x4cef=function(_0x4cef4b,_0x4cab18){_0x4cef4b=_0x4cef4b-0x16f;let _0x5bb898=_0x2180dc[_0x4cef4b];return _0x5bb898;},a73_0x4cef(_0x10f1b1,_0x1d4393);}exports[a73_0x5592b8(0x176)]=executeJob;
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.executeJob = void 0;
+const dayjs = require("dayjs");
+const cache_1 = require("./cache");
+const executeJob = async ({ jobId, run, next, durationInSecond, }) => {
+    if (!durationInSecond) {
+        const { process, promise } = run();
+        cache_1.PROCESS_CACHE.addProcess(jobId, process);
+        const result = await promise;
+        next(process, result);
+    }
+    else {
+        const time = dayjs().add(durationInSecond, 'second').toDate();
+        setTimeout(async () => {
+            cache_1.PROCESS_CACHE.killProcess(jobId);
+        }, durationInSecond * 1000);
+        while (dayjs().isBefore(time)) {
+            const { process, promise } = run();
+            cache_1.PROCESS_CACHE.addProcess(jobId, process);
+            try {
+                await promise;
+                if (!cache_1.PROCESS_CACHE.getProcess(jobId)) {
+                    next(process, true);
+                    break;
+                }
+            }
+            catch (e) {
+                if (!cache_1.PROCESS_CACHE.getProcess(jobId)) {
+                    next(process, true);
+                    break;
+                }
+                console.error(`Error repeating process: ${e}`);
+                next(process, false);
+                break;
+            }
+        }
+    }
+};
+exports.executeJob = executeJob;
+//# sourceMappingURL=job-executor.js.map

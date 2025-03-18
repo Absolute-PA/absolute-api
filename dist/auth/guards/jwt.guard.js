@@ -1,1 +1,59 @@
-'use strict';const a40_0x691a0e=a40_0x3819;(function(_0x483817,_0x135951){const _0xf23446=a40_0x3819,_0x3f21af=_0x483817();while(!![]){try{const _0x5a649b=-parseInt(_0xf23446(0x130))/0x1+-parseInt(_0xf23446(0x147))/0x2*(-parseInt(_0xf23446(0x135))/0x3)+parseInt(_0xf23446(0x129))/0x4*(-parseInt(_0xf23446(0x12a))/0x5)+-parseInt(_0xf23446(0x153))/0x6+parseInt(_0xf23446(0x144))/0x7+-parseInt(_0xf23446(0x12b))/0x8+parseInt(_0xf23446(0x137))/0x9*(parseInt(_0xf23446(0x12c))/0xa);if(_0x5a649b===_0x135951)break;else _0x3f21af['push'](_0x3f21af['shift']());}catch(_0x17eec3){_0x3f21af['push'](_0x3f21af['shift']());}}}(a40_0x5b93,0x2cc65));var __decorate=this&&this[a40_0x691a0e(0x140)]||function(_0x5bddb5,_0x1ffab3,_0x3c9176,_0x144ad6){const _0x1d0742=a40_0x691a0e;var _0x2d103d=arguments[_0x1d0742(0x150)],_0x4f8e57=_0x2d103d<0x3?_0x1ffab3:_0x144ad6===null?_0x144ad6=Object[_0x1d0742(0x13b)](_0x1ffab3,_0x3c9176):_0x144ad6,_0xf575e8;if(typeof Reflect===_0x1d0742(0x142)&&typeof Reflect['decorate']===_0x1d0742(0x14a))_0x4f8e57=Reflect['decorate'](_0x5bddb5,_0x1ffab3,_0x3c9176,_0x144ad6);else{for(var _0x5049a1=_0x5bddb5['length']-0x1;_0x5049a1>=0x0;_0x5049a1--)if(_0xf575e8=_0x5bddb5[_0x5049a1])_0x4f8e57=(_0x2d103d<0x3?_0xf575e8(_0x4f8e57):_0x2d103d>0x3?_0xf575e8(_0x1ffab3,_0x3c9176,_0x4f8e57):_0xf575e8(_0x1ffab3,_0x3c9176))||_0x4f8e57;}return _0x2d103d>0x3&&_0x4f8e57&&Object[_0x1d0742(0x149)](_0x1ffab3,_0x3c9176,_0x4f8e57),_0x4f8e57;},__metadata=this&&this[a40_0x691a0e(0x127)]||function(_0x310f49,_0x54e525){const _0x43d240=a40_0x691a0e;if(typeof Reflect==='object'&&typeof Reflect['metadata']===_0x43d240(0x14a))return Reflect[_0x43d240(0x134)](_0x310f49,_0x54e525);};Object[a40_0x691a0e(0x149)](exports,'__esModule',{'value':!![]}),exports[a40_0x691a0e(0x14c)]=void 0x0;const common_1=require(a40_0x691a0e(0x145)),core_1=require(a40_0x691a0e(0x12f)),passport_1=require('@nestjs/passport'),public_decorator_1=require(a40_0x691a0e(0x132)),jwt_1=require(a40_0x691a0e(0x14f));let JwtAuthGuard=class JwtAuthGuard extends(0x0,passport_1[a40_0x691a0e(0x13e)])(a40_0x691a0e(0x139)){constructor(_0x26f9dc,_0x2cc4e5){super(),this['reflector']=_0x26f9dc,this['jwtService']=_0x2cc4e5;}async[a40_0x691a0e(0x151)](_0x2cd865){const _0x5af94c=a40_0x691a0e,_0x4cde10=this[_0x5af94c(0x133)][_0x5af94c(0x148)](public_decorator_1['IS_PUBLIC_KEY'],[_0x2cd865[_0x5af94c(0x14d)](),_0x2cd865[_0x5af94c(0x141)]()]);if(_0x4cde10)return!![];const _0x67aa76=_0x2cd865[_0x5af94c(0x13d)]()['getRequest'](),_0xac383a=this['extractTokenFromHeader'](_0x67aa76);if(!_0xac383a)throw new common_1[(_0x5af94c(0x13c))]();try{const _0x575acf=await this[_0x5af94c(0x143)][_0x5af94c(0x14e)](_0xac383a,{'secret':process[_0x5af94c(0x13f)][_0x5af94c(0x152)]});_0x67aa76[_0x5af94c(0x146)]=_0x575acf;}catch(_0x39b4bb){throw new common_1[(_0x5af94c(0x13c))]();}return!![];}[a40_0x691a0e(0x12d)](_0x182fe2){const _0x5bd861=a40_0x691a0e;var _0x1f8795,_0x5126a7;const [_0xc5ccb1,_0x237d6f]=(_0x5126a7=(_0x1f8795=_0x182fe2[_0x5bd861(0x13a)][_0x5bd861(0x138)])===null||_0x1f8795===void 0x0?void 0x0:_0x1f8795[_0x5bd861(0x131)]('\x20'))!==null&&_0x5126a7!==void 0x0?_0x5126a7:[];return _0xc5ccb1===_0x5bd861(0x128)?_0x237d6f:undefined;}};function a40_0x5b93(){const _0x476f37=['getClass','object','jwtService','171402IxHrxd','@nestjs/common','user','13094RKLjbL','getAllAndOverride','defineProperty','function','Injectable','JwtAuthGuard','getHandler','verifyAsync','@nestjs/jwt','length','canActivate','JWT_SECRET','191652sClCEd','__metadata','Bearer','4rQlJQr','1454485qspYUp','2890352OxtmYf','9437830PVKAwQ','extractTokenFromHeader','Reflector','@nestjs/core','342978yvNjPW','split','../decorators/public.decorator','reflector','metadata','111TdUyJK','design:paramtypes','9HqNcGi','authorization','jwt','headers','getOwnPropertyDescriptor','UnauthorizedException','switchToHttp','AuthGuard','env','__decorate'];a40_0x5b93=function(){return _0x476f37;};return a40_0x5b93();}function a40_0x3819(_0x504834,_0x1913aa){const _0x5b938d=a40_0x5b93();return a40_0x3819=function(_0x3819b3,_0x4a406f){_0x3819b3=_0x3819b3-0x127;let _0x4f3582=_0x5b938d[_0x3819b3];return _0x4f3582;},a40_0x3819(_0x504834,_0x1913aa);}JwtAuthGuard=__decorate([(0x0,common_1[a40_0x691a0e(0x14b)])(),__metadata(a40_0x691a0e(0x136),[core_1[a40_0x691a0e(0x12e)],jwt_1['JwtService']])],JwtAuthGuard),exports['JwtAuthGuard']=JwtAuthGuard;
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.JwtAuthGuard = void 0;
+const common_1 = require("@nestjs/common");
+const core_1 = require("@nestjs/core");
+const passport_1 = require("@nestjs/passport");
+const public_decorator_1 = require("../decorators/public.decorator");
+const jwt_1 = require("@nestjs/jwt");
+let JwtAuthGuard = class JwtAuthGuard extends (0, passport_1.AuthGuard)('jwt') {
+    constructor(reflector, jwtService) {
+        super();
+        this.reflector = reflector;
+        this.jwtService = jwtService;
+    }
+    async canActivate(context) {
+        const isPublic = this.reflector.getAllAndOverride(public_decorator_1.IS_PUBLIC_KEY, [
+            context.getHandler(),
+            context.getClass(),
+        ]);
+        if (isPublic) {
+            return true;
+        }
+        const request = context.switchToHttp().getRequest();
+        const token = this.extractTokenFromHeader(request);
+        if (!token) {
+            throw new common_1.UnauthorizedException();
+        }
+        try {
+            const payload = await this.jwtService.verifyAsync(token, {
+                secret: process.env.JWT_SECRET,
+            });
+            request['user'] = payload;
+        }
+        catch (_a) {
+            throw new common_1.UnauthorizedException();
+        }
+        return true;
+    }
+    extractTokenFromHeader(request) {
+        var _a, _b;
+        const [type, token] = (_b = (_a = request.headers.authorization) === null || _a === void 0 ? void 0 : _a.split(' ')) !== null && _b !== void 0 ? _b : [];
+        return type === 'Bearer' ? token : undefined;
+    }
+};
+JwtAuthGuard = __decorate([
+    (0, common_1.Injectable)(),
+    __metadata("design:paramtypes", [core_1.Reflector, jwt_1.JwtService])
+], JwtAuthGuard);
+exports.JwtAuthGuard = JwtAuthGuard;
+//# sourceMappingURL=jwt.guard.js.map

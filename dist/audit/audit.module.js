@@ -1,1 +1,28 @@
-'use strict';const a25_0x44e36e=a25_0x1106;function a25_0x1106(_0xcbb737,_0x158954){const _0x2ba520=a25_0x2ba5();return a25_0x1106=function(_0x110670,_0x46686f){_0x110670=_0x110670-0x172;let _0x48588f=_0x2ba520[_0x110670];return _0x48588f;},a25_0x1106(_0xcbb737,_0x158954);}function a25_0x2ba5(){const _0xb93963=['AuditModule','@nestjs/common','28cmfHaN','length','41827IFWGXn','__decorate','740048oOwtYD','defineProperty','1068591YUBEUi','9yhxKMS','__esModule','./audit.service','getOwnPropertyDescriptor','AuditSchema','28EpOYLS','3252828yHDRuP','108KnRLxR','21037753rxCmOi','AuditService','decorate','63515cLodDW','object','Audit','889270yOWzwY'];a25_0x2ba5=function(){return _0xb93963;};return a25_0x2ba5();}(function(_0x23cd05,_0x1eed82){const _0x40ba78=a25_0x1106,_0x577c8a=_0x23cd05();while(!![]){try{const _0x109ced=parseInt(_0x40ba78(0x186))/0x1*(-parseInt(_0x40ba78(0x178))/0x2)+-parseInt(_0x40ba78(0x172))/0x3+parseInt(_0x40ba78(0x17a))/0x4*(parseInt(_0x40ba78(0x17e))/0x5)+-parseInt(_0x40ba78(0x179))/0x6+parseInt(_0x40ba78(0x184))/0x7*(-parseInt(_0x40ba78(0x188))/0x8)+parseInt(_0x40ba78(0x173))/0x9*(-parseInt(_0x40ba78(0x181))/0xa)+parseInt(_0x40ba78(0x17b))/0xb;if(_0x109ced===_0x1eed82)break;else _0x577c8a['push'](_0x577c8a['shift']());}catch(_0x33f0c0){_0x577c8a['push'](_0x577c8a['shift']());}}}(a25_0x2ba5,0x4c540));var __decorate=this&&this[a25_0x44e36e(0x187)]||function(_0x4eaa91,_0xeff96b,_0x5df947,_0x4cf432){const _0x466b39=a25_0x44e36e;var _0x4ad9fb=arguments['length'],_0x1c1889=_0x4ad9fb<0x3?_0xeff96b:_0x4cf432===null?_0x4cf432=Object[_0x466b39(0x176)](_0xeff96b,_0x5df947):_0x4cf432,_0x194156;if(typeof Reflect===_0x466b39(0x17f)&&typeof Reflect['decorate']==='function')_0x1c1889=Reflect[_0x466b39(0x17d)](_0x4eaa91,_0xeff96b,_0x5df947,_0x4cf432);else{for(var _0x9a9c45=_0x4eaa91[_0x466b39(0x185)]-0x1;_0x9a9c45>=0x0;_0x9a9c45--)if(_0x194156=_0x4eaa91[_0x9a9c45])_0x1c1889=(_0x4ad9fb<0x3?_0x194156(_0x1c1889):_0x4ad9fb>0x3?_0x194156(_0xeff96b,_0x5df947,_0x1c1889):_0x194156(_0xeff96b,_0x5df947))||_0x1c1889;}return _0x4ad9fb>0x3&&_0x1c1889&&Object[_0x466b39(0x189)](_0xeff96b,_0x5df947,_0x1c1889),_0x1c1889;};Object['defineProperty'](exports,a25_0x44e36e(0x174),{'value':!![]}),exports[a25_0x44e36e(0x182)]=void 0x0;const common_1=require(a25_0x44e36e(0x183)),audit_service_1=require(a25_0x44e36e(0x175)),audit_controller_1=require('./audit.controller'),mongoose_1=require('@nestjs/mongoose'),audit_schema_1=require('./schemas/audit.schema');let AuditModule=class AuditModule{};AuditModule=__decorate([(0x0,common_1['Module'])({'imports':[mongoose_1['MongooseModule']['forFeature']([{'name':a25_0x44e36e(0x180),'schema':audit_schema_1[a25_0x44e36e(0x177)]}])],'providers':[audit_service_1[a25_0x44e36e(0x17c)]],'controllers':[audit_controller_1['AuditController']],'exports':[audit_service_1['AuditService']]})],AuditModule),exports[a25_0x44e36e(0x182)]=AuditModule;
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.AuditModule = void 0;
+const common_1 = require("@nestjs/common");
+const audit_service_1 = require("./audit.service");
+const audit_controller_1 = require("./audit.controller");
+const mongoose_1 = require("@nestjs/mongoose");
+const audit_schema_1 = require("./schemas/audit.schema");
+let AuditModule = class AuditModule {
+};
+AuditModule = __decorate([
+    (0, common_1.Module)({
+        imports: [
+            mongoose_1.MongooseModule.forFeature([{ name: 'Audit', schema: audit_schema_1.AuditSchema }]),
+        ],
+        providers: [audit_service_1.AuditService],
+        controllers: [audit_controller_1.AuditController],
+        exports: [audit_service_1.AuditService],
+    })
+], AuditModule);
+exports.AuditModule = AuditModule;
+//# sourceMappingURL=audit.module.js.map

@@ -1,1 +1,27 @@
-'use strict';function a47_0x1d6e(_0x282718,_0x2ad64b){const _0x37bf1b=a47_0x37bf();return a47_0x1d6e=function(_0x1d6e88,_0x3d99b1){_0x1d6e88=_0x1d6e88-0x128;let _0x7ba3b2=_0x37bf1b[_0x1d6e88];return _0x7ba3b2;},a47_0x1d6e(_0x282718,_0x2ad64b);}const a47_0x155710=a47_0x1d6e;(function(_0x4330c1,_0x391fa4){const _0x154324=a47_0x1d6e,_0x10b1d3=_0x4330c1();while(!![]){try{const _0x556103=parseInt(_0x154324(0x12f))/0x1*(-parseInt(_0x154324(0x130))/0x2)+-parseInt(_0x154324(0x12d))/0x3+parseInt(_0x154324(0x136))/0x4+parseInt(_0x154324(0x12e))/0x5*(-parseInt(_0x154324(0x129))/0x6)+parseInt(_0x154324(0x132))/0x7+-parseInt(_0x154324(0x12c))/0x8+parseInt(_0x154324(0x12a))/0x9;if(_0x556103===_0x391fa4)break;else _0x10b1d3['push'](_0x10b1d3['shift']());}catch(_0x19cf26){_0x10b1d3['push'](_0x10b1d3['shift']());}}}(a47_0x37bf,0x2b7da));function a47_0x37bf(){const _0x10c0be=['toString','354786MhTfBR','6031350FqoTmI','hash','1765136zBAxoG','964713QDlvov','5asDBRO','1026aqwatm','280jSpCga','randomBytes','66843JidArb','crypto','scrypt','hex','973692QVdWfP','verify'];a47_0x37bf=function(){return _0x10c0be;};return a47_0x37bf();}Object['defineProperty'](exports,'__esModule',{'value':!![]}),exports['verify']=exports['hash']=void 0x0;const crypto=require(a47_0x155710(0x133));async function hash(_0x32ce0b){return new Promise((_0x35e3ce,_0x8d23fb)=>{const _0x50a566=a47_0x1d6e,_0x431923=crypto[_0x50a566(0x131)](0x10)[_0x50a566(0x128)](_0x50a566(0x135));crypto[_0x50a566(0x134)](_0x32ce0b,_0x431923,0x40,(_0x3d651c,_0x138eae)=>{const _0x124ee=_0x50a566;if(_0x3d651c)_0x8d23fb(_0x3d651c);_0x35e3ce(_0x431923+':'+_0x138eae[_0x124ee(0x128)](_0x124ee(0x135)));});});}exports[a47_0x155710(0x12b)]=hash;async function verify(_0x3d17ac,_0x3c134d){return new Promise((_0x57ed63,_0x5cb579)=>{const _0x5add6d=a47_0x1d6e,[_0xb9a143,_0x1e264f]=_0x3c134d['split'](':');crypto[_0x5add6d(0x134)](_0x3d17ac,_0xb9a143,0x40,(_0x25c6a2,_0x4ae129)=>{const _0x30e847=_0x5add6d;if(_0x25c6a2)_0x5cb579(_0x25c6a2);_0x57ed63(_0x1e264f==_0x4ae129['toString'](_0x30e847(0x135)));});});}exports[a47_0x155710(0x137)]=verify;
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.verify = exports.hash = void 0;
+const crypto = require("crypto");
+async function hash(password) {
+    return new Promise((resolve, reject) => {
+        const salt = crypto.randomBytes(16).toString('hex');
+        crypto.scrypt(password, salt, 64, (err, derivedKey) => {
+            if (err)
+                reject(err);
+            resolve(salt + ':' + derivedKey.toString('hex'));
+        });
+    });
+}
+exports.hash = hash;
+async function verify(password, hash) {
+    return new Promise((resolve, reject) => {
+        const [salt, key] = hash.split(':');
+        crypto.scrypt(password, salt, 64, (err, derivedKey) => {
+            if (err)
+                reject(err);
+            resolve(key == derivedKey.toString('hex'));
+        });
+    });
+}
+exports.verify = verify;
+//# sourceMappingURL=verify.js.map

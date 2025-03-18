@@ -1,1 +1,28 @@
-'use strict';const a121_0x53b95a=a121_0x1279;(function(_0xacd1cc,_0x547ae3){const _0x49f9d0=a121_0x1279,_0x1765a8=_0xacd1cc();while(!![]){try{const _0x259c73=parseInt(_0x49f9d0(0x1c4))/0x1*(-parseInt(_0x49f9d0(0x1ca))/0x2)+parseInt(_0x49f9d0(0x1c6))/0x3*(-parseInt(_0x49f9d0(0x1c7))/0x4)+parseInt(_0x49f9d0(0x1c9))/0x5+-parseInt(_0x49f9d0(0x1cf))/0x6*(-parseInt(_0x49f9d0(0x1cc))/0x7)+-parseInt(_0x49f9d0(0x1ba))/0x8*(-parseInt(_0x49f9d0(0x1c3))/0x9)+parseInt(_0x49f9d0(0x1bc))/0xa*(-parseInt(_0x49f9d0(0x1cd))/0xb)+parseInt(_0x49f9d0(0x1ce))/0xc*(parseInt(_0x49f9d0(0x1c8))/0xd);if(_0x259c73===_0x547ae3)break;else _0x1765a8['push'](_0x1765a8['shift']());}catch(_0xfee4c7){_0x1765a8['push'](_0x1765a8['shift']());}}}(a121_0x150f,0xcfd07));var __decorate=this&&this[a121_0x53b95a(0x1bd)]||function(_0x463524,_0x24ff42,_0x10b2de,_0x5d04e1){const _0x1fc9d6=a121_0x53b95a;var _0x4a0bb7=arguments[_0x1fc9d6(0x1cb)],_0x50fd50=_0x4a0bb7<0x3?_0x24ff42:_0x5d04e1===null?_0x5d04e1=Object['getOwnPropertyDescriptor'](_0x24ff42,_0x10b2de):_0x5d04e1,_0x11fb46;if(typeof Reflect==='object'&&typeof Reflect[_0x1fc9d6(0x1bb)]==='function')_0x50fd50=Reflect['decorate'](_0x463524,_0x24ff42,_0x10b2de,_0x5d04e1);else{for(var _0x2a1ebf=_0x463524['length']-0x1;_0x2a1ebf>=0x0;_0x2a1ebf--)if(_0x11fb46=_0x463524[_0x2a1ebf])_0x50fd50=(_0x4a0bb7<0x3?_0x11fb46(_0x50fd50):_0x4a0bb7>0x3?_0x11fb46(_0x24ff42,_0x10b2de,_0x50fd50):_0x11fb46(_0x24ff42,_0x10b2de))||_0x50fd50;}return _0x4a0bb7>0x3&&_0x50fd50&&Object[_0x1fc9d6(0x1c1)](_0x24ff42,_0x10b2de,_0x50fd50),_0x50fd50;};function a121_0x150f(){const _0x3e3d35=['45xmCcGG','50087JuknXD','MongooseModule','1157469qPsrRZ','4TNnSJB','13jhlqhM','2167780deWoQS','16QVyLDe','length','14hIUpKd','792kysjgF','11537196XKoOyR','183234nFDCKx','./setting.controller','SettingController','SettingModule','SettingService','forFeature','1988472AZCtVu','decorate','147380chdIfM','__decorate','Module','@nestjs/common','__esModule','defineProperty','./setting.service'];a121_0x150f=function(){return _0x3e3d35;};return a121_0x150f();}Object['defineProperty'](exports,a121_0x53b95a(0x1c0),{'value':!![]}),exports[a121_0x53b95a(0x1b7)]=void 0x0;function a121_0x1279(_0x31d69f,_0x5009db){const _0x150f11=a121_0x150f();return a121_0x1279=function(_0x12798a,_0xcd7738){_0x12798a=_0x12798a-0x1b7;let _0x23bdab=_0x150f11[_0x12798a];return _0x23bdab;},a121_0x1279(_0x31d69f,_0x5009db);}const common_1=require(a121_0x53b95a(0x1bf)),setting_service_1=require(a121_0x53b95a(0x1c2)),setting_controller_1=require(a121_0x53b95a(0x1d0)),mongoose_1=require('@nestjs/mongoose'),schemas_1=require('./schemas');let SettingModule=class SettingModule{};SettingModule=__decorate([(0x0,common_1[a121_0x53b95a(0x1be)])({'imports':[mongoose_1[a121_0x53b95a(0x1c5)][a121_0x53b95a(0x1b9)]([{'name':'Setting','schema':schemas_1['SettingSchema']}])],'providers':[setting_service_1[a121_0x53b95a(0x1b8)]],'controllers':[setting_controller_1[a121_0x53b95a(0x1d1)]],'exports':[setting_service_1[a121_0x53b95a(0x1b8)]]})],SettingModule),exports[a121_0x53b95a(0x1b7)]=SettingModule;
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.SettingModule = void 0;
+const common_1 = require("@nestjs/common");
+const setting_service_1 = require("./setting.service");
+const setting_controller_1 = require("./setting.controller");
+const mongoose_1 = require("@nestjs/mongoose");
+const schemas_1 = require("./schemas");
+let SettingModule = class SettingModule {
+};
+SettingModule = __decorate([
+    (0, common_1.Module)({
+        imports: [
+            mongoose_1.MongooseModule.forFeature([{ name: 'Setting', schema: schemas_1.SettingSchema }]),
+        ],
+        providers: [setting_service_1.SettingService],
+        controllers: [setting_controller_1.SettingController],
+        exports: [setting_service_1.SettingService],
+    })
+], SettingModule);
+exports.SettingModule = SettingModule;
+//# sourceMappingURL=setting.module.js.map

@@ -1,1 +1,29 @@
-'use strict';const a159_0x345639=a159_0x2995;function a159_0x1954(){const _0x10caa4=['__decorate','VoiceModule','214478kfsuGo','decorate','28773810lrRPIX','28WsfrmQ','../upload/upload.service','../common/audio/audio-player','289806kXofaN','3ERZuji','1025875hrmtnx','AudioPlayer','./voice.service','7358058pjGgPu','401272yfaRMu','defineProperty','63zMbuTg','@nestjs/mongoose','./voice.controller','Upload','UploadService','getOwnPropertyDescriptor','length','VoiceController','forFeature','@nestjs/common','5017971MeSeBP','object','UploadSchema'];a159_0x1954=function(){return _0x10caa4;};return a159_0x1954();}(function(_0x1e33f7,_0x54fef2){const _0x518e24=a159_0x2995,_0x192ef3=_0x1e33f7();while(!![]){try{const _0x3dd6e1=parseInt(_0x518e24(0x1e7))/0x1+-parseInt(_0x518e24(0x1ed))/0x2*(-parseInt(_0x518e24(0x1ee))/0x3)+-parseInt(_0x518e24(0x1ea))/0x4*(parseInt(_0x518e24(0x1ef))/0x5)+-parseInt(_0x518e24(0x1f2))/0x6+parseInt(_0x518e24(0x1e2))/0x7+-parseInt(_0x518e24(0x1f3))/0x8*(parseInt(_0x518e24(0x1f5))/0x9)+parseInt(_0x518e24(0x1e9))/0xa;if(_0x3dd6e1===_0x54fef2)break;else _0x192ef3['push'](_0x192ef3['shift']());}catch(_0x48bb21){_0x192ef3['push'](_0x192ef3['shift']());}}}(a159_0x1954,0xe579e));var __decorate=this&&this[a159_0x345639(0x1e5)]||function(_0x214054,_0x3963b3,_0xd7ef9e,_0xe7a5da){const _0x2521f6=a159_0x345639;var _0x2ba466=arguments[_0x2521f6(0x1de)],_0x89fa3e=_0x2ba466<0x3?_0x3963b3:_0xe7a5da===null?_0xe7a5da=Object[_0x2521f6(0x1dd)](_0x3963b3,_0xd7ef9e):_0xe7a5da,_0xf5a7a1;if(typeof Reflect===_0x2521f6(0x1e3)&&typeof Reflect[_0x2521f6(0x1e8)]==='function')_0x89fa3e=Reflect[_0x2521f6(0x1e8)](_0x214054,_0x3963b3,_0xd7ef9e,_0xe7a5da);else{for(var _0x78294f=_0x214054[_0x2521f6(0x1de)]-0x1;_0x78294f>=0x0;_0x78294f--)if(_0xf5a7a1=_0x214054[_0x78294f])_0x89fa3e=(_0x2ba466<0x3?_0xf5a7a1(_0x89fa3e):_0x2ba466>0x3?_0xf5a7a1(_0x3963b3,_0xd7ef9e,_0x89fa3e):_0xf5a7a1(_0x3963b3,_0xd7ef9e))||_0x89fa3e;}return _0x2ba466>0x3&&_0x89fa3e&&Object[_0x2521f6(0x1f4)](_0x3963b3,_0xd7ef9e,_0x89fa3e),_0x89fa3e;};Object[a159_0x345639(0x1f4)](exports,'__esModule',{'value':!![]}),exports[a159_0x345639(0x1e6)]=void 0x0;function a159_0x2995(_0x4e582b,_0xe29147){const _0x195422=a159_0x1954();return a159_0x2995=function(_0x2995b2,_0x350aae){_0x2995b2=_0x2995b2-0x1d9;let _0x3ccaf3=_0x195422[_0x2995b2];return _0x3ccaf3;},a159_0x2995(_0x4e582b,_0xe29147);}const common_1=require(a159_0x345639(0x1e1)),voice_controller_1=require(a159_0x345639(0x1da)),voice_service_1=require(a159_0x345639(0x1f1)),upload_service_1=require(a159_0x345639(0x1eb)),mongoose_1=require(a159_0x345639(0x1d9)),upload_schema_1=require('../upload/schemas/upload.schema'),audio_player_1=require(a159_0x345639(0x1ec));let VoiceModule=class VoiceModule{};VoiceModule=__decorate([(0x0,common_1['Module'])({'imports':[mongoose_1['MongooseModule'][a159_0x345639(0x1e0)]([{'name':a159_0x345639(0x1db),'schema':upload_schema_1[a159_0x345639(0x1e4)]}])],'controllers':[voice_controller_1[a159_0x345639(0x1df)]],'providers':[voice_service_1['VoiceService'],upload_service_1[a159_0x345639(0x1dc)],audio_player_1[a159_0x345639(0x1f0)]]})],VoiceModule),exports[a159_0x345639(0x1e6)]=VoiceModule;
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.VoiceModule = void 0;
+const common_1 = require("@nestjs/common");
+const voice_controller_1 = require("./voice.controller");
+const voice_service_1 = require("./voice.service");
+const upload_service_1 = require("../upload/upload.service");
+const mongoose_1 = require("@nestjs/mongoose");
+const upload_schema_1 = require("../upload/schemas/upload.schema");
+const audio_player_1 = require("../common/audio/audio-player");
+let VoiceModule = class VoiceModule {
+};
+VoiceModule = __decorate([
+    (0, common_1.Module)({
+        imports: [
+            mongoose_1.MongooseModule.forFeature([{ name: 'Upload', schema: upload_schema_1.UploadSchema }]),
+        ],
+        controllers: [voice_controller_1.VoiceController],
+        providers: [voice_service_1.VoiceService, upload_service_1.UploadService, audio_player_1.AudioPlayer],
+    })
+], VoiceModule);
+exports.VoiceModule = VoiceModule;
+//# sourceMappingURL=voice.module.js.map

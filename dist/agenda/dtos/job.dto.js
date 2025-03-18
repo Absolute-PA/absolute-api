@@ -1,1 +1,12 @@
-'use strict';const a8_0x2485ac=a8_0x2c2f;function a8_0x2c2f(_0x425103,_0x3a1da8){const _0x420b70=a8_0x420b();return a8_0x2c2f=function(_0x2c2f6d,_0x1634dc){_0x2c2f6d=_0x2c2f6d-0x9c;let _0x5ac1fb=_0x420b70[_0x2c2f6d];return _0x5ac1fb;},a8_0x2c2f(_0x425103,_0x3a1da8);}(function(_0x4448ba,_0x5cbb27){const _0x2bd23f=a8_0x2c2f,_0x230767=_0x4448ba();while(!![]){try{const _0x31162c=parseInt(_0x2bd23f(0xa3))/0x1*(-parseInt(_0x2bd23f(0xa1))/0x2)+-parseInt(_0x2bd23f(0xa4))/0x3+parseInt(_0x2bd23f(0x9c))/0x4+parseInt(_0x2bd23f(0xa5))/0x5*(parseInt(_0x2bd23f(0x9f))/0x6)+parseInt(_0x2bd23f(0xa7))/0x7+-parseInt(_0x2bd23f(0x9d))/0x8*(-parseInt(_0x2bd23f(0x9e))/0x9)+-parseInt(_0x2bd23f(0xa8))/0xa;if(_0x31162c===_0x5cbb27)break;else _0x230767['push'](_0x230767['shift']());}catch(_0x5b32c7){_0x230767['push'](_0x230767['shift']());}}}(a8_0x420b,0x1a23d));Object[a8_0x2485ac(0xa0)](exports,a8_0x2485ac(0xaa),{'value':!![]}),exports[a8_0x2485ac(0xa9)]=exports[a8_0x2485ac(0xa6)]=void 0x0;const isRepeatJobDTO=_0x1a8843=>{const _0x37d08d=a8_0x2485ac;return _0x1a8843[_0x37d08d(0xab)]!==undefined;};exports[a8_0x2485ac(0xa6)]=isRepeatJobDTO;const isScheduleJobDTO=_0x45751c=>{const _0x341524=a8_0x2485ac;return _0x45751c[_0x341524(0xa2)]!==undefined;};exports[a8_0x2485ac(0xa9)]=isScheduleJobDTO;function a8_0x420b(){const _0x50d026=['every','832964yIyRrK','24SIcqfb','385227fYaAlk','30URWjte','defineProperty','10wjKadY','when','14167aZYJXd','562095NsaOTv','83620PiYBny','isRepeatJobDTO','1063643hakmrO','2069500iwJyNB','isScheduleJobDTO','__esModule'];a8_0x420b=function(){return _0x50d026;};return a8_0x420b();}
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.isScheduleJobDTO = exports.isRepeatJobDTO = void 0;
+const isRepeatJobDTO = (job) => {
+    return job.every !== undefined;
+};
+exports.isRepeatJobDTO = isRepeatJobDTO;
+const isScheduleJobDTO = (job) => {
+    return job.when !== undefined;
+};
+exports.isScheduleJobDTO = isScheduleJobDTO;
+//# sourceMappingURL=job.dto.js.map

@@ -1,1 +1,27 @@
-'use strict';const a93_0x5b90c1=a93_0x82db;function a93_0x82db(_0xf20edb,_0x498180){const _0x150aa2=a93_0x150a();return a93_0x82db=function(_0x82db1f,_0x89264d){_0x82db1f=_0x82db1f-0x81;let _0x9b4263=_0x150aa2[_0x82db1f];return _0x9b4263;},a93_0x82db(_0xf20edb,_0x498180);}function a93_0x150a(){const _0x40c3e0=['320844ivnKit','ProductService','24lcYABE','ProductModule','1770580XrWciU','function','5649GQrpsg','ProductController','forFeature','462dQYFlV','@nestjs/common','length','658249sVkyGr','__esModule','420036TMEbqG','defineProperty','66213MGIWuu','9NZykic','__decorate','decorate','2Rbzuei','Module','./schemas/product.schema','1208YTyfcb','38920orOyva','object'];a93_0x150a=function(){return _0x40c3e0;};return a93_0x150a();}(function(_0xf003e6,_0x137a7f){const _0x19d6bb=a93_0x82db,_0x2f6a3f=_0xf003e6();while(!![]){try{const _0x2c620b=parseInt(_0x19d6bb(0x93))/0x1*(-parseInt(_0x19d6bb(0x81))/0x2)+-parseInt(_0x19d6bb(0x8d))/0x3*(parseInt(_0x19d6bb(0x84))/0x4)+-parseInt(_0x19d6bb(0x85))/0x5+-parseInt(_0x19d6bb(0x87))/0x6+parseInt(_0x19d6bb(0x97))/0x7*(-parseInt(_0x19d6bb(0x89))/0x8)+parseInt(_0x19d6bb(0x98))/0x9*(parseInt(_0x19d6bb(0x8b))/0xa)+-parseInt(_0x19d6bb(0x90))/0xb*(-parseInt(_0x19d6bb(0x95))/0xc);if(_0x2c620b===_0x137a7f)break;else _0x2f6a3f['push'](_0x2f6a3f['shift']());}catch(_0x428af2){_0x2f6a3f['push'](_0x2f6a3f['shift']());}}}(a93_0x150a,0x50b8a));var __decorate=this&&this[a93_0x5b90c1(0x99)]||function(_0x1e6cb3,_0x1fc101,_0x527d54,_0x70870f){const _0x48579d=a93_0x5b90c1;var _0x32a6e4=arguments[_0x48579d(0x92)],_0xf14d23=_0x32a6e4<0x3?_0x1fc101:_0x70870f===null?_0x70870f=Object['getOwnPropertyDescriptor'](_0x1fc101,_0x527d54):_0x70870f,_0x2a551b;if(typeof Reflect===_0x48579d(0x86)&&typeof Reflect[_0x48579d(0x9a)]===_0x48579d(0x8c))_0xf14d23=Reflect['decorate'](_0x1e6cb3,_0x1fc101,_0x527d54,_0x70870f);else{for(var _0x3010bf=_0x1e6cb3['length']-0x1;_0x3010bf>=0x0;_0x3010bf--)if(_0x2a551b=_0x1e6cb3[_0x3010bf])_0xf14d23=(_0x32a6e4<0x3?_0x2a551b(_0xf14d23):_0x32a6e4>0x3?_0x2a551b(_0x1fc101,_0x527d54,_0xf14d23):_0x2a551b(_0x1fc101,_0x527d54))||_0xf14d23;}return _0x32a6e4>0x3&&_0xf14d23&&Object[_0x48579d(0x96)](_0x1fc101,_0x527d54,_0xf14d23),_0xf14d23;};Object[a93_0x5b90c1(0x96)](exports,a93_0x5b90c1(0x94),{'value':!![]}),exports[a93_0x5b90c1(0x8a)]=void 0x0;const common_1=require(a93_0x5b90c1(0x91)),product_controller_1=require('./product.controller'),product_service_1=require('./product.service'),mongoose_1=require('@nestjs/mongoose'),product_schema_1=require(a93_0x5b90c1(0x83));let ProductModule=class ProductModule{};ProductModule=__decorate([(0x0,common_1[a93_0x5b90c1(0x82)])({'imports':[mongoose_1['MongooseModule'][a93_0x5b90c1(0x8f)]([{'name':'Product','schema':product_schema_1['ProductSchema']}])],'controllers':[product_controller_1[a93_0x5b90c1(0x8e)]],'providers':[product_service_1[a93_0x5b90c1(0x88)]]})],ProductModule),exports[a93_0x5b90c1(0x8a)]=ProductModule;
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.ProductModule = void 0;
+const common_1 = require("@nestjs/common");
+const product_controller_1 = require("./product.controller");
+const product_service_1 = require("./product.service");
+const mongoose_1 = require("@nestjs/mongoose");
+const product_schema_1 = require("./schemas/product.schema");
+let ProductModule = class ProductModule {
+};
+ProductModule = __decorate([
+    (0, common_1.Module)({
+        imports: [
+            mongoose_1.MongooseModule.forFeature([{ name: 'Product', schema: product_schema_1.ProductSchema }]),
+        ],
+        controllers: [product_controller_1.ProductController],
+        providers: [product_service_1.ProductService],
+    })
+], ProductModule);
+exports.ProductModule = ProductModule;
+//# sourceMappingURL=product.module.js.map

@@ -1,1 +1,130 @@
-'use strict';const a120_0x528476=a120_0x2517;(function(_0x5dced4,_0x5432cc){const _0x4f8887=a120_0x2517,_0x1fa4db=_0x5dced4();while(!![]){try{const _0x235a99=-parseInt(_0x4f8887(0x212))/0x1+parseInt(_0x4f8887(0x20c))/0x2*(parseInt(_0x4f8887(0x224))/0x3)+-parseInt(_0x4f8887(0x22c))/0x4*(-parseInt(_0x4f8887(0x1f4))/0x5)+-parseInt(_0x4f8887(0x220))/0x6*(-parseInt(_0x4f8887(0x222))/0x7)+-parseInt(_0x4f8887(0x1fa))/0x8+parseInt(_0x4f8887(0x227))/0x9*(-parseInt(_0x4f8887(0x23c))/0xa)+-parseInt(_0x4f8887(0x23f))/0xb;if(_0x235a99===_0x5432cc)break;else _0x1fa4db['push'](_0x1fa4db['shift']());}catch(_0x3efa72){_0x1fa4db['push'](_0x1fa4db['shift']());}}}(a120_0x1981,0x3beaf));function a120_0x1981(){const _0x36a3ac=['../auth/enums/role.enum','Controller','updateUserSetting','Get','8168MBMOsC','settingService','UserSettingDto','findFirst','Role','update','360416fZJyQC','./dto','Patch','./mappers/setting.mapper','User',':id/user-setting','prototype',':id/license','decorate','design:paramtypes','isValid','RolesGuard','metadata','maxUser','2696376HflrfO','object','7ORYMGt','Admin','258KpHDAt','data','./setting.service','432cgIhTa','exec','Master','/kill-jobs','mapSettingDocumentToDto','1851572QPrTry','Param','__metadata','create','Viewer','licenseKey','length','Success\x20request\x20update\x20app\x20to\x20latest\x20version','SettingController','error','__esModule','Body','pm2\x20restart\x20startUI\x20startApi','stdin','function','Roles','6140upqDLA','initalize','Max\x20user\x20must\x20be\x20a\x20number','1856833btvJyV','defineProperty','log','expiryDate','JwtAuthGuard','../auth/guards/jwt.guard','stdout','UpdateSettingDto','5eVLJlx','child_process','../auth/decorators/roles.decorator','design:returntype','__decorate','Post','3675192uuyina','__param','userSetting','BadRequestException','isExpired','/update','Invalid\x20license\x20key','@nestjs/common','killJobs','design:type','stderr','../auth/guards/roles.guard','UseGuards','./dto/user-setting.dto'];a120_0x1981=function(){return _0x36a3ac;};return a120_0x1981();}var __decorate=this&&this[a120_0x528476(0x1f8)]||function(_0x313f63,_0xc3f676,_0x472f9f,_0xa4e453){const _0xe53b04=a120_0x528476;var _0x259f53=arguments[_0xe53b04(0x232)],_0x585b15=_0x259f53<0x3?_0xc3f676:_0xa4e453===null?_0xa4e453=Object['getOwnPropertyDescriptor'](_0xc3f676,_0x472f9f):_0xa4e453,_0x52bde6;if(typeof Reflect===_0xe53b04(0x221)&&typeof Reflect[_0xe53b04(0x21a)]===_0xe53b04(0x23a))_0x585b15=Reflect[_0xe53b04(0x21a)](_0x313f63,_0xc3f676,_0x472f9f,_0xa4e453);else{for(var _0x6da484=_0x313f63[_0xe53b04(0x232)]-0x1;_0x6da484>=0x0;_0x6da484--)if(_0x52bde6=_0x313f63[_0x6da484])_0x585b15=(_0x259f53<0x3?_0x52bde6(_0x585b15):_0x259f53>0x3?_0x52bde6(_0xc3f676,_0x472f9f,_0x585b15):_0x52bde6(_0xc3f676,_0x472f9f))||_0x585b15;}return _0x259f53>0x3&&_0x585b15&&Object[_0xe53b04(0x240)](_0xc3f676,_0x472f9f,_0x585b15),_0x585b15;},__metadata=this&&this[a120_0x528476(0x22e)]||function(_0x4e9c1f,_0x3492a6){const _0x18f467=a120_0x528476;if(typeof Reflect==='object'&&typeof Reflect[_0x18f467(0x21e)]==='function')return Reflect[_0x18f467(0x21e)](_0x4e9c1f,_0x3492a6);},__param=this&&this[a120_0x528476(0x1fb)]||function(_0x33a925,_0x5a7bfc){return function(_0x58bc87,_0x100f2d){_0x5a7bfc(_0x58bc87,_0x100f2d,_0x33a925);};};Object['defineProperty'](exports,a120_0x528476(0x236),{'value':!![]}),exports[a120_0x528476(0x234)]=void 0x0;const common_1=require(a120_0x528476(0x201)),setting_service_1=require(a120_0x528476(0x226)),dto_1=require(a120_0x528476(0x213)),roles_decorator_1=require(a120_0x528476(0x1f6)),role_enum_1=require(a120_0x528476(0x208)),jwt_guard_1=require(a120_0x528476(0x1f1)),roles_guard_1=require(a120_0x528476(0x205)),setting_mapper_1=require(a120_0x528476(0x215)),child_process_1=require(a120_0x528476(0x1f5)),user_setting_dto_1=require(a120_0x528476(0x207));let SettingController=class SettingController{constructor(_0x2ab105){const _0x266753=a120_0x528476;this['settingService']=_0x2ab105,this[_0x266753(0x23d)]();}async[a120_0x528476(0x20f)](){const _0x172e1b=a120_0x528476,_0x3fc33c=await this[_0x172e1b(0x20d)][_0x172e1b(0x20f)](),_0x261a65=this['settingService']['validateLicenseKey'](_0x3fc33c['licenseKey'],_0x3fc33c['schoolId']);return(0x0,setting_mapper_1[_0x172e1b(0x22b)])(_0x3fc33c,_0x261a65['expiryDate']);}async['updateCode'](){const _0x3c0117=a120_0x528476,_0x3c266b=(0x0,child_process_1[_0x3c0117(0x228)])(_0x3c0117(0x238));return console[_0x3c0117(0x241)](_0x3c0117(0x233)),_0x3c266b[_0x3c0117(0x1f2)]['on'](_0x3c0117(0x235),_0x1556b5=>{const _0x29052f=_0x3c0117;console[_0x29052f(0x241)](_0x1556b5);}),_0x3c266b[_0x3c0117(0x239)]['on'](_0x3c0117(0x235),_0x20f007=>{const _0x217387=_0x3c0117;console[_0x217387(0x241)](_0x20f007);}),_0x3c266b[_0x3c0117(0x204)]['on'](_0x3c0117(0x225),_0xc5a3ca=>{console['log'](_0xc5a3ca);}),'Success\x20request\x20update\x20app\x20to\x20latest\x20version';}async[a120_0x528476(0x211)](_0x49ac5b,_0x46c05a){const _0x5ed437=a120_0x528476,_0x3f62bb=this[_0x5ed437(0x20d)]['validateLicenseKey'](_0x46c05a[_0x5ed437(0x231)],_0x46c05a['schoolId']);if(!_0x3f62bb[_0x5ed437(0x21c)])throw new common_1[(_0x5ed437(0x1fd))](_0x5ed437(0x200));_0x46c05a[_0x5ed437(0x1fe)]=![];const _0x4d2b63=await this[_0x5ed437(0x20d)][_0x5ed437(0x211)](_0x49ac5b,_0x46c05a);return(0x0,setting_mapper_1['mapSettingDocumentToDto'])(_0x4d2b63,_0x3f62bb[_0x5ed437(0x1ef)]);}async[a120_0x528476(0x20a)](_0x5db7d5,_0x15cfce){const _0x2358ae=a120_0x528476;_0x15cfce[_0x2358ae(0x21f)]=+_0x15cfce[_0x2358ae(0x21f)];if(isNaN(_0x15cfce[_0x2358ae(0x21f)]))throw new common_1[(_0x2358ae(0x1fd))](_0x2358ae(0x23e));const _0xe3e6ce=await this[_0x2358ae(0x20d)][_0x2358ae(0x20a)](_0x15cfce);return _0xe3e6ce[_0x2358ae(0x1fc)];}async[a120_0x528476(0x202)](){const _0x57ae34=a120_0x528476;await this[_0x57ae34(0x20d)][_0x57ae34(0x202)]();}async[a120_0x528476(0x23d)](){const _0x248392=a120_0x528476,_0x205285=await this['settingService'][_0x248392(0x20f)]();!_0x205285&&await this[_0x248392(0x20d)][_0x248392(0x22f)]({'schoolId':'','licenseKey':'','isExpired':!![]});}};function a120_0x2517(_0x2f6343,_0x160a6f){const _0x1981f8=a120_0x1981();return a120_0x2517=function(_0x251749,_0x88630e){_0x251749=_0x251749-0x1ef;let _0x36c643=_0x1981f8[_0x251749];return _0x36c643;},a120_0x2517(_0x2f6343,_0x160a6f);}__decorate([(0x0,common_1[a120_0x528476(0x20b)])('/'),(0x0,common_1['UseGuards'])(jwt_guard_1['JwtAuthGuard'],roles_guard_1[a120_0x528476(0x21d)]),(0x0,roles_decorator_1[a120_0x528476(0x23b)])(role_enum_1['Role']['Admin'],role_enum_1['Role'][a120_0x528476(0x216)],role_enum_1['Role'][a120_0x528476(0x230)]),__metadata(a120_0x528476(0x203),Function),__metadata(a120_0x528476(0x21b),[]),__metadata(a120_0x528476(0x1f7),Promise)],SettingController['prototype'],a120_0x528476(0x20f),null),__decorate([(0x0,common_1['Post'])(a120_0x528476(0x1ff)),(0x0,common_1[a120_0x528476(0x206)])(jwt_guard_1[a120_0x528476(0x1f0)],roles_guard_1['RolesGuard']),(0x0,roles_decorator_1[a120_0x528476(0x23b)])(role_enum_1[a120_0x528476(0x210)]['Admin'],role_enum_1[a120_0x528476(0x210)][a120_0x528476(0x216)]),__metadata(a120_0x528476(0x203),Function),__metadata(a120_0x528476(0x21b),[]),__metadata(a120_0x528476(0x1f7),Promise)],SettingController['prototype'],'updateCode',null),__decorate([(0x0,common_1[a120_0x528476(0x214)])(a120_0x528476(0x219)),(0x0,common_1[a120_0x528476(0x206)])(jwt_guard_1[a120_0x528476(0x1f0)],roles_guard_1[a120_0x528476(0x21d)]),(0x0,roles_decorator_1['Roles'])(role_enum_1[a120_0x528476(0x210)][a120_0x528476(0x223)],role_enum_1[a120_0x528476(0x210)][a120_0x528476(0x216)]),__param(0x0,(0x0,common_1[a120_0x528476(0x22d)])('id')),__param(0x1,(0x0,common_1[a120_0x528476(0x237)])()),__metadata('design:type',Function),__metadata('design:paramtypes',[String,dto_1[a120_0x528476(0x1f3)]]),__metadata(a120_0x528476(0x1f7),Promise)],SettingController['prototype'],a120_0x528476(0x211),null),__decorate([(0x0,common_1[a120_0x528476(0x214)])(a120_0x528476(0x217)),(0x0,common_1[a120_0x528476(0x206)])(jwt_guard_1[a120_0x528476(0x1f0)],roles_guard_1['RolesGuard']),(0x0,roles_decorator_1[a120_0x528476(0x23b)])(role_enum_1['Role'][a120_0x528476(0x229)]),__param(0x0,(0x0,common_1[a120_0x528476(0x22d)])('id')),__param(0x1,(0x0,common_1[a120_0x528476(0x237)])()),__metadata(a120_0x528476(0x203),Function),__metadata(a120_0x528476(0x21b),[String,user_setting_dto_1[a120_0x528476(0x20e)]]),__metadata(a120_0x528476(0x1f7),Promise)],SettingController['prototype'],a120_0x528476(0x20a),null),__decorate([(0x0,common_1[a120_0x528476(0x1f9)])(a120_0x528476(0x22a)),(0x0,common_1[a120_0x528476(0x206)])(jwt_guard_1[a120_0x528476(0x1f0)],roles_guard_1['RolesGuard']),(0x0,roles_decorator_1[a120_0x528476(0x23b)])(role_enum_1[a120_0x528476(0x210)][a120_0x528476(0x223)],role_enum_1[a120_0x528476(0x210)]['User']),__metadata('design:type',Function),__metadata(a120_0x528476(0x21b),[]),__metadata(a120_0x528476(0x1f7),Promise)],SettingController[a120_0x528476(0x218)],a120_0x528476(0x202),null),SettingController=__decorate([(0x0,common_1[a120_0x528476(0x209)])('setting'),__metadata(a120_0x528476(0x21b),[setting_service_1['SettingService']])],SettingController),exports[a120_0x528476(0x234)]=SettingController;
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __param = (this && this.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.SettingController = void 0;
+const common_1 = require("@nestjs/common");
+const setting_service_1 = require("./setting.service");
+const dto_1 = require("./dto");
+const roles_decorator_1 = require("../auth/decorators/roles.decorator");
+const role_enum_1 = require("../auth/enums/role.enum");
+const jwt_guard_1 = require("../auth/guards/jwt.guard");
+const roles_guard_1 = require("../auth/guards/roles.guard");
+const setting_mapper_1 = require("./mappers/setting.mapper");
+const child_process_1 = require("child_process");
+const user_setting_dto_1 = require("./dto/user-setting.dto");
+let SettingController = class SettingController {
+    constructor(settingService) {
+        this.settingService = settingService;
+        this.initalize();
+    }
+    async findFirst() {
+        const setting = await this.settingService.findFirst();
+        const result = this.settingService.validateLicenseKey(setting.licenseKey, setting.schoolId);
+        return (0, setting_mapper_1.mapSettingDocumentToDto)(setting, result.expiryDate);
+    }
+    async updateCode() {
+        const process = (0, child_process_1.exec)('pm2 restart startUI startApi');
+        console.log('Success request update app to latest version');
+        process.stdout.on('error', (err) => {
+            console.log(err);
+        });
+        process.stdin.on('error', (error) => {
+            console.log(error);
+        });
+        process.stderr.on('data', (data) => {
+            console.log(data);
+        });
+        return 'Success request update app to latest version';
+    }
+    async update(id, updateSettingDto) {
+        const result = this.settingService.validateLicenseKey(updateSettingDto.licenseKey, updateSettingDto.schoolId);
+        if (!result.isValid) {
+            throw new common_1.BadRequestException('Invalid license key');
+        }
+        updateSettingDto.isExpired = false;
+        const updatedSetting = await this.settingService.update(id, updateSettingDto);
+        return (0, setting_mapper_1.mapSettingDocumentToDto)(updatedSetting, result.expiryDate);
+    }
+    async updateUserSetting(id, userSetting) {
+        userSetting.maxUser = +userSetting.maxUser;
+        if (isNaN(userSetting.maxUser)) {
+            throw new common_1.BadRequestException('Max user must be a number');
+        }
+        const updatedSetting = await this.settingService.updateUserSetting(userSetting);
+        return updatedSetting.userSetting;
+    }
+    async killJobs() {
+        await this.settingService.killJobs();
+    }
+    async initalize() {
+        const setting = await this.settingService.findFirst();
+        if (!setting) {
+            await this.settingService.create({
+                schoolId: '',
+                licenseKey: '',
+                isExpired: true,
+            });
+        }
+    }
+};
+__decorate([
+    (0, common_1.Get)('/'),
+    (0, common_1.UseGuards)(jwt_guard_1.JwtAuthGuard, roles_guard_1.RolesGuard),
+    (0, roles_decorator_1.Roles)(role_enum_1.Role.Admin, role_enum_1.Role.User, role_enum_1.Role.Viewer),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", Promise)
+], SettingController.prototype, "findFirst", null);
+__decorate([
+    (0, common_1.Post)('/update'),
+    (0, common_1.UseGuards)(jwt_guard_1.JwtAuthGuard, roles_guard_1.RolesGuard),
+    (0, roles_decorator_1.Roles)(role_enum_1.Role.Admin, role_enum_1.Role.User),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", Promise)
+], SettingController.prototype, "updateCode", null);
+__decorate([
+    (0, common_1.Patch)(':id/license'),
+    (0, common_1.UseGuards)(jwt_guard_1.JwtAuthGuard, roles_guard_1.RolesGuard),
+    (0, roles_decorator_1.Roles)(role_enum_1.Role.Admin, role_enum_1.Role.User),
+    __param(0, (0, common_1.Param)('id')),
+    __param(1, (0, common_1.Body)()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [String, dto_1.UpdateSettingDto]),
+    __metadata("design:returntype", Promise)
+], SettingController.prototype, "update", null);
+__decorate([
+    (0, common_1.Patch)(':id/user-setting'),
+    (0, common_1.UseGuards)(jwt_guard_1.JwtAuthGuard, roles_guard_1.RolesGuard),
+    (0, roles_decorator_1.Roles)(role_enum_1.Role.Master),
+    __param(0, (0, common_1.Param)('id')),
+    __param(1, (0, common_1.Body)()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [String, user_setting_dto_1.UserSettingDto]),
+    __metadata("design:returntype", Promise)
+], SettingController.prototype, "updateUserSetting", null);
+__decorate([
+    (0, common_1.Post)('/kill-jobs'),
+    (0, common_1.UseGuards)(jwt_guard_1.JwtAuthGuard, roles_guard_1.RolesGuard),
+    (0, roles_decorator_1.Roles)(role_enum_1.Role.Admin, role_enum_1.Role.User),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", Promise)
+], SettingController.prototype, "killJobs", null);
+SettingController = __decorate([
+    (0, common_1.Controller)('setting'),
+    __metadata("design:paramtypes", [setting_service_1.SettingService])
+], SettingController);
+exports.SettingController = SettingController;
+//# sourceMappingURL=setting.controller.js.map

@@ -1,1 +1,38 @@
-'use strict';var a105_0x5520fd=a105_0x3213;function a105_0x4b07(){var _0x4f6712=['prototype','assign','18hIKShE','indexOf','name','1369040FlZVru','isUpdateEventPlayMusicDto','../dto','903753gKXarv','974532ZSJGFb','textToAudioId','2zsYlRl','__esModule','545CpLGyf','call','durationInSecond','defineProperty','1322520EZApjL','length','isUpdateEventPlayVoiceRecordedDto','voiceId','propertyIsEnumerable','function','jobType','time','mapUpdateDtoToEventDocument','109711DMZByj','3913644YkFPGm','isUpdateEventPlayTextToAudioDto','getOwnPropertySymbols','hasOwnProperty','13288zBkMls'];a105_0x4b07=function(){return _0x4f6712;};return a105_0x4b07();}function a105_0x3213(_0x2a1032,_0x32c7b0){var _0x4b0741=a105_0x4b07();return a105_0x3213=function(_0x3213f4,_0x1dda6a){_0x3213f4=_0x3213f4-0xfd;var _0x36e2c9=_0x4b0741[_0x3213f4];return _0x36e2c9;},a105_0x3213(_0x2a1032,_0x32c7b0);}(function(_0x502d71,_0x1fb205){var _0x9927ac=a105_0x3213,_0x13b2f6=_0x502d71();while(!![]){try{var _0x218dd5=-parseInt(_0x9927ac(0x104))/0x1*(parseInt(_0x9927ac(0x115))/0x2)+-parseInt(_0x9927ac(0x112))/0x3+parseInt(_0x9927ac(0x109))/0x4*(-parseInt(_0x9927ac(0x117))/0x5)+parseInt(_0x9927ac(0x113))/0x6+parseInt(_0x9927ac(0x105))/0x7+-parseInt(_0x9927ac(0x11b))/0x8*(-parseInt(_0x9927ac(0x10c))/0x9)+parseInt(_0x9927ac(0x10f))/0xa;if(_0x218dd5===_0x1fb205)break;else _0x13b2f6['push'](_0x13b2f6['shift']());}catch(_0x5ecbbb){_0x13b2f6['push'](_0x13b2f6['shift']());}}}(a105_0x4b07,0x658f4));var __rest=this&&this['__rest']||function(_0x2ab5cb,_0x34291c){var _0x44d4cb=a105_0x3213,_0x30f41d={};for(var _0x3eccee in _0x2ab5cb)if(Object[_0x44d4cb(0x10a)][_0x44d4cb(0x108)][_0x44d4cb(0x118)](_0x2ab5cb,_0x3eccee)&&_0x34291c['indexOf'](_0x3eccee)<0x0)_0x30f41d[_0x3eccee]=_0x2ab5cb[_0x3eccee];if(_0x2ab5cb!=null&&typeof Object['getOwnPropertySymbols']===_0x44d4cb(0x100))for(var _0x367713=0x0,_0x3eccee=Object[_0x44d4cb(0x107)](_0x2ab5cb);_0x367713<_0x3eccee[_0x44d4cb(0x11c)];_0x367713++){if(_0x34291c[_0x44d4cb(0x10d)](_0x3eccee[_0x367713])<0x0&&Object['prototype'][_0x44d4cb(0xff)][_0x44d4cb(0x118)](_0x2ab5cb,_0x3eccee[_0x367713]))_0x30f41d[_0x3eccee[_0x367713]]=_0x2ab5cb[_0x3eccee[_0x367713]];}return _0x30f41d;};Object[a105_0x5520fd(0x11a)](exports,a105_0x5520fd(0x116),{'value':!![]}),exports[a105_0x5520fd(0x103)]=void 0x0;const dto_1=require(a105_0x5520fd(0x111)),mapUpdateDtoToEventDocument=_0x5c5d8f=>{var _0x49ebef=a105_0x5520fd;const {id:_0xf58693,name:_0x3c9255,time:_0x24c3ce,jobType:_0x3853e7}=_0x5c5d8f,_0xdc921f=__rest(_0x5c5d8f,['id',_0x49ebef(0x10e),_0x49ebef(0x102),_0x49ebef(0x101)]);return{'id':_0xf58693,'name':_0x3c9255,'time':_0x24c3ce,'jobType':_0x3853e7,'data':Object[_0x49ebef(0x10b)](Object[_0x49ebef(0x10b)](Object[_0x49ebef(0x10b)](Object[_0x49ebef(0x10b)](Object[_0x49ebef(0x10b)]({},_0xdc921f),(0x0,dto_1['isUpdateEventPlaySoundDto'])(_0x5c5d8f)&&{'soundId':_0x5c5d8f['soundId'],'durationInSecond':_0x5c5d8f[_0x49ebef(0x119)]}),(0x0,dto_1[_0x49ebef(0x110)])(_0x5c5d8f)&&{'playlistId':_0x5c5d8f['playlistId']}),(0x0,dto_1[_0x49ebef(0xfd)])(_0x5c5d8f)&&{'voiceId':_0x5c5d8f[_0x49ebef(0xfe)],'durationInSecond':_0x5c5d8f[_0x49ebef(0x119)]}),(0x0,dto_1[_0x49ebef(0x106)])(_0x5c5d8f)&&{'textToAudioId':_0x5c5d8f[_0x49ebef(0x114)],'durationInSecond':_0x5c5d8f[_0x49ebef(0x119)]})};};exports['mapUpdateDtoToEventDocument']=mapUpdateDtoToEventDocument;
+"use strict";
+var __rest = (this && this.__rest) || function (s, e) {
+    var t = {};
+    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+        t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function")
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+                t[p[i]] = s[p[i]];
+        }
+    return t;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.mapUpdateDtoToEventDocument = void 0;
+const dto_1 = require("../dto");
+const mapUpdateDtoToEventDocument = (updateEventDto) => {
+    const { id, name, time, jobType } = updateEventDto, others = __rest(updateEventDto, ["id", "name", "time", "jobType"]);
+    return {
+        id,
+        name,
+        time,
+        jobType,
+        data: Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, others), ((0, dto_1.isUpdateEventPlaySoundDto)(updateEventDto) && {
+            soundId: updateEventDto.soundId,
+            durationInSecond: updateEventDto.durationInSecond,
+        })), ((0, dto_1.isUpdateEventPlayMusicDto)(updateEventDto) && {
+            playlistId: updateEventDto.playlistId,
+        })), ((0, dto_1.isUpdateEventPlayVoiceRecordedDto)(updateEventDto) && {
+            voiceId: updateEventDto.voiceId,
+            durationInSecond: updateEventDto.durationInSecond,
+        })), ((0, dto_1.isUpdateEventPlayTextToAudioDto)(updateEventDto) && {
+            textToAudioId: updateEventDto.textToAudioId,
+            durationInSecond: updateEventDto.durationInSecond,
+        })),
+    };
+};
+exports.mapUpdateDtoToEventDocument = mapUpdateDtoToEventDocument;
+//# sourceMappingURL=update-event.mapper.js.map

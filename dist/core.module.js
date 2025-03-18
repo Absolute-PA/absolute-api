@@ -1,1 +1,36 @@
-'use strict';const a76_0x4d0e8d=a76_0x4f1a;(function(_0x364124,_0x9d8a7f){const _0x119bd1=a76_0x4f1a,_0x108452=_0x364124();while(!![]){try{const _0x59c7e3=-parseInt(_0x119bd1(0x172))/0x1+-parseInt(_0x119bd1(0x179))/0x2*(parseInt(_0x119bd1(0x16e))/0x3)+-parseInt(_0x119bd1(0x176))/0x4+-parseInt(_0x119bd1(0x17d))/0x5+-parseInt(_0x119bd1(0x177))/0x6*(parseInt(_0x119bd1(0x180))/0x7)+parseInt(_0x119bd1(0x171))/0x8*(parseInt(_0x119bd1(0x17e))/0x9)+parseInt(_0x119bd1(0x174))/0xa;if(_0x59c7e3===_0x9d8a7f)break;else _0x108452['push'](_0x108452['shift']());}catch(_0x5bd7af){_0x108452['push'](_0x108452['shift']());}}}(a76_0x5edf,0xca975));function a76_0x5edf(){const _0x139690=['6747485XqyGuL','990BACXpQ','JwtAuthGuard','10923717JXHdqS','30d','CoreModule','@nestjs/core','APP_GUARD','function','defineProperty','register','getOwnPropertyDescriptor','env','3DpOzvo','__esModule','./auth/guards/jwt.guard','100424Jgtqes','1236592VZgtfQ','dotenv/config','50070220CcbMdn','Module','2026288BickNY','6GjVZuh','object','1809694OTHUSa','SECRET','length','JwtModule'];a76_0x5edf=function(){return _0x139690;};return a76_0x5edf();}var __decorate=this&&this['__decorate']||function(_0x4c393a,_0xd1b6d,_0x10db00,_0x33e15c){const _0x40dde2=a76_0x4f1a;var _0x16da56=arguments['length'],_0x4e8677=_0x16da56<0x3?_0xd1b6d:_0x33e15c===null?_0x33e15c=Object[_0x40dde2(0x16c)](_0xd1b6d,_0x10db00):_0x33e15c,_0x187fc7;if(typeof Reflect===_0x40dde2(0x178)&&typeof Reflect['decorate']===_0x40dde2(0x169))_0x4e8677=Reflect['decorate'](_0x4c393a,_0xd1b6d,_0x10db00,_0x33e15c);else{for(var _0x53f09c=_0x4c393a[_0x40dde2(0x17b)]-0x1;_0x53f09c>=0x0;_0x53f09c--)if(_0x187fc7=_0x4c393a[_0x53f09c])_0x4e8677=(_0x16da56<0x3?_0x187fc7(_0x4e8677):_0x16da56>0x3?_0x187fc7(_0xd1b6d,_0x10db00,_0x4e8677):_0x187fc7(_0xd1b6d,_0x10db00))||_0x4e8677;}return _0x16da56>0x3&&_0x4e8677&&Object[_0x40dde2(0x16a)](_0xd1b6d,_0x10db00,_0x4e8677),_0x4e8677;};function a76_0x4f1a(_0x74ab6e,_0x2800f1){const _0x5edf9a=a76_0x5edf();return a76_0x4f1a=function(_0x4f1a6c,_0x2c2074){_0x4f1a6c=_0x4f1a6c-0x166;let _0x1343e5=_0x5edf9a[_0x4f1a6c];return _0x1343e5;},a76_0x4f1a(_0x74ab6e,_0x2800f1);}Object[a76_0x4d0e8d(0x16a)](exports,a76_0x4d0e8d(0x16f),{'value':!![]}),exports[a76_0x4d0e8d(0x166)]=void 0x0;const common_1=require('@nestjs/common'),core_1=require(a76_0x4d0e8d(0x167)),jwt_1=require('@nestjs/jwt'),jwt_guard_1=require(a76_0x4d0e8d(0x170));require(a76_0x4d0e8d(0x173));let CoreModule=class CoreModule{};CoreModule=__decorate([(0x0,common_1['Global'])(),(0x0,common_1[a76_0x4d0e8d(0x175)])({'imports':[jwt_1[a76_0x4d0e8d(0x17c)][a76_0x4d0e8d(0x16b)]({'secret':process[a76_0x4d0e8d(0x16d)][a76_0x4d0e8d(0x17a)],'signOptions':{'expiresIn':a76_0x4d0e8d(0x181)}})],'providers':[{'provide':core_1[a76_0x4d0e8d(0x168)],'useClass':jwt_guard_1[a76_0x4d0e8d(0x17f)]}],'exports':[jwt_1['JwtModule']]})],CoreModule),exports[a76_0x4d0e8d(0x166)]=CoreModule;
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.CoreModule = void 0;
+const common_1 = require("@nestjs/common");
+const core_1 = require("@nestjs/core");
+const jwt_1 = require("@nestjs/jwt");
+const jwt_guard_1 = require("./auth/guards/jwt.guard");
+require("dotenv/config");
+let CoreModule = class CoreModule {
+};
+CoreModule = __decorate([
+    (0, common_1.Global)(),
+    (0, common_1.Module)({
+        imports: [
+            jwt_1.JwtModule.register({
+                secret: process.env.SECRET,
+                signOptions: { expiresIn: '30d' },
+            }),
+        ],
+        providers: [
+            {
+                provide: core_1.APP_GUARD,
+                useClass: jwt_guard_1.JwtAuthGuard,
+            },
+        ],
+        exports: [jwt_1.JwtModule],
+    })
+], CoreModule);
+exports.CoreModule = CoreModule;
+//# sourceMappingURL=core.module.js.map

@@ -1,1 +1,9 @@
-'use strict';const a146_0x3c1926=a146_0x5609;(function(_0x3b64eb,_0x167755){const _0x2ae85b=a146_0x5609,_0xa0d296=_0x3b64eb();while(!![]){try{const _0x44bcf0=parseInt(_0x2ae85b(0x1c7))/0x1+parseInt(_0x2ae85b(0x1d6))/0x2*(-parseInt(_0x2ae85b(0x1ce))/0x3)+-parseInt(_0x2ae85b(0x1d1))/0x4*(parseInt(_0x2ae85b(0x1d3))/0x5)+parseInt(_0x2ae85b(0x1cc))/0x6+-parseInt(_0x2ae85b(0x1d5))/0x7*(-parseInt(_0x2ae85b(0x1d2))/0x8)+-parseInt(_0x2ae85b(0x1c8))/0x9+-parseInt(_0x2ae85b(0x1c6))/0xa*(-parseInt(_0x2ae85b(0x1d4))/0xb);if(_0x44bcf0===_0x167755)break;else _0xa0d296['push'](_0xa0d296['shift']());}catch(_0x7324e9){_0xa0d296['push'](_0xa0d296['shift']());}}}(a146_0x193b,0xc710f));function a146_0x193b(){const _0xd48392=['232SZyLYy','1610cSsWQE','462emVtWU','41195OLGnNh','999350ybHMpE','476120bwBjiF','879036aBmLvI','13707630nfMTeh','PartialType','CreateUploadDto','./create-upload.dto','6718764ECEfVI','__esModule','6xvcmrQ','@nestjs/swagger','UpdateUploadDto','10328IIYHZR'];a146_0x193b=function(){return _0xd48392;};return a146_0x193b();}Object['defineProperty'](exports,a146_0x3c1926(0x1cd),{'value':!![]}),exports[a146_0x3c1926(0x1d0)]=void 0x0;const swagger_1=require(a146_0x3c1926(0x1cf)),create_upload_dto_1=require(a146_0x3c1926(0x1cb));class UpdateUploadDto extends(0x0,swagger_1[a146_0x3c1926(0x1c9)])(create_upload_dto_1[a146_0x3c1926(0x1ca)]){}function a146_0x5609(_0x5d54ee,_0x2d732e){const _0x193bb3=a146_0x193b();return a146_0x5609=function(_0x5609e7,_0x215404){_0x5609e7=_0x5609e7-0x1c6;let _0x4ebdbf=_0x193bb3[_0x5609e7];return _0x4ebdbf;},a146_0x5609(_0x5d54ee,_0x2d732e);}exports[a146_0x3c1926(0x1d0)]=UpdateUploadDto;
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.UpdateUploadDto = void 0;
+const swagger_1 = require("@nestjs/swagger");
+const create_upload_dto_1 = require("./create-upload.dto");
+class UpdateUploadDto extends (0, swagger_1.PartialType)(create_upload_dto_1.CreateUploadDto) {
+}
+exports.UpdateUploadDto = UpdateUploadDto;
+//# sourceMappingURL=update-upload.dto.js.map

@@ -1,1 +1,95 @@
-'use strict';function a158_0xa378(){const _0xcb979a=['AudioPlayer','Delete','getOwnPropertyDescriptor','design:paramtypes','Body','10ridXqI','Role','defineProperty','decorate','deleteVoiceRecord','../auth/decorators/roles.decorator','860970qeNKbg','VoiceController','Get','1WbmJLH','1039554NnflJB','RolesGuard','getAllVoicesRecorded','__decorate','Query','@nestjs/common','cwd','505295JbxfwK','UseGuards','Admin','2494359HYnkeI','4497KkzPNK','design:returntype','Param','388TpmrJx','Put','join','error','name','filePath','length','JwtAuthGuard','metadata','../auth/guards/jwt.guard','voice','prototype','__metadata','493418ihBNYv','UploadService','../auth/guards/roles.guard','Roles','Post','playAudioFile','getAllVoicesRecord','play','/play/','updateVoiceRecord','uploadService','/:id','function','logger','User','__esModule','3875993blZTIt','../common/audio/audio-player','Res','40nDMvFG','__param','../auth/enums/role.enum','design:type','send'];a158_0xa378=function(){return _0xcb979a;};return a158_0xa378();}const a158_0x5bac2b=a158_0x2ea8;(function(_0x143541,_0x53c5a0){const _0x19c43a=a158_0x2ea8,_0x1d2251=_0x143541();while(!![]){try{const _0xd4d61f=parseInt(_0x19c43a(0x8f))/0x1*(-parseInt(_0x19c43a(0x69))/0x2)+-parseInt(_0x19c43a(0x9b))/0x3*(-parseInt(_0x19c43a(0x9e))/0x4)+-parseInt(_0x19c43a(0x8c))/0x5+parseInt(_0x19c43a(0x90))/0x6+parseInt(_0x19c43a(0x97))/0x7*(parseInt(_0x19c43a(0x7c))/0x8)+parseInt(_0x19c43a(0x9a))/0x9+parseInt(_0x19c43a(0x86))/0xa*(-parseInt(_0x19c43a(0x79))/0xb);if(_0xd4d61f===_0x53c5a0)break;else _0x1d2251['push'](_0x1d2251['shift']());}catch(_0x189e97){_0x1d2251['push'](_0x1d2251['shift']());}}}(a158_0xa378,0x2d480));var __decorate=this&&this[a158_0x5bac2b(0x93)]||function(_0x21d1c0,_0x5b1eb7,_0x570123,_0x1b3f84){const _0x95b2be=a158_0x5bac2b;var _0x3f3447=arguments[_0x95b2be(0xa4)],_0x433f13=_0x3f3447<0x3?_0x5b1eb7:_0x1b3f84===null?_0x1b3f84=Object[_0x95b2be(0x83)](_0x5b1eb7,_0x570123):_0x1b3f84,_0x296f9b;if(typeof Reflect==='object'&&typeof Reflect[_0x95b2be(0x89)]===_0x95b2be(0x75))_0x433f13=Reflect['decorate'](_0x21d1c0,_0x5b1eb7,_0x570123,_0x1b3f84);else{for(var _0xce1081=_0x21d1c0['length']-0x1;_0xce1081>=0x0;_0xce1081--)if(_0x296f9b=_0x21d1c0[_0xce1081])_0x433f13=(_0x3f3447<0x3?_0x296f9b(_0x433f13):_0x3f3447>0x3?_0x296f9b(_0x5b1eb7,_0x570123,_0x433f13):_0x296f9b(_0x5b1eb7,_0x570123))||_0x433f13;}return _0x3f3447>0x3&&_0x433f13&&Object[_0x95b2be(0x88)](_0x5b1eb7,_0x570123,_0x433f13),_0x433f13;},__metadata=this&&this[a158_0x5bac2b(0x68)]||function(_0x38c3e2,_0x40d7ab){const _0x38defc=a158_0x5bac2b;if(typeof Reflect==='object'&&typeof Reflect[_0x38defc(0xa6)]==='function')return Reflect['metadata'](_0x38c3e2,_0x40d7ab);},__param=this&&this[a158_0x5bac2b(0x7d)]||function(_0x44dc62,_0x5411f8){return function(_0x4cafe6,_0x43a6a4){_0x5411f8(_0x4cafe6,_0x43a6a4,_0x44dc62);};},VoiceController_1;Object['defineProperty'](exports,a158_0x5bac2b(0x78),{'value':!![]}),exports[a158_0x5bac2b(0x8d)]=void 0x0;const common_1=require(a158_0x5bac2b(0x95)),path_1=require('path'),upload_service_1=require('../upload/upload.service'),role_enum_1=require(a158_0x5bac2b(0x7e)),roles_decorator_1=require(a158_0x5bac2b(0x8b)),jwt_guard_1=require(a158_0x5bac2b(0xa7)),roles_guard_1=require(a158_0x5bac2b(0x6b)),audio_player_1=require(a158_0x5bac2b(0x7a)),update_upload_dto_1=require('../upload/dto/update-upload.dto');function a158_0x2ea8(_0x3a76e6,_0x37cb66){const _0xa3788e=a158_0xa378();return a158_0x2ea8=function(_0x2ea878,_0x45aa80){_0x2ea878=_0x2ea878-0x67;let _0x563a2d=_0xa3788e[_0x2ea878];return _0x563a2d;},a158_0x2ea8(_0x3a76e6,_0x37cb66);}let VoiceController=VoiceController_1=class VoiceController{constructor(_0x4cfc08){const _0x89dc0a=a158_0x5bac2b;this[_0x89dc0a(0x73)]=_0x4cfc08,this[_0x89dc0a(0x76)]=new common_1['Logger'](VoiceController_1[_0x89dc0a(0xa2)]);}async[a158_0x5bac2b(0x6e)](_0xdebfc6,_0x4a1068,_0x3340a9){const _0x23d3bf=a158_0x5bac2b;try{const _0x153297=(0x0,path_1[_0x23d3bf(0xa0)])(process[_0x23d3bf(0x96)](),_0xdebfc6);audio_player_1[_0x23d3bf(0x81)][_0x23d3bf(0x70)](_0x153297,_0x4a1068),_0x3340a9[_0x23d3bf(0x80)]('Success\x20play\x20sound:\x20'+_0x153297);}catch(_0x2aa8c0){return this['logger'][_0x23d3bf(0xa1)](_0x2aa8c0),'';}}[a158_0x5bac2b(0x6f)](){const _0x4f1e3d=a158_0x5bac2b;return this[_0x4f1e3d(0x73)][_0x4f1e3d(0x92)]();}[a158_0x5bac2b(0x8a)](_0x58cf02){const _0x530d4e=a158_0x5bac2b;return this[_0x530d4e(0x73)][_0x530d4e(0x8a)](_0x58cf02);}[a158_0x5bac2b(0x72)](_0x174453,_0x1f52bf){const _0x223e2e=a158_0x5bac2b;return this[_0x223e2e(0x73)][_0x223e2e(0x72)](_0x1f52bf);}};__decorate([(0x0,common_1[a158_0x5bac2b(0x6d)])(a158_0x5bac2b(0x71)),(0x0,common_1['UseGuards'])(jwt_guard_1[a158_0x5bac2b(0xa5)],roles_guard_1[a158_0x5bac2b(0x91)]),(0x0,roles_decorator_1[a158_0x5bac2b(0x6c)])(role_enum_1[a158_0x5bac2b(0x87)]['Admin'],role_enum_1['Role'][a158_0x5bac2b(0x77)]),__param(0x0,(0x0,common_1[a158_0x5bac2b(0x94)])(a158_0x5bac2b(0xa3))),__param(0x1,(0x0,common_1[a158_0x5bac2b(0x94)])('volume')),__param(0x2,(0x0,common_1[a158_0x5bac2b(0x7b)])({'passthrough':!![]})),__metadata(a158_0x5bac2b(0x7f),Function),__metadata(a158_0x5bac2b(0x84),[String,Number,Object]),__metadata(a158_0x5bac2b(0x9c),Promise)],VoiceController[a158_0x5bac2b(0x67)],a158_0x5bac2b(0x6e),null),__decorate([(0x0,common_1[a158_0x5bac2b(0x8e)])('/'),(0x0,common_1[a158_0x5bac2b(0x98)])(jwt_guard_1[a158_0x5bac2b(0xa5)],roles_guard_1['RolesGuard']),(0x0,roles_decorator_1[a158_0x5bac2b(0x6c)])(role_enum_1[a158_0x5bac2b(0x87)]['Admin'],role_enum_1['Role'][a158_0x5bac2b(0x77)]),__metadata(a158_0x5bac2b(0x7f),Function),__metadata('design:paramtypes',[]),__metadata(a158_0x5bac2b(0x9c),void 0x0)],VoiceController[a158_0x5bac2b(0x67)],a158_0x5bac2b(0x6f),null),__decorate([(0x0,common_1[a158_0x5bac2b(0x82)])(a158_0x5bac2b(0x74)),(0x0,common_1['UseGuards'])(jwt_guard_1[a158_0x5bac2b(0xa5)],roles_guard_1[a158_0x5bac2b(0x91)]),(0x0,roles_decorator_1[a158_0x5bac2b(0x6c)])(role_enum_1[a158_0x5bac2b(0x87)][a158_0x5bac2b(0x99)],role_enum_1[a158_0x5bac2b(0x87)][a158_0x5bac2b(0x77)]),__param(0x0,(0x0,common_1[a158_0x5bac2b(0x9d)])('id')),__metadata(a158_0x5bac2b(0x7f),Function),__metadata(a158_0x5bac2b(0x84),[String]),__metadata(a158_0x5bac2b(0x9c),void 0x0)],VoiceController['prototype'],a158_0x5bac2b(0x8a),null),__decorate([(0x0,common_1[a158_0x5bac2b(0x9f)])('/:id'),(0x0,common_1['UseGuards'])(jwt_guard_1[a158_0x5bac2b(0xa5)],roles_guard_1['RolesGuard']),(0x0,roles_decorator_1[a158_0x5bac2b(0x6c)])(role_enum_1[a158_0x5bac2b(0x87)][a158_0x5bac2b(0x99)],role_enum_1['Role'][a158_0x5bac2b(0x77)]),__param(0x0,(0x0,common_1[a158_0x5bac2b(0x9d)])('id')),__param(0x1,(0x0,common_1[a158_0x5bac2b(0x85)])()),__metadata(a158_0x5bac2b(0x7f),Function),__metadata(a158_0x5bac2b(0x84),[String,update_upload_dto_1['UpdateUploadDto']]),__metadata(a158_0x5bac2b(0x9c),void 0x0)],VoiceController['prototype'],a158_0x5bac2b(0x72),null),VoiceController=VoiceController_1=__decorate([(0x0,common_1['Controller'])(a158_0x5bac2b(0xa8)),__metadata(a158_0x5bac2b(0x84),[upload_service_1[a158_0x5bac2b(0x6a)]])],VoiceController),exports[a158_0x5bac2b(0x8d)]=VoiceController;
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __param = (this && this.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
+var VoiceController_1;
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.VoiceController = void 0;
+const common_1 = require("@nestjs/common");
+const path_1 = require("path");
+const upload_service_1 = require("../upload/upload.service");
+const role_enum_1 = require("../auth/enums/role.enum");
+const roles_decorator_1 = require("../auth/decorators/roles.decorator");
+const jwt_guard_1 = require("../auth/guards/jwt.guard");
+const roles_guard_1 = require("../auth/guards/roles.guard");
+const audio_player_1 = require("../common/audio/audio-player");
+const update_upload_dto_1 = require("../upload/dto/update-upload.dto");
+let VoiceController = VoiceController_1 = class VoiceController {
+    constructor(uploadService) {
+        this.uploadService = uploadService;
+        this.logger = new common_1.Logger(VoiceController_1.name);
+    }
+    async playAudioFile(filePath, volume, res) {
+        try {
+            const fullFilePath = (0, path_1.join)(process.cwd(), filePath);
+            audio_player_1.AudioPlayer.play(fullFilePath, volume);
+            res.send('Success play sound: ' + fullFilePath);
+        }
+        catch (error) {
+            this.logger.error(error);
+            return '';
+        }
+    }
+    getAllVoicesRecord() {
+        return this.uploadService.getAllVoicesRecorded();
+    }
+    deleteVoiceRecord(id) {
+        return this.uploadService.deleteVoiceRecord(id);
+    }
+    updateVoiceRecord(id, voiceData) {
+        return this.uploadService.updateVoiceRecord(voiceData);
+    }
+};
+__decorate([
+    (0, common_1.Post)('/play/'),
+    (0, common_1.UseGuards)(jwt_guard_1.JwtAuthGuard, roles_guard_1.RolesGuard),
+    (0, roles_decorator_1.Roles)(role_enum_1.Role.Admin, role_enum_1.Role.User),
+    __param(0, (0, common_1.Query)('filePath')),
+    __param(1, (0, common_1.Query)('volume')),
+    __param(2, (0, common_1.Res)({ passthrough: true })),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [String, Number, Object]),
+    __metadata("design:returntype", Promise)
+], VoiceController.prototype, "playAudioFile", null);
+__decorate([
+    (0, common_1.Get)('/'),
+    (0, common_1.UseGuards)(jwt_guard_1.JwtAuthGuard, roles_guard_1.RolesGuard),
+    (0, roles_decorator_1.Roles)(role_enum_1.Role.Admin, role_enum_1.Role.User),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", void 0)
+], VoiceController.prototype, "getAllVoicesRecord", null);
+__decorate([
+    (0, common_1.Delete)('/:id'),
+    (0, common_1.UseGuards)(jwt_guard_1.JwtAuthGuard, roles_guard_1.RolesGuard),
+    (0, roles_decorator_1.Roles)(role_enum_1.Role.Admin, role_enum_1.Role.User),
+    __param(0, (0, common_1.Param)('id')),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [String]),
+    __metadata("design:returntype", void 0)
+], VoiceController.prototype, "deleteVoiceRecord", null);
+__decorate([
+    (0, common_1.Put)('/:id'),
+    (0, common_1.UseGuards)(jwt_guard_1.JwtAuthGuard, roles_guard_1.RolesGuard),
+    (0, roles_decorator_1.Roles)(role_enum_1.Role.Admin, role_enum_1.Role.User),
+    __param(0, (0, common_1.Param)('id')),
+    __param(1, (0, common_1.Body)()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [String, update_upload_dto_1.UpdateUploadDto]),
+    __metadata("design:returntype", void 0)
+], VoiceController.prototype, "updateVoiceRecord", null);
+VoiceController = VoiceController_1 = __decorate([
+    (0, common_1.Controller)('voice'),
+    __metadata("design:paramtypes", [upload_service_1.UploadService])
+], VoiceController);
+exports.VoiceController = VoiceController;
+//# sourceMappingURL=voice.controller.js.map

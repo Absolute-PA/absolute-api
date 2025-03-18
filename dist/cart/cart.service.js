@@ -1,1 +1,85 @@
-'use strict';function a53_0x3549(){const _0x112489=['subTotalPrice','cartModel','@nestjs/common','__param','removeItemFromCart','7290OegYpN','defineProperty','4803186FQlcgw','6350264weLerz','length','__esModule','totalPrice','object','create','push','createCart','getOwnPropertyDescriptor','getCart','findOne','items','findOneAndRemove','2048380RVuGNb','decorate','design:paramtypes','productId','3665362gHJWlA','deleteCart','quantity','@nestjs/mongoose','InjectModel','1164834iHywhc','price','metadata','findIndex','4794948OcnABO','addItemToCart','2373xraQmn','assign','24QTqvXQ','__metadata','forEach','CartService','save','function','recalculateCart','Injectable'];a53_0x3549=function(){return _0x112489;};return a53_0x3549();}const a53_0x25ff44=a53_0x13dc;(function(_0x243b19,_0x5c0458){const _0x1c9dea=a53_0x13dc,_0x4f7236=_0x243b19();while(!![]){try{const _0x33c363=parseInt(_0x1c9dea(0x9f))/0x1+-parseInt(_0x1c9dea(0x9a))/0x2+-parseInt(_0x1c9dea(0x88))/0x3+parseInt(_0x1c9dea(0x89))/0x4+-parseInt(_0x1c9dea(0x96))/0x5+parseInt(_0x1c9dea(0x86))/0x6*(parseInt(_0x1c9dea(0xa5))/0x7)+-parseInt(_0x1c9dea(0xa7))/0x8*(-parseInt(_0x1c9dea(0xa3))/0x9);if(_0x33c363===_0x5c0458)break;else _0x4f7236['push'](_0x4f7236['shift']());}catch(_0x3c21ea){_0x4f7236['push'](_0x4f7236['shift']());}}}(a53_0x3549,0xe068e));var __decorate=this&&this['__decorate']||function(_0xd71481,_0x14ad05,_0x4e2ff0,_0x13edad){const _0x2e2c40=a53_0x13dc;var _0x4bb11d=arguments['length'],_0x5a770c=_0x4bb11d<0x3?_0x14ad05:_0x13edad===null?_0x13edad=Object[_0x2e2c40(0x91)](_0x14ad05,_0x4e2ff0):_0x13edad,_0x19ab87;if(typeof Reflect===_0x2e2c40(0x8d)&&typeof Reflect[_0x2e2c40(0x97)]===_0x2e2c40(0xac))_0x5a770c=Reflect[_0x2e2c40(0x97)](_0xd71481,_0x14ad05,_0x4e2ff0,_0x13edad);else{for(var _0x13991c=_0xd71481[_0x2e2c40(0x8a)]-0x1;_0x13991c>=0x0;_0x13991c--)if(_0x19ab87=_0xd71481[_0x13991c])_0x5a770c=(_0x4bb11d<0x3?_0x19ab87(_0x5a770c):_0x4bb11d>0x3?_0x19ab87(_0x14ad05,_0x4e2ff0,_0x5a770c):_0x19ab87(_0x14ad05,_0x4e2ff0))||_0x5a770c;}return _0x4bb11d>0x3&&_0x5a770c&&Object[_0x2e2c40(0x87)](_0x14ad05,_0x4e2ff0,_0x5a770c),_0x5a770c;},__metadata=this&&this[a53_0x25ff44(0xa8)]||function(_0x50b541,_0x5eb84d){const _0x450a10=a53_0x25ff44;if(typeof Reflect==='object'&&typeof Reflect[_0x450a10(0xa1)]===_0x450a10(0xac))return Reflect['metadata'](_0x50b541,_0x5eb84d);},__param=this&&this[a53_0x25ff44(0x84)]||function(_0x1124e1,_0xe14a92){return function(_0x2590a1,_0x13f9cc){_0xe14a92(_0x2590a1,_0x13f9cc,_0x1124e1);};};function a53_0x13dc(_0x2b18a7,_0x4323f8){const _0x3549dc=a53_0x3549();return a53_0x13dc=function(_0x13dc79,_0x28f3d7){_0x13dc79=_0x13dc79-0x81;let _0x5d159a=_0x3549dc[_0x13dc79];return _0x5d159a;},a53_0x13dc(_0x2b18a7,_0x4323f8);}Object['defineProperty'](exports,a53_0x25ff44(0x8b),{'value':!![]}),exports[a53_0x25ff44(0xaa)]=void 0x0;const common_1=require(a53_0x25ff44(0x83)),mongoose_1=require('mongoose'),mongoose_2=require(a53_0x25ff44(0x9d));let CartService=class CartService{constructor(_0x1b0393){const _0x42209a=a53_0x25ff44;this[_0x42209a(0x82)]=_0x1b0393;}async[a53_0x25ff44(0x90)](_0x17f90f,_0x123bd4,_0x4889da,_0x4f8ea6){const _0x3038eb=a53_0x25ff44,_0x1b8ead=await this[_0x3038eb(0x82)][_0x3038eb(0x8e)]({'userId':_0x17f90f,'items':[Object[_0x3038eb(0xa6)](Object[_0x3038eb(0xa6)]({},_0x123bd4),{'subTotalPrice':_0x4889da})],'totalPrice':_0x4f8ea6});return _0x1b8ead;}async[a53_0x25ff44(0x92)](_0x3f392d){const _0x18bd2a=a53_0x25ff44,_0x47607b=await this[_0x18bd2a(0x82)][_0x18bd2a(0x93)]({'userId':_0x3f392d});return _0x47607b;}async[a53_0x25ff44(0x9b)](_0x56ec4c){const _0x567d9f=a53_0x25ff44,_0x5a2642=await this[_0x567d9f(0x82)][_0x567d9f(0x95)]({'userId':_0x56ec4c});return _0x5a2642;}[a53_0x25ff44(0xad)](_0x52f1fc){const _0x3c62ce=a53_0x25ff44;_0x52f1fc['totalPrice']=0x0,_0x52f1fc[_0x3c62ce(0x94)][_0x3c62ce(0xa9)](_0x147dd0=>{const _0x52d983=_0x3c62ce;_0x52f1fc[_0x52d983(0x8c)]+=_0x147dd0[_0x52d983(0x9c)]*_0x147dd0[_0x52d983(0xa0)];});}async[a53_0x25ff44(0xa4)](_0x2f8058,_0x46a83f){const _0xed5fb3=a53_0x25ff44,{productId:_0x47103c,quantity:_0x4e133c,price:_0x3085e3}=_0x46a83f,_0x3768cc=_0x4e133c*_0x3085e3,_0x4b0c4b=await this['getCart'](_0x2f8058);if(_0x4b0c4b){const _0x166660=_0x4b0c4b[_0xed5fb3(0x94)][_0xed5fb3(0xa2)](_0xbdaf2f=>_0xbdaf2f['productId']==_0x47103c);if(_0x166660>-0x1){const _0x58806a=_0x4b0c4b[_0xed5fb3(0x94)][_0x166660];return _0x58806a[_0xed5fb3(0x9c)]=Number(_0x58806a['quantity'])+Number(_0x4e133c),_0x58806a[_0xed5fb3(0x81)]=_0x58806a['quantity']*_0x58806a[_0xed5fb3(0xa0)],_0x4b0c4b[_0xed5fb3(0x94)][_0x166660]=_0x58806a,this[_0xed5fb3(0xad)](_0x4b0c4b),_0x4b0c4b[_0xed5fb3(0xab)]();}else return _0x4b0c4b[_0xed5fb3(0x94)][_0xed5fb3(0x8f)](Object[_0xed5fb3(0xa6)](Object[_0xed5fb3(0xa6)]({},_0x46a83f),{'subTotalPrice':_0x3768cc})),this[_0xed5fb3(0xad)](_0x4b0c4b),_0x4b0c4b[_0xed5fb3(0xab)]();}else{const _0x3ec4c7=await this[_0xed5fb3(0x90)](_0x2f8058,_0x46a83f,_0x3768cc,_0x3085e3);return _0x3ec4c7;}}async[a53_0x25ff44(0x85)](_0x349197,_0x258ace){const _0x2ead7f=a53_0x25ff44,_0x3dddae=await this['getCart'](_0x349197),_0x83f516=_0x3dddae[_0x2ead7f(0x94)][_0x2ead7f(0xa2)](_0x4d9c6b=>_0x4d9c6b[_0x2ead7f(0x99)]==_0x258ace);if(_0x83f516>-0x1)return _0x3dddae[_0x2ead7f(0x94)]['splice'](_0x83f516,0x1),_0x3dddae[_0x2ead7f(0xab)]();}};CartService=__decorate([(0x0,common_1[a53_0x25ff44(0xae)])(),__param(0x0,(0x0,mongoose_2[a53_0x25ff44(0x9e)])('Cart')),__metadata(a53_0x25ff44(0x98),[mongoose_1['Model']])],CartService),exports[a53_0x25ff44(0xaa)]=CartService;
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __param = (this && this.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.CartService = void 0;
+const common_1 = require("@nestjs/common");
+const mongoose_1 = require("mongoose");
+const mongoose_2 = require("@nestjs/mongoose");
+let CartService = class CartService {
+    constructor(cartModel) {
+        this.cartModel = cartModel;
+    }
+    async createCart(userId, itemDTO, subTotalPrice, totalPrice) {
+        const newCart = await this.cartModel.create({
+            userId,
+            items: [Object.assign(Object.assign({}, itemDTO), { subTotalPrice })],
+            totalPrice,
+        });
+        return newCart;
+    }
+    async getCart(userId) {
+        const cart = await this.cartModel.findOne({ userId });
+        return cart;
+    }
+    async deleteCart(userId) {
+        const deletedCart = await this.cartModel.findOneAndRemove({ userId });
+        return deletedCart;
+    }
+    recalculateCart(cart) {
+        cart.totalPrice = 0;
+        cart.items.forEach((item) => {
+            cart.totalPrice += item.quantity * item.price;
+        });
+    }
+    async addItemToCart(userId, itemDTO) {
+        const { productId, quantity, price } = itemDTO;
+        const subTotalPrice = quantity * price;
+        const cart = await this.getCart(userId);
+        if (cart) {
+            const itemIndex = cart.items.findIndex((item) => item.productId == productId);
+            if (itemIndex > -1) {
+                const item = cart.items[itemIndex];
+                item.quantity = Number(item.quantity) + Number(quantity);
+                item.subTotalPrice = item.quantity * item.price;
+                cart.items[itemIndex] = item;
+                this.recalculateCart(cart);
+                return cart.save();
+            }
+            else {
+                cart.items.push(Object.assign(Object.assign({}, itemDTO), { subTotalPrice }));
+                this.recalculateCart(cart);
+                return cart.save();
+            }
+        }
+        else {
+            const newCart = await this.createCart(userId, itemDTO, subTotalPrice, price);
+            return newCart;
+        }
+    }
+    async removeItemFromCart(userId, productId) {
+        const cart = await this.getCart(userId);
+        const itemIndex = cart.items.findIndex((item) => item.productId == productId);
+        if (itemIndex > -1) {
+            cart.items.splice(itemIndex, 1);
+            return cart.save();
+        }
+    }
+};
+CartService = __decorate([
+    (0, common_1.Injectable)(),
+    __param(0, (0, mongoose_2.InjectModel)('Cart')),
+    __metadata("design:paramtypes", [mongoose_1.Model])
+], CartService);
+exports.CartService = CartService;
+//# sourceMappingURL=cart.service.js.map

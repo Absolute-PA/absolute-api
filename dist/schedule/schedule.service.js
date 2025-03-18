@@ -1,1 +1,138 @@
-'use strict';const a108_0x3f5a95=a108_0x3dd3;function a108_0x5dca(){const _0x5d6975=['Injectable','object','findOne','remove','startOf','defineProperty','metadata','create','addIncludeDate','findAllActiveSchedules','findAll','3588CgkSBD','findIndex','setDate','__decorate','getDate','format','findByIdAndUpdate','findEligibleSchedule','getTime','YYYY-MM-DD','ScheduleService','sort','push','428280dTQKvy','120116xNgRVD','Schedule','toDate','assign','4630NXSxEk','@nestjs/mongoose','function','toISOString','6252904KWItxA','getOwnPropertyDescriptor','save','includes','all','events','find','isAfter','update','removeOtherExistingIncludeDates','clone','map','544062rsuHAS','includeDates','getDay','__esModule','scheduleModel','findById','length','exec','603770eOfYdi','createdAtUtc','dayjs','Model','__metadata','1458345GXCVAt','weekDays','filter'];a108_0x5dca=function(){return _0x5d6975;};return a108_0x5dca();}(function(_0x320d67,_0x36f5fd){const _0x11bbb2=a108_0x3dd3,_0x52d510=_0x320d67();while(!![]){try{const _0x595407=-parseInt(_0x11bbb2(0x1be))/0x1+-parseInt(_0x11bbb2(0x1da))/0x2+-parseInt(_0x11bbb2(0x1d2))/0x3+-parseInt(_0x11bbb2(0x1bd))/0x4+parseInt(_0x11bbb2(0x1c2))/0x5*(parseInt(_0x11bbb2(0x1ed))/0x6)+-parseInt(_0x11bbb2(0x1df))/0x7+parseInt(_0x11bbb2(0x1c6))/0x8;if(_0x595407===_0x36f5fd)break;else _0x52d510['push'](_0x52d510['shift']());}catch(_0x4a435c){_0x52d510['push'](_0x52d510['shift']());}}}(a108_0x5dca,0x65b59));var __decorate=this&&this[a108_0x3f5a95(0x1b3)]||function(_0x47ded0,_0x136f27,_0x3fb19e,_0x2d8b9f){const _0x4095d0=a108_0x3f5a95;var _0x5c1e42=arguments[_0x4095d0(0x1d8)],_0x4f860f=_0x5c1e42<0x3?_0x136f27:_0x2d8b9f===null?_0x2d8b9f=Object[_0x4095d0(0x1c7)](_0x136f27,_0x3fb19e):_0x2d8b9f,_0x58de73;if(typeof Reflect==='object'&&typeof Reflect['decorate']===_0x4095d0(0x1c4))_0x4f860f=Reflect['decorate'](_0x47ded0,_0x136f27,_0x3fb19e,_0x2d8b9f);else{for(var _0xdf29c1=_0x47ded0[_0x4095d0(0x1d8)]-0x1;_0xdf29c1>=0x0;_0xdf29c1--)if(_0x58de73=_0x47ded0[_0xdf29c1])_0x4f860f=(_0x5c1e42<0x3?_0x58de73(_0x4f860f):_0x5c1e42>0x3?_0x58de73(_0x136f27,_0x3fb19e,_0x4f860f):_0x58de73(_0x136f27,_0x3fb19e))||_0x4f860f;}return _0x5c1e42>0x3&&_0x4f860f&&Object['defineProperty'](_0x136f27,_0x3fb19e,_0x4f860f),_0x4f860f;},__metadata=this&&this[a108_0x3f5a95(0x1de)]||function(_0x3c00e8,_0x46f973){const _0x3e424a=a108_0x3f5a95;if(typeof Reflect===_0x3e424a(0x1e3)&&typeof Reflect[_0x3e424a(0x1e8)]==='function')return Reflect[_0x3e424a(0x1e8)](_0x3c00e8,_0x46f973);},__param=this&&this['__param']||function(_0x34df70,_0x2cf4e2){return function(_0x301b8e,_0x3c984b){_0x2cf4e2(_0x301b8e,_0x3c984b,_0x34df70);};};Object[a108_0x3f5a95(0x1e7)](exports,a108_0x3f5a95(0x1d5),{'value':!![]}),exports['ScheduleService']=void 0x0;const common_1=require('@nestjs/common'),mongoose_1=require(a108_0x3f5a95(0x1c3)),mongoose_2=require('mongoose'),dayjs=require(a108_0x3f5a95(0x1dc)),utils_1=require('../common/utils'),schedulePrioritySort=(_0x43920e,_0x592934)=>dayjs(_0x43920e[a108_0x3f5a95(0x1db)])[a108_0x3f5a95(0x1cd)](dayjs(_0x592934[a108_0x3f5a95(0x1db)]))?-0x1:0x1;let ScheduleService=class ScheduleService{constructor(_0xfc93b2){this['scheduleModel']=_0xfc93b2;}async[a108_0x3f5a95(0x1e9)](_0x2a6ad1){const _0x5efbd8=a108_0x3f5a95,_0x1bc0a9=new this[(_0x5efbd8(0x1d6))](_0x2a6ad1);return _0x1bc0a9[_0x5efbd8(0x1c8)]();}async[a108_0x3f5a95(0x1ec)](){const _0x1e34b2=a108_0x3f5a95,_0x159c69=await this[_0x1e34b2(0x1d6)][_0x1e34b2(0x1cc)]()[_0x1e34b2(0x1d9)]();return _0x159c69;}async[a108_0x3f5a95(0x1e4)](_0x4f6b34){const _0x557a6e=a108_0x3f5a95,_0x5126a5=await this[_0x557a6e(0x1d6)][_0x557a6e(0x1d7)](_0x4f6b34);return _0x5126a5;}async['findEligibleSchedule'](_0x353c93){const _0x2b109e=a108_0x3f5a95,_0x4585de=await this[_0x2b109e(0x1eb)](_0x353c93),_0xc6e152=_0x4585de[_0x2b109e(0x1e1)](_0x355537=>_0x355537['includeDates'][_0x2b109e(0x1d8)]>0x0&&_0x355537['includeDates']['map'](_0x2d9a10=>dayjs(_0x2d9a10)[_0x2b109e(0x1b5)](_0x2b109e(0x1b9)))[_0x2b109e(0x1c9)](dayjs(_0x353c93)[_0x2b109e(0x1b5)](_0x2b109e(0x1b9))))[_0x2b109e(0x1bb)](schedulePrioritySort);if(_0xc6e152['length']>0x0)return _0xc6e152[0x0];const _0x151d58=_0x4585de['filter'](_0x5465db=>_0x5465db[_0x2b109e(0x1e0)]['includes'](_0x353c93[_0x2b109e(0x1d4)]()))[_0x2b109e(0x1bb)](schedulePrioritySort);if(_0x151d58[_0x2b109e(0x1d8)]>0x0)return _0x151d58[0x0];return null;}async[a108_0x3f5a95(0x1eb)](_0x591fb2){const _0x2f9d0a=a108_0x3f5a95,_0x20abcf=dayjs(_0x591fb2)[_0x2f9d0a(0x1e6)]('day')[_0x2f9d0a(0x1c0)](),_0x4abff8={'$and':[{'$or':[{'startDate':{'$lte':_0x591fb2},'endDate':{'$gte':_0x591fb2}},{'startDate':{'$lte':_0x591fb2},'endDate':null},{'startDate':null,'endDate':{'$gte':_0x591fb2}}]},{'excludeDates':{'$nin':[_0x20abcf]}}]},_0x5f132e=await this[_0x2f9d0a(0x1d6)][_0x2f9d0a(0x1cc)](_0x4abff8)[_0x2f9d0a(0x1d9)]();return _0x5f132e;}async['findEligibleScheduleBetween'](_0xff8617,_0x23d0c1){const _0x5e10fe=a108_0x3f5a95,_0x306c4c=new Date(_0xff8617),_0x26ef6d={};while(_0x306c4c<=_0x23d0c1){const _0x35296f=await this[_0x5e10fe(0x1b7)](_0x306c4c);_0x35296f&&(_0x26ef6d[dayjs(_0x306c4c)[_0x5e10fe(0x1b5)](_0x5e10fe(0x1b9))]=_0x35296f),_0x306c4c[_0x5e10fe(0x1ef)](_0x306c4c[_0x5e10fe(0x1b4)]()+0x1);}return _0x26ef6d;}async[a108_0x3f5a95(0x1ce)](_0x680bbf,_0x7ffbb2){const _0x411c75=a108_0x3f5a95,_0x1c3a47=await this[_0x411c75(0x1d6)][_0x411c75(0x1b6)](_0x680bbf,Object[_0x411c75(0x1c1)](Object[_0x411c75(0x1c1)]({},_0x7ffbb2),{'updatedAtUtc':new Date()}),{'new':!![]})[_0x411c75(0x1d9)]();return _0x1c3a47[_0x411c75(0x1d3)]&&await this[_0x411c75(0x1cf)](_0x680bbf,_0x1c3a47['includeDates']),_0x1c3a47;}async[a108_0x3f5a95(0x1e5)](_0x341792){const _0x215b99=await this['scheduleModel']['findByIdAndDelete'](_0x341792)['exec']();return _0x215b99;}async[a108_0x3f5a95(0x1ea)](_0x283f11,_0x3abc79){const _0x2ee7a2=a108_0x3f5a95,_0x8889c9=await this[_0x2ee7a2(0x1e4)](_0x283f11);_0x8889c9[_0x2ee7a2(0x1d3)][_0x2ee7a2(0x1ee)](_0x19b1ec=>_0x19b1ec[_0x2ee7a2(0x1b8)]()===_0x3abc79[_0x2ee7a2(0x1b8)]())===-0x1&&_0x8889c9[_0x2ee7a2(0x1d3)][_0x2ee7a2(0x1bc)](_0x3abc79);const _0x2cf9d1=await _0x8889c9[_0x2ee7a2(0x1c8)]();return await this['removeOtherExistingIncludeDates'](_0x283f11,[_0x3abc79]),_0x2cf9d1;}async[a108_0x3f5a95(0x1cf)](_0x3a9855,_0x4013ec){const _0x502980=a108_0x3f5a95,_0x30b8f9=await this[_0x502980(0x1d6)][_0x502980(0x1cc)]({'_id':{'$ne':_0x3a9855},'includeDates':{'$in':_0x4013ec}})[_0x502980(0x1d9)](),_0xfad7e6=_0x4013ec[_0x502980(0x1d1)](_0x2e604e=>_0x2e604e[_0x502980(0x1c5)]());await Promise[_0x502980(0x1ca)](_0x30b8f9['map'](_0x32c556=>{const _0x9beba3=_0x502980,_0x3e4802=_0x32c556[_0x9beba3(0x1d3)]['filter'](_0x21a9a3=>!_0xfad7e6[_0x9beba3(0x1c9)](_0x21a9a3[_0x9beba3(0x1c5)]()));return _0x32c556[_0x9beba3(0x1d3)]=_0x3e4802,_0x32c556['updatedAtUtc']=new Date(),_0x32c556['save']();}));}async[a108_0x3f5a95(0x1d0)](_0x1684d6){const _0x32ef3d=a108_0x3f5a95,_0x4540a7=await this[_0x32ef3d(0x1e4)](_0x1684d6),_0x419f2f=_0x4540a7[_0x32ef3d(0x1cb)][_0x32ef3d(0x1d1)](_0x5696c4=>Object[_0x32ef3d(0x1c1)](Object['assign']({},_0x5696c4),{'id':(0x0,utils_1['uuid'])()})),_0x146653=new this['scheduleModel'](Object[_0x32ef3d(0x1c1)](Object[_0x32ef3d(0x1c1)]({},_0x4540a7['toObject']()),{'events':_0x419f2f,'_id':undefined,'createdAtUtc':new Date(),'updatedAtUtc':new Date()}));return _0x146653[_0x32ef3d(0x1c8)]();}};function a108_0x3dd3(_0x24764e,_0x14c590){const _0x5dcaff=a108_0x5dca();return a108_0x3dd3=function(_0x3dd32a,_0x56db73){_0x3dd32a=_0x3dd32a-0x1b3;let _0x46c24b=_0x5dcaff[_0x3dd32a];return _0x46c24b;},a108_0x3dd3(_0x24764e,_0x14c590);}ScheduleService=__decorate([(0x0,common_1[a108_0x3f5a95(0x1e2)])(),__param(0x0,(0x0,mongoose_1['InjectModel'])(a108_0x3f5a95(0x1bf))),__metadata('design:paramtypes',[mongoose_2[a108_0x3f5a95(0x1dd)]])],ScheduleService),exports[a108_0x3f5a95(0x1ba)]=ScheduleService;
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __param = (this && this.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.ScheduleService = void 0;
+const common_1 = require("@nestjs/common");
+const mongoose_1 = require("@nestjs/mongoose");
+const mongoose_2 = require("mongoose");
+const dayjs = require("dayjs");
+const utils_1 = require("../common/utils");
+const schedulePrioritySort = (a, b) => dayjs(a.createdAtUtc).isAfter(dayjs(b.createdAtUtc)) ? -1 : 1;
+let ScheduleService = class ScheduleService {
+    constructor(scheduleModel) {
+        this.scheduleModel = scheduleModel;
+    }
+    async create(createScheduleDto) {
+        const newSchedule = new this.scheduleModel(createScheduleDto);
+        return newSchedule.save();
+    }
+    async findAll() {
+        const schedules = await this.scheduleModel.find().exec();
+        return schedules;
+    }
+    async findOne(id) {
+        const Schedule = await this.scheduleModel.findById(id);
+        return Schedule;
+    }
+    async findEligibleSchedule(date) {
+        const activeSchedules = await this.findAllActiveSchedules(date);
+        const specificDaySchedules = activeSchedules
+            .filter((s) => s.includeDates.length > 0 &&
+            s.includeDates
+                .map((item) => dayjs(item).format('YYYY-MM-DD'))
+                .includes(dayjs(date).format('YYYY-MM-DD')))
+            .sort(schedulePrioritySort);
+        if (specificDaySchedules.length > 0) {
+            return specificDaySchedules[0];
+        }
+        const weekdaySchedules = activeSchedules
+            .filter((s) => s.weekDays.includes(date.getDay()))
+            .sort(schedulePrioritySort);
+        if (weekdaySchedules.length > 0) {
+            return weekdaySchedules[0];
+        }
+        return null;
+    }
+    async findAllActiveSchedules(date) {
+        const dateOnly = dayjs(date).startOf('day').toDate();
+        const query = {
+            $and: [
+                {
+                    $or: [
+                        { startDate: { $lte: date }, endDate: { $gte: date } },
+                        { startDate: { $lte: date }, endDate: null },
+                        { startDate: null, endDate: { $gte: date } },
+                    ],
+                },
+                { excludeDates: { $nin: [dateOnly] } },
+            ],
+        };
+        const schedules = await this.scheduleModel.find(query).exec();
+        return schedules;
+    }
+    async findEligibleScheduleBetween(startDate, endDate) {
+        const date = new Date(startDate);
+        const eligibleSchedules = {};
+        while (date <= endDate) {
+            const eligibleSchedule = await this.findEligibleSchedule(date);
+            if (eligibleSchedule) {
+                eligibleSchedules[dayjs(date).format('YYYY-MM-DD')] = eligibleSchedule;
+            }
+            date.setDate(date.getDate() + 1);
+        }
+        return eligibleSchedules;
+    }
+    async update(id, updateScheduleDto) {
+        const updatedSchedule = await this.scheduleModel
+            .findByIdAndUpdate(id, Object.assign(Object.assign({}, updateScheduleDto), { updatedAtUtc: new Date() }), { new: true })
+            .exec();
+        if (updatedSchedule.includeDates) {
+            await this.removeOtherExistingIncludeDates(id, updatedSchedule.includeDates);
+        }
+        return updatedSchedule;
+    }
+    async remove(id) {
+        const deletedSchedule = await this.scheduleModel
+            .findByIdAndDelete(id)
+            .exec();
+        return deletedSchedule;
+    }
+    async addIncludeDate(scheduleId, dateToInclude) {
+        const schedule = await this.findOne(scheduleId);
+        if (schedule.includeDates.findIndex((d) => d.getTime() === dateToInclude.getTime()) === -1) {
+            schedule.includeDates.push(dateToInclude);
+        }
+        const updatedSchedule = await schedule.save();
+        await this.removeOtherExistingIncludeDates(scheduleId, [dateToInclude]);
+        return updatedSchedule;
+    }
+    async removeOtherExistingIncludeDates(id, includeDates) {
+        const schedulesHaveSameIncludeDates = await this.scheduleModel
+            .find({
+            _id: { $ne: id },
+            includeDates: { $in: includeDates },
+        })
+            .exec();
+        const includeDatesString = includeDates.map((d) => d.toISOString());
+        await Promise.all(schedulesHaveSameIncludeDates.map((s) => {
+            const newIncludeDates = s.includeDates.filter((d) => !includeDatesString.includes(d.toISOString()));
+            s.includeDates = newIncludeDates;
+            s.updatedAtUtc = new Date();
+            return s.save();
+        }));
+    }
+    async clone(id) {
+        const schedule = await this.findOne(id);
+        const events = schedule.events.map((e) => (Object.assign(Object.assign({}, e), { id: (0, utils_1.uuid)() })));
+        const newSchedule = new this.scheduleModel(Object.assign(Object.assign({}, schedule.toObject()), { events, _id: undefined, createdAtUtc: new Date(), updatedAtUtc: new Date() }));
+        return newSchedule.save();
+    }
+};
+ScheduleService = __decorate([
+    (0, common_1.Injectable)(),
+    __param(0, (0, mongoose_1.InjectModel)('Schedule')),
+    __metadata("design:paramtypes", [mongoose_2.Model])
+], ScheduleService);
+exports.ScheduleService = ScheduleService;
+//# sourceMappingURL=schedule.service.js.map

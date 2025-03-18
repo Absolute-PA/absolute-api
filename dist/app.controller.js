@@ -1,1 +1,50 @@
-'use strict';var a21_0x1b5230=a21_0x4a4e;(function(_0x4fa343,_0x32ea9a){var _0x51f35c=a21_0x4a4e,_0x8141e5=_0x4fa343();while(!![]){try{var _0x868eca=parseInt(_0x51f35c(0x15d))/0x1*(-parseInt(_0x51f35c(0x13f))/0x2)+parseInt(_0x51f35c(0x14b))/0x3+parseInt(_0x51f35c(0x13b))/0x4*(-parseInt(_0x51f35c(0x156))/0x5)+parseInt(_0x51f35c(0x153))/0x6*(parseInt(_0x51f35c(0x14c))/0x7)+-parseInt(_0x51f35c(0x14a))/0x8+-parseInt(_0x51f35c(0x145))/0x9+-parseInt(_0x51f35c(0x140))/0xa*(-parseInt(_0x51f35c(0x149))/0xb);if(_0x868eca===_0x32ea9a)break;else _0x8141e5['push'](_0x8141e5['shift']());}catch(_0x1e8b27){_0x8141e5['push'](_0x8141e5['shift']());}}}(a21_0x1aee,0xb9451));function a21_0x4a4e(_0x410e32,_0x30590b){var _0x1aee8d=a21_0x1aee();return a21_0x4a4e=function(_0x4a4e59,_0x10428f){_0x4a4e59=_0x4a4e59-0x13a;var _0x33ce12=_0x1aee8d[_0x4a4e59];return _0x33ce12;},a21_0x4a4e(_0x410e32,_0x30590b);}var __decorate=this&&this[a21_0x1b5230(0x141)]||function(_0x127a65,_0x4cc25f,_0x3e9cc0,_0x142672){var _0x3735a9=a21_0x1b5230,_0x4da668=arguments['length'],_0x23b14f=_0x4da668<0x3?_0x4cc25f:_0x142672===null?_0x142672=Object['getOwnPropertyDescriptor'](_0x4cc25f,_0x3e9cc0):_0x142672,_0x22c738;if(typeof Reflect===_0x3735a9(0x15a)&&typeof Reflect[_0x3735a9(0x15e)]===_0x3735a9(0x13a))_0x23b14f=Reflect[_0x3735a9(0x15e)](_0x127a65,_0x4cc25f,_0x3e9cc0,_0x142672);else{for(var _0x18268a=_0x127a65[_0x3735a9(0x14e)]-0x1;_0x18268a>=0x0;_0x18268a--)if(_0x22c738=_0x127a65[_0x18268a])_0x23b14f=(_0x4da668<0x3?_0x22c738(_0x23b14f):_0x4da668>0x3?_0x22c738(_0x4cc25f,_0x3e9cc0,_0x23b14f):_0x22c738(_0x4cc25f,_0x3e9cc0))||_0x23b14f;}return _0x4da668>0x3&&_0x23b14f&&Object['defineProperty'](_0x4cc25f,_0x3e9cc0,_0x23b14f),_0x23b14f;},__metadata=this&&this['__metadata']||function(_0x334223,_0x690bae){var _0x4dfccd=a21_0x1b5230;if(typeof Reflect===_0x4dfccd(0x15a)&&typeof Reflect[_0x4dfccd(0x143)]===_0x4dfccd(0x13a))return Reflect[_0x4dfccd(0x143)](_0x334223,_0x690bae);},__param=this&&this[a21_0x1b5230(0x160)]||function(_0x411452,_0x36c26d){return function(_0x52e6ea,_0x275045){_0x36c26d(_0x52e6ea,_0x275045,_0x411452);};};function a21_0x1aee(){var _0x3604c9=['redirectURL','design:paramtypes','Query','24120965WNklDI','5684960tGPfGE','3200505byTqvF','111699BNFHEQ','Get','length','Controller','appService','design:type','@nestjs/common','438yxfBtH','./auth/decorators/public.decorator','getHello','7045415nGsnMX','byPassSercurityAPI','AppService','AppController','object','Public','prototype','673MkyLKa','decorate','Res','__param','function','4gphuWV','__esModule','defineProperty','redirect','758OQJvMb','10oKVleG','__decorate','by-pass-api','metadata','design:returntype','11617884AuAvME'];a21_0x1aee=function(){return _0x3604c9;};return a21_0x1aee();}Object[a21_0x1b5230(0x13d)](exports,a21_0x1b5230(0x13c),{'value':!![]}),exports[a21_0x1b5230(0x159)]=void 0x0;const common_1=require(a21_0x1b5230(0x152)),app_service_1=require('./app.service'),public_decorator_1=require(a21_0x1b5230(0x154));let AppController=class AppController{constructor(_0x37eb7e){this['appService']=_0x37eb7e;}['getHello'](){var _0x15fa0b=a21_0x1b5230;return this[_0x15fa0b(0x150)][_0x15fa0b(0x155)]();}['byPassSercurityAPI'](_0x414f97,_0x27f25a){var _0x28aea2=a21_0x1b5230;return _0x414f97[_0x28aea2(0x13e)](_0x27f25a);}};__decorate([(0x0,common_1[a21_0x1b5230(0x14d)])(),__metadata(a21_0x1b5230(0x151),Function),__metadata(a21_0x1b5230(0x147),[]),__metadata('design:returntype',String)],AppController['prototype'],a21_0x1b5230(0x155),null),__decorate([(0x0,public_decorator_1[a21_0x1b5230(0x15b)])(),(0x0,common_1[a21_0x1b5230(0x14d)])(a21_0x1b5230(0x142)),__param(0x0,(0x0,common_1[a21_0x1b5230(0x15f)])()),__param(0x1,(0x0,common_1[a21_0x1b5230(0x148)])(a21_0x1b5230(0x146))),__metadata('design:type',Function),__metadata('design:paramtypes',[Object,String]),__metadata(a21_0x1b5230(0x144),void 0x0)],AppController[a21_0x1b5230(0x15c)],a21_0x1b5230(0x157),null),AppController=__decorate([(0x0,common_1[a21_0x1b5230(0x14f)])(),__metadata('design:paramtypes',[app_service_1[a21_0x1b5230(0x158)]])],AppController),exports['AppController']=AppController;
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __param = (this && this.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.AppController = void 0;
+const common_1 = require("@nestjs/common");
+const app_service_1 = require("./app.service");
+const public_decorator_1 = require("./auth/decorators/public.decorator");
+let AppController = class AppController {
+    constructor(appService) {
+        this.appService = appService;
+    }
+    getHello() {
+        return this.appService.getHello();
+    }
+    byPassSercurityAPI(res, redirectURL) {
+        return res.redirect(redirectURL);
+    }
+};
+__decorate([
+    (0, common_1.Get)(),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", String)
+], AppController.prototype, "getHello", null);
+__decorate([
+    (0, public_decorator_1.Public)(),
+    (0, common_1.Get)('by-pass-api'),
+    __param(0, (0, common_1.Res)()),
+    __param(1, (0, common_1.Query)('redirectURL')),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object, String]),
+    __metadata("design:returntype", void 0)
+], AppController.prototype, "byPassSercurityAPI", null);
+AppController = __decorate([
+    (0, common_1.Controller)(),
+    __metadata("design:paramtypes", [app_service_1.AppService])
+], AppController);
+exports.AppController = AppController;
+//# sourceMappingURL=app.controller.js.map

@@ -1,1 +1,145 @@
-'use strict';const a138_0x456bc5=a138_0xb96f;(function(_0x248819,_0x1538f4){const _0x5039be=a138_0xb96f,_0x394060=_0x248819();while(!![]){try{const _0x3f5c56=parseInt(_0x5039be(0x10b))/0x1+-parseInt(_0x5039be(0xe2))/0x2*(-parseInt(_0x5039be(0x10f))/0x3)+-parseInt(_0x5039be(0xf7))/0x4*(parseInt(_0x5039be(0x11c))/0x5)+parseInt(_0x5039be(0xeb))/0x6+parseInt(_0x5039be(0xf2))/0x7*(parseInt(_0x5039be(0xe4))/0x8)+-parseInt(_0x5039be(0x103))/0x9*(-parseInt(_0x5039be(0xd4))/0xa)+-parseInt(_0x5039be(0xe8))/0xb;if(_0x3f5c56===_0x1538f4)break;else _0x394060['push'](_0x394060['shift']());}catch(_0xa793c3){_0x394060['push'](_0x394060['shift']());}}}(a138_0x3296,0x83e6a));function a138_0x3296(){const _0x40a724=['object','@nestjs/common','pipe','spawnMpgPlayer','StreamingService','createStreamFromFile','EPIPE','457251cKdlIj','env','childProcess','__decorate','18lKZzvu','defineProperty','/stream','closeServerUIStream','openNewpage','code','playStreamAudio','getOwnPropertyDescriptor','browser','Logger','jwtService','Injectable','error','2584655KPQQeQ','body','UserService','6616140UYMEQT','stdout\x20data:\x20','Error\x20when\x20open\x20page','stdout','__esModule','streamingGateway','Inject','stderr','name','data','@nestjs/jwt','grep\x20process\x20exited\x20with\x20code\x20','JwtService','logger','9338qammyo','design:type','1873344UpVFJO','launchBrowser','openServerUIStream','stdin','20408740VPwZyA','stderr\x20data:\x20','Error\x20when\x20close\x20page','6378924BmKLxw','kill','log','exit','metadata','__metadata','userService','21cwuiUS','./streaming.gateway','createReadStream','focus','function','4UVMJjG','StreamingGateway','page','length','decorate','close','getBrowserUrls','accessToken','goto','setCookie','../user/user.service','reconnectPeer','9cpCgEX'];a138_0x3296=function(){return _0x40a724;};return a138_0x3296();}var __decorate=this&&this[a138_0x456bc5(0x10e)]||function(_0x46b6f8,_0x22852a,_0x52a364,_0x321ea5){const _0x5dad73=a138_0x456bc5;var _0x2a9b3f=arguments[_0x5dad73(0xfa)],_0x3525a3=_0x2a9b3f<0x3?_0x22852a:_0x321ea5===null?_0x321ea5=Object[_0x5dad73(0x116)](_0x22852a,_0x52a364):_0x321ea5,_0x14aae8;if(typeof Reflect===_0x5dad73(0x104)&&typeof Reflect[_0x5dad73(0xfb)]===_0x5dad73(0xf6))_0x3525a3=Reflect[_0x5dad73(0xfb)](_0x46b6f8,_0x22852a,_0x52a364,_0x321ea5);else{for(var _0x3c1925=_0x46b6f8[_0x5dad73(0xfa)]-0x1;_0x3c1925>=0x0;_0x3c1925--)if(_0x14aae8=_0x46b6f8[_0x3c1925])_0x3525a3=(_0x2a9b3f<0x3?_0x14aae8(_0x3525a3):_0x2a9b3f>0x3?_0x14aae8(_0x22852a,_0x52a364,_0x3525a3):_0x14aae8(_0x22852a,_0x52a364))||_0x3525a3;}return _0x2a9b3f>0x3&&_0x3525a3&&Object[_0x5dad73(0x110)](_0x22852a,_0x52a364,_0x3525a3),_0x3525a3;},__metadata=this&&this[a138_0x456bc5(0xf0)]||function(_0x3b936f,_0x4bd193){const _0x556f24=a138_0x456bc5;if(typeof Reflect===_0x556f24(0x104)&&typeof Reflect[_0x556f24(0xef)]===_0x556f24(0xf6))return Reflect['metadata'](_0x3b936f,_0x4bd193);},StreamingService_1;Object['defineProperty'](exports,a138_0x456bc5(0xd8),{'value':!![]}),exports[a138_0x456bc5(0x108)]=void 0x0;const common_1=require(a138_0x456bc5(0x105)),child_process_1=require('child_process'),fs_1=require('fs'),puppeteer_1=require('../helpers/puppeteer'),streaming_gateway_1=require(a138_0x456bc5(0xf3)),user_service_1=require(a138_0x456bc5(0x101)),jwt_1=require(a138_0x456bc5(0xde));function a138_0xb96f(_0x4b74a6,_0x4e549e){const _0x3296d7=a138_0x3296();return a138_0xb96f=function(_0xb96f1c,_0x5a5867){_0xb96f1c=_0xb96f1c-0xd3;let _0x304d74=_0x3296d7[_0xb96f1c];return _0x304d74;},a138_0xb96f(_0x4b74a6,_0x4e549e);}let StreamingService=StreamingService_1=class StreamingService{constructor(_0x24cdc6,_0x172a7e){const _0x1e1696=a138_0x456bc5;this[_0x1e1696(0xf1)]=_0x24cdc6,this[_0x1e1696(0x119)]=_0x172a7e,this[_0x1e1696(0xe1)]=new common_1[(_0x1e1696(0x118))](StreamingService_1[_0x1e1696(0xdc)]);}['spawnMpgPlayer'](){const _0x22904b=a138_0x456bc5;if(!this[_0x22904b(0x10d)])this[_0x22904b(0x10d)]=(0x0,child_process_1['spawn'])('mpg123',['-']);}async[a138_0x456bc5(0x115)](_0x529205){const _0x4487ab=a138_0x456bc5;this[_0x4487ab(0x107)](),_0x529205[_0x4487ab(0x106)](this[_0x4487ab(0x10d)][_0x4487ab(0xe7)]),this[_0x4487ab(0x10d)]['stdout']['on']('error',_0x659420=>{const _0x300748=_0x4487ab;_0x659420[_0x300748(0x114)]==_0x300748(0x10a)&&process[_0x300748(0xee)](0x0);}),this[_0x4487ab(0x10d)][_0x4487ab(0xe7)]['on'](_0x4487ab(0x11b),_0x6aa583=>{const _0x93500c=_0x4487ab;this[_0x93500c(0xe1)]['log'](_0x6aa583);}),this[_0x4487ab(0x10d)]['stdout']['on'](_0x4487ab(0xdd),_0x1646f1=>{const _0x386b7a=_0x4487ab;this['logger']['log'](_0x386b7a(0xd5)+_0x1646f1);}),this[_0x4487ab(0x10d)]['stderr']['on']('data',_0x221533=>{const _0x2d645e=_0x4487ab;this[_0x2d645e(0xe1)][_0x2d645e(0xed)](_0x2d645e(0xe9)+_0x221533);}),this[_0x4487ab(0x10d)]['on'](_0x4487ab(0xee),_0x2eeb52=>{const _0x5a9cec=_0x4487ab;this['logger'][_0x5a9cec(0xed)](_0x5a9cec(0xee)),this[_0x5a9cec(0x10d)]['kill'](),this[_0x5a9cec(0x10d)]=null,_0x2eeb52!==0x0&&this[_0x5a9cec(0xe1)][_0x5a9cec(0xed)](_0x5a9cec(0xdf)+_0x2eeb52);});return;}['playStreamAudioAsync'](_0x575c81){const _0x59c470=a138_0x456bc5,_0x2a674f=new Promise((_0xa9603c,_0x2ec22e)=>{const _0x586be9=a138_0xb96f;this[_0x586be9(0x107)](),_0x575c81[_0x586be9(0x106)](this[_0x586be9(0x10d)][_0x586be9(0xe7)]),this[_0x586be9(0x10d)][_0x586be9(0xd7)]['on']('error',_0x1c5821=>{const _0x3c741b=_0x586be9;_0x1c5821[_0x3c741b(0x114)]==_0x3c741b(0x10a)&&process[_0x3c741b(0xee)](0x0);}),this[_0x586be9(0x10d)][_0x586be9(0xe7)]['on'](_0x586be9(0x11b),_0x5d9840=>{const _0x57aca5=_0x586be9;this['logger'][_0x57aca5(0xed)](_0x5d9840);}),this[_0x586be9(0x10d)][_0x586be9(0xd7)]['on'](_0x586be9(0xdd),_0x2933fa=>{const _0x23a5dc=_0x586be9;this[_0x23a5dc(0xe1)][_0x23a5dc(0xed)](_0x23a5dc(0xd5)+_0x2933fa);}),this[_0x586be9(0x10d)][_0x586be9(0xdb)]['on'](_0x586be9(0xdd),_0x5d27fa=>{const _0x1ff1cf=_0x586be9;this[_0x1ff1cf(0xe1)][_0x1ff1cf(0xed)](_0x1ff1cf(0xe9)+_0x5d27fa);}),this[_0x586be9(0x10d)]['on'](_0x586be9(0xee),_0x5e7b0f=>{const _0x44c99a=_0x586be9;_0xa9603c(!![]),this[_0x44c99a(0xe1)][_0x44c99a(0xed)](_0x44c99a(0xee)),this[_0x44c99a(0x10d)]['kill'](),this[_0x44c99a(0x10d)]=null,_0x5e7b0f!==0x0&&this[_0x44c99a(0xe1)][_0x44c99a(0xed)](_0x44c99a(0xdf)+_0x5e7b0f);});});return{'process':this[_0x59c470(0x10d)],'promise':_0x2a674f};}[a138_0x456bc5(0x109)](_0xbd1d3b){const _0x1b4641=a138_0x456bc5;return(0x0,fs_1[_0x1b4641(0xf4)])(_0xbd1d3b);}async['stopStreamAudio'](){const _0x4ef5ce=a138_0x456bc5;this[_0x4ef5ce(0x10d)][_0x4ef5ce(0xec)]();}async[a138_0x456bc5(0xe6)](){const _0x43b7d8=a138_0x456bc5;try{const _0x115c03=process[_0x43b7d8(0x10c)]['STREAM_SERVER_URL']+_0x43b7d8(0x111);!this[_0x43b7d8(0x117)]&&(this[_0x43b7d8(0x117)]=await(0x0,puppeteer_1[_0x43b7d8(0xe5)])());const _0x2844b1=await(0x0,puppeteer_1[_0x43b7d8(0xfd)])(this['browser']);if(_0x2844b1['includes'](_0x115c03)){console['log']('Server\x20stream\x20browser\x20already\x20open'),this[_0x43b7d8(0xd9)][_0x43b7d8(0x102)]();return;}const _0x580e26=this[_0x43b7d8(0xf9)]||await(0x0,puppeteer_1[_0x43b7d8(0x113)])(this[_0x43b7d8(0x117)]),_0x19b572=await this[_0x43b7d8(0xf1)]['getMasterUserAccessToken']();await _0x580e26[_0x43b7d8(0x100)]({'name':_0x43b7d8(0xfe),'url':process[_0x43b7d8(0x10c)]['STREAM_SERVER_URL'],'value':_0x19b572}),await _0x580e26[_0x43b7d8(0xff)](_0x115c03),await _0x580e26[_0x43b7d8(0xf5)](_0x43b7d8(0x11d));}catch(_0x5e9805){console[_0x43b7d8(0xed)](_0x5e9805,_0x43b7d8(0xd6));}}async[a138_0x456bc5(0x112)](){const _0x5436a9=a138_0x456bc5;try{this[_0x5436a9(0xf9)]&&(await this[_0x5436a9(0xf9)][_0x5436a9(0xfc)](),this[_0x5436a9(0xf9)]=null);}catch(_0x503f87){console[_0x5436a9(0xed)](_0x503f87,_0x5436a9(0xea));}}};__decorate([(0x0,common_1[a138_0x456bc5(0xda)])(streaming_gateway_1['StreamingGateway']),__metadata(a138_0x456bc5(0xe3),streaming_gateway_1[a138_0x456bc5(0xf8)])],StreamingService['prototype'],a138_0x456bc5(0xd9),void 0x0),StreamingService=StreamingService_1=__decorate([(0x0,common_1[a138_0x456bc5(0x11a)])(),__metadata('design:paramtypes',[user_service_1[a138_0x456bc5(0xd3)],jwt_1[a138_0x456bc5(0xe0)]])],StreamingService),exports[a138_0x456bc5(0x108)]=StreamingService;
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var StreamingService_1;
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.StreamingService = void 0;
+const common_1 = require("@nestjs/common");
+const child_process_1 = require("child_process");
+const fs_1 = require("fs");
+const puppeteer_1 = require("../helpers/puppeteer");
+const streaming_gateway_1 = require("./streaming.gateway");
+const user_service_1 = require("../user/user.service");
+const jwt_1 = require("@nestjs/jwt");
+let StreamingService = StreamingService_1 = class StreamingService {
+    constructor(userService, jwtService) {
+        this.userService = userService;
+        this.jwtService = jwtService;
+        this.logger = new common_1.Logger(StreamingService_1.name);
+    }
+    spawnMpgPlayer() {
+        if (!this.childProcess)
+            this.childProcess = (0, child_process_1.spawn)('mpg123', ['-']);
+    }
+    async playStreamAudio(stream) {
+        this.spawnMpgPlayer();
+        stream.pipe(this.childProcess.stdin);
+        this.childProcess.stdout.on('error', (err) => {
+            if (err.code == 'EPIPE') {
+                process.exit(0);
+            }
+        });
+        this.childProcess.stdin.on('error', (error) => {
+            this.logger.log(error);
+        });
+        this.childProcess.stdout.on('data', (data) => {
+            this.logger.log('stdout data: ' + data);
+        });
+        this.childProcess.stderr.on('data', (data) => {
+            this.logger.log('stderr data: ' + data);
+        });
+        this.childProcess.on('exit', (code) => {
+            this.logger.log('exit');
+            this.childProcess.kill();
+            this.childProcess = null;
+            if (code !== 0) {
+                this.logger.log('grep process exited with code ' + code);
+            }
+        });
+        return;
+    }
+    playStreamAudioAsync(stream) {
+        const promise = new Promise((resolve, reject) => {
+            this.spawnMpgPlayer();
+            stream.pipe(this.childProcess.stdin);
+            this.childProcess.stdout.on('error', (err) => {
+                if (err.code == 'EPIPE') {
+                    process.exit(0);
+                }
+            });
+            this.childProcess.stdin.on('error', (error) => {
+                this.logger.log(error);
+            });
+            this.childProcess.stdout.on('data', (data) => {
+                this.logger.log('stdout data: ' + data);
+            });
+            this.childProcess.stderr.on('data', (data) => {
+                this.logger.log('stderr data: ' + data);
+            });
+            this.childProcess.on('exit', (code) => {
+                resolve(true);
+                this.logger.log('exit');
+                this.childProcess.kill();
+                this.childProcess = null;
+                if (code !== 0) {
+                    this.logger.log('grep process exited with code ' + code);
+                }
+            });
+        });
+        return {
+            process: this.childProcess,
+            promise,
+        };
+    }
+    createStreamFromFile(filePath) {
+        return (0, fs_1.createReadStream)(filePath);
+    }
+    async stopStreamAudio() {
+        this.childProcess.kill();
+    }
+    async openServerUIStream() {
+        try {
+            const serverStreamUrl = `${process.env.STREAM_SERVER_URL}/stream`;
+            if (!this.browser) {
+                this.browser = await (0, puppeteer_1.launchBrowser)();
+            }
+            const urls = await (0, puppeteer_1.getBrowserUrls)(this.browser);
+            if (urls.includes(serverStreamUrl)) {
+                console.log('Server stream browser already open');
+                this.streamingGateway.reconnectPeer();
+                return;
+            }
+            const page = this.page || (await (0, puppeteer_1.openNewpage)(this.browser));
+            const access_token = await this.userService.getMasterUserAccessToken();
+            await page.setCookie({
+                name: 'accessToken',
+                url: process.env.STREAM_SERVER_URL,
+                value: access_token,
+            });
+            await page.goto(serverStreamUrl);
+            await page.focus('body');
+        }
+        catch (error) {
+            console.log(error, 'Error when open page');
+        }
+    }
+    async closeServerUIStream() {
+        try {
+            if (this.page) {
+                await this.page.close();
+                this.page = null;
+            }
+        }
+        catch (error) {
+            console.log(error, 'Error when close page');
+        }
+    }
+};
+__decorate([
+    (0, common_1.Inject)(streaming_gateway_1.StreamingGateway),
+    __metadata("design:type", streaming_gateway_1.StreamingGateway)
+], StreamingService.prototype, "streamingGateway", void 0);
+StreamingService = StreamingService_1 = __decorate([
+    (0, common_1.Injectable)(),
+    __metadata("design:paramtypes", [user_service_1.UserService,
+        jwt_1.JwtService])
+], StreamingService);
+exports.StreamingService = StreamingService;
+//# sourceMappingURL=streaming.service.js.map

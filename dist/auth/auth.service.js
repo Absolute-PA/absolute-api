@@ -1,1 +1,55 @@
-'use strict';const a35_0x4181e5=a35_0x1d05;(function(_0x2d48cf,_0x4b4c3c){const _0x4160bb=a35_0x1d05,_0x21574a=_0x2d48cf();while(!![]){try{const _0x3847e9=-parseInt(_0x4160bb(0x10b))/0x1+parseInt(_0x4160bb(0xfc))/0x2+-parseInt(_0x4160bb(0x100))/0x3+-parseInt(_0x4160bb(0xfd))/0x4+-parseInt(_0x4160bb(0x115))/0x5+parseInt(_0x4160bb(0x118))/0x6*(-parseInt(_0x4160bb(0x108))/0x7)+parseInt(_0x4160bb(0x105))/0x8;if(_0x3847e9===_0x4b4c3c)break;else _0x21574a['push'](_0x21574a['shift']());}catch(_0x5e8f88){_0x21574a['push'](_0x21574a['shift']());}}}(a35_0x52a6,0x1d32d));var __decorate=this&&this[a35_0x4181e5(0x103)]||function(_0x5c846b,_0x2094fc,_0x256346,_0x7c8b1f){const _0x545fc6=a35_0x4181e5;var _0x362a46=arguments[_0x545fc6(0xff)],_0x1a9f64=_0x362a46<0x3?_0x2094fc:_0x7c8b1f===null?_0x7c8b1f=Object['getOwnPropertyDescriptor'](_0x2094fc,_0x256346):_0x7c8b1f,_0x489e47;if(typeof Reflect===_0x545fc6(0x109)&&typeof Reflect[_0x545fc6(0x111)]==='function')_0x1a9f64=Reflect[_0x545fc6(0x111)](_0x5c846b,_0x2094fc,_0x256346,_0x7c8b1f);else{for(var _0x514553=_0x5c846b[_0x545fc6(0xff)]-0x1;_0x514553>=0x0;_0x514553--)if(_0x489e47=_0x5c846b[_0x514553])_0x1a9f64=(_0x362a46<0x3?_0x489e47(_0x1a9f64):_0x362a46>0x3?_0x489e47(_0x2094fc,_0x256346,_0x1a9f64):_0x489e47(_0x2094fc,_0x256346))||_0x1a9f64;}return _0x362a46>0x3&&_0x1a9f64&&Object[_0x545fc6(0x112)](_0x2094fc,_0x256346,_0x1a9f64),_0x1a9f64;},__metadata=this&&this[a35_0x4181e5(0x10c)]||function(_0x4b788b,_0x4ef836){if(typeof Reflect==='object'&&typeof Reflect['metadata']==='function')return Reflect['metadata'](_0x4b788b,_0x4ef836);};Object[a35_0x4181e5(0x112)](exports,'__esModule',{'value':!![]}),exports[a35_0x4181e5(0x114)]=void 0x0;const common_1=require('@nestjs/common'),user_service_1=require(a35_0x4181e5(0x116)),jwt_1=require(a35_0x4181e5(0x10f)),verify_1=require('./verify');function a35_0x1d05(_0x550499,_0x595bf8){const _0x52a6f2=a35_0x52a6();return a35_0x1d05=function(_0x1d053a,_0x9e2a01){_0x1d053a=_0x1d053a-0xfc;let _0x3839cc=_0x52a6f2[_0x1d053a];return _0x3839cc;},a35_0x1d05(_0x550499,_0x595bf8);}let AuthService=class AuthService{constructor(_0x1358eb,_0x1b51de){const _0x4d5bdb=a35_0x4181e5;this[_0x4d5bdb(0x117)]=_0x1358eb,this[_0x4d5bdb(0x102)]=_0x1b51de;}async['validateUser'](_0x2c1472,_0x177d07){const _0x579b88=a35_0x4181e5,_0x4760d0=await this[_0x579b88(0x117)][_0x579b88(0x10e)](_0x2c1472);if(!_0x4760d0)return null;console['log'](_0x4760d0[_0x579b88(0x10d)],_0x177d07,'user.password,\x20password');const _0x5d6384=await(0x0,verify_1[_0x579b88(0x104)])(_0x177d07,_0x4760d0['password']);if(_0x4760d0&&_0x5d6384)return _0x4760d0;return null;}async[a35_0x4181e5(0x101)](_0x4ab8f7,{newPassword:_0x1c362f}){const _0x3dc959=a35_0x4181e5,_0x12343c=await(0x0,verify_1[_0x3dc959(0x10a)])(_0x1c362f);return await this['userService'][_0x3dc959(0xfe)](_0x4ab8f7['sub'],Object['assign'](Object['assign']({},_0x4ab8f7),{'password':_0x12343c}));}async[a35_0x4181e5(0x110)](_0x4d1445){const _0x78634=a35_0x4181e5,_0x3d3422={'username':_0x4d1445['username'],'sub':_0x4d1445['_id'],'roles':_0x4d1445[_0x78634(0x107)],'email':_0x4d1445['email']};return{'access_token':this['jwtService']['sign'](_0x3d3422)};}};function a35_0x52a6(){const _0x5d976a=['roles','7TeZOaR','object','hash','161031bIaTBZ','__metadata','password','findUser','@nestjs/jwt','login','decorate','defineProperty','Injectable','AuthService','594065kymVoq','../user/user.service','userService','541932tIwXcC','design:paramtypes','456674jQLhmn','25540mAyMAa','updateUser','length','144843zdQibC','updatePassword','jwtService','__decorate','verify','2528736xNYRtr','UserService'];a35_0x52a6=function(){return _0x5d976a;};return a35_0x52a6();}AuthService=__decorate([(0x0,common_1[a35_0x4181e5(0x113)])(),__metadata(a35_0x4181e5(0x119),[user_service_1[a35_0x4181e5(0x106)],jwt_1['JwtService']])],AuthService),exports['AuthService']=AuthService;
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.AuthService = void 0;
+const common_1 = require("@nestjs/common");
+const user_service_1 = require("../user/user.service");
+const jwt_1 = require("@nestjs/jwt");
+const verify_1 = require("./verify");
+let AuthService = class AuthService {
+    constructor(userService, jwtService) {
+        this.userService = userService;
+        this.jwtService = jwtService;
+    }
+    async validateUser(username, password) {
+        const user = await this.userService.findUser(username);
+        if (!user)
+            return null;
+        console.log(user.password, password, 'user.password, password');
+        const isPasswordMatch = await (0, verify_1.verify)(password, user.password);
+        if (user && isPasswordMatch) {
+            return user;
+        }
+        return null;
+    }
+    async updatePassword(user, { newPassword }) {
+        const password = await (0, verify_1.hash)(newPassword);
+        return await this.userService.updateUser(user.sub, Object.assign(Object.assign({}, user), { password }));
+    }
+    async login(user) {
+        const payload = {
+            username: user.username,
+            sub: user._id,
+            roles: user.roles,
+            email: user.email,
+        };
+        return {
+            access_token: this.jwtService.sign(payload),
+        };
+    }
+};
+AuthService = __decorate([
+    (0, common_1.Injectable)(),
+    __metadata("design:paramtypes", [user_service_1.UserService,
+        jwt_1.JwtService])
+], AuthService);
+exports.AuthService = AuthService;
+//# sourceMappingURL=auth.service.js.map

@@ -1,1 +1,32 @@
-'use strict';function a41_0x294b(){var _0x58026d=['SettingService','defineProperty','Injectable','design:paramtypes','object','4425FuPeeZ','__esModule','__metadata','8325890DghYsB','isExpired','findFirst','553KbuANB','1088908kDZfCd','2776cutWop','decorate','19408090DskiwY','getRequest','settingService','2682RmoEeg','LicenseGuard','45522dFHMrY','@nestjs/common','switchToHttp','canActivate','getOwnPropertyDescriptor','57761781ZalyjE','1lwriFc','__decorate','11296wRTLSv','function','metadata','../../setting/setting.service'];a41_0x294b=function(){return _0x58026d;};return a41_0x294b();}var a41_0x270189=a41_0x3951;(function(_0x70b7c3,_0xf190fb){var _0x45e1f3=a41_0x3951,_0x46dba6=_0x70b7c3();while(!![]){try{var _0x11d082=-parseInt(_0x45e1f3(0x209))/0x1*(-parseInt(_0x45e1f3(0x1fb))/0x2)+parseInt(_0x45e1f3(0x1f4))/0x3*(-parseInt(_0x45e1f3(0x1fc))/0x4)+-parseInt(_0x45e1f3(0x1f7))/0x5+-parseInt(_0x45e1f3(0x203))/0x6*(parseInt(_0x45e1f3(0x1fa))/0x7)+-parseInt(_0x45e1f3(0x20b))/0x8*(-parseInt(_0x45e1f3(0x201))/0x9)+-parseInt(_0x45e1f3(0x1fe))/0xa+parseInt(_0x45e1f3(0x208))/0xb;if(_0x11d082===_0xf190fb)break;else _0x46dba6['push'](_0x46dba6['shift']());}catch(_0x3b2efa){_0x46dba6['push'](_0x46dba6['shift']());}}}(a41_0x294b,0xf109b));var __decorate=this&&this[a41_0x270189(0x20a)]||function(_0x10123b,_0x4f4fde,_0x557245,_0x51f7d8){var _0x1f48a0=a41_0x270189,_0x46e411=arguments['length'],_0x41add2=_0x46e411<0x3?_0x4f4fde:_0x51f7d8===null?_0x51f7d8=Object[_0x1f48a0(0x207)](_0x4f4fde,_0x557245):_0x51f7d8,_0x2dedd2;if(typeof Reflect==='object'&&typeof Reflect[_0x1f48a0(0x1fd)]===_0x1f48a0(0x20c))_0x41add2=Reflect['decorate'](_0x10123b,_0x4f4fde,_0x557245,_0x51f7d8);else{for(var _0x1afdc5=_0x10123b['length']-0x1;_0x1afdc5>=0x0;_0x1afdc5--)if(_0x2dedd2=_0x10123b[_0x1afdc5])_0x41add2=(_0x46e411<0x3?_0x2dedd2(_0x41add2):_0x46e411>0x3?_0x2dedd2(_0x4f4fde,_0x557245,_0x41add2):_0x2dedd2(_0x4f4fde,_0x557245))||_0x41add2;}return _0x46e411>0x3&&_0x41add2&&Object[_0x1f48a0(0x1f0)](_0x4f4fde,_0x557245,_0x41add2),_0x41add2;},__metadata=this&&this[a41_0x270189(0x1f6)]||function(_0x3b584a,_0xb07661){var _0x3ae1b9=a41_0x270189;if(typeof Reflect===_0x3ae1b9(0x1f3)&&typeof Reflect[_0x3ae1b9(0x1ed)]===_0x3ae1b9(0x20c))return Reflect[_0x3ae1b9(0x1ed)](_0x3b584a,_0xb07661);};function a41_0x3951(_0x3c4ee8,_0x332102){var _0x294bf9=a41_0x294b();return a41_0x3951=function(_0x3951c0,_0x56b473){_0x3951c0=_0x3951c0-0x1ed;var _0x3a635b=_0x294bf9[_0x3951c0];return _0x3a635b;},a41_0x3951(_0x3c4ee8,_0x332102);}Object['defineProperty'](exports,a41_0x270189(0x1f5),{'value':!![]}),exports[a41_0x270189(0x202)]=void 0x0;const common_1=require(a41_0x270189(0x204)),setting_service_1=require(a41_0x270189(0x1ee));let LicenseGuard=class LicenseGuard{constructor(_0x321de9){var _0x225a37=a41_0x270189;this[_0x225a37(0x200)]=_0x321de9;}async[a41_0x270189(0x206)](_0x2ea315){var _0x1c28f4=a41_0x270189;const {user:_0x2666c2}=_0x2ea315[_0x1c28f4(0x205)]()[_0x1c28f4(0x1ff)]();if(!_0x2666c2)return![];const _0x179707=await this[_0x1c28f4(0x200)][_0x1c28f4(0x1f9)]();return _0x179707&&!_0x179707[_0x1c28f4(0x1f8)];}};LicenseGuard=__decorate([(0x0,common_1[a41_0x270189(0x1f1)])(),__metadata(a41_0x270189(0x1f2),[setting_service_1[a41_0x270189(0x1ef)]])],LicenseGuard),exports[a41_0x270189(0x202)]=LicenseGuard;
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.LicenseGuard = void 0;
+const common_1 = require("@nestjs/common");
+const setting_service_1 = require("@root/src/setting/setting.service");
+let LicenseGuard = class LicenseGuard {
+    constructor(settingService) {
+        this.settingService = settingService;
+    }
+    async canActivate(context) {
+        const { user } = context.switchToHttp().getRequest();
+        if (!user)
+            return false;
+        const setting = await this.settingService.findFirst();
+        return setting && !setting.isExpired;
+    }
+};
+LicenseGuard = __decorate([
+    (0, common_1.Injectable)(),
+    __metadata("design:paramtypes", [setting_service_1.SettingService])
+], LicenseGuard);
+exports.LicenseGuard = LicenseGuard;
+//# sourceMappingURL=license.guard.js.map

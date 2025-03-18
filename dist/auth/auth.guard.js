@@ -1,1 +1,58 @@
-'use strict';const a33_0x221539=a33_0x5035;(function(_0x280474,_0x3f681b){const _0x585314=a33_0x5035,_0x563d60=_0x280474();while(!![]){try{const _0x1c1e9a=parseInt(_0x585314(0x213))/0x1+parseInt(_0x585314(0x206))/0x2*(-parseInt(_0x585314(0x205))/0x3)+-parseInt(_0x585314(0x20e))/0x4+parseInt(_0x585314(0x1ee))/0x5*(-parseInt(_0x585314(0x20f))/0x6)+parseInt(_0x585314(0x202))/0x7*(-parseInt(_0x585314(0x1fe))/0x8)+parseInt(_0x585314(0x1f7))/0x9+parseInt(_0x585314(0x208))/0xa;if(_0x1c1e9a===_0x3f681b)break;else _0x563d60['push'](_0x563d60['shift']());}catch(_0x111aef){_0x563d60['push'](_0x563d60['shift']());}}}(a33_0x5027,0x42bb3));function a33_0x5035(_0x3763bf,_0x39f467){const _0x502726=a33_0x5027();return a33_0x5035=function(_0x503595,_0x63e6c6){_0x503595=_0x503595-0x1ee;let _0x24e541=_0x502726[_0x503595];return _0x24e541;},a33_0x5035(_0x3763bf,_0x39f467);}var __decorate=this&&this[a33_0x221539(0x1ff)]||function(_0x1d9df2,_0x422740,_0x567542,_0x4841da){const _0x3cf1a1=a33_0x221539;var _0x5edf1f=arguments['length'],_0x2700c3=_0x5edf1f<0x3?_0x422740:_0x4841da===null?_0x4841da=Object[_0x3cf1a1(0x216)](_0x422740,_0x567542):_0x4841da,_0x54922e;if(typeof Reflect===_0x3cf1a1(0x1f0)&&typeof Reflect[_0x3cf1a1(0x1f3)]===_0x3cf1a1(0x209))_0x2700c3=Reflect[_0x3cf1a1(0x1f3)](_0x1d9df2,_0x422740,_0x567542,_0x4841da);else{for(var _0x2a6928=_0x1d9df2[_0x3cf1a1(0x1f4)]-0x1;_0x2a6928>=0x0;_0x2a6928--)if(_0x54922e=_0x1d9df2[_0x2a6928])_0x2700c3=(_0x5edf1f<0x3?_0x54922e(_0x2700c3):_0x5edf1f>0x3?_0x54922e(_0x422740,_0x567542,_0x2700c3):_0x54922e(_0x422740,_0x567542))||_0x2700c3;}return _0x5edf1f>0x3&&_0x2700c3&&Object[_0x3cf1a1(0x207)](_0x422740,_0x567542,_0x2700c3),_0x2700c3;},__metadata=this&&this['__metadata']||function(_0x1df496,_0x3396b1){const _0x4d16a8=a33_0x221539;if(typeof Reflect===_0x4d16a8(0x1f0)&&typeof Reflect[_0x4d16a8(0x204)]===_0x4d16a8(0x209))return Reflect[_0x4d16a8(0x204)](_0x1df496,_0x3396b1);};function a33_0x5027(){const _0xecd4e0=['1256013fqkLhf','Injectable','user','getHandler','reflector','getAllAndOverride','headers','3468808oVvgbh','__decorate','authorization','UnauthorizedException','7xDaKtM','@nestjs/core','metadata','1359285kWPQKm','2qUyVvz','defineProperty','14474160ZEsfVB','function','jwtService','JWT_SECRET','log','./decorators/public.decorator','2104036iwWSEj','76602puQEyd','env','JwtService','@nestjs/jwt','162898TaygmQ','getClass','extractTokenFromHeader','getOwnPropertyDescriptor','25sWArdR','split','object','getRequest','@nestjs/common','decorate','length','AuthGuard','switchToHttp'];a33_0x5027=function(){return _0xecd4e0;};return a33_0x5027();}Object[a33_0x221539(0x207)](exports,'__esModule',{'value':!![]}),exports[a33_0x221539(0x1f5)]=void 0x0;const common_1=require(a33_0x221539(0x1f2)),core_1=require(a33_0x221539(0x203)),jwt_1=require(a33_0x221539(0x212)),public_decorator_1=require(a33_0x221539(0x20d));let AuthGuard=class AuthGuard{constructor(_0x5d8495,_0x368502){const _0x4bf0ef=a33_0x221539;this[_0x4bf0ef(0x20a)]=_0x5d8495,this[_0x4bf0ef(0x1fb)]=_0x368502;}async['canActivate'](_0x36591a){const _0x1b9b96=a33_0x221539,_0xfd2020=this[_0x1b9b96(0x1fb)][_0x1b9b96(0x1fc)](public_decorator_1['IS_PUBLIC_KEY'],[_0x36591a[_0x1b9b96(0x1fa)](),_0x36591a[_0x1b9b96(0x214)]()]);if(_0xfd2020)return!![];const _0x4cc320=_0x36591a[_0x1b9b96(0x1f6)]()[_0x1b9b96(0x1f1)](),_0x4f88c4=this['extractTokenFromHeader'](_0x4cc320);if(!_0x4f88c4)throw new common_1[(_0x1b9b96(0x201))]();try{const _0x4d40cf=await this[_0x1b9b96(0x20a)]['verifyAsync'](_0x4f88c4,{'secret':process[_0x1b9b96(0x210)][_0x1b9b96(0x20b)]});_0x4cc320[_0x1b9b96(0x1f9)]=_0x4d40cf;}catch(_0x37b99f){console[_0x1b9b96(0x20c)](_0x37b99f);throw new common_1[(_0x1b9b96(0x201))]();}return!![];}[a33_0x221539(0x215)](_0x39d677){const _0x280a56=a33_0x221539;var _0x3da941,_0x3bbc8b;const [_0x4c4825,_0x3c3f5e]=(_0x3bbc8b=(_0x3da941=_0x39d677[_0x280a56(0x1fd)][_0x280a56(0x200)])===null||_0x3da941===void 0x0?void 0x0:_0x3da941[_0x280a56(0x1ef)]('\x20'))!==null&&_0x3bbc8b!==void 0x0?_0x3bbc8b:[];return _0x4c4825==='Bearer'?_0x3c3f5e:undefined;}};AuthGuard=__decorate([(0x0,common_1[a33_0x221539(0x1f8)])(),__metadata('design:paramtypes',[jwt_1[a33_0x221539(0x211)],core_1['Reflector']])],AuthGuard),exports[a33_0x221539(0x1f5)]=AuthGuard;
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.AuthGuard = void 0;
+const common_1 = require("@nestjs/common");
+const core_1 = require("@nestjs/core");
+const jwt_1 = require("@nestjs/jwt");
+const public_decorator_1 = require("./decorators/public.decorator");
+let AuthGuard = class AuthGuard {
+    constructor(jwtService, reflector) {
+        this.jwtService = jwtService;
+        this.reflector = reflector;
+    }
+    async canActivate(context) {
+        const isPublic = this.reflector.getAllAndOverride(public_decorator_1.IS_PUBLIC_KEY, [
+            context.getHandler(),
+            context.getClass(),
+        ]);
+        if (isPublic) {
+            return true;
+        }
+        const request = context.switchToHttp().getRequest();
+        const token = this.extractTokenFromHeader(request);
+        if (!token) {
+            throw new common_1.UnauthorizedException();
+        }
+        try {
+            const payload = await this.jwtService.verifyAsync(token, {
+                secret: process.env.JWT_SECRET,
+            });
+            request['user'] = payload;
+        }
+        catch (error) {
+            console.log(error);
+            throw new common_1.UnauthorizedException();
+        }
+        return true;
+    }
+    extractTokenFromHeader(request) {
+        var _a, _b;
+        const [type, token] = (_b = (_a = request.headers.authorization) === null || _a === void 0 ? void 0 : _a.split(' ')) !== null && _b !== void 0 ? _b : [];
+        return type === 'Bearer' ? token : undefined;
+    }
+};
+AuthGuard = __decorate([
+    (0, common_1.Injectable)(),
+    __metadata("design:paramtypes", [jwt_1.JwtService, core_1.Reflector])
+], AuthGuard);
+exports.AuthGuard = AuthGuard;
+//# sourceMappingURL=auth.guard.js.map

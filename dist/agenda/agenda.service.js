@@ -1,1 +1,119 @@
-'use strict';const a2_0x1cd2d5=a2_0x511d;function a2_0x5824(){const _0xed942d=['BackgroundJobType','PlayVoiceRecorded','457508Iwgpio','toPlayMusicCommand','decorate','../common/job','design:returntype','attrs','./mappers','CheckEvent','now','20290qQDctc','design:type','PROCESS_CACHE','design:paramtypes','scheduleJob','cancelJob','jobType','isScheduleJobDTO','schedule','jobs','3606TdCWYN','rescheduleJob','AgendaService','values','startDate','length','every','JobType','when','toPlaySoundCommand','ScheduleChangedEvent','./dtos','__esModule','object','@nestjs/event-emitter','../common/enums','\x20is\x20cancelled','agendaAgent','toPlayTextToAudioCommand','PurgeTempUploadedFiles','getJobPayload','EventChangedEvent','log','./mappers/voice.mapper','10DDJzuy','@agent-ly/nestjs-agenda','rescheduleEvents','toString','cancel','PlayMusic','getJobs','106732ehGIgK','513FygWKq','__metadata','logger','metadata','killProcess','NotFoundException','Scheduling\x20events...','791UxnBcd','0\x200\x20*\x20*\x20*','function','1516776WDdTWU','2wRwHLC','name','Deleted','initialize','1866568plkCTO','Job\x20','PlaySound','Logger','ObjectId','Updated','_id','../common/events','Failed\x20to\x20cancel\x20job\x20','1236813uhNgPq','defineProperty','OnEvent','Created'];a2_0x5824=function(){return _0xed942d;};return a2_0x5824();}function a2_0x511d(_0x1b8953,_0x2e3d34){const _0x5824bd=a2_0x5824();return a2_0x511d=function(_0x511d07,_0xa84de){_0x511d07=_0x511d07-0x145;let _0xee5342=_0x5824bd[_0x511d07];return _0xee5342;},a2_0x511d(_0x1b8953,_0x2e3d34);}(function(_0x5cb23e,_0x434de0){const _0x10ae94=a2_0x511d,_0x4b86d6=_0x5cb23e();while(!![]){try{const _0x4b9887=parseInt(_0x10ae94(0x14a))/0x1*(parseInt(_0x10ae94(0x18f))/0x2)+parseInt(_0x10ae94(0x157))/0x3+-parseInt(_0x10ae94(0x15d))/0x4*(parseInt(_0x10ae94(0x188))/0x5)+-parseInt(_0x10ae94(0x170))/0x6*(-parseInt(_0x10ae94(0x146))/0x7)+-parseInt(_0x10ae94(0x149))/0x8+parseInt(_0x10ae94(0x190))/0x9*(-parseInt(_0x10ae94(0x166))/0xa)+parseInt(_0x10ae94(0x14e))/0xb;if(_0x4b9887===_0x434de0)break;else _0x4b86d6['push'](_0x4b86d6['shift']());}catch(_0x4ecacd){_0x4b86d6['push'](_0x4b86d6['shift']());}}}(a2_0x5824,0x36588));var __decorate=this&&this['__decorate']||function(_0x4ccc14,_0x585902,_0x5dbad3,_0x5379c1){const _0xffb0d8=a2_0x511d;var _0x3466f4=arguments[_0xffb0d8(0x175)],_0x89227e=_0x3466f4<0x3?_0x585902:_0x5379c1===null?_0x5379c1=Object['getOwnPropertyDescriptor'](_0x585902,_0x5dbad3):_0x5379c1,_0x216d06;if(typeof Reflect===_0xffb0d8(0x17d)&&typeof Reflect['decorate']===_0xffb0d8(0x148))_0x89227e=Reflect[_0xffb0d8(0x15f)](_0x4ccc14,_0x585902,_0x5dbad3,_0x5379c1);else{for(var _0x4d8ef9=_0x4ccc14[_0xffb0d8(0x175)]-0x1;_0x4d8ef9>=0x0;_0x4d8ef9--)if(_0x216d06=_0x4ccc14[_0x4d8ef9])_0x89227e=(_0x3466f4<0x3?_0x216d06(_0x89227e):_0x3466f4>0x3?_0x216d06(_0x585902,_0x5dbad3,_0x89227e):_0x216d06(_0x585902,_0x5dbad3))||_0x89227e;}return _0x3466f4>0x3&&_0x89227e&&Object[_0xffb0d8(0x158)](_0x585902,_0x5dbad3,_0x89227e),_0x89227e;},__metadata=this&&this[a2_0x1cd2d5(0x191)]||function(_0x307c1c,_0x342fae){const _0xa0554f=a2_0x1cd2d5;if(typeof Reflect===_0xa0554f(0x17d)&&typeof Reflect[_0xa0554f(0x193)]===_0xa0554f(0x148))return Reflect[_0xa0554f(0x193)](_0x307c1c,_0x342fae);},AgendaService_1;Object[a2_0x1cd2d5(0x158)](exports,a2_0x1cd2d5(0x17c),{'value':!![]}),exports[a2_0x1cd2d5(0x172)]=void 0x0;const common_1=require('@nestjs/common'),nestjs_agenda_1=require(a2_0x1cd2d5(0x189)),event_emitter_1=require(a2_0x1cd2d5(0x17e)),mongodb_1=require('mongodb'),enums_1=require(a2_0x1cd2d5(0x17f)),events_1=require(a2_0x1cd2d5(0x155)),job_1=require(a2_0x1cd2d5(0x160)),dtos_1=require(a2_0x1cd2d5(0x17b)),mappers_1=require(a2_0x1cd2d5(0x163)),voice_mapper_1=require(a2_0x1cd2d5(0x187)),textToAudio_mapper_1=require('./mappers/textToAudio.mapper');let AgendaService=AgendaService_1=class AgendaService{constructor(_0x1bb197){const _0x3d5419=a2_0x1cd2d5;this[_0x3d5419(0x181)]=_0x1bb197,this[_0x3d5419(0x192)]=new common_1[(_0x3d5419(0x151))](AgendaService_1[_0x3d5419(0x14b)]),this[_0x3d5419(0x14d)]();}async[a2_0x1cd2d5(0x14d)](){const _0x187116=a2_0x1cd2d5;await this['agendaAgent']['purge'](),this[_0x187116(0x181)][_0x187116(0x176)](_0x187116(0x147),enums_1[_0x187116(0x15b)]['CheckEvent']),this[_0x187116(0x181)][_0x187116(0x176)](_0x187116(0x147),enums_1[_0x187116(0x15b)][_0x187116(0x183)]),this['agendaAgent'][_0x187116(0x165)](enums_1['BackgroundJobType']['CheckEvent'],null);}async['rescheduleEvents'](){const _0x25ae3b=a2_0x1cd2d5;this[_0x25ae3b(0x192)][_0x25ae3b(0x186)](_0x25ae3b(0x145)),await this['agendaAgent']['cancel']({'name':{'$in':Object[_0x25ae3b(0x173)](enums_1[_0x25ae3b(0x177)])}}),this[_0x25ae3b(0x181)]['now'](enums_1[_0x25ae3b(0x15b)][_0x25ae3b(0x164)],null);}async[a2_0x1cd2d5(0x18e)](){const _0x835b87=a2_0x1cd2d5,_0xb861=await this[_0x835b87(0x181)][_0x835b87(0x16f)]({'nextRunAt':{'$exists':!![],'$ne':null}});return _0xb861;}async[a2_0x1cd2d5(0x16a)](_0x32046c){const _0xaa8ad0=a2_0x1cd2d5,_0x1c6dc0=this['getJobPayload'](_0x32046c),_0x4b6d60=(0x0,dtos_1[_0xaa8ad0(0x16d)])(_0x32046c),_0x173af5=_0x4b6d60?_0x32046c[_0xaa8ad0(0x178)]:_0x32046c['every'];let _0x541b97;return _0x4b6d60?_0x541b97=await this[_0xaa8ad0(0x181)][_0xaa8ad0(0x16e)](_0x173af5,_0x32046c['jobType'],_0x1c6dc0):_0x541b97=await this[_0xaa8ad0(0x181)]['every'](_0x173af5,_0x32046c[_0xaa8ad0(0x16c)],_0x1c6dc0,{'startDate':new Date(_0x32046c[_0xaa8ad0(0x174)]),'endDate':new Date(_0x32046c['endDate']),'skipImmediate':!![]}),{'jobId':_0x541b97[_0xaa8ad0(0x162)][_0xaa8ad0(0x154)][_0xaa8ad0(0x18b)]()};}async[a2_0x1cd2d5(0x16b)](_0x47baff){const _0x48a602=a2_0x1cd2d5,_0x5a3b04=await this['agendaAgent'][_0x48a602(0x16f)]({'_id':new mongodb_1[(_0x48a602(0x152))](_0x47baff)});if(!_0x5a3b04['length'])return{'success':!![],'message':_0x48a602(0x14f)+_0x47baff+'\x20not\x20found'};const _0x5d0c28=await this[_0x48a602(0x181)][_0x48a602(0x18c)]({'_id':new mongodb_1[(_0x48a602(0x152))](_0x47baff)});job_1[_0x48a602(0x168)][_0x48a602(0x194)](_0x47baff);if(_0x5d0c28)return{'success':!![],'message':_0x48a602(0x14f)+_0x47baff+_0x48a602(0x180)};return{'success':![],'message':_0x48a602(0x156)+_0x47baff};}async[a2_0x1cd2d5(0x171)](_0x531be1,_0x5cbd3c){const _0x5cf1f2=a2_0x1cd2d5;return await this[_0x5cf1f2(0x16b)](_0x531be1),await this[_0x5cf1f2(0x16a)](_0x5cbd3c);}[a2_0x1cd2d5(0x184)](_0x5ea4c5){const _0x294d18=a2_0x1cd2d5;switch(_0x5ea4c5[_0x294d18(0x16c)]){case enums_1[_0x294d18(0x177)][_0x294d18(0x150)]:{return(0x0,mappers_1[_0x294d18(0x179)])(_0x5ea4c5);}case enums_1['JobType'][_0x294d18(0x18d)]:{return(0x0,mappers_1[_0x294d18(0x15e)])(_0x5ea4c5);}case enums_1['JobType'][_0x294d18(0x15c)]:{return(0x0,voice_mapper_1['toPlayVoiceCommand'])(_0x5ea4c5);}case enums_1['JobType']['PlayTextToAudio']:{return(0x0,textToAudio_mapper_1[_0x294d18(0x182)])(_0x5ea4c5);}default:throw new common_1[(_0x294d18(0x195))]('Job\x20type\x20not\x20found');}}};__decorate([(0x0,event_emitter_1['OnEvent'])(events_1[a2_0x1cd2d5(0x17a)][a2_0x1cd2d5(0x153)]),(0x0,event_emitter_1[a2_0x1cd2d5(0x159)])(events_1[a2_0x1cd2d5(0x17a)][a2_0x1cd2d5(0x14c)]),(0x0,event_emitter_1[a2_0x1cd2d5(0x159)])(events_1['EventChangedEvent'][a2_0x1cd2d5(0x15a)]),(0x0,event_emitter_1['OnEvent'])(events_1[a2_0x1cd2d5(0x185)][a2_0x1cd2d5(0x153)]),(0x0,event_emitter_1[a2_0x1cd2d5(0x159)])(events_1['EventChangedEvent'][a2_0x1cd2d5(0x14c)]),__metadata(a2_0x1cd2d5(0x167),Function),__metadata(a2_0x1cd2d5(0x169),[]),__metadata(a2_0x1cd2d5(0x161),Promise)],AgendaService['prototype'],a2_0x1cd2d5(0x18a),null),AgendaService=AgendaService_1=__decorate([(0x0,common_1['Injectable'])(),__metadata(a2_0x1cd2d5(0x169),[nestjs_agenda_1[a2_0x1cd2d5(0x172)]])],AgendaService),exports[a2_0x1cd2d5(0x172)]=AgendaService;
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var AgendaService_1;
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.AgendaService = void 0;
+const common_1 = require("@nestjs/common");
+const nestjs_agenda_1 = require("@agent-ly/nestjs-agenda");
+const event_emitter_1 = require("@nestjs/event-emitter");
+const mongodb_1 = require("mongodb");
+const enums_1 = require("@/common/enums");
+const events_1 = require("@/common/events");
+const job_1 = require("@/common/job");
+const dtos_1 = require("./dtos");
+const mappers_1 = require("./mappers");
+const voice_mapper_1 = require("./mappers/voice.mapper");
+const textToAudio_mapper_1 = require("./mappers/textToAudio.mapper");
+let AgendaService = AgendaService_1 = class AgendaService {
+    constructor(agendaAgent) {
+        this.agendaAgent = agendaAgent;
+        this.logger = new common_1.Logger(AgendaService_1.name);
+        this.initialize();
+    }
+    async initialize() {
+        await this.agendaAgent.purge();
+        this.agendaAgent.every('0 0 * * *', enums_1.BackgroundJobType.CheckEvent);
+        this.agendaAgent.every('0 0 * * *', enums_1.BackgroundJobType.PurgeTempUploadedFiles);
+        this.agendaAgent.now(enums_1.BackgroundJobType.CheckEvent, null);
+    }
+    async rescheduleEvents() {
+        this.logger.log(`Scheduling events...`);
+        await this.agendaAgent.cancel({
+            name: { $in: Object.values(enums_1.JobType) },
+        });
+        this.agendaAgent.now(enums_1.BackgroundJobType.CheckEvent, null);
+    }
+    async getJobs() {
+        const jobs = await this.agendaAgent.jobs({
+            nextRunAt: { $exists: true, $ne: null },
+        });
+        return jobs;
+    }
+    async scheduleJob(jobDTO) {
+        const data = this.getJobPayload(jobDTO);
+        const isScheduleJob = (0, dtos_1.isScheduleJobDTO)(jobDTO);
+        const time = isScheduleJob ? jobDTO.when : jobDTO.every;
+        let job;
+        if (isScheduleJob) {
+            job = await this.agendaAgent.schedule(time, jobDTO.jobType, data);
+        }
+        else {
+            job = await this.agendaAgent.every(time, jobDTO.jobType, data, {
+                startDate: new Date(jobDTO.startDate),
+                endDate: new Date(jobDTO.endDate),
+                skipImmediate: true,
+            });
+        }
+        return { jobId: job.attrs._id.toString() };
+    }
+    async cancelJob(id) {
+        const jobs = await this.agendaAgent.jobs({ _id: new mongodb_1.ObjectId(id) });
+        if (!jobs.length) {
+            return { success: true, message: `Job ${id} not found` };
+        }
+        const isSuccess = await this.agendaAgent.cancel({
+            _id: new mongodb_1.ObjectId(id),
+        });
+        job_1.PROCESS_CACHE.killProcess(id);
+        if (isSuccess) {
+            return { success: true, message: `Job ${id} is cancelled` };
+        }
+        return { success: false, message: `Failed to cancel job ${id}` };
+    }
+    async rescheduleJob(id, jobDTO) {
+        await this.cancelJob(id);
+        return await this.scheduleJob(jobDTO);
+    }
+    getJobPayload(jobDTO) {
+        switch (jobDTO.jobType) {
+            case enums_1.JobType.PlaySound: {
+                return (0, mappers_1.toPlaySoundCommand)(jobDTO);
+            }
+            case enums_1.JobType.PlayMusic: {
+                return (0, mappers_1.toPlayMusicCommand)(jobDTO);
+            }
+            case enums_1.JobType.PlayVoiceRecorded: {
+                return (0, voice_mapper_1.toPlayVoiceCommand)(jobDTO);
+            }
+            case enums_1.JobType.PlayTextToAudio: {
+                return (0, textToAudio_mapper_1.toPlayTextToAudioCommand)(jobDTO);
+            }
+            default:
+                throw new common_1.NotFoundException('Job type not found');
+        }
+    }
+};
+__decorate([
+    (0, event_emitter_1.OnEvent)(events_1.ScheduleChangedEvent.Updated),
+    (0, event_emitter_1.OnEvent)(events_1.ScheduleChangedEvent.Deleted),
+    (0, event_emitter_1.OnEvent)(events_1.EventChangedEvent.Created),
+    (0, event_emitter_1.OnEvent)(events_1.EventChangedEvent.Updated),
+    (0, event_emitter_1.OnEvent)(events_1.EventChangedEvent.Deleted),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", Promise)
+], AgendaService.prototype, "rescheduleEvents", null);
+AgendaService = AgendaService_1 = __decorate([
+    (0, common_1.Injectable)(),
+    __metadata("design:paramtypes", [nestjs_agenda_1.AgendaService])
+], AgendaService);
+exports.AgendaService = AgendaService;
+//# sourceMappingURL=agenda.service.js.map

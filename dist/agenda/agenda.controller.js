@@ -1,1 +1,80 @@
-'use strict';const a0_0x157624=a0_0x2062;(function(_0x2214b5,_0x182cb1){const _0x226724=a0_0x2062,_0x58220d=_0x2214b5();while(!![]){try{const _0x324a43=-parseInt(_0x226724(0x1a7))/0x1+parseInt(_0x226724(0x1bd))/0x2+parseInt(_0x226724(0x197))/0x3*(-parseInt(_0x226724(0x195))/0x4)+-parseInt(_0x226724(0x1b7))/0x5*(parseInt(_0x226724(0x19d))/0x6)+-parseInt(_0x226724(0x1b2))/0x7*(parseInt(_0x226724(0x1ba))/0x8)+parseInt(_0x226724(0x1c4))/0x9*(parseInt(_0x226724(0x1b5))/0xa)+-parseInt(_0x226724(0x1b9))/0xb*(-parseInt(_0x226724(0x1b3))/0xc);if(_0x324a43===_0x182cb1)break;else _0x58220d['push'](_0x58220d['shift']());}catch(_0x4ed739){_0x58220d['push'](_0x58220d['shift']());}}}(a0_0x1694,0x80406));function a0_0x2062(_0x4c5236,_0x56b95d){const _0x169490=a0_0x1694();return a0_0x2062=function(_0x206294,_0x23b155){_0x206294=_0x206294-0x195;let _0x26d22f=_0x169490[_0x206294];return _0x26d22f;},a0_0x2062(_0x4c5236,_0x56b95d);}var __decorate=this&&this['__decorate']||function(_0xf3b30f,_0x35d4b6,_0x3460a7,_0x1b5486){const _0x1ac6bc=a0_0x2062;var _0x4d3216=arguments[_0x1ac6bc(0x1bf)],_0xf6983=_0x4d3216<0x3?_0x35d4b6:_0x1b5486===null?_0x1b5486=Object[_0x1ac6bc(0x1b4)](_0x35d4b6,_0x3460a7):_0x1b5486,_0x52433f;if(typeof Reflect==='object'&&typeof Reflect[_0x1ac6bc(0x1c1)]===_0x1ac6bc(0x1a5))_0xf6983=Reflect['decorate'](_0xf3b30f,_0x35d4b6,_0x3460a7,_0x1b5486);else{for(var _0x2b7b48=_0xf3b30f[_0x1ac6bc(0x1bf)]-0x1;_0x2b7b48>=0x0;_0x2b7b48--)if(_0x52433f=_0xf3b30f[_0x2b7b48])_0xf6983=(_0x4d3216<0x3?_0x52433f(_0xf6983):_0x4d3216>0x3?_0x52433f(_0x35d4b6,_0x3460a7,_0xf6983):_0x52433f(_0x35d4b6,_0x3460a7))||_0xf6983;}return _0x4d3216>0x3&&_0xf6983&&Object[_0x1ac6bc(0x1b8)](_0x35d4b6,_0x3460a7,_0xf6983),_0xf6983;},__metadata=this&&this[a0_0x157624(0x19f)]||function(_0x50ce9b,_0x471bae){const _0x2ab5d8=a0_0x157624;if(typeof Reflect===_0x2ab5d8(0x1bb)&&typeof Reflect['metadata']===_0x2ab5d8(0x1a5))return Reflect[_0x2ab5d8(0x19e)](_0x50ce9b,_0x471bae);},__param=this&&this[a0_0x157624(0x1ad)]||function(_0x2e2595,_0x2e3e72){return function(_0x2a6dd2,_0x292147){_0x2e3e72(_0x2a6dd2,_0x292147,_0x2e2595);};};Object[a0_0x157624(0x1b8)](exports,'__esModule',{'value':!![]}),exports['AgendaController']=void 0x0;function a0_0x1694(){const _0xb968ca=['scheduleJob','agendaService','Controller','AgendaController','__param','design:paramtypes','Post','Get','Admin','7gGuXfz','678804pkbfwr','getOwnPropertyDescriptor','108980PrKJTp','AgendaService','1827110LrnpzQ','defineProperty','231hyBAKe','5947856nfXzyR','object','Viewer','1010826opsEiJ','prototype','length','getJobs','decorate','cancelJob','./agenda.service','828sQUDje','User','design:returntype','/jobs','../auth/guards/roles.guard','RolesGuard','292FNRuac','/jobs/:id','27399xgehaW','rescheduleJob','design:type','JwtAuthGuard','../auth/enums/role.enum','Role','6Qqqtkj','metadata','__metadata','Roles','agenda','Delete','UseGuards','Param','function','Body','395005WsugDn','../auth/decorators/roles.decorator'];a0_0x1694=function(){return _0xb968ca;};return a0_0x1694();}const common_1=require('@nestjs/common'),agenda_service_1=require(a0_0x157624(0x1c3)),roles_decorator_1=require(a0_0x157624(0x1a8)),role_enum_1=require(a0_0x157624(0x19b)),jwt_guard_1=require('../auth/guards/jwt.guard'),roles_guard_1=require(a0_0x157624(0x1c8));let AgendaController=class AgendaController{constructor(_0x296e36){const _0x48e521=a0_0x157624;this[_0x48e521(0x1aa)]=_0x296e36;}async['getJobs'](){const _0x3cc507=a0_0x157624;return this['agendaService'][_0x3cc507(0x1c0)]();}async[a0_0x157624(0x1a9)](_0x2aa2fc){const _0x7dd297=a0_0x157624;return this[_0x7dd297(0x1aa)][_0x7dd297(0x1a9)](_0x2aa2fc);}async[a0_0x157624(0x198)](_0x3ee5d7,_0x336258){const _0x2b6f5c=a0_0x157624;return this[_0x2b6f5c(0x1aa)][_0x2b6f5c(0x198)](_0x3ee5d7,_0x336258);}async[a0_0x157624(0x1c2)](_0x215906){const _0x411683=a0_0x157624;return this[_0x411683(0x1aa)][_0x411683(0x1c2)](_0x215906);}};__decorate([(0x0,common_1[a0_0x157624(0x1b0)])(a0_0x157624(0x1c7)),(0x0,common_1[a0_0x157624(0x1a3)])(jwt_guard_1[a0_0x157624(0x19a)],roles_guard_1[a0_0x157624(0x1c9)]),(0x0,roles_decorator_1[a0_0x157624(0x1a0)])(role_enum_1[a0_0x157624(0x19c)][a0_0x157624(0x1b1)],role_enum_1['Role'][a0_0x157624(0x1c5)],role_enum_1['Role'][a0_0x157624(0x1bc)]),__metadata(a0_0x157624(0x199),Function),__metadata('design:paramtypes',[]),__metadata(a0_0x157624(0x1c6),Promise)],AgendaController['prototype'],a0_0x157624(0x1c0),null),__decorate([(0x0,common_1[a0_0x157624(0x1af)])(a0_0x157624(0x1c7)),(0x0,common_1[a0_0x157624(0x1a3)])(jwt_guard_1['JwtAuthGuard'],roles_guard_1[a0_0x157624(0x1c9)]),(0x0,roles_decorator_1[a0_0x157624(0x1a0)])(role_enum_1[a0_0x157624(0x19c)][a0_0x157624(0x1b1)],role_enum_1[a0_0x157624(0x19c)][a0_0x157624(0x1c5)],role_enum_1[a0_0x157624(0x19c)]['Viewer']),__param(0x0,(0x0,common_1[a0_0x157624(0x1a6)])()),__metadata('design:type',Function),__metadata(a0_0x157624(0x1ae),[Object]),__metadata(a0_0x157624(0x1c6),Promise)],AgendaController[a0_0x157624(0x1be)],a0_0x157624(0x1a9),null),__decorate([(0x0,common_1[a0_0x157624(0x1af)])('/jobs/:id'),(0x0,common_1['UseGuards'])(jwt_guard_1[a0_0x157624(0x19a)],roles_guard_1['RolesGuard']),(0x0,roles_decorator_1['Roles'])(role_enum_1[a0_0x157624(0x19c)][a0_0x157624(0x1b1)],role_enum_1['Role'][a0_0x157624(0x1c5)],role_enum_1[a0_0x157624(0x19c)][a0_0x157624(0x1bc)]),__param(0x0,(0x0,common_1[a0_0x157624(0x1a4)])('id')),__param(0x1,(0x0,common_1[a0_0x157624(0x1a6)])()),__metadata(a0_0x157624(0x199),Function),__metadata('design:paramtypes',[String,Object]),__metadata('design:returntype',Promise)],AgendaController['prototype'],a0_0x157624(0x198),null),__decorate([(0x0,common_1[a0_0x157624(0x1a2)])(a0_0x157624(0x196)),(0x0,common_1['UseGuards'])(jwt_guard_1[a0_0x157624(0x19a)],roles_guard_1['RolesGuard']),(0x0,roles_decorator_1[a0_0x157624(0x1a0)])(role_enum_1[a0_0x157624(0x19c)][a0_0x157624(0x1b1)],role_enum_1['Role']['User'],role_enum_1[a0_0x157624(0x19c)][a0_0x157624(0x1bc)]),__param(0x0,(0x0,common_1[a0_0x157624(0x1a4)])('id')),__metadata('design:type',Function),__metadata('design:paramtypes',[String]),__metadata('design:returntype',Promise)],AgendaController[a0_0x157624(0x1be)],'cancelJob',null),AgendaController=__decorate([(0x0,common_1[a0_0x157624(0x1ab)])(a0_0x157624(0x1a1)),__metadata(a0_0x157624(0x1ae),[agenda_service_1[a0_0x157624(0x1b6)]])],AgendaController),exports[a0_0x157624(0x1ac)]=AgendaController;
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __param = (this && this.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.AgendaController = void 0;
+const common_1 = require("@nestjs/common");
+const agenda_service_1 = require("./agenda.service");
+const roles_decorator_1 = require("../auth/decorators/roles.decorator");
+const role_enum_1 = require("../auth/enums/role.enum");
+const jwt_guard_1 = require("../auth/guards/jwt.guard");
+const roles_guard_1 = require("../auth/guards/roles.guard");
+let AgendaController = class AgendaController {
+    constructor(agendaService) {
+        this.agendaService = agendaService;
+    }
+    async getJobs() {
+        return this.agendaService.getJobs();
+    }
+    async scheduleJob(jobDTO) {
+        return this.agendaService.scheduleJob(jobDTO);
+    }
+    async rescheduleJob(id, jobDTO) {
+        return this.agendaService.rescheduleJob(id, jobDTO);
+    }
+    async cancelJob(id) {
+        return this.agendaService.cancelJob(id);
+    }
+};
+__decorate([
+    (0, common_1.Get)('/jobs'),
+    (0, common_1.UseGuards)(jwt_guard_1.JwtAuthGuard, roles_guard_1.RolesGuard),
+    (0, roles_decorator_1.Roles)(role_enum_1.Role.Admin, role_enum_1.Role.User, role_enum_1.Role.Viewer),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", Promise)
+], AgendaController.prototype, "getJobs", null);
+__decorate([
+    (0, common_1.Post)('/jobs'),
+    (0, common_1.UseGuards)(jwt_guard_1.JwtAuthGuard, roles_guard_1.RolesGuard),
+    (0, roles_decorator_1.Roles)(role_enum_1.Role.Admin, role_enum_1.Role.User, role_enum_1.Role.Viewer),
+    __param(0, (0, common_1.Body)()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", Promise)
+], AgendaController.prototype, "scheduleJob", null);
+__decorate([
+    (0, common_1.Post)('/jobs/:id'),
+    (0, common_1.UseGuards)(jwt_guard_1.JwtAuthGuard, roles_guard_1.RolesGuard),
+    (0, roles_decorator_1.Roles)(role_enum_1.Role.Admin, role_enum_1.Role.User, role_enum_1.Role.Viewer),
+    __param(0, (0, common_1.Param)('id')),
+    __param(1, (0, common_1.Body)()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [String, Object]),
+    __metadata("design:returntype", Promise)
+], AgendaController.prototype, "rescheduleJob", null);
+__decorate([
+    (0, common_1.Delete)('/jobs/:id'),
+    (0, common_1.UseGuards)(jwt_guard_1.JwtAuthGuard, roles_guard_1.RolesGuard),
+    (0, roles_decorator_1.Roles)(role_enum_1.Role.Admin, role_enum_1.Role.User, role_enum_1.Role.Viewer),
+    __param(0, (0, common_1.Param)('id')),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [String]),
+    __metadata("design:returntype", Promise)
+], AgendaController.prototype, "cancelJob", null);
+AgendaController = __decorate([
+    (0, common_1.Controller)('agenda'),
+    __metadata("design:paramtypes", [agenda_service_1.AgendaService])
+], AgendaController);
+exports.AgendaController = AgendaController;
+//# sourceMappingURL=agenda.controller.js.map

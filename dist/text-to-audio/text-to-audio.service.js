@@ -1,1 +1,61 @@
-'use strict';const a144_0x508ebf=a144_0x387c;(function(_0x2be897,_0x417d06){const _0xcaffe0=a144_0x387c,_0x101a14=_0x2be897();while(!![]){try{const _0x4f4a6c=parseInt(_0xcaffe0(0x1ce))/0x1*(-parseInt(_0xcaffe0(0x1ea))/0x2)+parseInt(_0xcaffe0(0x1cb))/0x3+parseInt(_0xcaffe0(0x1f0))/0x4+parseInt(_0xcaffe0(0x1d9))/0x5*(-parseInt(_0xcaffe0(0x1d7))/0x6)+-parseInt(_0xcaffe0(0x1e6))/0x7+parseInt(_0xcaffe0(0x1eb))/0x8*(-parseInt(_0xcaffe0(0x1d1))/0x9)+parseInt(_0xcaffe0(0x1cf))/0xa;if(_0x4f4a6c===_0x417d06)break;else _0x101a14['push'](_0x101a14['shift']());}catch(_0x2cc163){_0x101a14['push'](_0x101a14['shift']());}}}(a144_0x2c17,0x81015));function a144_0x387c(_0x52ba58,_0x5247dc){const _0x2c17d8=a144_0x2c17();return a144_0x387c=function(_0x387c02,_0x5ec464){_0x387c02=_0x387c02-0x1c7;let _0x17ff53=_0x2c17d8[_0x387c02];return _0x17ff53;},a144_0x387c(_0x52ba58,_0x5247dc);}var __decorate=this&&this[a144_0x508ebf(0x1c8)]||function(_0x189801,_0x307e91,_0x31d04f,_0xf234ff){const _0x18740a=a144_0x508ebf;var _0x412b9a=arguments[_0x18740a(0x1de)],_0x3fbd91=_0x412b9a<0x3?_0x307e91:_0xf234ff===null?_0xf234ff=Object[_0x18740a(0x1d0)](_0x307e91,_0x31d04f):_0xf234ff,_0x1e51ba;if(typeof Reflect==='object'&&typeof Reflect['decorate']===_0x18740a(0x1cd))_0x3fbd91=Reflect[_0x18740a(0x1ec)](_0x189801,_0x307e91,_0x31d04f,_0xf234ff);else{for(var _0x1e9a12=_0x189801[_0x18740a(0x1de)]-0x1;_0x1e9a12>=0x0;_0x1e9a12--)if(_0x1e51ba=_0x189801[_0x1e9a12])_0x3fbd91=(_0x412b9a<0x3?_0x1e51ba(_0x3fbd91):_0x412b9a>0x3?_0x1e51ba(_0x307e91,_0x31d04f,_0x3fbd91):_0x1e51ba(_0x307e91,_0x31d04f))||_0x3fbd91;}return _0x412b9a>0x3&&_0x3fbd91&&Object[_0x18740a(0x1dc)](_0x307e91,_0x31d04f,_0x3fbd91),_0x3fbd91;},__metadata=this&&this['__metadata']||function(_0x3ca557,_0x1a04a6){const _0x432e4d=a144_0x508ebf;if(typeof Reflect===_0x432e4d(0x1e0)&&typeof Reflect[_0x432e4d(0x1f1)]===_0x432e4d(0x1cd))return Reflect[_0x432e4d(0x1f1)](_0x3ca557,_0x1a04a6);},__param=this&&this[a144_0x508ebf(0x1db)]||function(_0x1ddee2,_0x792ad7){return function(_0x5b155c,_0x1fd134){_0x792ad7(_0x5b155c,_0x1fd134,_0x1ddee2);};},TextToAudioService_1;Object[a144_0x508ebf(0x1dc)](exports,'__esModule',{'value':!![]}),exports[a144_0x508ebf(0x1ee)]=void 0x0;function a144_0x2c17(){const _0x29f81c=['create','digest','stream','design:paramtypes','updateTextMessage','658497FxFpIA','update','logger','base64','93626TUoxlF','8xBSiEy','decorate','Model','TextToAudioService','getMessages','519944kTStlp','metadata','@nestjs/common','__decorate','gtts','Injectable','908946rQKukt','messageModel','function','13weaDjN','22345470OrJGEg','getOwnPropertyDescriptor','4057254sLmMDw','log','sha256','findOne','deleteTextMessage','Message','384cUzeos','sort','77005vNGWAi','createHash','__param','defineProperty','mongoose','length','getMessageById','object'];a144_0x2c17=function(){return _0x29f81c;};return a144_0x2c17();}const common_1=require(a144_0x508ebf(0x1c7)),mongoose_1=require('@nestjs/mongoose'),gTTS=require(a144_0x508ebf(0x1c9)),mongoose_2=require(a144_0x508ebf(0x1dd)),crypto=require('crypto');let TextToAudioService=TextToAudioService_1=class TextToAudioService{constructor(_0x46c046){const _0x1a7f32=a144_0x508ebf;this[_0x1a7f32(0x1cc)]=_0x46c046,this[_0x1a7f32(0x1e8)]=new common_1['Logger'](TextToAudioService_1['name']);}async['textToAudio'](_0xf5bf3d,_0x11a196){const _0x3d5140=a144_0x508ebf,_0x2e57ee=new gTTS(_0xf5bf3d,'en')[_0x3d5140(0x1e3)]();_0x11a196(_0x2e57ee);}async['saveMessage'](_0x4b077b){const _0x2af364=a144_0x508ebf,_0x308c20=crypto[_0x2af364(0x1da)](_0x2af364(0x1d3))[_0x2af364(0x1e7)](_0x4b077b)[_0x2af364(0x1e2)](_0x2af364(0x1e9)),_0x17a413=await this[_0x2af364(0x1cc)][_0x2af364(0x1d4)]({'hash':_0x308c20});if(_0x17a413)return this[_0x2af364(0x1e8)][_0x2af364(0x1d2)]('Found\x20the\x20same\x20message\x20in\x20the\x20DB'),_0x17a413;return this[_0x2af364(0x1cc)][_0x2af364(0x1e1)]({'message':_0x4b077b,'hash':_0x308c20});}async[a144_0x508ebf(0x1ef)](){const _0x4d72ce=a144_0x508ebf;return this[_0x4d72ce(0x1cc)]['find']({})[_0x4d72ce(0x1d8)]({'createdAt':-0x1});}async[a144_0x508ebf(0x1df)](_0x529f1f){const _0x41d57b=a144_0x508ebf;return this[_0x41d57b(0x1cc)]['findOne']({'_id':_0x529f1f});}async[a144_0x508ebf(0x1d5)](_0x476a6){const _0x56f156=a144_0x508ebf;return this[_0x56f156(0x1cc)]['findByIdAndDelete']({'_id':_0x476a6});}async[a144_0x508ebf(0x1e5)](_0x1fe0ec,_0x4e2679){const _0x206916=a144_0x508ebf;return this[_0x206916(0x1cc)]['findByIdAndUpdate']({'_id':_0x1fe0ec},_0x4e2679,{'new':!![]});}};TextToAudioService=TextToAudioService_1=__decorate([(0x0,common_1[a144_0x508ebf(0x1ca)])(),__param(0x0,(0x0,mongoose_1['InjectModel'])(a144_0x508ebf(0x1d6))),__metadata(a144_0x508ebf(0x1e4),[mongoose_2[a144_0x508ebf(0x1ed)]])],TextToAudioService),exports[a144_0x508ebf(0x1ee)]=TextToAudioService;
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __param = (this && this.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
+var TextToAudioService_1;
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.TextToAudioService = void 0;
+const common_1 = require("@nestjs/common");
+const mongoose_1 = require("@nestjs/mongoose");
+const gTTS = require("gtts");
+const mongoose_2 = require("mongoose");
+const crypto = require("crypto");
+let TextToAudioService = TextToAudioService_1 = class TextToAudioService {
+    constructor(messageModel) {
+        this.messageModel = messageModel;
+        this.logger = new common_1.Logger(TextToAudioService_1.name);
+    }
+    async textToAudio(text, cb) {
+        const audioStream = new gTTS(text, 'en').stream();
+        cb(audioStream);
+    }
+    async saveMessage(message) {
+        const hash = crypto.createHash('sha256').update(message).digest('base64');
+        const savedMessage = await this.messageModel.findOne({ hash });
+        if (savedMessage) {
+            this.logger.log('Found the same message in the DB');
+            return savedMessage;
+        }
+        return this.messageModel.create({ message, hash });
+    }
+    async getMessages() {
+        return this.messageModel.find({}).sort({ createdAt: -1 });
+    }
+    async getMessageById(id) {
+        return this.messageModel.findOne({ _id: id });
+    }
+    async deleteTextMessage(id) {
+        return this.messageModel.findByIdAndDelete({ _id: id });
+    }
+    async updateTextMessage(id, message) {
+        return this.messageModel.findByIdAndUpdate({ _id: id }, message, {
+            new: true,
+        });
+    }
+};
+TextToAudioService = TextToAudioService_1 = __decorate([
+    (0, common_1.Injectable)(),
+    __param(0, (0, mongoose_1.InjectModel)('Message')),
+    __metadata("design:paramtypes", [mongoose_2.Model])
+], TextToAudioService);
+exports.TextToAudioService = TextToAudioService;
+//# sourceMappingURL=text-to-audio.service.js.map

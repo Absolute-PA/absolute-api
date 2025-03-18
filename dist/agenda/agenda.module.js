@@ -1,1 +1,49 @@
-'use strict';const a1_0x273426=a1_0x4aba;(function(_0x474aad,_0x5664d3){const _0x304b20=a1_0x4aba,_0x2dba6d=_0x474aad();while(!![]){try{const _0x47d6cd=-parseInt(_0x304b20(0xdd))/0x1+parseInt(_0x304b20(0xd6))/0x2*(-parseInt(_0x304b20(0xd1))/0x3)+-parseInt(_0x304b20(0xec))/0x4+parseInt(_0x304b20(0xe0))/0x5+-parseInt(_0x304b20(0xe1))/0x6*(-parseInt(_0x304b20(0xea))/0x7)+parseInt(_0x304b20(0xde))/0x8*(parseInt(_0x304b20(0xe4))/0x9)+parseInt(_0x304b20(0xe8))/0xa*(-parseInt(_0x304b20(0xd0))/0xb);if(_0x47d6cd===_0x5664d3)break;else _0x2dba6d['push'](_0x2dba6d['shift']());}catch(_0x3d19d2){_0x2dba6d['push'](_0x2dba6d['shift']());}}}(a1_0x2080,0x81a16));function a1_0x2080(){const _0x17e5e1=['__esModule','AgendaController','18yjpbPA','object','env','SettingModule','20vpoxmC','AgendaModule','959YrhbZD','AgendaService','1102236ImpEqX','function','./sound.processor','decorate','getOwnPropertyDescriptor','TextToAudioProcessor','defineProperty','@nestjs/common','VocieRecoredProcessor','./job.processor','./agenda.controller','Module','../schedule/schedule.module','1252504rLESYX','21kbDwaO','../audit/audit.module','forRoot','__decorate','NODEWEB_DB_URL','44684PlhLPf','../setting/setting.module','./textToAudio.processor','length','./voiceRecorded.processor','MusicProcessor','ScheduleModule','786055YhaFVg','3548488AqNfyp','AuditModule','4665630jUhjOI','6852iJVQeE'];a1_0x2080=function(){return _0x17e5e1;};return a1_0x2080();}var __decorate=this&&this[a1_0x273426(0xd4)]||function(_0x445a3d,_0x2ad473,_0x4bb7fd,_0x342b5c){const _0x5dc04d=a1_0x273426;var _0x20dd86=arguments[_0x5dc04d(0xd9)],_0x57c507=_0x20dd86<0x3?_0x2ad473:_0x342b5c===null?_0x342b5c=Object[_0x5dc04d(0xf0)](_0x2ad473,_0x4bb7fd):_0x342b5c,_0x2dea08;if(typeof Reflect===_0x5dc04d(0xe5)&&typeof Reflect[_0x5dc04d(0xef)]===_0x5dc04d(0xed))_0x57c507=Reflect['decorate'](_0x445a3d,_0x2ad473,_0x4bb7fd,_0x342b5c);else{for(var _0xd594a3=_0x445a3d[_0x5dc04d(0xd9)]-0x1;_0xd594a3>=0x0;_0xd594a3--)if(_0x2dea08=_0x445a3d[_0xd594a3])_0x57c507=(_0x20dd86<0x3?_0x2dea08(_0x57c507):_0x20dd86>0x3?_0x2dea08(_0x2ad473,_0x4bb7fd,_0x57c507):_0x2dea08(_0x2ad473,_0x4bb7fd))||_0x57c507;}return _0x20dd86>0x3&&_0x57c507&&Object['defineProperty'](_0x2ad473,_0x4bb7fd,_0x57c507),_0x57c507;};Object[a1_0x273426(0xf2)](exports,a1_0x273426(0xe2),{'value':!![]}),exports[a1_0x273426(0xe9)]=void 0x0;function a1_0x4aba(_0x2afde6,_0x3dccc8){const _0x208082=a1_0x2080();return a1_0x4aba=function(_0x4aba35,_0x1c10de){_0x4aba35=_0x4aba35-0xcc;let _0x3ecd73=_0x208082[_0x4aba35];return _0x3ecd73;},a1_0x4aba(_0x2afde6,_0x3dccc8);}const common_1=require(a1_0x273426(0xf3)),nestjs_agenda_1=require('@agent-ly/nestjs-agenda'),schedule_module_1=require(a1_0x273426(0xcf)),setting_module_1=require(a1_0x273426(0xd7)),sound_processor_1=require(a1_0x273426(0xee)),job_processor_1=require(a1_0x273426(0xcc)),music_processor_1=require('./music.processor'),agenda_controller_1=require(a1_0x273426(0xcd)),agenda_service_1=require('./agenda.service'),audit_module_1=require(a1_0x273426(0xd2)),voiceRecorded_processor_1=require(a1_0x273426(0xda)),textToAudio_processor_1=require(a1_0x273426(0xd8));let AgendaModule=class AgendaModule{};AgendaModule=__decorate([(0x0,common_1[a1_0x273426(0xce)])({'imports':[schedule_module_1[a1_0x273426(0xdc)],setting_module_1[a1_0x273426(0xe7)],audit_module_1[a1_0x273426(0xdf)],nestjs_agenda_1['AgendaModule'][a1_0x273426(0xd3)]({'db':{'address':process[a1_0x273426(0xe6)][a1_0x273426(0xd5)]}})],'controllers':[agenda_controller_1[a1_0x273426(0xe3)]],'providers':[agenda_service_1[a1_0x273426(0xeb)],sound_processor_1['SoundProcessor'],job_processor_1['JobProccessor'],music_processor_1[a1_0x273426(0xdb)],voiceRecorded_processor_1[a1_0x273426(0xf4)],textToAudio_processor_1[a1_0x273426(0xf1)]],'exports':[agenda_service_1[a1_0x273426(0xeb)]]})],AgendaModule),exports[a1_0x273426(0xe9)]=AgendaModule;
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.AgendaModule = void 0;
+const common_1 = require("@nestjs/common");
+const nestjs_agenda_1 = require("@agent-ly/nestjs-agenda");
+const schedule_module_1 = require("@/schedule/schedule.module");
+const setting_module_1 = require("@/setting/setting.module");
+const sound_processor_1 = require("./sound.processor");
+const job_processor_1 = require("./job.processor");
+const music_processor_1 = require("./music.processor");
+const agenda_controller_1 = require("./agenda.controller");
+const agenda_service_1 = require("./agenda.service");
+const audit_module_1 = require("../audit/audit.module");
+const voiceRecorded_processor_1 = require("./voiceRecorded.processor");
+const textToAudio_processor_1 = require("./textToAudio.processor");
+let AgendaModule = class AgendaModule {
+};
+AgendaModule = __decorate([
+    (0, common_1.Module)({
+        imports: [
+            schedule_module_1.ScheduleModule,
+            setting_module_1.SettingModule,
+            audit_module_1.AuditModule,
+            nestjs_agenda_1.AgendaModule.forRoot({
+                db: {
+                    address: process.env.NODEWEB_DB_URL,
+                },
+            }),
+        ],
+        controllers: [agenda_controller_1.AgendaController],
+        providers: [
+            agenda_service_1.AgendaService,
+            sound_processor_1.SoundProcessor,
+            job_processor_1.JobProccessor,
+            music_processor_1.MusicProcessor,
+            voiceRecorded_processor_1.VocieRecoredProcessor,
+            textToAudio_processor_1.TextToAudioProcessor,
+        ],
+        exports: [agenda_service_1.AgendaService],
+    })
+], AgendaModule);
+exports.AgendaModule = AgendaModule;
+//# sourceMappingURL=agenda.module.js.map

@@ -1,1 +1,52 @@
-'use strict';const a26_0x40c595=a26_0x8c20;(function(_0x5198e4,_0x12771c){const _0x2f47fd=a26_0x8c20,_0x3d1d14=_0x5198e4();while(!![]){try{const _0x483165=parseInt(_0x2f47fd(0x1e2))/0x1*(-parseInt(_0x2f47fd(0x1d8))/0x2)+-parseInt(_0x2f47fd(0x1d9))/0x3*(-parseInt(_0x2f47fd(0x1e1))/0x4)+-parseInt(_0x2f47fd(0x1c8))/0x5*(-parseInt(_0x2f47fd(0x1cf))/0x6)+-parseInt(_0x2f47fd(0x1d0))/0x7+-parseInt(_0x2f47fd(0x1bd))/0x8+-parseInt(_0x2f47fd(0x1bf))/0x9*(-parseInt(_0x2f47fd(0x1cb))/0xa)+-parseInt(_0x2f47fd(0x1d6))/0xb;if(_0x483165===_0x12771c)break;else _0x3d1d14['push'](_0x3d1d14['shift']());}catch(_0x14c701){_0x3d1d14['push'](_0x3d1d14['shift']());}}}(a26_0x44da,0xa2cba));var __decorate=this&&this[a26_0x40c595(0x1c6)]||function(_0x2f95d,_0x3dbba5,_0x1ee2bb,_0x1944e7){const _0x54f27b=a26_0x40c595;var _0x43b618=arguments['length'],_0x13e020=_0x43b618<0x3?_0x3dbba5:_0x1944e7===null?_0x1944e7=Object[_0x54f27b(0x1d5)](_0x3dbba5,_0x1ee2bb):_0x1944e7,_0x4b77c5;if(typeof Reflect===_0x54f27b(0x1c5)&&typeof Reflect[_0x54f27b(0x1da)]===_0x54f27b(0x1e0))_0x13e020=Reflect[_0x54f27b(0x1da)](_0x2f95d,_0x3dbba5,_0x1ee2bb,_0x1944e7);else{for(var _0x133c7b=_0x2f95d[_0x54f27b(0x1c3)]-0x1;_0x133c7b>=0x0;_0x133c7b--)if(_0x4b77c5=_0x2f95d[_0x133c7b])_0x13e020=(_0x43b618<0x3?_0x4b77c5(_0x13e020):_0x43b618>0x3?_0x4b77c5(_0x3dbba5,_0x1ee2bb,_0x13e020):_0x4b77c5(_0x3dbba5,_0x1ee2bb))||_0x13e020;}return _0x43b618>0x3&&_0x13e020&&Object[_0x54f27b(0x1c9)](_0x3dbba5,_0x1ee2bb,_0x13e020),_0x13e020;},__metadata=this&&this[a26_0x40c595(0x1ce)]||function(_0x251534,_0x1394ba){const _0x1e57c8=a26_0x40c595;if(typeof Reflect==='object'&&typeof Reflect['metadata']===_0x1e57c8(0x1e0))return Reflect[_0x1e57c8(0x1e5)](_0x251534,_0x1394ba);},__param=this&&this[a26_0x40c595(0x1d1)]||function(_0x2ad763,_0x153d60){return function(_0x29c5dd,_0x23c3fd){_0x153d60(_0x29c5dd,_0x23c3fd,_0x2ad763);};};function a26_0x44da(){const _0x288a87=['52OPKPEX','912cPaMcE','mapToAuditDto','findAuditsPaginated','metadata','9837504TXPFhL','AuditService','7022772DNkfTE','create','auditModel','@nestjs/mongoose','length','@nestjs/common','object','__decorate','map','25OerlNf','defineProperty','exec','10NbcNYm','countDocuments','find','__metadata','600870irUUCJ','368893CCmRLd','__param','__esModule','Injectable','InjectModel','getOwnPropertyDescriptor','2686035ZVwShd','mongoose','706FXYbyi','284835PWbpvq','decorate','./mappers','Audit','ceil','save','Model','function'];a26_0x44da=function(){return _0x288a87;};return a26_0x44da();}function a26_0x8c20(_0x37f131,_0x2f9076){const _0x44da03=a26_0x44da();return a26_0x8c20=function(_0x8c2070,_0xefffbf){_0x8c2070=_0x8c2070-0x1bd;let _0x3fa242=_0x44da03[_0x8c2070];return _0x3fa242;},a26_0x8c20(_0x37f131,_0x2f9076);}Object[a26_0x40c595(0x1c9)](exports,a26_0x40c595(0x1d2),{'value':!![]}),exports[a26_0x40c595(0x1be)]=void 0x0;const common_1=require(a26_0x40c595(0x1c4)),mongoose_1=require(a26_0x40c595(0x1c2)),mongoose_2=require(a26_0x40c595(0x1d7)),mappers_1=require(a26_0x40c595(0x1db));let AuditService=class AuditService{constructor(_0x4603ae){const _0x20b346=a26_0x40c595;this[_0x20b346(0x1c1)]=_0x4603ae;}async[a26_0x40c595(0x1c0)](_0x1b902c){const _0x471e15=a26_0x40c595,_0x2cd6f6=await this[_0x471e15(0x1c1)]['create'](_0x1b902c);return _0x2cd6f6[_0x471e15(0x1de)]();}async[a26_0x40c595(0x1e4)](_0x25214c=0x1,_0xd763fb=0x1e){const _0x557a98=a26_0x40c595,_0x1e8328=_0xd763fb*(_0x25214c-0x1),_0x117ae5=await this['auditModel'][_0x557a98(0x1cc)](),_0x216015=Math[_0x557a98(0x1dd)](_0x117ae5/_0xd763fb),_0x1fc339=await this['auditModel'][_0x557a98(0x1cd)]()['sort']({'createdAtUtc':-0x1})['skip'](_0x1e8328)['limit'](_0xd763fb)[_0x557a98(0x1ca)]();return{'data':_0x1fc339[_0x557a98(0x1c7)](mappers_1[_0x557a98(0x1e3)]),'totalItems':_0x117ae5,'currentPage':_0x25214c,'totalPages':_0x216015};}};AuditService=__decorate([(0x0,common_1[a26_0x40c595(0x1d3)])(),__param(0x0,(0x0,mongoose_1[a26_0x40c595(0x1d4)])(a26_0x40c595(0x1dc))),__metadata('design:paramtypes',[mongoose_2[a26_0x40c595(0x1df)]])],AuditService),exports[a26_0x40c595(0x1be)]=AuditService;
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __param = (this && this.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.AuditService = void 0;
+const common_1 = require("@nestjs/common");
+const mongoose_1 = require("@nestjs/mongoose");
+const mongoose_2 = require("mongoose");
+const mappers_1 = require("./mappers");
+let AuditService = class AuditService {
+    constructor(auditModel) {
+        this.auditModel = auditModel;
+    }
+    async create(audit) {
+        const createdAudit = await this.auditModel.create(audit);
+        return createdAudit.save();
+    }
+    async findAuditsPaginated(page = 1, limit = 30) {
+        const skips = limit * (page - 1);
+        const totalItems = await this.auditModel.countDocuments();
+        const totalPages = Math.ceil(totalItems / limit);
+        const data = await this.auditModel
+            .find()
+            .sort({ createdAtUtc: -1 })
+            .skip(skips)
+            .limit(limit)
+            .exec();
+        return {
+            data: data.map(mappers_1.mapToAuditDto),
+            totalItems,
+            currentPage: page,
+            totalPages,
+        };
+    }
+};
+AuditService = __decorate([
+    (0, common_1.Injectable)(),
+    __param(0, (0, mongoose_1.InjectModel)('Audit')),
+    __metadata("design:paramtypes", [mongoose_2.Model])
+], AuditService);
+exports.AuditService = AuditService;
+//# sourceMappingURL=audit.service.js.map

@@ -1,1 +1,147 @@
-'use strict';const a32_0x163f81=a32_0x358d;function a32_0x16f5(){const _0x1eaae9=['login','Something\x20went\x20wrong','getProfile','AuthController','design:type','metadata','defineProperty','message','updatePassword','54gcyYwU','./decorators/roles.decorator','17562TLPvaR','register','__decorate','JwtAuthGuard','Admin','LocalAuthGuard','/user','1605QpWnyH','auth','logger','/register','Body','203VaPvjP','userService','11493pcRxAR','getDashboard','Get','@nestjs/common','1910IrpdFy','405906kWkAZj','RolesGuard','Logger','Post','prototype','UseGuards','./guards/local.guard','design:returntype','body','CreateUserDTO','Public','length','AuthService','./decorators/public.decorator','error','Controller','__esModule','authService','3084oXxiSJ','function','decorate','/login','1366672nUYUVJ','5870590Tioftg','design:paramtypes','user','/update-password','object','../user/dtos/create-user.dto','../user/user.service','BadRequestException','2936ejChfD','__metadata','Request','Roles','./guards/jwt.guard','name','./enums/role.enum','UserService','getOwnPropertyDescriptor'];a32_0x16f5=function(){return _0x1eaae9;};return a32_0x16f5();}(function(_0x254e67,_0x5422d7){const _0x503ec7=a32_0x358d,_0x4c725a=_0x254e67();while(!![]){try{const _0x3f5bf3=parseInt(_0x503ec7(0xba))/0x1+parseInt(_0x503ec7(0xd9))/0x2*(parseInt(_0x503ec7(0xeb))/0x3)+-parseInt(_0x503ec7(0xcc))/0x4*(parseInt(_0x503ec7(0xf4))/0x5)+parseInt(_0x503ec7(0xed))/0x6*(parseInt(_0x503ec7(0xb3))/0x7)+-parseInt(_0x503ec7(0xd0))/0x8+-parseInt(_0x503ec7(0xb5))/0x9*(parseInt(_0x503ec7(0xb9))/0xa)+parseInt(_0x503ec7(0xd1))/0xb;if(_0x3f5bf3===_0x5422d7)break;else _0x4c725a['push'](_0x4c725a['shift']());}catch(_0x4aa0f1){_0x4c725a['push'](_0x4c725a['shift']());}}}(a32_0x16f5,0x5ee3f));var __decorate=this&&this[a32_0x163f81(0xef)]||function(_0xfdd0bf,_0x4f72bc,_0x5c6a28,_0x14f9fa){const _0xd346d5=a32_0x163f81;var _0xad92cb=arguments['length'],_0x510af9=_0xad92cb<0x3?_0x4f72bc:_0x14f9fa===null?_0x14f9fa=Object[_0xd346d5(0xe1)](_0x4f72bc,_0x5c6a28):_0x14f9fa,_0x44e5e2;if(typeof Reflect===_0xd346d5(0xd5)&&typeof Reflect['decorate']===_0xd346d5(0xcd))_0x510af9=Reflect[_0xd346d5(0xce)](_0xfdd0bf,_0x4f72bc,_0x5c6a28,_0x14f9fa);else{for(var _0x311b32=_0xfdd0bf[_0xd346d5(0xc5)]-0x1;_0x311b32>=0x0;_0x311b32--)if(_0x44e5e2=_0xfdd0bf[_0x311b32])_0x510af9=(_0xad92cb<0x3?_0x44e5e2(_0x510af9):_0xad92cb>0x3?_0x44e5e2(_0x4f72bc,_0x5c6a28,_0x510af9):_0x44e5e2(_0x4f72bc,_0x5c6a28))||_0x510af9;}return _0xad92cb>0x3&&_0x510af9&&Object[_0xd346d5(0xe8)](_0x4f72bc,_0x5c6a28,_0x510af9),_0x510af9;},__metadata=this&&this[a32_0x163f81(0xda)]||function(_0x5b77b8,_0x10a43b){const _0x127e49=a32_0x163f81;if(typeof Reflect==='object'&&typeof Reflect[_0x127e49(0xe7)]===_0x127e49(0xcd))return Reflect['metadata'](_0x5b77b8,_0x10a43b);},__param=this&&this['__param']||function(_0x4b53f8,_0x210764){return function(_0x3194ff,_0x5a7b9e){_0x210764(_0x3194ff,_0x5a7b9e,_0x4b53f8);};},AuthController_1;Object[a32_0x163f81(0xe8)](exports,a32_0x163f81(0xca),{'value':!![]}),exports[a32_0x163f81(0xe5)]=void 0x0;const common_1=require(a32_0x163f81(0xb8)),create_user_dto_1=require(a32_0x163f81(0xd6)),user_service_1=require(a32_0x163f81(0xd7)),auth_service_1=require('./auth.service'),local_guard_1=require(a32_0x163f81(0xc0)),jwt_guard_1=require(a32_0x163f81(0xdd)),roles_decorator_1=require(a32_0x163f81(0xec)),role_enum_1=require(a32_0x163f81(0xdf)),roles_guard_1=require('./guards/roles.guard'),public_decorator_1=require(a32_0x163f81(0xc7));function a32_0x358d(_0x2a0ee2,_0x1e715a){const _0x16f5c8=a32_0x16f5();return a32_0x358d=function(_0x358dd4,_0x3976b4){_0x358dd4=_0x358dd4-0xb1;let _0x2ad6d3=_0x16f5c8[_0x358dd4];return _0x2ad6d3;},a32_0x358d(_0x2a0ee2,_0x1e715a);}let AuthController=AuthController_1=class AuthController{constructor(_0x14ebe7,_0x1d4e7b){const _0x2bc2ed=a32_0x163f81;this[_0x2bc2ed(0xcb)]=_0x14ebe7,this[_0x2bc2ed(0xb4)]=_0x1d4e7b,this[_0x2bc2ed(0xf6)]=new common_1[(_0x2bc2ed(0xbc))](AuthController_1[_0x2bc2ed(0xde)]);}async[a32_0x163f81(0xee)](_0x1812f7){const _0x6426d4=a32_0x163f81;try{const _0x2718db=await this['userService']['addUser'](_0x1812f7);return _0x2718db;}catch(_0x5e6790){throw new common_1[(_0x6426d4(0xd8))](_0x6426d4(0xe3),{'cause':_0x5e6790,'description':_0x5e6790[_0x6426d4(0xe9)]});}}async[a32_0x163f81(0xe2)](_0x2be0d7){const _0x473fb3=a32_0x163f81;try{return await this['authService'][_0x473fb3(0xe2)](_0x2be0d7['user']);}catch(_0x5a268e){this[_0x473fb3(0xf6)][_0x473fb3(0xc8)](_0x5a268e);throw new common_1['BadRequestException'](_0x473fb3(0xe3),{'cause':_0x5a268e,'description':_0x5a268e[_0x473fb3(0xe9)]});}}async[a32_0x163f81(0xea)](_0x264176){const _0x337199=a32_0x163f81;try{const {newPassword:_0x240372}=_0x264176[_0x337199(0xc2)];if(!_0x240372)throw new common_1[(_0x337199(0xd8))]('Something\x20went\x20wrong');return await this[_0x337199(0xcb)][_0x337199(0xea)](_0x264176['user'],{'newPassword':_0x240372});}catch(_0x575b7f){this['logger'][_0x337199(0xc8)](_0x575b7f);throw new common_1[(_0x337199(0xd8))](_0x337199(0xe3),{'cause':_0x575b7f,'description':_0x575b7f[_0x337199(0xe9)]});}}['getProfile'](_0xece282){const _0x16a9a0=a32_0x163f81;try{return _0xece282[_0x16a9a0(0xd3)];}catch(_0x108429){this[_0x16a9a0(0xf6)]['error'](_0x108429);throw new common_1[(_0x16a9a0(0xd8))]('Something\x20went\x20wrong',{'cause':_0x108429,'description':_0x108429[_0x16a9a0(0xe9)]});}}[a32_0x163f81(0xb6)](_0x161a3b){const _0x1c3258=a32_0x163f81;try{return _0x161a3b['user'];}catch(_0x5b3f03){this[_0x1c3258(0xf6)][_0x1c3258(0xc8)](_0x5b3f03);throw new common_1[(_0x1c3258(0xd8))](_0x1c3258(0xe3),{'cause':_0x5b3f03,'description':_0x5b3f03['message']});}}};__decorate([(0x0,common_1[a32_0x163f81(0xbd)])(a32_0x163f81(0xb1)),(0x0,public_decorator_1['Public'])(),__param(0x0,(0x0,common_1[a32_0x163f81(0xb2)])()),__metadata(a32_0x163f81(0xe6),Function),__metadata(a32_0x163f81(0xd2),[create_user_dto_1[a32_0x163f81(0xc3)]]),__metadata(a32_0x163f81(0xc1),Promise)],AuthController[a32_0x163f81(0xbe)],'register',null),__decorate([(0x0,common_1[a32_0x163f81(0xbf)])(local_guard_1[a32_0x163f81(0xf2)]),(0x0,public_decorator_1[a32_0x163f81(0xc4)])(),(0x0,common_1[a32_0x163f81(0xbd)])(a32_0x163f81(0xcf)),__param(0x0,(0x0,common_1[a32_0x163f81(0xdb)])()),__metadata(a32_0x163f81(0xe6),Function),__metadata(a32_0x163f81(0xd2),[Object]),__metadata(a32_0x163f81(0xc1),Promise)],AuthController[a32_0x163f81(0xbe)],a32_0x163f81(0xe2),null),__decorate([(0x0,common_1[a32_0x163f81(0xbf)])(jwt_guard_1[a32_0x163f81(0xf0)],roles_guard_1['RolesGuard']),(0x0,common_1[a32_0x163f81(0xbd)])(a32_0x163f81(0xd4)),__param(0x0,(0x0,common_1[a32_0x163f81(0xdb)])()),__metadata('design:type',Function),__metadata(a32_0x163f81(0xd2),[Object]),__metadata(a32_0x163f81(0xc1),Promise)],AuthController[a32_0x163f81(0xbe)],a32_0x163f81(0xea),null),__decorate([(0x0,common_1[a32_0x163f81(0xbf)])(jwt_guard_1[a32_0x163f81(0xf0)],roles_guard_1[a32_0x163f81(0xbb)]),(0x0,common_1['Get'])(a32_0x163f81(0xf3)),__param(0x0,(0x0,common_1['Request'])()),__metadata(a32_0x163f81(0xe6),Function),__metadata('design:paramtypes',[Object]),__metadata(a32_0x163f81(0xc1),void 0x0)],AuthController[a32_0x163f81(0xbe)],a32_0x163f81(0xe4),null),__decorate([(0x0,common_1[a32_0x163f81(0xbf)])(jwt_guard_1[a32_0x163f81(0xf0)],roles_guard_1[a32_0x163f81(0xbb)]),(0x0,roles_decorator_1[a32_0x163f81(0xdc)])(role_enum_1['Role'][a32_0x163f81(0xf1)]),(0x0,common_1[a32_0x163f81(0xb7)])('/admin'),__param(0x0,(0x0,common_1[a32_0x163f81(0xdb)])()),__metadata(a32_0x163f81(0xe6),Function),__metadata(a32_0x163f81(0xd2),[Object]),__metadata(a32_0x163f81(0xc1),void 0x0)],AuthController['prototype'],'getDashboard',null),AuthController=AuthController_1=__decorate([(0x0,common_1[a32_0x163f81(0xc9)])(a32_0x163f81(0xf5)),__metadata(a32_0x163f81(0xd2),[auth_service_1[a32_0x163f81(0xc6)],user_service_1[a32_0x163f81(0xe0)]])],AuthController),exports[a32_0x163f81(0xe5)]=AuthController;
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __param = (this && this.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
+var AuthController_1;
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.AuthController = void 0;
+const common_1 = require("@nestjs/common");
+const create_user_dto_1 = require("src/user/dtos/create-user.dto");
+const user_service_1 = require("src/user/user.service");
+const auth_service_1 = require("./auth.service");
+const local_guard_1 = require("./guards/local.guard");
+const jwt_guard_1 = require("./guards/jwt.guard");
+const roles_decorator_1 = require("./decorators/roles.decorator");
+const role_enum_1 = require("./enums/role.enum");
+const roles_guard_1 = require("./guards/roles.guard");
+const public_decorator_1 = require("./decorators/public.decorator");
+let AuthController = AuthController_1 = class AuthController {
+    constructor(authService, userService) {
+        this.authService = authService;
+        this.userService = userService;
+        this.logger = new common_1.Logger(AuthController_1.name);
+    }
+    async register(createUserDTO) {
+        try {
+            const user = await this.userService.addUser(createUserDTO);
+            return user;
+        }
+        catch (error) {
+            throw new common_1.BadRequestException('Something went wrong', {
+                cause: error,
+                description: error.message,
+            });
+        }
+    }
+    async login(req) {
+        try {
+            return await this.authService.login(req.user);
+        }
+        catch (error) {
+            this.logger.error(error);
+            throw new common_1.BadRequestException('Something went wrong', {
+                cause: error,
+                description: error.message,
+            });
+        }
+    }
+    async updatePassword(req) {
+        try {
+            const { newPassword } = req.body;
+            if (!newPassword)
+                throw new common_1.BadRequestException('Something went wrong');
+            return await this.authService.updatePassword(req.user, {
+                newPassword,
+            });
+        }
+        catch (error) {
+            this.logger.error(error);
+            throw new common_1.BadRequestException('Something went wrong', {
+                cause: error,
+                description: error.message,
+            });
+        }
+    }
+    getProfile(req) {
+        try {
+            return req.user;
+        }
+        catch (error) {
+            this.logger.error(error);
+            throw new common_1.BadRequestException('Something went wrong', {
+                cause: error,
+                description: error.message,
+            });
+        }
+    }
+    getDashboard(req) {
+        try {
+            return req.user;
+        }
+        catch (error) {
+            this.logger.error(error);
+            throw new common_1.BadRequestException('Something went wrong', {
+                cause: error,
+                description: error.message,
+            });
+        }
+    }
+};
+__decorate([
+    (0, common_1.Post)('/register'),
+    (0, public_decorator_1.Public)(),
+    __param(0, (0, common_1.Body)()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [create_user_dto_1.CreateUserDTO]),
+    __metadata("design:returntype", Promise)
+], AuthController.prototype, "register", null);
+__decorate([
+    (0, common_1.UseGuards)(local_guard_1.LocalAuthGuard),
+    (0, public_decorator_1.Public)(),
+    (0, common_1.Post)('/login'),
+    __param(0, (0, common_1.Request)()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", Promise)
+], AuthController.prototype, "login", null);
+__decorate([
+    (0, common_1.UseGuards)(jwt_guard_1.JwtAuthGuard, roles_guard_1.RolesGuard),
+    (0, common_1.Post)('/update-password'),
+    __param(0, (0, common_1.Request)()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", Promise)
+], AuthController.prototype, "updatePassword", null);
+__decorate([
+    (0, common_1.UseGuards)(jwt_guard_1.JwtAuthGuard, roles_guard_1.RolesGuard),
+    (0, common_1.Get)('/user'),
+    __param(0, (0, common_1.Request)()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", void 0)
+], AuthController.prototype, "getProfile", null);
+__decorate([
+    (0, common_1.UseGuards)(jwt_guard_1.JwtAuthGuard, roles_guard_1.RolesGuard),
+    (0, roles_decorator_1.Roles)(role_enum_1.Role.Admin),
+    (0, common_1.Get)('/admin'),
+    __param(0, (0, common_1.Request)()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", void 0)
+], AuthController.prototype, "getDashboard", null);
+AuthController = AuthController_1 = __decorate([
+    (0, common_1.Controller)('auth'),
+    __metadata("design:paramtypes", [auth_service_1.AuthService,
+        user_service_1.UserService])
+], AuthController);
+exports.AuthController = AuthController;
+//# sourceMappingURL=auth.controller.js.map

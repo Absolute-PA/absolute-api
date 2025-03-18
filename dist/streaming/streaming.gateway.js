@@ -1,1 +1,74 @@
-'use strict';var a136_0x3b49c9=a136_0x3890;(function(_0x565482,_0x56a961){var _0x4e5dc1=a136_0x3890,_0x14ec79=_0x565482();while(!![]){try{var _0x50a02e=parseInt(_0x4e5dc1(0x113))/0x1*(parseInt(_0x4e5dc1(0xfe))/0x2)+-parseInt(_0x4e5dc1(0xfa))/0x3*(-parseInt(_0x4e5dc1(0x109))/0x4)+parseInt(_0x4e5dc1(0x103))/0x5*(-parseInt(_0x4e5dc1(0x102))/0x6)+parseInt(_0x4e5dc1(0x118))/0x7+parseInt(_0x4e5dc1(0x10c))/0x8+parseInt(_0x4e5dc1(0x100))/0x9*(-parseInt(_0x4e5dc1(0x117))/0xa)+parseInt(_0x4e5dc1(0xe7))/0xb*(-parseInt(_0x4e5dc1(0xec))/0xc);if(_0x50a02e===_0x56a961)break;else _0x14ec79['push'](_0x14ec79['shift']());}catch(_0x25ffde){_0x14ec79['push'](_0x14ec79['shift']());}}}(a136_0x2e63,0x20ecd));function a136_0x3890(_0x2a6785,_0x4dc599){var _0x2e634f=a136_0x2e63();return a136_0x3890=function(_0x389096,_0x31b271){_0x389096=_0x389096-0xe5;var _0x4d7568=_0x2e634f[_0x389096];return _0x4d7568;},a136_0x3890(_0x2a6785,_0x4dc599);}var __decorate=this&&this[a136_0x3b49c9(0x11b)]||function(_0x238f87,_0x3be80c,_0x2a4a8d,_0x472f57){var _0x29dedf=a136_0x3b49c9,_0x4019f3=arguments[_0x29dedf(0x11f)],_0x1c31c9=_0x4019f3<0x3?_0x3be80c:_0x472f57===null?_0x472f57=Object[_0x29dedf(0xff)](_0x3be80c,_0x2a4a8d):_0x472f57,_0x93dace;if(typeof Reflect===_0x29dedf(0x10d)&&typeof Reflect[_0x29dedf(0xe6)]===_0x29dedf(0x11a))_0x1c31c9=Reflect[_0x29dedf(0xe6)](_0x238f87,_0x3be80c,_0x2a4a8d,_0x472f57);else{for(var _0x26359a=_0x238f87['length']-0x1;_0x26359a>=0x0;_0x26359a--)if(_0x93dace=_0x238f87[_0x26359a])_0x1c31c9=(_0x4019f3<0x3?_0x93dace(_0x1c31c9):_0x4019f3>0x3?_0x93dace(_0x3be80c,_0x2a4a8d,_0x1c31c9):_0x93dace(_0x3be80c,_0x2a4a8d))||_0x1c31c9;}return _0x4019f3>0x3&&_0x1c31c9&&Object[_0x29dedf(0xf4)](_0x3be80c,_0x2a4a8d,_0x1c31c9),_0x1c31c9;},__metadata=this&&this[a136_0x3b49c9(0x11c)]||function(_0x4b12d0,_0x2e0a3b){var _0x15243a=a136_0x3b49c9;if(typeof Reflect==='object'&&typeof Reflect[_0x15243a(0x10b)]===_0x15243a(0x11a))return Reflect[_0x15243a(0x10b)](_0x4b12d0,_0x2e0a3b);},__param=this&&this[a136_0x3b49c9(0x107)]||function(_0x24a268,_0x52255d){return function(_0x383320,_0x466a87){_0x52255d(_0x383320,_0x466a87,_0x24a268);};};Object[a136_0x3b49c9(0xf4)](exports,a136_0x3b49c9(0x111),{'value':!![]}),exports[a136_0x3b49c9(0xed)]=void 0x0;const common_1=require(a136_0x3b49c9(0xf2)),websockets_1=require(a136_0x3b49c9(0x10a)),socket_io_1=require('socket.io');function a136_0x2e63(){var _0x15bf6a=['__decorate','__metadata','wss','Initialized','length','query','handleError','decorate','819335ieQOPY','WebSocketServer','Socket','handleConnection','serverPeerId','36xqUKOA','StreamingGateway','volume','prototype','handleVolumeChange','Logger','@nestjs/common','Injectable','defineProperty','emit','connect_error','afterInit','design:type','handleServerPeerId','526404iqjWRJ','WebSocketGateway','log','design:returntype','10GzPOUx','getOwnPropertyDescriptor','288FecNHX','volumeChange','252kOxSjY','13565BeWzrJ','name','logger','error','__param','SubscribeMessage','4OFgilq','@nestjs/websockets','metadata','620584UYThkn','object','reconnectPeerjs','reconnectPeer','MessageBody','__esModule','Server','43476btiHtu','design:paramtypes','MessageGateway','handleDisconnect','19300PPRumZ','445207dmnIjS','handshake','function'];a136_0x2e63=function(){return _0x15bf6a;};return a136_0x2e63();}let StreamingGateway=class StreamingGateway{constructor(){var _0x4be573=a136_0x3b49c9;this['logger']=new common_1[(_0x4be573(0xf1))](_0x4be573(0x115));}[a136_0x3b49c9(0xf7)](_0x5d6fa1){var _0x4c66bb=a136_0x3b49c9;this[_0x4c66bb(0x105)][_0x4c66bb(0xfc)](_0x4c66bb(0x11e));}[a136_0x3b49c9(0x116)](_0x238d64){var _0x3a1e77=a136_0x3b49c9;const _0xdb3b1d=_0x238d64[_0x3a1e77(0x119)][_0x3a1e77(0x120)][_0x3a1e77(0x104)];}[a136_0x3b49c9(0xea)](_0x44d962,..._0x123a20){var _0x2d2a36=a136_0x3b49c9;const _0x133497=_0x44d962[_0x2d2a36(0x119)][_0x2d2a36(0x120)][_0x2d2a36(0x104)];}async[a136_0x3b49c9(0xe5)](_0x39a0a1){var _0x22c2bf=a136_0x3b49c9;this[_0x22c2bf(0x105)][_0x22c2bf(0x106)](_0x39a0a1);}async[a136_0x3b49c9(0xf9)](_0x3dc2cc,_0x60de1b){var _0x8b7b4d=a136_0x3b49c9;this[_0x8b7b4d(0x11d)][_0x8b7b4d(0xf5)](_0x8b7b4d(0xeb),_0x60de1b);}async[a136_0x3b49c9(0xf0)](_0x3da63d){var _0xace7c4=a136_0x3b49c9;return this[_0xace7c4(0x11d)][_0xace7c4(0xf5)](_0xace7c4(0x101),_0x3da63d),_0x3da63d;}async[a136_0x3b49c9(0x10f)](){var _0x1396aa=a136_0x3b49c9;this[_0x1396aa(0x11d)][_0x1396aa(0xf5)](_0x1396aa(0x10e));}};__decorate([(0x0,websockets_1[a136_0x3b49c9(0xe8)])(),__metadata(a136_0x3b49c9(0xf8),socket_io_1[a136_0x3b49c9(0x112)])],StreamingGateway[a136_0x3b49c9(0xef)],'wss',void 0x0),__decorate([(0x0,websockets_1[a136_0x3b49c9(0x108)])(a136_0x3b49c9(0xf6)),__metadata(a136_0x3b49c9(0xf8),Function),__metadata(a136_0x3b49c9(0x114),[Object]),__metadata(a136_0x3b49c9(0xfd),Promise)],StreamingGateway[a136_0x3b49c9(0xef)],a136_0x3b49c9(0xe5),null),__decorate([(0x0,websockets_1[a136_0x3b49c9(0x108)])('serverPeerId'),__metadata(a136_0x3b49c9(0xf8),Function),__metadata(a136_0x3b49c9(0x114),[socket_io_1[a136_0x3b49c9(0xe9)],String]),__metadata(a136_0x3b49c9(0xfd),Promise)],StreamingGateway[a136_0x3b49c9(0xef)],a136_0x3b49c9(0xf9),null),__decorate([(0x0,websockets_1[a136_0x3b49c9(0x108)])(a136_0x3b49c9(0xee)),__param(0x0,(0x0,websockets_1[a136_0x3b49c9(0x110)])()),__metadata(a136_0x3b49c9(0xf8),Function),__metadata(a136_0x3b49c9(0x114),[Number]),__metadata(a136_0x3b49c9(0xfd),Promise)],StreamingGateway['prototype'],a136_0x3b49c9(0xf0),null),StreamingGateway=__decorate([(0x0,common_1[a136_0x3b49c9(0xf3)])(),(0x0,websockets_1[a136_0x3b49c9(0xfb)])({'cors':!![]})],StreamingGateway),exports[a136_0x3b49c9(0xed)]=StreamingGateway;
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __param = (this && this.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.StreamingGateway = void 0;
+const common_1 = require("@nestjs/common");
+const websockets_1 = require("@nestjs/websockets");
+const socket_io_1 = require("socket.io");
+let StreamingGateway = class StreamingGateway {
+    constructor() {
+        this.logger = new common_1.Logger('MessageGateway');
+    }
+    afterInit(server) {
+        this.logger.log('Initialized');
+    }
+    handleDisconnect(client) {
+        const socketName = client.handshake.query.name;
+    }
+    handleConnection(client, ...args) {
+        const socketName = client.handshake.query.name;
+    }
+    async handleError(err) {
+        this.logger.error(err);
+    }
+    async handleServerPeerId(client, id) {
+        this.wss.emit('serverPeerId', id);
+    }
+    async handleVolumeChange(volume) {
+        this.wss.emit('volumeChange', volume);
+        return volume;
+    }
+    async reconnectPeer() {
+        this.wss.emit('reconnectPeerjs');
+    }
+};
+__decorate([
+    (0, websockets_1.WebSocketServer)(),
+    __metadata("design:type", socket_io_1.Server)
+], StreamingGateway.prototype, "wss", void 0);
+__decorate([
+    (0, websockets_1.SubscribeMessage)('connect_error'),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", Promise)
+], StreamingGateway.prototype, "handleError", null);
+__decorate([
+    (0, websockets_1.SubscribeMessage)('serverPeerId'),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [socket_io_1.Socket, String]),
+    __metadata("design:returntype", Promise)
+], StreamingGateway.prototype, "handleServerPeerId", null);
+__decorate([
+    (0, websockets_1.SubscribeMessage)('volume'),
+    __param(0, (0, websockets_1.MessageBody)()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Number]),
+    __metadata("design:returntype", Promise)
+], StreamingGateway.prototype, "handleVolumeChange", null);
+StreamingGateway = __decorate([
+    (0, common_1.Injectable)(),
+    (0, websockets_1.WebSocketGateway)({ cors: true })
+], StreamingGateway);
+exports.StreamingGateway = StreamingGateway;
+//# sourceMappingURL=streaming.gateway.js.map

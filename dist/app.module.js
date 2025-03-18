@@ -1,1 +1,75 @@
-'use strict';const a22_0x2b3160=a22_0x45e5;(function(_0x1373a1,_0x419d22){const _0x5a57b5=a22_0x45e5,_0x3e3cf9=_0x1373a1();while(!![]){try{const _0x3b1204=parseInt(_0x5a57b5(0x7a))/0x1+-parseInt(_0x5a57b5(0x88))/0x2+parseInt(_0x5a57b5(0x96))/0x3*(parseInt(_0x5a57b5(0x90))/0x4)+parseInt(_0x5a57b5(0x8f))/0x5+parseInt(_0x5a57b5(0x91))/0x6*(parseInt(_0x5a57b5(0x82))/0x7)+-parseInt(_0x5a57b5(0x86))/0x8+-parseInt(_0x5a57b5(0x8e))/0x9*(parseInt(_0x5a57b5(0x9e))/0xa);if(_0x3b1204===_0x419d22)break;else _0x3e3cf9['push'](_0x3e3cf9['shift']());}catch(_0x569e5c){_0x3e3cf9['push'](_0x3e3cf9['shift']());}}}(a22_0x2baf,0x1c25c));var __decorate=this&&this['__decorate']||function(_0x109130,_0x38a9f2,_0x15e42d,_0x5906a0){const _0xa76f1e=a22_0x45e5;var _0x41cca2=arguments['length'],_0x4fc9c6=_0x41cca2<0x3?_0x38a9f2:_0x5906a0===null?_0x5906a0=Object['getOwnPropertyDescriptor'](_0x38a9f2,_0x15e42d):_0x5906a0,_0x136757;if(typeof Reflect===_0xa76f1e(0x7d)&&typeof Reflect[_0xa76f1e(0x97)]===_0xa76f1e(0x83))_0x4fc9c6=Reflect[_0xa76f1e(0x97)](_0x109130,_0x38a9f2,_0x15e42d,_0x5906a0);else{for(var _0x9d88b5=_0x109130['length']-0x1;_0x9d88b5>=0x0;_0x9d88b5--)if(_0x136757=_0x109130[_0x9d88b5])_0x4fc9c6=(_0x41cca2<0x3?_0x136757(_0x4fc9c6):_0x41cca2>0x3?_0x136757(_0x38a9f2,_0x15e42d,_0x4fc9c6):_0x136757(_0x38a9f2,_0x15e42d))||_0x4fc9c6;}return _0x41cca2>0x3&&_0x4fc9c6&&Object[_0xa76f1e(0x7b)](_0x38a9f2,_0x15e42d,_0x4fc9c6),_0x4fc9c6;};function a22_0x45e5(_0x36a3fe,_0x574e3f){const _0x2bafeb=a22_0x2baf();return a22_0x45e5=function(_0x45e547,_0x479666){_0x45e547=_0x45e547-0x7a;let _0x3f714c=_0x2bafeb[_0x45e547];return _0x3f714c;},a22_0x45e5(_0x36a3fe,_0x574e3f);}Object[a22_0x2b3160(0x7b)](exports,a22_0x2b3160(0x7e),{'value':!![]}),exports[a22_0x2b3160(0xa9)]=void 0x0;const common_1=require(a22_0x2b3160(0xae)),mongoose_1=require(a22_0x2b3160(0xa7)),event_emitter_1=require('@nestjs/event-emitter'),serve_static_1=require(a22_0x2b3160(0xa6)),core_1=require(a22_0x2b3160(0x94)),path_1=require(a22_0x2b3160(0x89)),app_controller_1=require(a22_0x2b3160(0x87)),app_service_1=require('./app.service'),product_module_1=require('./product/product.module'),user_module_1=require(a22_0x2b3160(0xa3)),auth_module_1=require('./auth/auth.module'),cart_module_1=require(a22_0x2b3160(0xaf)),streaming_module_1=require(a22_0x2b3160(0xb1)),text_to_audio_module_1=require('./text-to-audio/text-to-audio.module'),agenda_module_1=require('./agenda/agenda.module'),schedule_module_1=require(a22_0x2b3160(0x99)),sound_module_1=require(a22_0x2b3160(0x8a)),upload_module_1=require(a22_0x2b3160(0xaa)),voice_module_1=require('./voice/voice.module'),setting_module_1=require(a22_0x2b3160(0x84)),playlist_module_1=require(a22_0x2b3160(0x81)),core_module_1=require(a22_0x2b3160(0x8b)),aws_module_1=require('./aws/aws.module'),app_exception_filter_1=require(a22_0x2b3160(0x9b)),audit_module_1=require(a22_0x2b3160(0x7c));function a22_0x2baf(){const _0x2ef307=['defineProperty','./audit/audit.module','object','__esModule','AppController','AwsModule','./playlist/playlist.module','2632oqYRyZ','function','./setting/setting.module','SettingModule','1186568QDdLzu','./app.controller','230414SkdYXH','path','./sound/sound.module','./core.module','forRoot','ServeStaticModule','2082195hFInqB','836815oTWuBQ','299656KYJoLX','2922UJCUqw','env','AppExceptionFilter','@nestjs/core','AuthModule','6gXeUQc','decorate','CoreModule','./schedule/schedule.module','EventEmitterModule','./common/exception/app-exception-filter','assets','UploadModule','10JbTDSp','StreamingModule','ProductModule','APP_FILTER','UserModule','./user/user.module','VoiceModule','AuditModule','@nestjs/serve-static','@nestjs/mongoose','TextToAudioModule','AppModule','./upload/upload.module','PlaylistModule','MongooseModule','ScheduleModule','@nestjs/common','./cart/cart.module','AppService','./streaming/streaming.module','CartModule','109872CzdiMU'];a22_0x2baf=function(){return _0x2ef307;};return a22_0x2baf();}let AppModule=class AppModule{};AppModule=__decorate([(0x0,common_1['Module'])({'imports':[mongoose_1[a22_0x2b3160(0xac)][a22_0x2b3160(0x8c)](process[a22_0x2b3160(0x92)]['NODEWEB_DB_URL']),event_emitter_1[a22_0x2b3160(0x9a)][a22_0x2b3160(0x8c)](),serve_static_1[a22_0x2b3160(0x8d)][a22_0x2b3160(0x8c)]({'rootPath':(0x0,path_1['join'])(__dirname,'..',a22_0x2b3160(0x9c)),'serveRoot':'/assets','serveStaticOptions':{'index':![]}}),product_module_1[a22_0x2b3160(0xa0)],user_module_1[a22_0x2b3160(0xa2)],auth_module_1[a22_0x2b3160(0x95)],cart_module_1[a22_0x2b3160(0xb2)],streaming_module_1[a22_0x2b3160(0x9f)],user_module_1[a22_0x2b3160(0xa2)],text_to_audio_module_1[a22_0x2b3160(0xa8)],schedule_module_1[a22_0x2b3160(0xad)],agenda_module_1['AgendaModule'],sound_module_1['SoundModule'],upload_module_1[a22_0x2b3160(0x9d)],voice_module_1[a22_0x2b3160(0xa4)],setting_module_1[a22_0x2b3160(0x85)],playlist_module_1[a22_0x2b3160(0xab)],core_module_1[a22_0x2b3160(0x98)],aws_module_1[a22_0x2b3160(0x80)],audit_module_1[a22_0x2b3160(0xa5)]],'controllers':[app_controller_1[a22_0x2b3160(0x7f)]],'providers':[app_service_1[a22_0x2b3160(0xb0)],{'provide':core_1[a22_0x2b3160(0xa1)],'useClass':app_exception_filter_1[a22_0x2b3160(0x93)]}]})],AppModule),exports['AppModule']=AppModule;
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.AppModule = void 0;
+const common_1 = require("@nestjs/common");
+const mongoose_1 = require("@nestjs/mongoose");
+const event_emitter_1 = require("@nestjs/event-emitter");
+const serve_static_1 = require("@nestjs/serve-static");
+const core_1 = require("@nestjs/core");
+const path_1 = require("path");
+const app_controller_1 = require("./app.controller");
+const app_service_1 = require("./app.service");
+const product_module_1 = require("./product/product.module");
+const user_module_1 = require("./user/user.module");
+const auth_module_1 = require("./auth/auth.module");
+const cart_module_1 = require("./cart/cart.module");
+const streaming_module_1 = require("./streaming/streaming.module");
+const text_to_audio_module_1 = require("./text-to-audio/text-to-audio.module");
+const agenda_module_1 = require("./agenda/agenda.module");
+const schedule_module_1 = require("./schedule/schedule.module");
+const sound_module_1 = require("./sound/sound.module");
+const upload_module_1 = require("./upload/upload.module");
+const voice_module_1 = require("./voice/voice.module");
+const setting_module_1 = require("./setting/setting.module");
+const playlist_module_1 = require("./playlist/playlist.module");
+const core_module_1 = require("./core.module");
+const aws_module_1 = require("./aws/aws.module");
+const app_exception_filter_1 = require("./common/exception/app-exception-filter");
+const audit_module_1 = require("./audit/audit.module");
+let AppModule = class AppModule {
+};
+AppModule = __decorate([
+    (0, common_1.Module)({
+        imports: [
+            mongoose_1.MongooseModule.forRoot(process.env.NODEWEB_DB_URL),
+            event_emitter_1.EventEmitterModule.forRoot(),
+            serve_static_1.ServeStaticModule.forRoot({
+                rootPath: (0, path_1.join)(__dirname, '..', 'assets'),
+                serveRoot: '/assets',
+                serveStaticOptions: {
+                    index: false,
+                },
+            }),
+            product_module_1.ProductModule,
+            user_module_1.UserModule,
+            auth_module_1.AuthModule,
+            cart_module_1.CartModule,
+            streaming_module_1.StreamingModule,
+            user_module_1.UserModule,
+            text_to_audio_module_1.TextToAudioModule,
+            schedule_module_1.ScheduleModule,
+            agenda_module_1.AgendaModule,
+            sound_module_1.SoundModule,
+            upload_module_1.UploadModule,
+            voice_module_1.VoiceModule,
+            setting_module_1.SettingModule,
+            playlist_module_1.PlaylistModule,
+            core_module_1.CoreModule,
+            aws_module_1.AwsModule,
+            audit_module_1.AuditModule,
+        ],
+        controllers: [app_controller_1.AppController],
+        providers: [
+            app_service_1.AppService,
+            { provide: core_1.APP_FILTER, useClass: app_exception_filter_1.AppExceptionFilter },
+        ],
+    })
+], AppModule);
+exports.AppModule = AppModule;
+//# sourceMappingURL=app.module.js.map

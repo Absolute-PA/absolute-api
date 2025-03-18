@@ -1,1 +1,39 @@
-'use strict';var a103_0x8cd304=a103_0x3547;function a103_0x3547(_0x5e767c,_0x56d175){var _0x1e3368=a103_0x1e33();return a103_0x3547=function(_0x3547b8,_0x345d74){_0x3547b8=_0x3547b8-0x86;var _0x56b171=_0x1e3368[_0x3547b8];return _0x56b171;},a103_0x3547(_0x5e767c,_0x56d175);}(function(_0x3696cb,_0x1b85fc){var _0x32d78e=a103_0x3547,_0x1944c4=_0x3696cb();while(!![]){try{var _0x1c88b8=-parseInt(_0x32d78e(0x9e))/0x1+-parseInt(_0x32d78e(0x87))/0x2*(-parseInt(_0x32d78e(0x89))/0x3)+parseInt(_0x32d78e(0x98))/0x4+parseInt(_0x32d78e(0x94))/0x5+parseInt(_0x32d78e(0x8f))/0x6*(-parseInt(_0x32d78e(0x9d))/0x7)+-parseInt(_0x32d78e(0x9f))/0x8+parseInt(_0x32d78e(0xa3))/0x9*(parseInt(_0x32d78e(0x86))/0xa);if(_0x1c88b8===_0x1b85fc)break;else _0x1944c4['push'](_0x1944c4['shift']());}catch(_0x4b6856){_0x1944c4['push'](_0x1944c4['shift']());}}}(a103_0x1e33,0x6b681));var __rest=this&&this[a103_0x8cd304(0x8d)]||function(_0x18d6ca,_0x349f57){var _0x287ee3=a103_0x8cd304,_0x303ed4={};for(var _0x382647 in _0x18d6ca)if(Object['prototype'][_0x287ee3(0x9b)][_0x287ee3(0xa6)](_0x18d6ca,_0x382647)&&_0x349f57[_0x287ee3(0x93)](_0x382647)<0x0)_0x303ed4[_0x382647]=_0x18d6ca[_0x382647];if(_0x18d6ca!=null&&typeof Object[_0x287ee3(0xa0)]===_0x287ee3(0x91))for(var _0xdf71dc=0x0,_0x382647=Object[_0x287ee3(0xa0)](_0x18d6ca);_0xdf71dc<_0x382647['length'];_0xdf71dc++){if(_0x349f57['indexOf'](_0x382647[_0xdf71dc])<0x0&&Object[_0x287ee3(0x99)]['propertyIsEnumerable']['call'](_0x18d6ca,_0x382647[_0xdf71dc]))_0x303ed4[_0x382647[_0xdf71dc]]=_0x18d6ca[_0x382647[_0xdf71dc]];}return _0x303ed4;};Object[a103_0x8cd304(0x90)](exports,a103_0x8cd304(0xa8),{'value':!![]}),exports[a103_0x8cd304(0xa5)]=void 0x0;function a103_0x1e33(){var _0x10b488=['45ksRJrl','isCreateEventPlayTextToAudioDto','mapCreateDtoToEventDocument','call','voiceId','__esModule','jobType','1030430UzKEZa','2rSwVbu','playlistId','1067907yIoswQ','../../common/utils','time','assign','__rest','durationInSecond','6wqxvhL','defineProperty','function','soundId','indexOf','3993105cevWPQ','name','textToAudioId','uuid','202208nbQxgh','prototype','isCreateEventPlayVoiceRecodedDto','hasOwnProperty','../dto','5991097YyjaHv','250207chDXBE','1394736tvbxEI','getOwnPropertySymbols','isCreateEventPlaySoundDto','isCreateEventPlayMusicDto'];a103_0x1e33=function(){return _0x10b488;};return a103_0x1e33();}const utils_1=require(a103_0x8cd304(0x8a)),dto_1=require(a103_0x8cd304(0x9c)),mapCreateDtoToEventDocument=_0xb65ed0=>{var _0x2f3091=a103_0x8cd304;const {name:_0x291d5f,time:_0x3dd6e0,jobType:_0xb15188}=_0xb65ed0,_0x46a3d8=__rest(_0xb65ed0,[_0x2f3091(0x95),_0x2f3091(0x8b),_0x2f3091(0xa9)]);return{'id':(0x0,utils_1[_0x2f3091(0x97)])(),'name':_0x291d5f,'time':_0x3dd6e0,'jobType':_0xb15188,'data':Object[_0x2f3091(0x8c)](Object[_0x2f3091(0x8c)](Object[_0x2f3091(0x8c)](Object[_0x2f3091(0x8c)](Object[_0x2f3091(0x8c)]({},_0x46a3d8),(0x0,dto_1[_0x2f3091(0xa1)])(_0xb65ed0)&&{'soundId':_0xb65ed0[_0x2f3091(0x92)],'durationInSecond':_0xb65ed0[_0x2f3091(0x8e)]}),(0x0,dto_1[_0x2f3091(0xa2)])(_0xb65ed0)&&{'playlistId':_0xb65ed0[_0x2f3091(0x88)]}),(0x0,dto_1[_0x2f3091(0x9a)])(_0xb65ed0)&&{'voiceId':_0xb65ed0[_0x2f3091(0xa7)],'durationInSecond':_0xb65ed0['durationInSecond']}),(0x0,dto_1[_0x2f3091(0xa4)])(_0xb65ed0)&&{'textToAudioId':_0xb65ed0[_0x2f3091(0x96)],'durationInSecond':_0xb65ed0[_0x2f3091(0x8e)]})};};exports[a103_0x8cd304(0xa5)]=mapCreateDtoToEventDocument;
+"use strict";
+var __rest = (this && this.__rest) || function (s, e) {
+    var t = {};
+    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+        t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function")
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+                t[p[i]] = s[p[i]];
+        }
+    return t;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.mapCreateDtoToEventDocument = void 0;
+const utils_1 = require("@/common/utils");
+const dto_1 = require("../dto");
+const mapCreateDtoToEventDocument = (createEventDto) => {
+    const { name, time, jobType } = createEventDto, others = __rest(createEventDto, ["name", "time", "jobType"]);
+    return {
+        id: (0, utils_1.uuid)(),
+        name,
+        time,
+        jobType,
+        data: Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, others), ((0, dto_1.isCreateEventPlaySoundDto)(createEventDto) && {
+            soundId: createEventDto.soundId,
+            durationInSecond: createEventDto.durationInSecond,
+        })), ((0, dto_1.isCreateEventPlayMusicDto)(createEventDto) && {
+            playlistId: createEventDto.playlistId,
+        })), ((0, dto_1.isCreateEventPlayVoiceRecodedDto)(createEventDto) && {
+            voiceId: createEventDto.voiceId,
+            durationInSecond: createEventDto.durationInSecond,
+        })), ((0, dto_1.isCreateEventPlayTextToAudioDto)(createEventDto) && {
+            textToAudioId: createEventDto.textToAudioId,
+            durationInSecond: createEventDto.durationInSecond,
+        })),
+    };
+};
+exports.mapCreateDtoToEventDocument = mapCreateDtoToEventDocument;
+//# sourceMappingURL=create-event.mapper.js.map

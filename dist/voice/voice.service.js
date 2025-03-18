@@ -1,1 +1,31 @@
-'use strict';var a160_0xce0049=a160_0x3c10;(function(_0x61c38a,_0x3e531c){var _0x314bf8=a160_0x3c10,_0x395260=_0x61c38a();while(!![]){try{var _0xb6cfba=parseInt(_0x314bf8(0x9b))/0x1*(parseInt(_0x314bf8(0xa9))/0x2)+parseInt(_0x314bf8(0x9a))/0x3*(parseInt(_0x314bf8(0xaf))/0x4)+parseInt(_0x314bf8(0xb1))/0x5+parseInt(_0x314bf8(0x9e))/0x6*(parseInt(_0x314bf8(0xb0))/0x7)+parseInt(_0x314bf8(0xae))/0x8*(parseInt(_0x314bf8(0xa1))/0x9)+-parseInt(_0x314bf8(0x9c))/0xa+-parseInt(_0x314bf8(0xac))/0xb;if(_0xb6cfba===_0x3e531c)break;else _0x395260['push'](_0x395260['shift']());}catch(_0x10945d){_0x395260['push'](_0x395260['shift']());}}}(a160_0x1f1a,0x716c5));var __decorate=this&&this[a160_0xce0049(0xa6)]||function(_0x171c45,_0x99bd7e,_0x2c2ae9,_0x2e69d8){var _0x1d093c=a160_0xce0049,_0x5c2eef=arguments['length'],_0x259423=_0x5c2eef<0x3?_0x99bd7e:_0x2e69d8===null?_0x2e69d8=Object[_0x1d093c(0xa7)](_0x99bd7e,_0x2c2ae9):_0x2e69d8,_0xc37131;if(typeof Reflect==='object'&&typeof Reflect['decorate']===_0x1d093c(0xa2))_0x259423=Reflect['decorate'](_0x171c45,_0x99bd7e,_0x2c2ae9,_0x2e69d8);else{for(var _0x486281=_0x171c45['length']-0x1;_0x486281>=0x0;_0x486281--)if(_0xc37131=_0x171c45[_0x486281])_0x259423=(_0x5c2eef<0x3?_0xc37131(_0x259423):_0x5c2eef>0x3?_0xc37131(_0x99bd7e,_0x2c2ae9,_0x259423):_0xc37131(_0x99bd7e,_0x2c2ae9))||_0x259423;}return _0x5c2eef>0x3&&_0x259423&&Object[_0x1d093c(0xa4)](_0x99bd7e,_0x2c2ae9,_0x259423),_0x259423;},VoiceService_1;Object[a160_0xce0049(0xa4)](exports,a160_0xce0049(0xad),{'value':!![]}),exports[a160_0xce0049(0xa3)]=void 0x0;const common_1=require(a160_0xce0049(0xaa)),file_1=require(a160_0xce0049(0x9f));function a160_0x3c10(_0x258140,_0x1f520f){var _0x1f1a32=a160_0x1f1a();return a160_0x3c10=function(_0x3c1059,_0x578781){_0x3c1059=_0x3c1059-0x9a;var _0x20ece8=_0x1f1a32[_0x3c1059];return _0x20ece8;},a160_0x3c10(_0x258140,_0x1f520f);}function a160_0x1f1a(){var _0x2d3545=['9kzoFod','function','VoiceService','defineProperty','name','__decorate','getOwnPropertyDescriptor','createFolder','708466nEFjDx','@nestjs/common','logger','11651178zWcVjX','__esModule','6550728VmTKEv','2214348vCFcbO','217uVoRpB','2483845zrdWBV','3tOmPro','1ezMRLt','7079280aOqaJE','onModuleInit','1602GSijhx','../common/file','Injectable'];a160_0x1f1a=function(){return _0x2d3545;};return a160_0x1f1a();}let VoiceService=VoiceService_1=class VoiceService{constructor(){var _0x230717=a160_0xce0049;this[_0x230717(0xab)]=new common_1['Logger'](VoiceService_1[_0x230717(0xa5)]);}async[a160_0xce0049(0x9d)](){var _0x281396=a160_0xce0049;try{(0x0,file_1[_0x281396(0xa8)])('./assets/voices');}catch(_0x203372){this['logger']['error'](_0x203372);throw _0x203372;}}};VoiceService=VoiceService_1=__decorate([(0x0,common_1[a160_0xce0049(0xa0)])()],VoiceService),exports['VoiceService']=VoiceService;
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var VoiceService_1;
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.VoiceService = void 0;
+const common_1 = require("@nestjs/common");
+const file_1 = require("../common/file");
+let VoiceService = VoiceService_1 = class VoiceService {
+    constructor() {
+        this.logger = new common_1.Logger(VoiceService_1.name);
+    }
+    async onModuleInit() {
+        try {
+            (0, file_1.createFolder)('./assets/voices');
+        }
+        catch (error) {
+            this.logger.error(error);
+            throw error;
+        }
+    }
+};
+VoiceService = VoiceService_1 = __decorate([
+    (0, common_1.Injectable)()
+], VoiceService);
+exports.VoiceService = VoiceService;
+//# sourceMappingURL=voice.service.js.map

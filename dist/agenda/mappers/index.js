@@ -1,1 +1,19 @@
-'use strict';var a10_0x3eb684=a10_0x3956;(function(_0x3f26ad,_0x448244){var _0x56569d=a10_0x3956,_0x77d928=_0x3f26ad();while(!![]){try{var _0x3ec776=parseInt(_0x56569d(0x95))/0x1+-parseInt(_0x56569d(0x99))/0x2+-parseInt(_0x56569d(0x9e))/0x3+parseInt(_0x56569d(0x9f))/0x4+-parseInt(_0x56569d(0x96))/0x5+-parseInt(_0x56569d(0x8d))/0x6*(-parseInt(_0x56569d(0x90))/0x7)+-parseInt(_0x56569d(0x9d))/0x8;if(_0x3ec776===_0x448244)break;else _0x77d928['push'](_0x77d928['shift']());}catch(_0x30dbd4){_0x77d928['push'](_0x77d928['shift']());}}}(a10_0x25f3,0x635f1));function a10_0x3956(_0x2c519a,_0x379ede){var _0x25f362=a10_0x25f3();return a10_0x3956=function(_0x3956d6,_0x35422e){_0x3956d6=_0x3956d6-0x8c;var _0x156d01=_0x25f362[_0x3956d6];return _0x156d01;},a10_0x3956(_0x2c519a,_0x379ede);}function a10_0x25f3(){var _0x179d9f=['1427766lGWJVl','writable','prototype','__esModule','6041016kRtQNO','496659vWgPQy','2740440UoROOc','./music.mapper','135006UjBhWS','call','get','224LaZEeJ','__exportStar','./sound.mapper','getOwnPropertyDescriptor','create','799217NGfVsT','813855ipoJoC','defineProperty','__createBinding'];a10_0x25f3=function(){return _0x179d9f;};return a10_0x25f3();}var __createBinding=this&&this[a10_0x3eb684(0x98)]||(Object[a10_0x3eb684(0x94)]?function(_0x340c72,_0x54dbf4,_0x4bd77c,_0x3f58f8){var _0x289fcc=a10_0x3eb684;if(_0x3f58f8===undefined)_0x3f58f8=_0x4bd77c;var _0x30fd29=Object[_0x289fcc(0x93)](_0x54dbf4,_0x4bd77c);(!_0x30fd29||(_0x289fcc(0x8f)in _0x30fd29?!_0x54dbf4[_0x289fcc(0x9c)]:_0x30fd29[_0x289fcc(0x9a)]||_0x30fd29['configurable']))&&(_0x30fd29={'enumerable':!![],'get':function(){return _0x54dbf4[_0x4bd77c];}}),Object['defineProperty'](_0x340c72,_0x3f58f8,_0x30fd29);}:function(_0x3208da,_0x1fc63f,_0x5760d3,_0x5ce7e2){if(_0x5ce7e2===undefined)_0x5ce7e2=_0x5760d3;_0x3208da[_0x5ce7e2]=_0x1fc63f[_0x5760d3];}),__exportStar=this&&this[a10_0x3eb684(0x91)]||function(_0x342ea2,_0x486aac){var _0x16fea6=a10_0x3eb684;for(var _0x11cee9 in _0x342ea2)if(_0x11cee9!=='default'&&!Object[_0x16fea6(0x9b)]['hasOwnProperty'][_0x16fea6(0x8e)](_0x486aac,_0x11cee9))__createBinding(_0x486aac,_0x342ea2,_0x11cee9);};Object[a10_0x3eb684(0x97)](exports,a10_0x3eb684(0x9c),{'value':!![]}),__exportStar(require(a10_0x3eb684(0x92)),exports),__exportStar(require(a10_0x3eb684(0x8c)),exports);
+"use strict";
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __exportStar = (this && this.__exportStar) || function(m, exports) {
+    for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+__exportStar(require("./sound.mapper"), exports);
+__exportStar(require("./music.mapper"), exports);
+//# sourceMappingURL=index.js.map

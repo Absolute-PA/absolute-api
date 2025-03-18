@@ -1,1 +1,130 @@
-'use strict';const a157_0x3ee201=a157_0x3034;(function(_0x2e715f,_0x25a546){const _0x1adbab=a157_0x3034,_0x5b67da=_0x2e715f();while(!![]){try{const _0x4b1169=-parseInt(_0x1adbab(0x180))/0x1+-parseInt(_0x1adbab(0x17f))/0x2*(parseInt(_0x1adbab(0x195))/0x3)+parseInt(_0x1adbab(0x194))/0x4+-parseInt(_0x1adbab(0x17c))/0x5*(parseInt(_0x1adbab(0x163))/0x6)+parseInt(_0x1adbab(0x176))/0x7*(-parseInt(_0x1adbab(0x197))/0x8)+-parseInt(_0x1adbab(0x178))/0x9+parseInt(_0x1adbab(0x16e))/0xa;if(_0x4b1169===_0x25a546)break;else _0x5b67da['push'](_0x5b67da['shift']());}catch(_0x99f469){_0x5b67da['push'](_0x5b67da['shift']());}}}(a157_0x44b9,0x2ac8b));var __decorate=this&&this[a157_0x3ee201(0x196)]||function(_0x14ca2a,_0x365914,_0x31fd10,_0x28b9f7){const _0x18a351=a157_0x3ee201;var _0x48090f=arguments[_0x18a351(0x16c)],_0x46519f=_0x48090f<0x3?_0x365914:_0x28b9f7===null?_0x28b9f7=Object['getOwnPropertyDescriptor'](_0x365914,_0x31fd10):_0x28b9f7,_0x1bb073;if(typeof Reflect==='object'&&typeof Reflect[_0x18a351(0x164)]===_0x18a351(0x19a))_0x46519f=Reflect[_0x18a351(0x164)](_0x14ca2a,_0x365914,_0x31fd10,_0x28b9f7);else{for(var _0x294acd=_0x14ca2a['length']-0x1;_0x294acd>=0x0;_0x294acd--)if(_0x1bb073=_0x14ca2a[_0x294acd])_0x46519f=(_0x48090f<0x3?_0x1bb073(_0x46519f):_0x48090f>0x3?_0x1bb073(_0x365914,_0x31fd10,_0x46519f):_0x1bb073(_0x365914,_0x31fd10))||_0x46519f;}return _0x48090f>0x3&&_0x46519f&&Object[_0x18a351(0x19c)](_0x365914,_0x31fd10,_0x46519f),_0x46519f;},__metadata=this&&this[a157_0x3ee201(0x171)]||function(_0x3fda97,_0x13159c){const _0x5545f4=a157_0x3ee201;if(typeof Reflect===_0x5545f4(0x18f)&&typeof Reflect['metadata']==='function')return Reflect[_0x5545f4(0x193)](_0x3fda97,_0x13159c);},__param=this&&this[a157_0x3ee201(0x15d)]||function(_0x1dcd1f,_0x28e114){return function(_0x30ce0d,_0x50f10a){_0x28e114(_0x30ce0d,_0x50f10a,_0x1dcd1f);};},UserService_1;function a157_0x3034(_0xa26e8c,_0x3acfbe){const _0x44b9d8=a157_0x44b9();return a157_0x3034=function(_0x3034ee,_0x4d4def){_0x3034ee=_0x3034ee-0x15c;let _0x15b58d=_0x44b9d8[_0x3034ee];return _0x15b58d;},a157_0x3034(_0xa26e8c,_0x3acfbe);}Object[a157_0x3ee201(0x19c)](exports,a157_0x3ee201(0x192),{'value':!![]}),exports[a157_0x3ee201(0x16b)]=exports[a157_0x3ee201(0x181)]=void 0x0;const common_1=require(a157_0x3ee201(0x187)),mongoose_1=require(a157_0x3ee201(0x17a)),mongoose_2=require(a157_0x3ee201(0x177)),role_enum_1=require(a157_0x3ee201(0x173)),jwt_1=require(a157_0x3ee201(0x19f)),verify_1=require(a157_0x3ee201(0x182)),setting_service_1=require(a157_0x3ee201(0x189)),constants_1=require('../setting/constants');function a157_0x44b9(){const _0x4652f2=['findById','530164ZtOdWP','13176enSQkA','MasterUserUsername','../auth/verify','Role','DEFAULT_PASSWORD','map','findFirst','@nestjs/common','userModel','../setting/setting.service','Model','email','absolutePA123','Your\x20account\x20reach\x20maximum\x20number\x20of\x20account:\x20','maxUser','object','JWT_SECRET','-password','__esModule','metadata','292840vFOSju','3MlYfpL','__decorate','812552QwZGEQ','error','Master','function','delete','defineProperty','resetPassword','hash','@nestjs/jwt','settingService','Logger','password','select','InjectModel','__param','JwtService','env','updateUser','User','Email\x20is\x20exist','503544vxTqaN','decorate','deleteUser','getMasterUserAccessToken','findUser','create','DEFAULT_MAX_USER','logger','UserService','length','findOne','10589460KHUhWH','jwtService','toObject','__metadata','userSetting','../auth/enums/role.enum','SettingService','MASTER_PASSWORD','21WzsNoh','@nestjs/mongoose','1854900AqhLja','sign','mongoose','absolutePA123@gmail.com','10qNoZoi','onModuleInit'];a157_0x44b9=function(){return _0x4652f2;};return a157_0x44b9();}exports[a157_0x3ee201(0x181)]=a157_0x3ee201(0x18c);let UserService=UserService_1=class UserService{constructor(_0x1b22e2,_0x398017,_0x3c60de){const _0x970315=a157_0x3ee201;this[_0x970315(0x188)]=_0x1b22e2,this[_0x970315(0x16f)]=_0x398017,this[_0x970315(0x1a0)]=_0x3c60de,this[_0x970315(0x16a)]=new common_1[(_0x970315(0x1a1))](UserService_1['name']);}async['addUser'](_0x1944c2){const _0x2a5967=a157_0x3ee201;var _0x47ea79;const _0x2b454b=await this['userModel'][_0x2a5967(0x16d)]({'email':_0x1944c2[_0x2a5967(0x18b)]});if(_0x2b454b)throw new Error(_0x2a5967(0x162));const _0x423126=(await this[_0x2a5967(0x188)]['find']({}))['length'],_0x529158=((_0x47ea79=(await this['settingService'][_0x2a5967(0x186)]())[_0x2a5967(0x172)])===null||_0x47ea79===void 0x0?void 0x0:_0x47ea79[_0x2a5967(0x18e)])||constants_1[_0x2a5967(0x169)];if(_0x423126>_0x529158)throw new Error(_0x2a5967(0x18d)+_0x529158);const _0x4e910d=await this[_0x2a5967(0x188)][_0x2a5967(0x168)](_0x1944c2);return _0x4e910d[_0x2a5967(0x1a2)]=await(0x0,verify_1['hash'])(_0x4e910d[_0x2a5967(0x1a2)]),_0x4e910d['save']();}async[a157_0x3ee201(0x167)](_0x13716e){const _0x363b41=a157_0x3ee201,_0x5672b2=await this[_0x363b41(0x188)]['findOne']({'username':_0x13716e});return _0x5672b2;}async['getAllUser'](){const _0x46994c=a157_0x3ee201,_0x112245=await this['userModel']['find']({'roles':{'$ne':role_enum_1[_0x46994c(0x183)]['Master']}})['select']('-password');return _0x112245[_0x46994c(0x185)](_0x49aab2=>({'email':_0x49aab2['email'],'roles':_0x49aab2['roles'],'username':_0x49aab2['username'],'id':_0x49aab2['id']}));}async[a157_0x3ee201(0x160)](_0xe49fe2,_0x4368f9){const _0x306810=a157_0x3ee201;try{return await this['userModel']['findByIdAndUpdate'](_0xe49fe2,_0x4368f9)[_0x306810(0x1a3)](_0x306810(0x191));}catch(_0x28e2c1){this[_0x306810(0x16a)][_0x306810(0x198)](_0x28e2c1);return;}}async[a157_0x3ee201(0x165)](_0x39d886){const _0x2f0965=a157_0x3ee201,_0x334f46=await this[_0x2f0965(0x188)][_0x2f0965(0x17e)](_0x39d886)['select'](_0x2f0965(0x191));if(!_0x334f46)return;return await _0x334f46['deleteOne']();}async[a157_0x3ee201(0x19d)](_0x202c4e){const _0x12e444=a157_0x3ee201;try{const _0x73dece=await this[_0x12e444(0x188)][_0x12e444(0x17e)](_0x202c4e)['select']('-password');if(!_0x73dece)return;return _0x73dece[_0x12e444(0x1a2)]=await(0x0,verify_1[_0x12e444(0x19e)])(process[_0x12e444(0x15f)][_0x12e444(0x184)]),_0x73dece['save']();}catch(_0x10697f){this[_0x12e444(0x16a)]['error'](_0x10697f);}}async[a157_0x3ee201(0x17d)](){const _0xbf94aa=a157_0x3ee201;try{const _0x3cb215=await this['userModel'][_0xbf94aa(0x16d)]({'username':exports[_0xbf94aa(0x181)]});_0x3cb215&&await _0x3cb215[_0xbf94aa(0x19b)](),await this['addUser']({'username':exports[_0xbf94aa(0x181)],'email':_0xbf94aa(0x17b),'roles':[role_enum_1[_0xbf94aa(0x183)][_0xbf94aa(0x199)]],'password':process[_0xbf94aa(0x15f)][_0xbf94aa(0x175)]});}catch(_0x30e851){this[_0xbf94aa(0x16a)]['error'](_0x30e851);}}async[a157_0x3ee201(0x166)](){const _0x5d8ae3=a157_0x3ee201,_0xd1053b=await this[_0x5d8ae3(0x188)]['findOne']({'username':exports[_0x5d8ae3(0x181)]}),_0x256fda=await this[_0x5d8ae3(0x16f)][_0x5d8ae3(0x179)](_0xd1053b[_0x5d8ae3(0x170)](),{'secret':process['env'][_0x5d8ae3(0x190)]});return _0x256fda;}};UserService=UserService_1=__decorate([(0x0,common_1['Injectable'])(),__param(0x0,(0x0,mongoose_2[a157_0x3ee201(0x15c)])(a157_0x3ee201(0x161))),__metadata('design:paramtypes',[mongoose_1[a157_0x3ee201(0x18a)],jwt_1[a157_0x3ee201(0x15e)],setting_service_1[a157_0x3ee201(0x174)]])],UserService),exports[a157_0x3ee201(0x16b)]=UserService;
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __param = (this && this.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
+var UserService_1;
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.UserService = exports.MasterUserUsername = void 0;
+const common_1 = require("@nestjs/common");
+const mongoose_1 = require("mongoose");
+const mongoose_2 = require("@nestjs/mongoose");
+const role_enum_1 = require("../auth/enums/role.enum");
+const jwt_1 = require("@nestjs/jwt");
+const verify_1 = require("../auth/verify");
+const setting_service_1 = require("../setting/setting.service");
+const constants_1 = require("../setting/constants");
+exports.MasterUserUsername = 'absolutePA123';
+let UserService = UserService_1 = class UserService {
+    constructor(userModel, jwtService, settingService) {
+        this.userModel = userModel;
+        this.jwtService = jwtService;
+        this.settingService = settingService;
+        this.logger = new common_1.Logger(UserService_1.name);
+    }
+    async addUser(createUserDTO) {
+        var _a;
+        const duplicateUser = await this.userModel.findOne({
+            email: createUserDTO.email,
+        });
+        if (duplicateUser)
+            throw new Error('Email is exist');
+        const totalUser = (await this.userModel.find({})).length;
+        const maxUser = ((_a = (await this.settingService.findFirst()).userSetting) === null || _a === void 0 ? void 0 : _a.maxUser) ||
+            constants_1.DEFAULT_MAX_USER;
+        if (totalUser > maxUser)
+            throw new Error(`Your account reach maximum number of account: ${maxUser}`);
+        const newUser = await this.userModel.create(createUserDTO);
+        newUser.password = await (0, verify_1.hash)(newUser.password);
+        return newUser.save();
+    }
+    async findUser(username) {
+        const user = await this.userModel.findOne({ username: username });
+        return user;
+    }
+    async getAllUser() {
+        const users = await this.userModel
+            .find({ roles: { $ne: role_enum_1.Role.Master } })
+            .select('-password');
+        return users.map((user) => ({
+            email: user.email,
+            roles: user.roles,
+            username: user.username,
+            id: user.id,
+        }));
+    }
+    async updateUser(id, userPayload) {
+        try {
+            return await this.userModel
+                .findByIdAndUpdate(id, userPayload)
+                .select('-password');
+        }
+        catch (error) {
+            this.logger.error(error);
+            return;
+        }
+    }
+    async deleteUser(id) {
+        const user = await this.userModel.findById(id).select('-password');
+        if (!user)
+            return;
+        return await user.deleteOne();
+    }
+    async resetPassword(id) {
+        try {
+            const user = await this.userModel.findById(id).select('-password');
+            if (!user)
+                return;
+            user.password = await (0, verify_1.hash)(process.env.DEFAULT_PASSWORD);
+            return user.save();
+        }
+        catch (error) {
+            this.logger.error(error);
+        }
+    }
+    async onModuleInit() {
+        try {
+            const masterUser = await this.userModel.findOne({
+                username: exports.MasterUserUsername,
+            });
+            if (masterUser) {
+                await masterUser.delete();
+            }
+            await this.addUser({
+                username: exports.MasterUserUsername,
+                email: 'absolutePA123@gmail.com',
+                roles: [role_enum_1.Role.Master],
+                password: process.env.MASTER_PASSWORD,
+            });
+        }
+        catch (error) {
+            this.logger.error(error);
+        }
+    }
+    async getMasterUserAccessToken() {
+        const masterUser = await this.userModel.findOne({
+            username: exports.MasterUserUsername,
+        });
+        const accessToken = await this.jwtService.sign(masterUser.toObject(), {
+            secret: process.env.JWT_SECRET,
+        });
+        return accessToken;
+    }
+};
+UserService = UserService_1 = __decorate([
+    (0, common_1.Injectable)(),
+    __param(0, (0, mongoose_2.InjectModel)('User')),
+    __metadata("design:paramtypes", [mongoose_1.Model,
+        jwt_1.JwtService,
+        setting_service_1.SettingService])
+], UserService);
+exports.UserService = UserService;
+//# sourceMappingURL=user.service.js.map

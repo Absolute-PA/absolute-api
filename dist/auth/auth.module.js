@@ -1,1 +1,38 @@
-'use strict';const a34_0x38b4bd=a34_0xd448;(function(_0x45fd52,_0x2b1c4b){const _0x164184=a34_0xd448,_0xcce4de=_0x45fd52();while(!![]){try{const _0xd2bc65=parseInt(_0x164184(0x123))/0x1+parseInt(_0x164184(0x106))/0x2+parseInt(_0x164184(0x109))/0x3+parseInt(_0x164184(0x114))/0x4*(-parseInt(_0x164184(0x10f))/0x5)+parseInt(_0x164184(0x122))/0x6+-parseInt(_0x164184(0x115))/0x7*(-parseInt(_0x164184(0x111))/0x8)+-parseInt(_0x164184(0x108))/0x9;if(_0xd2bc65===_0x2b1c4b)break;else _0xcce4de['push'](_0xcce4de['shift']());}catch(_0x36f1b9){_0xcce4de['push'](_0xcce4de['shift']());}}}(a34_0x4b5c,0x5276a));var __decorate=this&&this[a34_0x38b4bd(0x11d)]||function(_0x534784,_0x320051,_0x1bd104,_0x5eeade){const _0xa46f4a=a34_0x38b4bd;var _0x503e24=arguments[_0xa46f4a(0x11c)],_0x314e60=_0x503e24<0x3?_0x320051:_0x5eeade===null?_0x5eeade=Object['getOwnPropertyDescriptor'](_0x320051,_0x1bd104):_0x5eeade,_0x3c6f20;if(typeof Reflect===_0xa46f4a(0x120)&&typeof Reflect[_0xa46f4a(0x10d)]===_0xa46f4a(0x121))_0x314e60=Reflect[_0xa46f4a(0x10d)](_0x534784,_0x320051,_0x1bd104,_0x5eeade);else{for(var _0x1ec0de=_0x534784[_0xa46f4a(0x11c)]-0x1;_0x1ec0de>=0x0;_0x1ec0de--)if(_0x3c6f20=_0x534784[_0x1ec0de])_0x314e60=(_0x503e24<0x3?_0x3c6f20(_0x314e60):_0x503e24>0x3?_0x3c6f20(_0x320051,_0x1bd104,_0x314e60):_0x3c6f20(_0x320051,_0x1bd104))||_0x314e60;}return _0x503e24>0x3&&_0x314e60&&Object[_0xa46f4a(0x10c)](_0x320051,_0x1bd104,_0x314e60),_0x314e60;};function a34_0x4b5c(){const _0x42ee22=['AuthService','object','function','3247956hZUYBF','207587rCjXDh','AuthModule','@nestjs/passport','dotenv/config','env','JWT_SECRET','903566LYildM','PassportModule','11958174JRMiyQ','836319TNpyJk','../setting/setting.module','@nestjs/jwt','defineProperty','decorate','./auth.controller','13225XQotbR','register','887104UlDflY','Module','JwtModule','388ahxRbN','28cAoJnU','SettingModule','./auth.service','LocalStrategy','UserModule','./strategies/jwt.strategy','./strategies/local.strategy','length','__decorate','__esModule'];a34_0x4b5c=function(){return _0x42ee22;};return a34_0x4b5c();}Object['defineProperty'](exports,a34_0x38b4bd(0x11e),{'value':!![]}),exports[a34_0x38b4bd(0x124)]=void 0x0;const common_1=require('@nestjs/common'),jwt_1=require(a34_0x38b4bd(0x10b)),passport_1=require(a34_0x38b4bd(0x125));function a34_0xd448(_0x2d1a01,_0x578eae){const _0x4b5c67=a34_0x4b5c();return a34_0xd448=function(_0xd448af,_0x27ea8d){_0xd448af=_0xd448af-0x106;let _0x2f932f=_0x4b5c67[_0xd448af];return _0x2f932f;},a34_0xd448(_0x2d1a01,_0x578eae);}require(a34_0x38b4bd(0x126));const user_module_1=require('../user/user.module'),setting_module_1=require(a34_0x38b4bd(0x10a)),auth_service_1=require(a34_0x38b4bd(0x117)),local_strategy_1=require(a34_0x38b4bd(0x11b)),jwt_strategy_1=require(a34_0x38b4bd(0x11a)),auth_controller_1=require(a34_0x38b4bd(0x10e));let AuthModule=class AuthModule{};AuthModule=__decorate([(0x0,common_1[a34_0x38b4bd(0x112)])({'imports':[user_module_1[a34_0x38b4bd(0x119)],passport_1[a34_0x38b4bd(0x107)],setting_module_1[a34_0x38b4bd(0x116)],jwt_1[a34_0x38b4bd(0x113)][a34_0x38b4bd(0x110)]({'secret':process[a34_0x38b4bd(0x127)][a34_0x38b4bd(0x128)],'signOptions':{'expiresIn':'30d'}})],'providers':[auth_service_1[a34_0x38b4bd(0x11f)],local_strategy_1[a34_0x38b4bd(0x118)],jwt_strategy_1['JwtStrategy']],'controllers':[auth_controller_1['AuthController']]})],AuthModule),exports[a34_0x38b4bd(0x124)]=AuthModule;
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.AuthModule = void 0;
+const common_1 = require("@nestjs/common");
+const jwt_1 = require("@nestjs/jwt");
+const passport_1 = require("@nestjs/passport");
+require("dotenv/config");
+const user_module_1 = require("@/user/user.module");
+const setting_module_1 = require("@/setting/setting.module");
+const auth_service_1 = require("./auth.service");
+const local_strategy_1 = require("./strategies/local.strategy");
+const jwt_strategy_1 = require("./strategies/jwt.strategy");
+const auth_controller_1 = require("./auth.controller");
+let AuthModule = class AuthModule {
+};
+AuthModule = __decorate([
+    (0, common_1.Module)({
+        imports: [
+            user_module_1.UserModule,
+            passport_1.PassportModule,
+            setting_module_1.SettingModule,
+            jwt_1.JwtModule.register({
+                secret: process.env.JWT_SECRET,
+                signOptions: { expiresIn: '30d' },
+            }),
+        ],
+        providers: [auth_service_1.AuthService, local_strategy_1.LocalStrategy, jwt_strategy_1.JwtStrategy],
+        controllers: [auth_controller_1.AuthController],
+    })
+], AuthModule);
+exports.AuthModule = AuthModule;
+//# sourceMappingURL=auth.module.js.map
