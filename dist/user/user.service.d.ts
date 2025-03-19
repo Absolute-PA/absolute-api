@@ -6,6 +6,8 @@ import { UpdateUserDTO } from './dtos/update-user.dto';
 import { JwtService } from '@nestjs/jwt';
 import { SettingService } from '../setting/setting.service';
 export declare const MasterUserUsername = "absolutePA123";
+export declare const DefaultAdminUsername = "admin";
+export declare const DefaultAdminPassword = "forgotpassword";
 export declare class UserService implements OnModuleInit {
     private readonly userModel;
     private jwtService;
