@@ -8,8 +8,8 @@ git reset --hard origin/main
 # Install dependencies
 yarn
 
-# Start the database
-./startDB.sh
+# Start the database and monitor it in the background
+./startDB.sh &
 
 pm2 start ecosystem.config.js
 pm2 save
