@@ -1,6 +1,6 @@
 {
   "name": "nestjs-ecommerce",
-  "version": "0.0.65",
+  "version": "0.0.67",
   "description": "",
   "author": "",
   "private": true,
@@ -26,6 +26,7 @@
     "docker:build": "docker build -t tien1106/absolutepa:nodeweb-master-api .",
     "deploy": "./scripts/prepareBuild.sh",
     "deployUat": "./scripts/prepareBuildUat.sh",
+    "release": "./scripts/prepareBuildRelease.sh",
     "docker:save": "docker save -o ./out/nodeweb-master-api.tar nodeweb-master-api"
   },
   "dependencies": {
@@ -54,6 +55,7 @@
     "multer": "^1.4.5-lts.1",
     "nest-winston": "^1.9.3",
     "newrelic": "^11.1.0",
+    "nodemailer": "^6.9.8",
     "passport": "^0.6.0",
     "passport-jwt": "^4.0.0",
     "passport-local": "^1.0.0",
@@ -76,6 +78,7 @@
     "@types/jest": "28.1.8",
     "@types/multer": "^1.4.7",
     "@types/node": "^16.0.0",
+    "@types/nodemailer": "^6.4.14",
     "@types/passport-jwt": "^3.0.7",
     "@types/passport-local": "^1.0.34",
     "@types/supertest": "^2.0.11",
