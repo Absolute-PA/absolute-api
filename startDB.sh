@@ -6,51 +6,59 @@ PORT=27017
 MAX_RETRIES=3
 RETRY_DELAY=5 # seconds
 
+timestamp() {
+    date '+%Y-%m-%d %H:%M:%S'
+}
+
+function log_msg() {
+    echo "[$(timestamp)] $1"
+}
+
 function is_mongo_running() {
     nc -z "$HOST" "$PORT"
     return $?
 }
 
 function wait_for_mongo() {
-    echo "⏳ Waiting for MongoDB to be ready..."
+    log_msg "⏳ Waiting for MongoDB to be ready..."
     for i in {1..10}; do
         if is_mongo_running; then
-            echo "✅ MongoDB is now running"
+            log_msg "✅ MongoDB is now running"
             return 0
         fi
         sleep 1
     done
-    echo "❌ MongoDB did not respond in time"
+    log_msg "❌ MongoDB did not respond in time"
     return 1
 }
 
 function start_mongo() {
-    echo "🚀 Starting MongoDB via Docker Compose..."
+    log_msg "🚀 Starting MongoDB via Docker Compose..."
     docker compose up -d --force-recreate --build
     wait_for_mongo
 }
 
 function monitor_mongo() {
-    echo "🩺 Monitoring MongoDB health..."
+    log_msg "🩺 Monitoring MongoDB health..."
 
     for i in $(seq 1 $MAX_RETRIES); do
         if is_mongo_running; then
-            echo "✅ MongoDB is healthy"
+            log_msg "✅ MongoDB is healthy"
             return
         else
-            echo "⚠️ MongoDB is unresponsive (attempt $i/$MAX_RETRIES)"
+            log_msg "⚠️ MongoDB is unresponsive (attempt $i/$MAX_RETRIES)"
             sleep "$RETRY_DELAY"
         fi
     done
 
-    echo "♻️ Restarting MongoDB..."
+    log_msg "♻️ Restarting MongoDB..."
     docker compose restart
     wait_for_mongo
 }
 
 # --- Script starts here ---
 if is_mongo_running; then
-    echo "✅ MongoDB is already running"
+    log_msg "✅ MongoDB is already running"
 else
     start_mongo
 fi
