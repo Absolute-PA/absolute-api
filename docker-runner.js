@@ -7,11 +7,11 @@ const runCommand = (command) => {
       console.log(`Running command: ${command}`);
 
       if (error) {
-        console.error(`❌ Error: [${error.message}]. Stderr: [${stderr}]`);
+        console.log(`❌ Error: [${error.message}]. Stderr: [${stderr}]`);
         return reject(error);
       }
       if (stderr) {
-        console.error(`⚠️ Stderr: [${stderr}]`);
+        console.log(`⚠️ Stderr: [${stderr}]`);
       }
       console.log(`✅ Output: [${stdout}]`);
       resolve(stdout);
@@ -44,7 +44,7 @@ const startDocker = async () => {
       console.log('Date: ', new Date().toLocaleString());
       success = true;
     } catch (err) {
-      console.error(`❌ Attempt ${attempts} failed. [${err.message}]`, err);
+      console.log(`❌ Attempt ${attempts} failed. [${err.message}]`, err);
       if (attempts < MAX_ATTEMPTS) {
         console.log('🔁 Retrying...');
         await new Promise((resolve) => setTimeout(resolve, WAIT_TIME));
@@ -53,16 +53,16 @@ const startDocker = async () => {
   }
 
   if (!success) {
-    console.error(
+    console.log(
       `❌ Failed to restart Docker Compose after ${MAX_ATTEMPTS} attempts.`,
     );
     try {
       await runCommand('sudo reboot');
     } catch (rebootErr) {
-      console.error('❌ Failed to reboot system:', rebootErr.message);
+      console.log('❌ Failed to reboot system:', rebootErr.message);
     }
   }
 };
 
 // Execute the function
-startDocker().catch((err) => console.error('❌ Script failed:', err));
+startDocker().catch((err) => console.log('❌ Script failed:', err));
