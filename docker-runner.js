@@ -27,8 +27,9 @@ const startDocker = async () => {
   const WAIT_TIME = 10 * 1000; // 10 seconds
 
   while (attempts < MAX_ATTEMPTS && !success) {
+    attempts++;
     try {
-      console.log(`---- ATTEMPT ${attempts + 1} ------------`);
+      console.log(`---- ATTEMPT ${attempts} ------------`);
       console.log('🚀 Stopping Docker Compose...');
       console.log('Date: ', new Date().toLocaleString());
       await runCommand('docker compose down');
@@ -36,15 +37,14 @@ const startDocker = async () => {
       console.log(`⏳ Waiting for ${WAIT_TIME / 1000} seconds...`);
       await new Promise((resolve) => setTimeout(resolve, WAIT_TIME));
 
-      console.log('🛑 Starting Docker Compose...');
+      console.log('⏳ Starting Docker Compose...');
       await runCommand('docker compose up -d');
 
       console.log('✅ Docker Compose Started.');
       console.log('Date: ', new Date().toLocaleString());
       success = true;
     } catch (err) {
-      attempts++;
-      console.error(`❌ Attempt ${attempts} failed:`, err.message);
+      console.error(`❌ Attempt ${attempts} failed. [${err.message}]`, err);
       if (attempts < MAX_ATTEMPTS) {
         console.log('🔁 Retrying...');
         await new Promise((resolve) => setTimeout(resolve, WAIT_TIME));
