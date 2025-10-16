@@ -52,7 +52,7 @@ function monitor_mongo() {
     done
 
     log_msg "♻️ Restarting MongoDB..."
-    docker compose restart
+    pm2 restart restart-db
     wait_for_mongo
 }
 
