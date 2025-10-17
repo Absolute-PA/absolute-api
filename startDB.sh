@@ -63,8 +63,19 @@ else
     start_mongo
 fi
 
+# Load .env if present
+if [ -f .env ]; then
+    export $(grep -v '^#' .env | xargs)
+fi
+
+# Check feature flag
+if [ "$DB_MONITOR_DISABLED" = "true" ]; then
+    log_msg "⏩ DB monitor is disabled by DB_MONITOR_DISABLED=true in .env. Exiting."
+    exit 0
+fi
+
 # Monitor MongoDB health in a loop
-while true; do
-    monitor_mongo
-    sleep 60  # check every 60s
-done
+# while true; do
+    # monitor_mongo
+    # sleep 60  # check every 60s
+# done
