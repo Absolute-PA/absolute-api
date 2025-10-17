@@ -1,5 +1,5 @@
 const fs = require('fs');
-const LOCK_FILE = '/tmp/db_reboot.lock';
+const LOCK_FILE = '/var/tmp/absolute_db_reboot.lock';
 
 function canReboot() {
   if (fs.existsSync(LOCK_FILE)) {
