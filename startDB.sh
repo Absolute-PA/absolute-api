@@ -34,7 +34,7 @@ function wait_for_mongo() {
 
 function start_mongo() {
     log_msg "🚀 Starting MongoDB via Docker Compose..."
-    sudo docker compose up -d --force-recreate --build
+    docker compose up -d --force-recreate --build
     wait_for_mongo
 }
 
