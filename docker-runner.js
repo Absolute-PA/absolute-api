@@ -53,13 +53,13 @@ const startDocker = async () => {
       console.log(`---- ATTEMPT ${attempts} ------------`);
       console.log('🚀 Stopping Docker Compose...');
       console.log('Date: ', new Date().toLocaleString());
-      await runCommand('docker compose down');
+      await runCommand('sudo docker compose down');
 
       console.log(`⏳ Waiting for ${WAIT_TIME / 1000} seconds...`);
       await new Promise((resolve) => setTimeout(resolve, WAIT_TIME));
 
       console.log('⏳ Starting Docker Compose...');
-      await runCommand('docker compose up -d');
+      await runCommand('sudo docker compose up -d');
 
       console.log('✅ Docker Compose Started.');
       console.log('Date: ', new Date().toLocaleString());
