@@ -1,3 +1,24 @@
+const fs = require('fs');
+const LOCK_FILE = '/tmp/db_reboot.lock';
+
+function canReboot() {
+  if (fs.existsSync(LOCK_FILE)) {
+    const lockTime = new Date(fs.readFileSync(LOCK_FILE, 'utf8'));
+    const now = new Date();
+    const diffMs = now - lockTime;
+    const diffHr = diffMs / (1000 * 60 * 60);
+    if (diffHr > 1) {
+      // Lock is older than 1 hour, remove it and allow reboot
+      fs.unlinkSync(LOCK_FILE);
+      console.log('🔓 Lock file expired (>1hr), allowing reboot.');
+    } else {
+      console.log('❌ Reboot already triggered recently. Skipping reboot.');
+      return false;
+    }
+  }
+  fs.writeFileSync(LOCK_FILE, new Date().toISOString());
+  return true;
+}
 const { exec } = require('child_process');
 
 // Function to run a shell command
@@ -56,10 +77,12 @@ const startDocker = async () => {
     console.log(
       `❌ Failed to restart Docker Compose after ${MAX_ATTEMPTS} attempts.`,
     );
-    try {
-      await runCommand('sudo reboot');
-    } catch (rebootErr) {
-      console.log('❌ Failed to reboot system:', rebootErr.message);
+    if (canReboot()) {
+      try {
+        await runCommand('sudo reboot');
+      } catch (rebootErr) {
+        console.log('❌ Failed to reboot system:', rebootErr.message);
+      }
     }
   }
 };
