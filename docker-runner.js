@@ -79,8 +79,7 @@ const startDocker = async () => {
     );
     if (canReboot()) {
       try {
-        console.log('🔄 Reboot command issued.');
-        // await runCommand('sudo reboot');
+        await runCommand('sudo reboot');
       } catch (rebootErr) {
         console.log('❌ Failed to reboot system:', rebootErr.message);
       }
