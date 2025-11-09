@@ -1,7 +1,9 @@
 # Configure passwordless reboot for a specified user
 # PM2-managed applications may require this for seamless restarts
-# Make script executable: chmod +x passwordlessReboot.sh
-# Usage: sudo ./passwordlessReboot.sh absolute
+# Installation guide: 
+# - cd /home/absolute/Documents/absolute-api
+# - chmod +x passwordlessReboot.sh
+# - sudo ./passwordlessReboot.sh absolute
 
 #!/bin/bash
 set -e

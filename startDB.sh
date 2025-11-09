@@ -5,6 +5,7 @@ HOST="localhost"
 PORT=27017
 MAX_RETRIES=3
 RETRY_DELAY=5 # seconds
+DEBUG=true
 
 timestamp() {
     date '+%Y-%m-%d %H:%M:%S'
@@ -15,8 +16,22 @@ function log_msg() {
 }
 
 function is_mongo_running() {
-    nc -z "$HOST" "$PORT"
-    return $?
+    # Prefer system nc with a timeout; use full path to avoid PATH differences under PM2
+    if command -v nc >/dev/null 2>&1; then
+        NC_BIN=$(command -v nc)
+        [ "$DEBUG" = "true" ] && log_msg "🔎 Checking $HOST:$PORT with $NC_BIN"
+        "$NC_BIN" -z -w 2 "$HOST" "$PORT" >/dev/null 2>&1
+        local rc=$?
+        [ "$DEBUG" = "true" ] && log_msg "🔍 nc exit code: $rc"
+        return $rc
+    fi
+
+    # Fallback: use bash /dev/tcp (not available in all shells)
+    [ "$DEBUG" = "true" ] && log_msg "🔎 nc not found, falling back to /dev/tcp"
+    (echo > /dev/tcp/"$HOST"/"$PORT") >/dev/null 2>&1
+    local rc=$?
+    [ "$DEBUG" = "true" ] && log_msg "🔍 /dev/tcp exit code: $rc"
+    return $rc
 }
 
 function wait_for_mongo() {
