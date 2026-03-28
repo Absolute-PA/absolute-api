@@ -39,6 +39,7 @@ export interface EventSnapshot {
     time: string;
     jobType: string;
     data: Record<string, any>;
+    targetDeviceId?: string;
 }
 export declare class Schedule {
     name: string;

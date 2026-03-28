@@ -7,6 +7,7 @@ export interface SoundEventPlayPayload {
     jobId: string;
     soundId: string;
     durationInSecond?: number;
+    targetDeviceId?: string;
 }
 export interface VoiceRecordedEventPlayPayload {
     jobId: string;

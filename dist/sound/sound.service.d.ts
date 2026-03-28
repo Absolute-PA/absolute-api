@@ -10,6 +10,7 @@ import { SoundGateway } from './sound.gateway';
 import { UploadService } from '../upload/upload.service';
 import { TextToAudioService } from '../text-to-audio/text-to-audio.service';
 import { StreamingService } from '../streaming/streaming.service';
+import { SatelliteGateway } from '../satellite/satellite.gateway';
 export declare class SoundService {
     private readonly soundModel;
     private readonly agendaService;
@@ -17,8 +18,9 @@ export declare class SoundService {
     private readonly textToAudioService;
     private readonly streamingService;
     private soundGateway;
+    private satelliteGateway;
     private readonly logger;
-    constructor(soundModel: Model<SoundDocument>, agendaService: AgendaService, uploadService: UploadService, textToAudioService: TextToAudioService, streamingService: StreamingService, soundGateway: SoundGateway);
+    constructor(soundModel: Model<SoundDocument>, agendaService: AgendaService, uploadService: UploadService, textToAudioService: TextToAudioService, streamingService: StreamingService, soundGateway: SoundGateway, satelliteGateway: SatelliteGateway);
     create(createSoundDto: CreateSoundDto): Promise<SoundDocument>;
     findByType(type: SoundType): Promise<SoundDocument[]>;
     findOne(id: string): Promise<SoundDocument>;

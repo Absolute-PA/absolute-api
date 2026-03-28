@@ -54,7 +54,6 @@ cp -r ./certificates $BUILD_FOLDER_PATH/
 cp -r ./assets $BUILD_FOLDER_PATH/
 cp ./.env.prod $BUILD_FOLDER_PATH/
 cp -r ./scripts/ $BUILD_FOLDER_PATH/
-cp ./newrelic.js $BUILD_FOLDER_PATH/
 
 # Update the .env.prod file
 cd $BUILD_FOLDER_PATH

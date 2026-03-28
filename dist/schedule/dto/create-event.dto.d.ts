@@ -3,6 +3,7 @@ export declare class CreateEventDtoBase {
     time: string;
     jobType: string;
     durationInSecond?: number;
+    targetDeviceId?: string;
 }
 export declare class CreateEventPlaySoundDto extends CreateEventDtoBase {
     soundId: string;

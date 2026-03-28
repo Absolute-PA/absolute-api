@@ -2,6 +2,7 @@ import { JobCommand } from './common.command';
 export interface PlaySoundCommand extends JobCommand {
     soundId: string;
     durationInSecond?: number;
+    targetDeviceId?: string;
 }
 export interface PlayVoiceCommand extends JobCommand {
     voiceId: string;
