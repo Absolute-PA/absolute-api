@@ -68,7 +68,12 @@ function monitor_mongo() {
 
     log_msg "♻️ Restarting MongoDB..."
     pm2 restart restart-db
-    wait_for_mongo
+    if wait_for_mongo; then
+        log_msg "🔄 Restarting API to restore Mongoose connection..."
+        pm2 restart startApi
+    else
+        log_msg "❌ MongoDB still not responding after restart — skipping API restart"
+    fi
 }
 
 # --- Script starts here ---

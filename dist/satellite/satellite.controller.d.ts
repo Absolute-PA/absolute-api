@@ -4,4 +4,5 @@ export declare class SatelliteController {
     private readonly satelliteService;
     constructor(satelliteService: SatelliteService);
     findAll(): Promise<SatelliteDocument[]>;
+    delete(id: string): Promise<SatelliteDocument>;
 }

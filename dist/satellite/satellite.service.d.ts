@@ -11,4 +11,5 @@ export declare class SatelliteService {
     }): Promise<SatelliteDocument>;
     markOffline(deviceId: string): Promise<void>;
     findAll(): Promise<SatelliteDocument[]>;
+    deleteOfflineSatellite(id: string): Promise<SatelliteDocument | null>;
 }
