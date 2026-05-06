@@ -8,6 +8,7 @@ export declare class SettingController {
     updateCode(): Promise<string>;
     update(id: string, updateSettingDto: UpdateSettingDto): Promise<SettingDto>;
     updateUserSetting(id: string, userSetting: UserSettingDto): Promise<import("./schemas").UserSettingSnapshot>;
+    cleanProcesses(): Promise<string>;
     killJobs(): Promise<void>;
     private initalize;
 }

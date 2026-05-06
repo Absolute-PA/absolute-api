@@ -4,7 +4,7 @@ export declare class AudioPlayer {
     private static logger;
     private static player;
     static play(audioPath: string, volume?: number): void;
-    static playAsync(audioPath: string | string[], volume?: number, shuffle?: boolean): {
+    static playAsync(audioPath: string | string[], volume?: number, shuffle?: boolean, onError?: (err: Error) => void): {
         process: ChildProcessWithoutNullStreams;
         promise: Promise<boolean>;
     };

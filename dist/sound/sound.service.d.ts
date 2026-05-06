@@ -1,8 +1,8 @@
-/// <reference types="multer" />
 import { Model } from 'mongoose';
 import { AgendaService } from '@/agenda/agenda.service';
 import { AuditActor } from '@/common/enums';
 import { SoundEventPlayPayload, TextToAudioEventPlayPayload, VoiceRecordedEventPlayPayload } from '@/common/events/sound';
+import { EmailService } from '@/email/email.service';
 import { SoundDocument } from './schemas';
 import { CreateSoundDto, UpdateSoundDto } from './dto';
 import { SoundType } from './constants';
@@ -19,8 +19,9 @@ export declare class SoundService {
     private readonly streamingService;
     private soundGateway;
     private satelliteGateway;
+    private readonly emailService;
     private readonly logger;
-    constructor(soundModel: Model<SoundDocument>, agendaService: AgendaService, uploadService: UploadService, textToAudioService: TextToAudioService, streamingService: StreamingService, soundGateway: SoundGateway, satelliteGateway: SatelliteGateway);
+    constructor(soundModel: Model<SoundDocument>, agendaService: AgendaService, uploadService: UploadService, textToAudioService: TextToAudioService, streamingService: StreamingService, soundGateway: SoundGateway, satelliteGateway: SatelliteGateway, emailService: EmailService);
     create(createSoundDto: CreateSoundDto): Promise<SoundDocument>;
     findByType(type: SoundType): Promise<SoundDocument[]>;
     findOne(id: string): Promise<SoundDocument>;

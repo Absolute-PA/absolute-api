@@ -1,4 +1,3 @@
-/// <reference types="multer" />
 import { UploadService } from './upload.service';
 import { UpdateUploadDto } from './dto/update-upload.dto';
 export declare class UploadController {

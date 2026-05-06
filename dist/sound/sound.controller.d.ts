@@ -1,4 +1,3 @@
-/// <reference types="multer" />
 import { SoundService } from './sound.service';
 import { CreateSoundDto, UpdateSoundDto } from './dto';
 export declare class SoundController {

@@ -69,6 +69,7 @@ function monitor_mongo() {
     log_msg "♻️ Restarting MongoDB..."
     pm2 restart restart-db
     if wait_for_mongo; then
+        bash "$(dirname "$0")/cleanProcesses.sh"
         log_msg "🔄 Restarting API to restore Mongoose connection..."
         pm2 restart startApi
     else

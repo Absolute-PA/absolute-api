@@ -26,6 +26,7 @@ import { Model } from 'mongoose';
 import { SoundService } from '@/sound/sound.service';
 import { PlaylistEventPlayPayload } from '@/common/events';
 import { AgendaService } from '@/agenda/agenda.service';
+import { EmailService } from '@/email/email.service';
 import { PlaylistDocument } from './schemas';
 import { CreatePlaylistDto, PlaylistDto, UpdatePlaylistDto } from './dto';
 import { AuditActor } from '../common/enums';
@@ -35,8 +36,9 @@ export declare class PlaylistService {
     private readonly soundService;
     private readonly agendaService;
     private soundGateway;
+    private readonly emailService;
     private readonly logger;
-    constructor(playlistModel: Model<PlaylistDocument>, soundService: SoundService, agendaService: AgendaService, soundGateway: SoundGateway);
+    constructor(playlistModel: Model<PlaylistDocument>, soundService: SoundService, agendaService: AgendaService, soundGateway: SoundGateway, emailService: EmailService);
     create(createPlaylistDto: CreatePlaylistDto): Promise<PlaylistDocument>;
     findAll(): Promise<PlaylistDto[]>;
     findOne(id: string): Promise<PlaylistDto>;
