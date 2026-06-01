@@ -12,6 +12,20 @@ yarn
 pm2 start ./startDB.sh
 
 pm2 start ecosystem.config.js
+
+# Start the UI if not already registered with PM2
+UI_SCRIPT="/home/absolute/Documents/absolute-ui/scripts/startUI.sh"
+if [ -f "$UI_SCRIPT" ]; then
+    if ! pm2 list | grep -q "startUI"; then
+        pm2 start "$UI_SCRIPT" --name startUI --interpreter bash
+        echo "Started startUI process."
+    else
+        echo "startUI already registered in PM2, skipping."
+    fi
+else
+    echo "Warning: UI script not found at $UI_SCRIPT — skipping UI startup."
+fi
+
 pm2 save
 
 # Always start from build defaults so npm_package_version and new fields are always current.
