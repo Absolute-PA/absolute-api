@@ -14,33 +14,38 @@ pm2 start ./startDB.sh
 pm2 start ecosystem.config.js
 pm2 save
 
-# Check if .env file exists
-if test -f .env; then 
-    # Extract npm_package_version line from .env.prod
-    npm_package_version=$(grep 'npm_package_version' .env.prod)
-    
-    # Create a temporary file with updated content
-    awk -v new_line="$npm_package_version" '
-    BEGIN { found = 0 }
-    {
-        if ($0 ~ /^npm_package_version=/) {
-            print new_line
-            found = 1
-        } else {
-            print
-        }
-    }
-    END {
-        if (!found) {
-            print new_line
-        }
-    }' .env > .env.tmp
-    
-    # Move the temporary file to .env
-    mv .env.tmp .env
+# Always start from build defaults so npm_package_version and new fields are always current.
+if [ ! -f ".env.prod" ]; then
+    echo "Error: .env.prod does not exist."
+    exit 1
+fi
+
+cp .env.prod .env
+echo "Copied .env.prod to .env."
+
+# Apply device-specific overrides from .env.device (if present).
+# .env.device is created manually once per device for values that differ from
+# build defaults (e.g. JWT_SECRET, PI_NAME, PORT, NODEWEB_DB_URL, passwords).
+# It is never committed to git and never modified by this script.
+DEVICE_ENV=".env.device"
+if [ -f "$DEVICE_ENV" ]; then
+    echo "Applying device overrides from $DEVICE_ENV..."
+    while IFS= read -r line || [ -n "$line" ]; do
+        # Skip blank lines and comments
+        [[ -z "$line" || "$line" == \#* ]] && continue
+        var_name=$(echo "$line" | cut -d '=' -f 1)
+        var_value=$(echo "$line" | cut -d '=' -f 2-)
+        if grep -q "^$var_name=" .env; then
+            sed -i "s|^$var_name=.*|$var_name=$var_value|" .env
+            echo "  Overrode $var_name"
+        else
+            echo "$var_name=$var_value" >> .env
+            echo "  Added $var_name"
+        fi
+    done < "$DEVICE_ENV"
+    echo "Device overrides applied."
 else
-    # If .env does not exist, copy .env.prod to .env
-    cp .env.prod .env
+    echo "No $DEVICE_ENV found — using build defaults only."
 fi
 
 # Start the server with HTTPS enabled
