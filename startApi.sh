@@ -14,7 +14,7 @@ pm2 start ./startDB.sh
 pm2 start ecosystem.config.js
 
 # Start the UI if not already registered with PM2
-UI_SCRIPT="/home/absolute/Documents/absolute-ui/startUI.sh"
+UI_SCRIPT="$HOME/Documents/absolute-ui/startUI.sh"
 if [ -f "$UI_SCRIPT" ]; then
     if ! pm2 list | grep -q "startUI"; then
         pm2 start "$UI_SCRIPT" --name startUI --interpreter bash
