@@ -42,7 +42,7 @@ if [ ! -d "$BUILD_FOLDER_PATH" ]; then
     git clone https://github.com/Absolute-PA/absolute-api.git $BUILD_FOLDER_PATH
 fi
 
-npm version  --allow-same-version patch -m "Update version to %s"
+npm version patch -m "Update version to %s"
 APP_VERSION=$(node -p -e "require('./package.json').version")
 echo App version is $APP_VERSION
 git push
@@ -64,3 +64,8 @@ echo "\nnpm_package_version=$APP_VERSION" >> .env.prod
 git add .
 git commit -m "Version: $APP_VERSION"
 git push
+
+# Tag the build repo with the semver version so devices can checkout by version.
+git tag "v$APP_VERSION"
+git push origin "v$APP_VERSION"
+echo "Tagged and pushed: v$APP_VERSION"

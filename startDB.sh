@@ -72,6 +72,8 @@ function monitor_mongo() {
         bash "$(dirname "$0")/cleanProcesses.sh"
         log_msg "🔄 Restarting API to restore Mongoose connection..."
         pm2 restart startApi
+        log_msg "🔄 Restarting UI..."
+        pm2 restart startUI 2>/dev/null || log_msg "⚠️ startUI not registered in PM2, skipping"
     else
         log_msg "❌ MongoDB still not responding after restart — skipping API restart"
     fi
