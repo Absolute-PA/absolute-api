@@ -86,6 +86,7 @@ if [ -f "$DEVICE_ENV" ]; then
             sed -i "s|^$var_name=.*|$var_name=$var_value|" .env
             echo "  Overrode $var_name"
         else
+            [ -s .env ] && [ "$(tail -c1 .env)" != $'\n' ] && echo >> .env
             echo "$var_name=$var_value" >> .env
             echo "  Added $var_name"
         fi
