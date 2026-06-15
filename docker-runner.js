@@ -1,5 +1,21 @@
 const fs = require('fs');
 const LOCK_FILE = '/var/tmp/absolute_db_reboot.lock';
+const HUB_URL = 'https://hub.absolutepa.com.au';
+
+function parseEnvFile(filePath) {
+  const result = {};
+  try {
+    const lines = fs.readFileSync(filePath, 'utf8').split('\n');
+    for (const line of lines) {
+      const trimmed = line.trim();
+      if (!trimmed || trimmed.startsWith('#')) continue;
+      const idx = trimmed.indexOf('=');
+      if (idx === -1) continue;
+      result[trimmed.slice(0, idx)] = trimmed.slice(idx + 1);
+    }
+  } catch (_) {}
+  return result;
+}
 
 function canReboot() {
   if (fs.existsSync(LOCK_FILE)) {
@@ -64,6 +80,7 @@ const startDocker = async () => {
       console.log('✅ Docker Compose Started.');
       console.log('Date: ', new Date().toLocaleString());
       success = true;
+      await doCheckins().catch((err) => console.log('⚠️ Hub checkin error:', err.message));
     } catch (err) {
       console.log(`❌ Attempt ${attempts} failed. [${err.message}]`, err);
       if (attempts < MAX_ATTEMPTS) {
@@ -83,6 +100,47 @@ const startDocker = async () => {
       } catch (rebootErr) {
         console.log('❌ Failed to reboot system:', rebootErr.message);
       }
+    }
+  }
+};
+
+const doCheckins = async () => {
+  const apiEnv = parseEnvFile('.env.device');
+  const uiEnv = parseEnvFile('/home/absolute/Documents/absolute-ui/.env.device');
+  const piName = apiEnv['PI_NAME'] || '';
+  const channel = apiEnv['CHANNEL'] || 'stable';
+
+  if (!piName) {
+    console.log('Hub checkin skipped — PI_NAME not set in .env.device');
+    return;
+  }
+
+  let apiVersion = apiEnv['TARGET_VERSION_API'] || '';
+  let uiVersion = uiEnv['TARGET_VERSION_UI'] || '';
+
+  if (!apiVersion || !uiVersion) {
+    try {
+      const manifestJson = await runCommand(
+        `curl -skf --max-time 5 "${HUB_URL}/api/manifest?channel=${channel}"`,
+      );
+      const manifest = JSON.parse(manifestJson.trim());
+      if (!apiVersion) apiVersion = manifest.api || 'main';
+      if (!uiVersion) uiVersion = manifest.ui || 'main';
+    } catch (_) {
+      if (!apiVersion) apiVersion = 'main';
+      if (!uiVersion) uiVersion = 'main';
+    }
+  }
+
+  for (const [component, version] of [['api', apiVersion], ['ui', uiVersion]]) {
+    const body = JSON.stringify({ device_id: piName, channel, component, version });
+    try {
+      await runCommand(
+        `curl -skf --max-time 5 -X POST -H "Content-Type: application/json" -d '${body}' "${HUB_URL}/api/checkin"`,
+      );
+      console.log(`Hub checkin OK: ${piName} ${component}@${version} (${channel})`);
+    } catch (_) {
+      console.log(`Hub checkin failed for ${component} (hub unreachable — continuing)`);
     }
   }
 };
