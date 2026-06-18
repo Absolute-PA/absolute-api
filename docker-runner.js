@@ -1,6 +1,37 @@
 const fs = require('fs');
-const LOCK_FILE = '/var/tmp/absolute_db_reboot.lock';
+const os = require('os');
+const path = require('path');
+const { exec } = require('child_process');
+
 const HUB_URL = 'https://hub.absolutepa.com.au';
+
+// Docker Desktop is the fleet standard. Pin the context so this job can never
+// silently target a stray rootful daemon (/var/run/docker.sock) — the cause of
+// the two-engine "permission denied" reboot storms. Override per-device with
+// DOCKER_RUNNER_CONTEXT if a box is intentionally on a different context.
+const DOCKER_CONTEXT = process.env.DOCKER_RUNNER_CONTEXT || 'desktop-linux';
+const COMPOSE = `docker --context ${DOCKER_CONTEXT} compose`;
+
+// Persistent state dir — /var/tmp is cleared on reboot, which let the old lock
+// reset every boot and allowed an endless reboot loop.
+const STATE_DIR = path.join(os.homedir(), '.absolutepa');
+const LOCK_FILE = path.join(STATE_DIR, 'db_reboot.lock');
+const REBOOT_LOG = path.join(STATE_DIR, 'reboot-count.json');
+const MAX_REBOOTS_PER_DAY = 3;
+
+function ensureStateDir() {
+  try {
+    fs.mkdirSync(STATE_DIR, { recursive: true });
+  } catch (_) {}
+}
+
+// Errors that a retry/reboot will NOT fix — these are misconfiguration, not
+// transient faults. Rebooting on these caused hundreds of reboots in the logs.
+function isUnrecoverable(message) {
+  return /permission denied|docker\.sock|Cannot connect to the Docker daemon|context .*not found|no such context/i.test(
+    message || '',
+  );
+}
 
 function parseEnvFile(filePath) {
   const result = {};
@@ -17,12 +48,27 @@ function parseEnvFile(filePath) {
   return result;
 }
 
+// Cap reboots per calendar day so a persistent fault can never reboot-storm.
+function rebootBudgetExhausted() {
+  const today = new Date().toISOString().slice(0, 10);
+  let data = { date: today, count: 0 };
+  try {
+    const parsed = JSON.parse(fs.readFileSync(REBOOT_LOG, 'utf8'));
+    if (parsed && parsed.date === today) data = parsed;
+  } catch (_) {}
+  if (data.count >= MAX_REBOOTS_PER_DAY) return true;
+  data.count += 1;
+  try {
+    fs.writeFileSync(REBOOT_LOG, JSON.stringify(data));
+  } catch (_) {}
+  return false;
+}
+
 function canReboot() {
+  ensureStateDir();
   if (fs.existsSync(LOCK_FILE)) {
     const lockTime = new Date(fs.readFileSync(LOCK_FILE, 'utf8'));
-    const now = new Date();
-    const diffMs = now - lockTime;
-    const diffHr = diffMs / (1000 * 60 * 60);
+    const diffHr = (Date.now() - lockTime.getTime()) / (1000 * 60 * 60);
     if (diffHr > 1) {
       // Lock is older than 1 hour, remove it and allow reboot
       fs.unlinkSync(LOCK_FILE);
@@ -32,10 +78,15 @@ function canReboot() {
       return false;
     }
   }
+  if (rebootBudgetExhausted()) {
+    console.log(
+      `❌ Reboot budget exhausted (max ${MAX_REBOOTS_PER_DAY}/day). Skipping reboot.`,
+    );
+    return false;
+  }
   fs.writeFileSync(LOCK_FILE, new Date().toISOString());
   return true;
 }
-const { exec } = require('child_process');
 
 // Function to run a shell command
 const runCommand = (command) => {
@@ -63,26 +114,50 @@ const startDocker = async () => {
   const MAX_ATTEMPTS = 5;
   const WAIT_TIME = 10 * 1000; // 10 seconds
 
+  console.log(`Using docker context: ${DOCKER_CONTEXT}`);
+
   while (attempts < MAX_ATTEMPTS && !success) {
     attempts++;
     try {
       console.log(`---- ATTEMPT ${attempts} ------------`);
       console.log('🚀 Stopping Docker Compose...');
       console.log('Date: ', new Date().toLocaleString());
-      await runCommand('docker compose down');
+      await runCommand(`${COMPOSE} down`);
 
       console.log(`⏳ Waiting for ${WAIT_TIME / 1000} seconds...`);
       await new Promise((resolve) => setTimeout(resolve, WAIT_TIME));
 
       console.log('⏳ Starting Docker Compose...');
-      await runCommand('docker compose up -d');
+      await runCommand(`${COMPOSE} up -d`);
 
       console.log('✅ Docker Compose Started.');
       console.log('Date: ', new Date().toLocaleString());
       success = true;
-      await doCheckins().catch((err) => console.log('⚠️ Hub checkin error:', err.message));
+      await doCheckins().catch((err) =>
+        console.log('⚠️ Hub checkin error:', err.message),
+      );
     } catch (err) {
-      console.log(`❌ Attempt ${attempts} failed. [${err.message}]`, err);
+      console.log(`❌ Attempt ${attempts} failed. [${err.message}]`);
+
+      // A permission/socket/context error is a configuration problem — retrying
+      // and especially rebooting will NOT fix it. Bail out instead of looping.
+      if (isUnrecoverable(err.message)) {
+        console.log(
+          '⛔ Unrecoverable Docker error (permission / socket / context).',
+        );
+        console.log(
+          '   This is a configuration problem, not a transient fault —',
+        );
+        console.log(
+          '   NOT retrying and NOT rebooting. Investigate the engine:',
+        );
+        console.log(`     docker --context ${DOCKER_CONTEXT} info`);
+        console.log(
+          '   (A rootful daemon on a Docker-Desktop device is the usual cause.)',
+        );
+        return;
+      }
+
       if (attempts < MAX_ATTEMPTS) {
         console.log('🔁 Retrying...');
         await new Promise((resolve) => setTimeout(resolve, WAIT_TIME));
@@ -106,7 +181,9 @@ const startDocker = async () => {
 
 const doCheckins = async () => {
   const apiEnv = parseEnvFile('.env.device');
-  const uiEnv = parseEnvFile('/home/absolute/Documents/absolute-ui/.env.device');
+  const uiEnv = parseEnvFile(
+    '/home/absolute/Documents/absolute-ui/.env.device',
+  );
   const piName = apiEnv['PI_NAME'] || '';
   const channel = apiEnv['CHANNEL'] || 'stable';
 
@@ -132,15 +209,27 @@ const doCheckins = async () => {
     }
   }
 
-  for (const [component, version] of [['api', apiVersion], ['ui', uiVersion]]) {
-    const body = JSON.stringify({ device_id: piName, channel, component, version });
+  for (const [component, version] of [
+    ['api', apiVersion],
+    ['ui', uiVersion],
+  ]) {
+    const body = JSON.stringify({
+      device_id: piName,
+      channel,
+      component,
+      version,
+    });
     try {
       await runCommand(
         `curl -skf --max-time 5 -X POST -H "Content-Type: application/json" -d '${body}' "${HUB_URL}/api/checkin"`,
       );
-      console.log(`Hub checkin OK: ${piName} ${component}@${version} (${channel})`);
+      console.log(
+        `Hub checkin OK: ${piName} ${component}@${version} (${channel})`,
+      );
     } catch (_) {
-      console.log(`Hub checkin failed for ${component} (hub unreachable — continuing)`);
+      console.log(
+        `Hub checkin failed for ${component} (hub unreachable — continuing)`,
+      );
     }
   }
 };
