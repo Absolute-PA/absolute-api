@@ -20,12 +20,11 @@ function ensureStateDir() {
   } catch (_) {}
 }
 
-// Errors that a retry/reboot will NOT fix — these are misconfiguration, not
-// transient faults. Rebooting on these caused hundreds of reboots in the logs.
+// Only "permission denied" is truly unrecoverable — no retry will fix a missing
+// privilege. "Cannot connect to the Docker daemon" is transient (Docker Desktop
+// still starting) and always resolves on attempt 2, so it must be retried.
 function isUnrecoverable(message) {
-  return /permission denied|docker\.sock|Cannot connect to the Docker daemon/i.test(
-    message || '',
-  );
+  return /permission denied/i.test(message || '');
 }
 
 function parseEnvFile(filePath) {
