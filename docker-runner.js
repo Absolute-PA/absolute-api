@@ -5,12 +5,7 @@ const { exec } = require('child_process');
 
 const HUB_URL = 'https://hub.absolutepa.com.au';
 
-// Docker Desktop is the fleet standard. Pin the context so this job can never
-// silently target a stray rootful daemon (/var/run/docker.sock) — the cause of
-// the two-engine "permission denied" reboot storms. Override per-device with
-// DOCKER_RUNNER_CONTEXT if a box is intentionally on a different context.
-const DOCKER_CONTEXT = process.env.DOCKER_RUNNER_CONTEXT || 'desktop-linux';
-const COMPOSE = `docker --context ${DOCKER_CONTEXT} compose`;
+const COMPOSE = 'docker compose';
 
 // Persistent state dir — /var/tmp is cleared on reboot, which let the old lock
 // reset every boot and allowed an endless reboot loop.
@@ -28,7 +23,7 @@ function ensureStateDir() {
 // Errors that a retry/reboot will NOT fix — these are misconfiguration, not
 // transient faults. Rebooting on these caused hundreds of reboots in the logs.
 function isUnrecoverable(message) {
-  return /permission denied|docker\.sock|Cannot connect to the Docker daemon|context .*not found|no such context/i.test(
+  return /permission denied|docker\.sock|Cannot connect to the Docker daemon/i.test(
     message || '',
   );
 }
@@ -114,8 +109,6 @@ const startDocker = async () => {
   const MAX_ATTEMPTS = 5;
   const WAIT_TIME = 10 * 1000; // 10 seconds
 
-  console.log(`Using docker context: ${DOCKER_CONTEXT}`);
-
   while (attempts < MAX_ATTEMPTS && !success) {
     attempts++;
     try {
@@ -151,10 +144,7 @@ const startDocker = async () => {
         console.log(
           '   NOT retrying and NOT rebooting. Investigate the engine:',
         );
-        console.log(`     docker --context ${DOCKER_CONTEXT} info`);
-        console.log(
-          '   (A rootful daemon on a Docker-Desktop device is the usual cause.)',
-        );
+        console.log('     docker info');
         return;
       }
 
